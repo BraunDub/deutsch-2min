@@ -4,9 +4,9 @@
 const $app = document.getElementById('app');
 const DAY = 864e5;
 const INTERVALS = [0, 1, 3, 7, 14, 30, 60, 120]; // days per SRS box
-const SKILLS = ['lesen', 'hoeren', 'schreiben', 'sprechen', 'party'];
+const SKILLS = ['wb', 'lesen', 'hoeren', 'schreiben', 'sprechen', 'party'];
 const STATES = { '': 'Noch nicht gewählt', BW: 'Baden-Württemberg', BY: 'Bayern', BE: 'Berlin', BB: 'Brandenburg', HB: 'Bremen', HH: 'Hamburg', HE: 'Hessen', MV: 'Mecklenburg-Vorpommern', NI: 'Niedersachsen', NW: 'Nordrhein-Westfalen', RP: 'Rheinland-Pfalz', SL: 'Saarland', SN: 'Sachsen', ST: 'Sachsen-Anhalt', SH: 'Schleswig-Holstein', TH: 'Thüringen' };
-const TYPE_LABEL = { vocab: 'Wortschatz', decode: 'Entschlüsseln', lid: 'Leben in Deutschland', lesen: 'Lesen', hoeren: 'Hören', schreiben: 'Schreiben', sprechen: 'Sprechen', party: 'Party-Hören' };
+const TYPE_LABEL = { vocab: 'Wortschatz', decode: 'Entschlüsseln', lid: 'Leben in Deutschland', lesen: 'Lesen', hoeren: 'Hören', schreiben: 'Schreiben', sprechen: 'Sprechen', party: 'Party-Hören', wb: 'Arbeitsheft' };
 
 let DATA = null;
 let S = load();
@@ -102,11 +102,13 @@ function buildMix() {
   return q;
 }
 function skillItem(kind) {
+  if (kind === 'wb') return wbItem();
   const list = DATA.tasks[kind];
   const { i, item } = leastSeen(kind, list);
   return { t: kind, c: item, i };
 }
 function buildSection(kind) {
+  if (kind === 'wb') return [wbItem()];
   if (kind === 'vocab') return choose(vocabPool(), 8, x => x.k).map(c => ({ t: 'vocab', c }));
   if (kind === 'decode') return choose(decodePool(), 5, x => x.k).map(c => ({ t: 'decode', c }));
   if (kind === 'lid') return choose(lidPool(), 5, x => x.k).map(c => ({ t: 'lid', c }));
@@ -153,6 +155,7 @@ function home() {
     <p class="muted small" style="text-align:center">Karten, ein Wort entschlüsseln, eine Einbürgerungsfrage und eine Prüfungsaufgabe</p>
     <h2>Einzeln üben</h2>
     <div class="grid">
+      ${wbTile()}
       ${tile('vocab', 'Wortschatz', `${dueV} fällig · ${newV} neu`)}
       ${tile('decode', 'Entschlüsseln', 'Wörter aus Teilen erraten')}
       ${tile('lid', 'Leben in Deutschland', `${lidDone}/${lidAll.length} sicher${S.settings.state ? '' : ' · Bundesland wählen'}`)}
@@ -168,7 +171,7 @@ const tile = (k, title, sub) => `<button class="tile" data-start="${k}"><b>${esc
 
 function startSession(kind) {
   const q = kind === 'mix' ? buildMix() : buildSection(kind);
-  if (kind === 'mix') q.filter(x => SKILLS.includes(x.t)).forEach(x => { markSeen(x.t, x.i); (S.seen._skills ||= {})[x.t] = (S.seen._skills[x.t] || 0) + 1; save(); });
+  if (kind === 'mix') q.filter(x => SKILLS.includes(x.t)).forEach(x => { if (x.i !== undefined) markSeen(x.t, x.i); (S.seen._skills ||= {})[x.t] = (S.seen._skills[x.t] || 0) + 1; save(); });
   if (!q.length) { toast('Gerade nichts fällig. Komm später wieder!'); return; }
   session = { kind, q, pos: 0, ok: 0, start: Date.now(), requeued: new Set() };
   clearInterval(window._tick);
@@ -215,14 +218,14 @@ function finish() {
 function renderItem() {
   stopSpeech();
   const it = session.q[session.pos];
-  ({ vocab: vVocab, decode: vDecode, lid: vLid, lesen: vLesen, hoeren: vHoeren, schreiben: vSchreiben, sprechen: vSprechen, party: vParty })[it.t](it.c);
+  ({ vocab: vVocab, decode: vDecode, lid: vLid, lesen: vLesen, hoeren: vHoeren, schreiben: vSchreiben, sprechen: vSprechen, party: vParty, wb: vWb })[it.t](it.c);
   window.scrollTo(0, 0);
 }
 
 /* --- Wortschatz (flashcard) --- */
 function vVocab(c) {
   const tag = c.deck ? `Wortschatz · ${c.deck}` : 'Wortschatz';
-  const front = `<div class="word">${esc(c.w)}</div>${c.s ? `<div class="sentence">${esc(c.s)}</div>` : ''}`;
+  const front = `<div class="word"${c.w.length > 40 ? ' style="font-size:22px;font-weight:500"' : ''}>${esc(c.w)}</div>${c.s ? `<div class="sentence">${esc(c.s)}</div>` : ''}`;
   $app.innerHTML = frame(`
     <div class="top" style="margin-top:6px"><button class="speak" id="say" aria-label="Vorlesen">🔊</button></div>
     <div class="body flipzone" id="flip">${front}<p class="muted small" style="margin-top:22px">Tippen zum Umdrehen</p></div>`, tag);
@@ -274,9 +277,18 @@ function mc({ tag, head, options, answer, onDone, after }) {
 
 /* --- Entschlüsseln --- */
 function vDecode(c) {
+  const tag = 'Entschlüsseln · Was bedeutet das?';
+  $app.innerHTML = frame(`<div class="body">
+    <div class="word">${esc(c.w)}</div><div class="sentence">${esc(c.s)}</div>
+    <p class="muted small" style="margin-top:18px">Zerleg das Wort im Kopf: Präfix? Stamm? Suffix? Was könnte es heißen?</p>
+    <input id="guess" placeholder="Deine Vermutung (optional, auch auf Englisch)" autocomplete="off">
+    <button class="btn primary actions" id="go">Ich habe eine Vermutung</button></div>`, tag);
+  document.getElementById('go').onclick = () => decodeReveal(c, document.getElementById('guess').value.trim());
+}
+function decodeReveal(c, guess) {
   mc({
     tag: 'Entschlüsseln · Was bedeutet das?',
-    head: `<div class="word">${esc(c.w)}</div><div class="sentence">${esc(c.s)}</div><div class="morph">${esc(c.p)}</div>`,
+    head: `<div class="word">${esc(c.w)}</div><div class="sentence">${esc(c.s)}</div><div class="morph">${esc(c.p)}</div>${guess ? `<p class="small muted" style="margin-top:8px">Deine Vermutung: <i>${esc(guess)}</i></p>` : ''}`,
     options: c.o, answer: c.a,
     after: '',
     onDone: ok => { grade(c.k, ok ? 1 : 0); next(ok); }
@@ -445,6 +457,118 @@ function playLines(lines, rate) {
   });
 }
 
+/* --- Arbeitsheft (digital workbook): one step per session --- */
+const WB_STEPS = ['read', 'comp', 'cloze', 'gram', 'write'];
+const WB_NAMES = { read: 'Lesen', comp: 'Textverständnis', cloze: 'Lückentext', gram: 'Grammatik', write: 'Schreiben' };
+function wbPos() { const w = S.wb || { u: 0, s: 0 }; const n = (DATA.workbook || []).length; return n ? { u: Math.min(w.u, n - 1), s: w.u >= n ? 0 : w.s, finished: w.u >= n } : null; }
+function wbItem() { const p = wbPos(); return p ? { t: 'wb', c: { u: p.u, s: p.s } } : skillItem('lesen'); }
+function wbTile() {
+  const p = wbPos(); if (!p) return '';
+  const u = DATA.workbook[p.u];
+  return `<button class="tile" data-start="wb" style="grid-column:1/-1;min-height:0"><b>📖 Arbeitsheft</b>
+    <span>${p.finished ? 'Alle Einheiten fertig. Wiederholen?' : `Einheit ${p.u + 1}: ${esc(u.title)} · Schritt ${p.s + 1}/5 (${WB_NAMES[WB_STEPS[p.s]]})`}</span>
+    <span>${esc(u.grammar)}</span></button>`;
+}
+function wbAdvance(c) {
+  const w = S.wb || { u: 0, s: 0 };
+  if (w.u === c.u && w.s === c.s) { w.s++; if (w.s >= WB_STEPS.length) { w.s = 0; w.u++; } }
+  if (w.u >= DATA.workbook.length) { w.u = 0; w.s = 0; }
+  S.wb = w; save();
+}
+function glossed(u) {
+  let html = esc(u.passage);
+  u.gloss.forEach((g, i) => { const w = esc(g.w); const at = html.indexOf(w); if (at >= 0) html = html.slice(0, at) + `<button class="gl" data-g="${i}">${w}</button>` + html.slice(at + w.length); });
+  return html.split(/\n\n+/).map(p => `<p>${p}</p>`).join('');
+}
+function wbGlossHandlers(u) {
+  document.querySelectorAll('.gl').forEach(b => b.onclick = () => toast(`${u.gloss[+b.dataset.g].w}: ${u.gloss[+b.dataset.g].m}`));
+}
+function vWb(c) {
+  const u = DATA.workbook[c.u], step = WB_STEPS[c.s];
+  const tag = `Arbeitsheft · Einheit ${c.u + 1} · ${c.s + 1}/5 ${WB_NAMES[step]}`;
+  const done = ok => { wbAdvance(c); next(ok); };
+  const passage = `<div class="passage">${glossed(u)}</div>`;
+  const words = `<details style="background:var(--card2)"><summary class="small">Wörter (${u.gloss.length})</summary>${u.gloss.map(g => `<p class="small"><b>${esc(g.w)}</b> = ${esc(g.m)}</p>`).join('')}</details>`;
+  if (step === 'read') {
+    $app.innerHTML = frame(`<div class="body"><h2 style="margin-top:4px">${esc(u.title)}</h2>
+      <p class="small muted">Lies den Text. Tippe auf <span class="gl" style="pointer-events:none">markierte Wörter</span> für die Bedeutung.</p>
+      ${passage}${words}
+      <button class="btn primary actions" id="ok">Gelesen ✓</button></div>`, tag);
+    wbGlossHandlers(u);
+    document.getElementById('ok').onclick = () => done(true);
+  } else if (step === 'comp') {
+    let qi = 0, score = 0;
+    const show = () => {
+      const q = u.comp[qi];
+      mc({ tag: `${tag} ${qi + 1}/${u.comp.length}`,
+        head: `<details style="background:var(--card2)"><summary class="small">Text nochmal lesen</summary>${passage}</details><p style="margin-top:14px;font-weight:600">${esc(q.q)}</p>`,
+        options: q.o, answer: q.a,
+        onDone: ok => { if (ok) score++; qi++; if (qi < u.comp.length) show(); else done(score === u.comp.length); } });
+      wbGlossHandlers(u);
+    };
+    show();
+  } else if (step === 'cloze') {
+    const z = u.cloze;
+    const text = esc(z.t).replace(/\{(\d+)\}/g, (_, n) => `<input class="gap" data-n="${n - 1}" autocomplete="off" autocapitalize="off" spellcheck="false">`);
+    $app.innerHTML = frame(`<div class="body"><p class="small muted">Ergänze die Lücken${z.bank ? ' mit den Wörtern unten (antippen)' : ''}.</p>
+      <p style="line-height:2.3">${text}</p>
+      ${z.bank ? `<div id="bank">${shuffle(z.ans.map((a, i) => i)).map(i => `<button class="chip" data-i="${i}">${esc(z.ans[i])}</button>`).join('')}</div>` : ''}
+      <div id="fb"></div><button class="btn primary actions" id="chk">Prüfen</button></div>`, tag);
+    let focus = null;
+    document.querySelectorAll('.gap').forEach(g => g.onfocus = () => focus = g);
+    document.querySelectorAll('.chip').forEach(ch => ch.onclick = () => {
+      const target = (focus && !focus.value) ? focus : [...document.querySelectorAll('.gap')].find(g => !g.value);
+      if (!target) return; target.value = ch.textContent; ch.disabled = true; focus = null;
+    });
+    document.getElementById('chk').onclick = function () {
+      let right = 0;
+      document.querySelectorAll('.gap').forEach(g => {
+        const want = z.ans[+g.dataset.n], ok = norm(g.value) === norm(want);
+        if (ok) right++; g.classList.add(ok ? 'right' : 'wrong'); g.disabled = true;
+        if (!ok) g.insertAdjacentHTML('afterend', ` <span class="small" style="color:var(--good)">${esc(want)}</span>`);
+      });
+      document.getElementById('fb').innerHTML = `<p class="feedback">${right}/${z.ans.length} richtig.</p>`;
+      this.textContent = 'Weiter'; this.onclick = () => done(right === z.ans.length);
+    };
+  } else if (step === 'gram') {
+    const g = u.gram;
+    $app.innerHTML = frame(`<div class="body"><p style="font-weight:600">${esc(u.grammar)}</p>
+      <details open style="background:var(--card2)"><summary class="small">Regel</summary><p class="small">${esc(g.rule)}</p></details>
+      <ol style="padding-left:20px;line-height:2.2">${g.items.map((it, i) => `<li>${esc(it.t).replace('___', `<input class="gap" data-i="${i}" autocomplete="off" autocapitalize="off" spellcheck="false">`)}</li>`).join('')}</ol>
+      <div id="fb"></div><button class="btn primary actions" id="chk">Prüfen</button></div>`, tag);
+    document.getElementById('chk').onclick = function () {
+      let right = 0;
+      document.querySelectorAll('.gap').forEach(el => {
+        const it = g.items[+el.dataset.i], ok = [it.a, ...[].concat(it.alt || [])].some(a => norm(a) === norm(el.value));
+        if (ok) right++; el.classList.add(ok ? 'right' : 'wrong'); el.disabled = true;
+        if (!ok) el.insertAdjacentHTML('afterend', ` <span class="small" style="color:var(--good)">${esc(it.a)}</span>`);
+      });
+      document.getElementById('fb').innerHTML = `<p class="feedback">${right}/${g.items.length} richtig.</p>`;
+      this.textContent = 'Weiter'; this.onclick = () => done(right === g.items.length);
+    };
+  } else {
+    const w = u.write;
+    $app.innerHTML = frame(`<div class="body"><p class="big" style="font-size:19px">${esc(w.p)}</p>
+      <textarea id="ans" style="margin-top:12px" placeholder="Auf Deutsch schreiben …" autocapitalize="sentences" spellcheck="false"></textarea>
+      ${checklist(w)}<div id="fb"></div>
+      <button class="btn primary actions" id="chk">Musterlösung zeigen</button></div>`, tag);
+    document.getElementById('chk').onclick = function () {
+      document.getElementById('fb').innerHTML = `<div class="morph"><b>Muster:</b> ${esc(w.m)}</div>
+        <div class="rate" style="grid-template-columns:1fr 1fr"><button class="btn again" data-ok="0">Noch unsicher</button><button class="btn easy" data-ok="1">Hab ich gut gemacht</button></div>`;
+      this.remove();
+      document.querySelectorAll('[data-ok]').forEach(b => b.onclick = () => done(b.dataset.ok === '1'));
+    };
+  }
+}
+const norm = s => String(s || '').trim().toLowerCase().replace(/\s+/g, ' ').replace(/[.!?,]$/, '');
+
+/* Words Braun already studied in Quizlet start as known reviews, spread over two weeks. */
+function seedLearned() {
+  let n = 0;
+  DATA.vocab.forEach(c => { if (c.deck === 'Gelernt' && !S.srs['v:' + c.w]) { S.srs['v:' + c.w] = { b: 2, d: Date.now() + Math.random() * 14 * DAY }; n++; } });
+  if (n) save();
+}
+
 /* --- Mission des Tages --- */
 function todaysMission() {
   const pool = (DATA.missions || []).filter(m => !m.wk || m.wk <= S.settings.week);
@@ -566,8 +690,9 @@ document.addEventListener('click', e => {
 async function boot() {
   $app.innerHTML = '<p class="muted">Lädt …</p>';
   const get = f => fetch(`data/${f}.json`).then(r => r.json());
-  const [vocab, decode, lid, tasks, missions] = await Promise.all(['vocab', 'decode', 'lid', 'tasks', 'missions'].map(get));
-  DATA = { vocab, decode, lid, tasks, missions };
+  const [vocab, decode, lid, tasks, missions, workbook] = await Promise.all(['vocab', 'decode', 'lid', 'tasks', 'missions', 'workbook'].map(get));
+  DATA = { vocab, decode, lid, tasks, missions, workbook };
+  seedLearned();
   home();
   if (new URLSearchParams(location.search).get('start') === 'mix') startSession('mix');
 }

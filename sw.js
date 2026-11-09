@@ -1,7 +1,7 @@
 // Cache-first service worker so the app opens instantly and works offline.
-const CACHE = 'd2m-v3';
+const CACHE = 'd2m-v4';
 const FILES = ['./', 'index.html', 'styles.css', 'app.js', 'manifest.webmanifest',
-  'data/vocab.json', 'data/decode.json', 'data/lid.json', 'data/tasks.json', 'data/missions.json',
+  'data/vocab.json', 'data/decode.json', 'data/lid.json', 'data/tasks.json', 'data/missions.json', 'data/workbook.json',
   'icons/icon-192.png', 'icons/icon-512.png', 'icons/apple-touch-icon.png'];
 self.addEventListener('install', e => { e.waitUntil(caches.open(CACHE).then(c => c.addAll(FILES))); self.skipWaiting(); });
 self.addEventListener('activate', e => {

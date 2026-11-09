@@ -1,0 +1,431 @@
+[
+ {
+  "wk": 1,
+  "th": "familie",
+  "title": "Das erste Treffen mit der Familie",
+  "grammar": "Wortstellung: Verb auf Position 2 / Verb am Ende",
+  "passage": "Letzten Sonntag hat mich meine Freundin Anna zum ersten Mal zu ihren Eltern mitgenommen. Ich war ziemlich aufgeregt, weil ich die Familie noch nicht kannte. Annas Mutter hatte uns zum Kaffee eingeladen, und als wir ankamen, war schon die halbe Verwandtschaft da: Onkel, Tanten, Cousins und sogar die Oma. Anna hat mich allen vorgestellt, und natürlich habe ich mir keinen einzigen Namen gemerkt.\n\nAm Anfang habe ich nur gelächelt und genickt, denn alle haben schnell und mit Dialekt gesprochen. Dann hat sich ihr Onkel neben mich gesetzt und mich gefragt, woher ich komme. Wir haben uns lange über Fußball und das Wetter unterhalten. Er hat halt ein bisschen Bairisch gesprochen, aber er hat langsam geredet, damit ich ihn verstehe.\n\nAm Ende war der Nachmittag richtig gemütlich. Beim Abschied hat die Oma gesagt: „Kimm bald wieder!“ Ich glaube, ich habe die Familie ein bisschen kennengelernt – und sie mich auch.",
+  "gloss": [
+   {
+    "w": "aufgeregt",
+    "m": "nervous, excited"
+   },
+   {
+    "w": "nicken",
+    "m": "to nod"
+   },
+   {
+    "w": "sich etwas merken",
+    "m": "to remember something"
+   },
+   {
+    "w": "der Abschied",
+    "m": "goodbye, farewell"
+   },
+   {
+    "w": "Kimm bald wieder!",
+    "m": "Bairisch for: Komm bald wieder!"
+   }
+  ],
+  "comp": [
+   {
+    "q": "Warum war der Erzähler aufgeregt?",
+    "o": [
+     "Er kannte die Familie noch nicht.",
+     "Er ist zu spät gekommen.",
+     "Er hatte kein Geschenk dabei."
+    ],
+    "a": 0
+   },
+   {
+    "q": "Warum hat er am Anfang nur gelächelt?",
+    "o": [
+     "Alle haben schnell und mit Dialekt gesprochen.",
+     "Er war sehr müde.",
+     "Niemand hat mit ihm gesprochen."
+    ],
+    "a": 0
+   },
+   {
+    "q": "Wie hat der Onkel ihm geholfen?",
+    "o": [
+     "Er hat langsam gesprochen.",
+     "Er hat Englisch gesprochen.",
+     "Er hat ihm die Namen aufgeschrieben."
+    ],
+    "a": 0
+   }
+  ],
+  "cloze": {
+   "t": "Anna hat mich der ganzen {1} {2}. Mit ihrem Onkel habe ich mich lange über Fußball {3}. Am Ende war der Nachmittag richtig {4}, und ich habe die Familie ein bisschen {5}.",
+   "ans": [
+    "Verwandtschaft",
+    "vorgestellt",
+    "unterhalten",
+    "gemütlich",
+    "kennengelernt"
+   ],
+   "bank": true
+  },
+  "gram": {
+   "rule": "In a main clause the conjugated verb is in position 2 (even if something other than the subject comes first). After weil, dass, wenn, ob, obwohl the conjugated verb goes to the END. If the sentence starts with a weil/wenn-clause, the main verb comes right after the comma.",
+   "items": [
+    {
+     "t": "Am Sonntag ___ wir zu Annas Eltern. (fahren)",
+     "a": "fahren"
+    },
+    {
+     "t": "Ich glaube, dass die Oma mich ___ . (mögen)",
+     "a": "mag"
+    },
+    {
+     "t": "Gestern ___ ich lange mit dem Onkel gesprochen. (haben)",
+     "a": "habe"
+    },
+    {
+     "t": "Weil alle Dialekt sprechen, ___ ich nicht viel. (verstehen)",
+     "a": "verstehe"
+    },
+    {
+     "t": "Wenn du Zeit ___, komm doch am Sonntag vorbei. (haben)",
+     "a": "hast"
+    },
+    {
+     "t": "Ich weiß nicht, ob Anna heute ___ . (kommen)",
+     "a": "kommt"
+    }
+   ]
+  },
+  "write": {
+   "p": "Write 3–4 sentences about the first time you met your partner's family (or a new group of people). Use weil and dass at least once each.",
+   "m": "Beim ersten Treffen war ich sehr nervös, weil ich kaum Bairisch verstanden habe. Aber alle waren sehr freundlich. Ich fand es schön, dass die Oma mir sofort Kuchen angeboten hat. Heute fühle ich mich in der Familie schon richtig wohl.",
+   "chk": [
+    "Is the verb in position 2 in every main clause?",
+    "Is the verb at the end after weil and dass?",
+    "Did you use the Perfekt for past events?"
+   ]
+  }
+ },
+ {
+  "wk": 2,
+  "th": "freizeit",
+  "title": "Ein Ausflug mit Hindernissen",
+  "grammar": "Perfekt und Präteritum",
+  "passage": "Am Samstag wollten wir einen Ausflug an den Tegernsee machen. Leider hat alles anders angefangen als geplant. Zuerst hatte die S-Bahn zwanzig Minuten Verspätung, und deshalb haben wir unseren Zug verpasst. Wir mussten eine Stunde am Bahnhof warten. Das war ärgerlich, aber wir haben uns einen Kaffee geholt und das Beste daraus gemacht.\n\nAm See war es dann wunderschön. Wir sind drei Stunden gewandert und haben unterwegs in einer Hütte Brotzeit gemacht. Auf dem Rückweg ist dann noch etwas passiert: Mein Freund ist auf einem nassen Stein ausgerutscht. Zum Glück hat er sich nicht verletzt, nur seine Hose war schmutzig.\n\nAm Abend waren wir müde, aber glücklich. Wir haben an einem Tag mehr erlebt als sonst in einer ganzen Woche.",
+  "gloss": [
+   {
+    "w": "ärgerlich",
+    "m": "annoying"
+   },
+   {
+    "w": "das Beste daraus machen",
+    "m": "to make the best of it"
+   },
+   {
+    "w": "die Hütte",
+    "m": "(mountain) hut"
+   },
+   {
+    "w": "der Rückweg",
+    "m": "the way back"
+   },
+   {
+    "w": "schmutzig",
+    "m": "dirty"
+   }
+  ],
+  "comp": [
+   {
+    "q": "Warum haben sie ihren Zug verpasst?",
+    "o": [
+     "Die S-Bahn hatte Verspätung.",
+     "Sie haben verschlafen.",
+     "Der Zug ist ausgefallen."
+    ],
+    "a": 0
+   },
+   {
+    "q": "Was haben sie unterwegs gemacht?",
+    "o": [
+     "Brotzeit in einer Hütte",
+     "Im See gebadet",
+     "Kaffee am Bahnhof getrunken"
+    ],
+    "a": 0
+   },
+   {
+    "q": "Was ist auf dem Rückweg passiert?",
+    "o": [
+     "Der Freund ist ausgerutscht.",
+     "Der Freund hat sich schwer verletzt.",
+     "Sie haben sich verlaufen."
+    ],
+    "a": 0
+   }
+  ],
+  "cloze": {
+   "t": "Wir wollten einen {1} an den See machen. Wegen der {2} haben wir unseren Zug {3}. {4} haben wir in einer Hütte gegessen. Auf dem Rückweg ist noch etwas {5}.",
+   "ans": [
+    "Ausflug",
+    "Verspätung",
+    "verpasst",
+    "Unterwegs",
+    "passiert"
+   ],
+   "bank": true
+  },
+  "gram": {
+   "rule": "When speaking, use the Perfekt for most verbs: haben + Partizip II, or sein for movement and change of state (gehen, fahren, wandern, passieren, ausrutschen). Use the Präteritum for sein, haben and the modal verbs: war, hatte, wollte, musste, konnte.",
+   "items": [
+    {
+     "t": "Wir ___ um acht Uhr losgefahren. (sein/haben)",
+     "a": "sind"
+    },
+    {
+     "t": "Die S-Bahn ___ zwanzig Minuten Verspätung. (haben, Präteritum)",
+     "a": "hatte"
+    },
+    {
+     "t": "Wir ___ eine Stunde warten. (müssen, Präteritum)",
+     "a": "mussten"
+    },
+    {
+     "t": "Was ist denn ___ ? (passieren)",
+     "a": "passiert"
+    },
+    {
+     "t": "Wir haben in einer Hütte Brotzeit ___ . (machen)",
+     "a": "gemacht"
+    },
+    {
+     "t": "Er ist auf einem Stein ___ . (ausrutschen)",
+     "a": "ausgerutscht"
+    }
+   ]
+  },
+  "write": {
+   "p": "Write 3–4 sentences about your last weekend. Use war or hatte, and at least two Perfekt verbs (one with sein).",
+   "m": "Letztes Wochenende war ich mit Freunden in den Bergen. Wir sind früh losgefahren, weil das Wetter so gut war. Oben auf dem Gipfel haben wir Brotzeit gemacht. Am Abend hatte ich Muskelkater, aber es hat sich gelohnt.",
+   "chk": [
+    "sein with movement verbs (gefahren, gewandert)?",
+    "war/hatte instead of ist gewesen/hat gehabt?",
+    "Partizip II at the end of the clause?"
+   ]
+  }
+ },
+ {
+  "wk": 3,
+  "th": "familie",
+  "title": "Einkaufen am Sonntag?",
+  "grammar": "Konnektoren: deshalb, trotzdem, obwohl, sondern",
+  "passage": "In Deutschland sind die meisten Geschäfte am Sonntag geschlossen. Viele Zugezogene finden das am Anfang seltsam. Auch beim Abendessen mit der Familie gab es neulich eine Diskussion darüber.\n\nMein Schwager meint, dass der Sonntag ein Ruhetag bleiben sollte. Die Verkäuferinnen und Verkäufer brauchen schließlich auch Zeit für ihre Familien. Außerdem genießt er es, dass die Stadt am Sonntag so ruhig ist.\n\nSeine Freundin sieht das anders. Sie arbeitet die ganze Woche und hat deshalb nur am Samstag Zeit zum Einkaufen. Trotzdem will sie nicht, dass alle Geschäfte immer geöffnet sind. Ihr Vorschlag: Kleine Supermärkte sollten sonntags ein paar Stunden öffnen dürfen.\n\nIch habe beiden zugestimmt – teilweise. Einerseits finde ich den ruhigen Sonntag schön, andererseits habe ich schon oft am Samstagabend gemerkt, dass ich etwas vergessen habe. Am Ende waren wir uns einig: Nicht die Geschäfte sind das Problem, sondern meine Einkaufsliste!",
+  "gloss": [
+   {
+    "w": "der/die Zugezogene",
+    "m": "newcomer (someone who moved to the area)"
+   },
+   {
+    "w": "seltsam",
+    "m": "strange"
+   },
+   {
+    "w": "genießen",
+    "m": "to enjoy"
+   },
+   {
+    "w": "teilweise",
+    "m": "partly"
+   },
+   {
+    "w": "sich einig sein",
+    "m": "to agree"
+   }
+  ],
+  "comp": [
+   {
+    "q": "Was meint der Schwager?",
+    "o": [
+     "Der Sonntag soll ein Ruhetag bleiben.",
+     "Alle Geschäfte sollen sonntags öffnen.",
+     "Er kauft gern am Sonntag ein."
+    ],
+    "a": 0
+   },
+   {
+    "q": "Was schlägt seine Freundin vor?",
+    "o": [
+     "Kleine Supermärkte sollen sonntags kurz öffnen dürfen.",
+     "Alle Geschäfte sollen immer geöffnet sein.",
+     "Man soll nur am Samstag einkaufen."
+    ],
+    "a": 0
+   },
+   {
+    "q": "Was ist am Ende das Ergebnis?",
+    "o": [
+     "Der Erzähler sollte seine Einkäufe besser planen.",
+     "Die Geschäfte sollten länger öffnen.",
+     "Der Sonntag ist langweilig."
+    ],
+    "a": 0
+   }
+  ],
+  "cloze": {
+   "t": "Die Verkäufer brauchen Zeit für ihre Familien. {1} genießt er die Ruhe. Sie arbeitet die ganze Woche, {2} hat sie nur am Samstag Zeit. {3} will sie nicht, dass alles immer offen ist. {4} finde ich den Sonntag schön, {5} vergesse ich oft etwas. Nicht die Geschäfte sind das Problem, {6} meine Einkaufsliste.",
+   "ans": [
+    "Außerdem",
+    "deshalb",
+    "Trotzdem",
+    "Einerseits",
+    "andererseits",
+    "sondern"
+   ],
+   "bank": true
+  },
+  "gram": {
+   "rule": "deshalb, trotzdem, außerdem, einerseits/andererseits take position 1, so the verb comes next (Deshalb HAT sie …). weil, obwohl, dass send the verb to the end. und, aber, oder, denn, sondern change nothing.",
+   "items": [
+    {
+     "t": "Sie hat keine Zeit. Deshalb ___ sie am Samstag einkaufen. (wollen)",
+     "a": "will"
+    },
+    {
+     "t": "Obwohl die Stadt so ruhig ___, langweilt er sich nicht. (sein)",
+     "a": "ist"
+    },
+    {
+     "t": "Ich bleibe heute zu Hause, ___ ich müde bin. (weil / deshalb)",
+     "a": "weil"
+    },
+    {
+     "t": "Es regnet. ___ gehen wir spazieren. (Trotzdem / Obwohl)",
+     "a": "Trotzdem"
+    },
+    {
+     "t": "Das ist nicht billig, ___ ziemlich teuer. (aber / sondern)",
+     "a": "sondern"
+    },
+    {
+     "t": "Je mehr ich übe, ___ besser spreche ich. (desto / dann)",
+     "a": "desto"
+    }
+   ]
+  },
+  "write": {
+   "p": "Give your opinion in 3–4 sentences: should shops open on Sundays? Use einerseits/andererseits and one weil.",
+   "m": "Einerseits finde ich es praktisch, wenn man am Sonntag einkaufen kann. Andererseits brauchen die Verkäufer auch einen freien Tag. Ich bin gegen eine komplette Öffnung, weil der ruhige Sonntag zur deutschen Kultur gehört. Deshalb plane ich meine Einkäufe jetzt besser.",
+   "chk": [
+    "Verb right after Einerseits/Andererseits/Deshalb?",
+    "Verb at the end after weil?",
+    "A clear opinion?"
+   ]
+  }
+ },
+ {
+  "wk": 4,
+  "th": "amt",
+  "title": "Post von der Ausländerbehörde",
+  "grammar": "Passiv: werden + Partizip II",
+  "passage": "Landratsamt – Ausländerbehörde\n\nSehr geehrter Herr Okafor,\n\nIhr Antrag auf Erteilung einer Niederlassungserlaubnis vom 3. Oktober ist bei uns eingegangen. Ihr Antrag wird zurzeit bearbeitet. Für die weitere Bearbeitung fehlen jedoch noch folgende Unterlagen:\n\n– eine aktuelle Bescheinigung Ihres Arbeitgebers (nicht älter als vier Wochen)\n– der Nachweis über Ihre Deutschkenntnisse (mindestens Niveau B1)\n– das Zertifikat über den Test „Leben in Deutschland“\n\nBitte reichen Sie die fehlenden Unterlagen innerhalb von vier Wochen ein. Die Dokumente können per Post geschickt oder während der Sprechzeiten persönlich abgegeben werden. Wenn die Unterlagen nicht rechtzeitig eingereicht werden, kann Ihr Antrag leider nicht weiter bearbeitet werden.\n\nDie Gebühr wird bei der Abholung des Aufenthaltstitels fällig.\n\nMit freundlichen Grüßen\nIm Auftrag\nM. Brandl",
+  "gloss": [
+   {
+    "w": "die Erteilung",
+    "m": "issuing, granting"
+   },
+   {
+    "w": "eingehen (ist eingegangen)",
+    "m": "to arrive, to be received (letters, applications)"
+   },
+   {
+    "w": "jedoch",
+    "m": "however"
+   },
+   {
+    "w": "fällig",
+    "m": "due (payment)"
+   },
+   {
+    "w": "Im Auftrag (i. A.)",
+    "m": "on behalf of (signature line)"
+   }
+  ],
+  "comp": [
+   {
+    "q": "Wie ist der Stand des Antrags?",
+    "o": [
+     "Er wird bearbeitet, aber es fehlen Unterlagen.",
+     "Er wurde abgelehnt.",
+     "Er ist schon genehmigt."
+    ],
+    "a": 0
+   },
+   {
+    "q": "Bis wann müssen die Unterlagen da sein?",
+    "o": [
+     "Innerhalb von vier Wochen",
+     "Bis zum 3. Oktober",
+     "Bei der Abholung"
+    ],
+    "a": 0
+   },
+   {
+    "q": "Wie kann man die Unterlagen abgeben?",
+    "o": [
+     "Per Post oder persönlich während der Sprechzeiten",
+     "Nur online",
+     "Nur per E-Mail"
+    ],
+    "a": 0
+   }
+  ],
+  "cloze": {
+   "t": "Ihr {1} wird zurzeit bearbeitet. Es fehlen noch einige {2}, zum Beispiel ein {3} über Ihre Deutschkenntnisse. Bitte {4} Sie diese innerhalb von vier Wochen ein. Die {5} zahlen Sie bei der Abholung.",
+   "ans": [
+    "Antrag",
+    "Unterlagen",
+    "Nachweis",
+    "reichen",
+    "Gebühr"
+   ],
+   "bank": true
+  },
+  "gram": {
+   "rule": "Passiv = werden + Partizip II (the action matters, not who does it). Present: Der Antrag wird bearbeitet. Past: Der Antrag wurde bearbeitet. With a modal verb: Die Unterlagen können abgegeben werden.",
+   "items": [
+    {
+     "t": "Ihr Antrag ___ zurzeit bearbeitet.",
+     "a": "wird"
+    },
+    {
+     "t": "Die Unterlagen ___ letzte Woche geschickt.",
+     "a": "wurden"
+    },
+    {
+     "t": "Die Dokumente können persönlich abgegeben ___ .",
+     "a": "werden"
+    },
+    {
+     "t": "Der Aufenthaltstitel wird nächste Woche ___ . (ausstellen)",
+     "a": "ausgestellt"
+    },
+    {
+     "t": "Hier ___ nur Deutsch gesprochen.",
+     "a": "wird"
+    },
+    {
+     "t": "Das Formular muss noch ___ werden. (unterschreiben)",
+     "a": "unterschrieben"
+    }
+   ]
+  },
+  "write": {
+   "p": "Write a short formal email (3–4 sentences) to the Ausländerbehörde: thank them for the letter, say you will send the documents by post this week, and ask whether a copy of the B1 certificate is enough.",
+   "m": "Sehr geehrte Frau Brandl,\n\nvielen Dank für Ihr Schreiben. Die fehlenden Unterlagen schicke ich Ihnen noch diese Woche per Post. Könnten Sie mir bitte sagen, ob eine Kopie des B1-Zertifikats ausreicht oder ob ich das Original vorlegen muss?\n\nMit freundlichen Grüßen\nBraun",
+   "chk": [
+    "Formal greeting and closing?",
+    "Könnten Sie … for the request?",
+    "Verb at the end after ob?"
+   ]
+  }
+ }
+]

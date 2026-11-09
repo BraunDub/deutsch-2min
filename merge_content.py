@@ -12,4 +12,5 @@ out={k: new.get(k,[])+base.get(k,[]) for k in set(base)|set(new)}
 out['party']=L(os.path.join(C,'dialogues.json'))
 W(os.path.join(D,'tasks.json'),out)
 W(os.path.join(D,'missions.json'),L(os.path.join(C,'missions.json')))
+W(os.path.join(D,'workbook.json'),L(os.path.join(C,'workbook.json')))
 print({k:len(v) for k,v in out.items()}, 'vocab',len(L(os.path.join(D,'vocab.json'))),'decode',len(L(os.path.join(D,'decode.json'))))

@@ -742,5 +742,5186 @@
   "wk": 1,
   "th": "familie",
   "deck": "Bairisch"
+ },
+ {
+  "w": "das Grundgesetz",
+  "s": "Das Grundgesetz ist die Verfassung der Bundesrepublik Deutschland.",
+  "m": "the Basic Law (Germany's constitution)",
+  "x": "Grund (basis) + Gesetz (law) → the basic law",
+  "wk": 1,
+  "th": "politik",
+  "deck": "Politik"
+ },
+ {
+  "w": "die Verfassung",
+  "s": "Die Verfassung schützt die Rechte aller Menschen.",
+  "m": "constitution",
+  "x": "ver- + fass(en) (grasp, put into words) + -ung → what is set down",
+  "pl": "die Verfassungen",
+  "wk": 1,
+  "th": "politik",
+  "deck": "Politik"
+ },
+ {
+  "w": "die Würde",
+  "s": "Die Würde des Menschen ist unantastbar.",
+  "m": "dignity",
+  "x": "root word; Artikel 1 des Grundgesetzes. un- + antast(en) (touch) + -bar → cannot be touched",
+  "wk": 1,
+  "th": "politik",
+  "deck": "Politik"
+ },
+ {
+  "w": "der Bundestag",
+  "s": "Der Bundestag wird alle vier Jahre gewählt.",
+  "m": "the federal parliament",
+  "x": "Bund (federation) + Tag (assembly; tagen = to meet)",
+  "wk": 1,
+  "th": "politik",
+  "deck": "Politik"
+ },
+ {
+  "w": "der Bundesrat",
+  "s": "Im Bundesrat sind die Bundesländer vertreten.",
+  "m": "the federal council (chamber of the states)",
+  "x": "Bund + -es- + Rat (council)",
+  "wk": 1,
+  "th": "politik",
+  "deck": "Politik"
+ },
+ {
+  "w": "der Bundeskanzler / die Bundeskanzlerin",
+  "s": "Der Bundeskanzler wird vom Bundestag gewählt.",
+  "m": "federal chancellor (head of government)",
+  "x": "Bund + Kanzler (from Latin cancellarius, court official)",
+  "wk": 1,
+  "th": "politik",
+  "deck": "Politik"
+ },
+ {
+  "w": "der Bundespräsident",
+  "s": "Der Bundespräsident ist das Staatsoberhaupt.",
+  "m": "federal president (head of state)",
+  "x": "Bund + Präsident; das Staatsoberhaupt = Staat + ober (top) + Haupt (head)",
+  "wk": 1,
+  "th": "politik",
+  "deck": "Politik"
+ },
+ {
+  "w": "das Bundesland",
+  "s": "Deutschland hat sechzehn Bundesländer.",
+  "m": "federal state",
+  "x": "Bund + Land (state); gender from Land → das",
+  "pl": "die Bundesländer",
+  "wk": 1,
+  "th": "politik",
+  "deck": "Politik"
+ },
+ {
+  "w": "die Wahl",
+  "s": "Bei der Wahl darf man nur einmal abstimmen.",
+  "m": "election; choice",
+  "x": "wähl(en) (choose) → the choosing",
+  "pl": "die Wahlen",
+  "col": "zur Wahl gehen",
+  "wk": 2,
+  "th": "politik",
+  "deck": "Politik"
+ },
+ {
+  "w": "wählen",
+  "s": "Ab 18 Jahren darf man den Bundestag wählen.",
+  "m": "to vote; to choose",
+  "x": "related: die Wahl, der Wähler (voter), wahlberechtigt (entitled to vote)",
+  "wk": 2,
+  "th": "politik",
+  "deck": "Politik"
+ },
+ {
+  "w": "geheim",
+  "s": "Die Wahl in Deutschland ist frei und geheim.",
+  "m": "secret",
+  "x": "root word; das Geheimnis = secret (noun)",
+  "wk": 2,
+  "th": "politik",
+  "deck": "Politik"
+ },
+ {
+  "w": "die Partei",
+  "s": "Mehrere Parteien bilden zusammen eine Regierung.",
+  "m": "political party",
+  "x": "from Latin pars (part) → a part of the people",
+  "pl": "die Parteien",
+  "wk": 2,
+  "th": "politik",
+  "deck": "Politik"
+ },
+ {
+  "w": "die Regierung",
+  "s": "Die Regierung wird von der Opposition kontrolliert.",
+  "m": "government",
+  "x": "regier(en) (govern) + -ung",
+  "pl": "die Regierungen",
+  "wk": 2,
+  "th": "politik",
+  "deck": "Politik"
+ },
+ {
+  "w": "die Opposition",
+  "s": "Die Opposition kritisiert die Regierung.",
+  "m": "the opposition",
+  "x": "-ion = cognate signal; op- (against) + posit (placed)",
+  "wk": 2,
+  "th": "politik",
+  "deck": "Politik"
+ },
+ {
+  "w": "der/die Abgeordnete",
+  "s": "Die Abgeordneten sitzen im Bundestag.",
+  "m": "member of parliament",
+  "x": "ab- (away) + ordn(en) (order, send) + -ete → someone sent (by the voters)",
+  "pl": "die Abgeordneten",
+  "wk": 2,
+  "th": "politik",
+  "deck": "Politik"
+ },
+ {
+  "w": "der Rechtsstaat",
+  "s": "In einem Rechtsstaat muss sich auch der Staat an die Gesetze halten.",
+  "m": "state under the rule of law",
+  "x": "Recht (law, right) + -s- + Staat (state)",
+  "wk": 3,
+  "th": "politik",
+  "deck": "Politik"
+ },
+ {
+  "w": "die Gewaltenteilung",
+  "s": "Die Gewaltenteilung verhindert, dass eine Person zu viel Macht hat.",
+  "m": "separation of powers",
+  "x": "Gewalt (power) + -en- + Teil (part) + -ung → splitting up the powers",
+  "wk": 3,
+  "th": "politik",
+  "deck": "Politik"
+ },
+ {
+  "w": "das Gericht",
+  "s": "Das Gericht ist unabhängig von der Regierung.",
+  "m": "court (of law)",
+  "x": "ge- + richt (from richten: to judge) → the place of judging; careful: also = dish (food)",
+  "pl": "die Gerichte",
+  "wk": 3,
+  "th": "politik",
+  "deck": "Politik"
+ },
+ {
+  "w": "die Meinungsfreiheit",
+  "s": "Die Meinungsfreiheit ist ein Grundrecht.",
+  "m": "freedom of expression",
+  "x": "Meinung (opinion) + -s- + Freiheit (frei + -heit)",
+  "wk": 3,
+  "th": "politik",
+  "deck": "Politik"
+ },
+ {
+  "w": "die Gleichberechtigung",
+  "s": "Männer und Frauen haben in Deutschland Gleichberechtigung.",
+  "m": "equal rights (esp. of men and women)",
+  "x": "gleich (equal) + be- + recht + -ig + -ung → being made equally entitled",
+  "wk": 3,
+  "th": "politik",
+  "deck": "Politik"
+ },
+ {
+  "w": "die Religionsfreiheit",
+  "s": "Wegen der Religionsfreiheit darf jeder seinen Glauben selbst wählen.",
+  "m": "freedom of religion",
+  "x": "Religion + -s- + Freiheit",
+  "wk": 3,
+  "th": "politik",
+  "deck": "Politik"
+ },
+ {
+  "w": "die Pflicht",
+  "s": "Rechte bringen auch Pflichten mit sich.",
+  "m": "duty, obligation",
+  "x": "root word; related: verpflichtet (obliged), die Schulpflicht (compulsory schooling)",
+  "pl": "die Pflichten",
+  "col": "Rechte und Pflichten",
+  "wk": 4,
+  "th": "politik",
+  "deck": "Politik"
+ },
+ {
+  "w": "die Steuer",
+  "s": "Von meinem Gehalt zahle ich Steuern.",
+  "m": "tax",
+  "x": "careful: das Steuer = steering wheel",
+  "pl": "die Steuern",
+  "col": "Steuern zahlen",
+  "wk": 4,
+  "th": "politik",
+  "deck": "Politik"
+ },
+ {
+  "w": "die Gemeinde",
+  "s": "Unsere Gemeinde hat ein neues Rathaus.",
+  "m": "municipality, local community",
+  "x": "ge- + Mein- (common, shared) + -de → the common people of a place",
+  "pl": "die Gemeinden",
+  "wk": 4,
+  "th": "politik",
+  "deck": "Politik"
+ },
+ {
+  "w": "die Staatsangehörigkeit",
+  "s": "Ich möchte die deutsche Staatsangehörigkeit beantragen.",
+  "m": "citizenship, nationality",
+  "x": "Staat + -s- + an- + gehör(en) (belong) + -ig + -keit → belonging to a state",
+  "pl": "die Staatsangehörigkeiten",
+  "wk": 4,
+  "th": "politik",
+  "deck": "Politik"
+ },
+ {
+  "w": "die Einbürgerung",
+  "s": "Für die Einbürgerung braucht man den Test „Leben in Deutschland“.",
+  "m": "naturalisation",
+  "x": "ein- (in) + Bürger (citizen) + -ung → making someone a citizen",
+  "wk": 4,
+  "th": "politik",
+  "deck": "Politik"
+ },
+ {
+  "w": "die Diktatur",
+  "s": "Von 1933 bis 1945 war Deutschland eine Diktatur.",
+  "m": "dictatorship",
+  "x": "Diktator + -ur; cognate",
+  "pl": "die Diktaturen",
+  "wk": 5,
+  "th": "politik",
+  "deck": "Politik"
+ },
+ {
+  "w": "die Verfolgung",
+  "s": "Während der NS-Zeit gab es eine schreckliche Verfolgung von Jüdinnen und Juden.",
+  "m": "persecution",
+  "x": "ver- + folg(en) (follow) + -ung → following someone to harm them",
+  "wk": 5,
+  "th": "politik",
+  "deck": "Politik"
+ },
+ {
+  "w": "die Mauer",
+  "s": "Die Berliner Mauer fiel am 9. November 1989.",
+  "m": "wall (esp. the Berlin Wall)",
+  "x": "root word; der Mauerfall = fall of the wall",
+  "pl": "die Mauern",
+  "wk": 6,
+  "th": "politik",
+  "deck": "Politik"
+ },
+ {
+  "w": "die Wiedervereinigung",
+  "s": "Die Wiedervereinigung war am 3. Oktober 1990.",
+  "m": "reunification",
+  "x": "wieder (again) + ver- + ein (one) + -ig + -ung → making one again",
+  "wk": 6,
+  "th": "politik",
+  "deck": "Politik"
+ },
+ {
+  "w": "die Teilung",
+  "s": "Nach dem Zweiten Weltkrieg kam die Teilung Deutschlands.",
+  "m": "division",
+  "x": "teil(en) (divide) + -ung",
+  "wk": 6,
+  "th": "politik",
+  "deck": "Politik"
+ },
+ {
+  "w": "die Europäische Union",
+  "s": "Deutschland ist ein Gründungsmitglied der Europäischen Union.",
+  "m": "European Union",
+  "x": "Gründung (founding) + Mitglied (member) → founding member",
+  "wk": 7,
+  "th": "politik",
+  "deck": "Politik"
+ },
+ {
+  "w": "deshalb",
+  "s": "Ich war krank, deshalb bin ich zu Hause geblieben.",
+  "m": "therefore, that's why",
+  "x": "position 1 or after a comma → verb comes next: deshalb BIN ich. Same: deswegen, darum",
+  "wk": 3,
+  "th": "alltag",
+  "deck": "Konnektoren"
+ },
+ {
+  "w": "trotzdem",
+  "s": "Es hat geregnet. Trotzdem sind wir gewandert.",
+  "m": "nevertheless, still",
+  "x": "trotz (despite) + dem (that) → despite that; verb comes next",
+  "wk": 3,
+  "th": "alltag",
+  "deck": "Konnektoren"
+ },
+ {
+  "w": "obwohl",
+  "s": "Obwohl es geregnet hat, sind wir gewandert.",
+  "m": "although",
+  "x": "ob + wohl; verb goes to the END of its clause",
+  "wk": 3,
+  "th": "alltag",
+  "deck": "Konnektoren"
+ },
+ {
+  "w": "außerdem",
+  "s": "Die Wohnung ist hell. Außerdem ist sie günstig.",
+  "m": "besides, in addition",
+  "x": "außer (besides) + dem; verb comes next",
+  "wk": 3,
+  "th": "alltag",
+  "deck": "Konnektoren"
+ },
+ {
+  "w": "sondern",
+  "s": "Das ist kein Problem, sondern eine Chance.",
+  "m": "but (rather) — after a negation",
+  "x": "only after nicht/kein; changes no word order",
+  "wk": 3,
+  "th": "alltag",
+  "deck": "Konnektoren"
+ },
+ {
+  "w": "einerseits … andererseits",
+  "s": "Einerseits ist die Stadt schön, andererseits ist sie teuer.",
+  "m": "on the one hand … on the other hand",
+  "x": "einer (one) + Seite (side) + -s; both take position 1 → verb next",
+  "wk": 3,
+  "th": "alltag",
+  "deck": "Konnektoren"
+ },
+ {
+  "w": "je … desto",
+  "s": "Je mehr ich übe, desto besser spreche ich.",
+  "m": "the more … the more",
+  "x": "je-clause: verb at the end; desto-clause: verb comes right after the comparative",
+  "wk": 3,
+  "th": "alltag",
+  "deck": "Konnektoren"
+ },
+ {
+  "w": "nicht nur … sondern auch",
+  "s": "Sie spricht nicht nur Deutsch, sondern auch Bairisch.",
+  "m": "not only … but also",
+  "x": "great for Schreiben: shows range",
+  "wk": 3,
+  "th": "alltag",
+  "deck": "Konnektoren"
+ },
+ {
+  "w": "sowohl … als auch",
+  "s": "Sowohl meine Schwiegermutter als auch mein Schwager waren da.",
+  "m": "both … and",
+  "x": "a plural subject → plural verb",
+  "wk": 3,
+  "th": "alltag",
+  "deck": "Konnektoren"
+ },
+ {
+  "w": "weder … noch",
+  "s": "Ich habe weder Zeit noch Lust.",
+  "m": "neither … nor",
+  "x": "replaces nicht; no extra negation needed",
+  "wk": 3,
+  "th": "alltag",
+  "deck": "Konnektoren"
+ },
+ {
+  "w": "entweder … oder",
+  "s": "Entweder wir fahren mit dem Zug, oder wir nehmen das Auto.",
+  "m": "either … or",
+  "x": "entweder can take position 0 or 1",
+  "wk": 3,
+  "th": "alltag",
+  "deck": "Konnektoren"
+ },
+ {
+  "w": "falls",
+  "s": "Falls du Hilfe brauchst, ruf mich an.",
+  "m": "in case, if",
+  "x": "like wenn but less likely; verb at the end",
+  "wk": 3,
+  "th": "alltag",
+  "deck": "Konnektoren"
+ },
+ {
+  "w": "indem",
+  "s": "Man lernt am besten, indem man jeden Tag ein bisschen übt.",
+  "m": "by (doing something)",
+  "x": "answers 'how?'; verb at the end",
+  "wk": 9,
+  "th": "alltag",
+  "deck": "Konnektoren"
+ },
+ {
+  "w": "damit",
+  "s": "Ich spreche langsam, damit du mich verstehst.",
+  "m": "so that",
+  "x": "purpose with a different subject; same subject → um … zu",
+  "wk": 9,
+  "th": "alltag",
+  "deck": "Konnektoren"
+ },
+ {
+  "w": "während",
+  "s": "Während ich koche, deckst du den Tisch.",
+  "m": "while",
+  "x": "as a connector: verb at the end; während + Genitiv = during",
+  "wk": 10,
+  "th": "alltag",
+  "deck": "Konnektoren"
+ },
+ {
+  "w": "seitdem",
+  "s": "Seitdem ich in Bayern wohne, esse ich viel mehr Brezn.",
+  "m": "since (time)",
+  "x": "seit (since) + dem; verb at the end",
+  "wk": 10,
+  "th": "alltag",
+  "deck": "Konnektoren"
+ },
+ {
+  "w": "halt",
+  "s": "Das ist halt so.",
+  "m": "just, simply (that's how it is)",
+  "x": "shows acceptance; very common in the south. Standard: eben",
+  "wk": 1,
+  "th": "alltag",
+  "deck": "Partikeln"
+ },
+ {
+  "w": "doch",
+  "s": "Komm doch mit!",
+  "m": "come on, why not (softens/urges); also: yes (after a negative question)",
+  "x": "Hast du keinen Hunger? – Doch! = yes I do",
+  "wk": 1,
+  "th": "alltag",
+  "deck": "Partikeln"
+ },
+ {
+  "w": "mal",
+  "s": "Schau mal!",
+  "m": "just, (have) a … (softens a request)",
+  "x": "from einmal (once); makes imperatives friendly",
+  "wk": 1,
+  "th": "alltag",
+  "deck": "Partikeln"
+ },
+ {
+  "w": "ja",
+  "s": "Das ist ja toll!",
+  "m": "(surprise / shared knowledge) — 'wow' or 'as you know'",
+  "x": "unstressed ja is not 'yes': Du weißt ja … = as you know …",
+  "wk": 1,
+  "th": "alltag",
+  "deck": "Partikeln"
+ },
+ {
+  "w": "schon",
+  "s": "Das wird schon klappen.",
+  "m": "it'll be fine (reassurance); already",
+  "x": "Ja, schon … = yes, sort of (hesitant agreement)",
+  "wk": 1,
+  "th": "alltag",
+  "deck": "Partikeln"
+ },
+ {
+  "w": "eben",
+  "s": "Wir müssen eben warten.",
+  "m": "just, simply (no other way)",
+  "x": "like halt but more northern/standard; also: just now (eben war er noch hier)",
+  "wk": 1,
+  "th": "alltag",
+  "deck": "Partikeln"
+ },
+ {
+  "w": "ruhig",
+  "s": "Du kannst ruhig noch ein Stück Kuchen nehmen.",
+  "m": "go ahead, feel free",
+  "x": "not 'quietly' here: gives permission",
+  "wk": 1,
+  "th": "familie",
+  "deck": "Partikeln"
+ },
+ {
+  "w": "Na ja …",
+  "s": "Na ja, das war nicht so toll.",
+  "m": "well … (hesitant, so-so)",
+  "x": "a filler while you think",
+  "wk": 1,
+  "th": "alltag",
+  "deck": "Partikeln"
+ },
+ {
+  "w": "Ach so!",
+  "s": "Ach so, jetzt verstehe ich.",
+  "m": "oh I see!",
+  "x": "signals you've understood; great survival phrase",
+  "wk": 1,
+  "th": "alltag",
+  "deck": "Partikeln"
+ },
+ {
+  "w": "Genau!",
+  "s": "Genau, das meine ich.",
+  "m": "exactly!",
+  "x": "the most common agreement word in spoken German",
+  "wk": 1,
+  "th": "alltag",
+  "deck": "Partikeln"
+ },
+ {
+  "w": "der Schwager / die Schwägerin",
+  "s": "Mein Schwager hilft uns beim Umzug.",
+  "m": "brother-in-law / sister-in-law",
+  "x": "Schwager is a root word; -in makes it female (with umlaut)",
+  "pl": "die Schwager / die Schwägerinnen",
+  "wk": 1,
+  "th": "familie"
+ },
+ {
+  "w": "die Braut / der Bräutigam",
+  "s": "Die Braut trägt ein Dirndl.",
+  "m": "bride / groom",
+  "x": "das Brautpaar = bride and groom; der Bräutigam (Gam = old word for man)",
+  "pl": "die Bräute / die Bräutigame",
+  "wk": 7,
+  "th": "familie"
+ },
+ {
+  "w": "anstoßen",
+  "s": "Lasst uns auf das Brautpaar anstoßen!",
+  "m": "to clink glasses, make a toast",
+  "x": "an- (against) + stoßen (push, bump). SEPARABLE",
+  "rp": "anstoßen auf + Akk",
+  "col": "Prost! / Zum Wohl!",
+  "wk": 7,
+  "th": "familie"
+ },
+ {
+  "w": "der Trinkspruch",
+  "s": "Der Trauzeuge hält einen kurzen Trinkspruch.",
+  "m": "toast (speech)",
+  "x": "trink(en) + Spruch (saying)",
+  "pl": "die Trinksprüche",
+  "col": "einen Trinkspruch halten",
+  "wk": 7,
+  "th": "familie"
+ },
+ {
+  "w": "die Flitterwochen",
+  "s": "Wir verbringen die Flitterwochen in Italien.",
+  "m": "honeymoon",
+  "x": "Flitter (glitter, tinsel) + Wochen → the sparkling weeks; plural only",
+  "wk": 7,
+  "th": "familie"
+ },
+ {
+  "w": "der Polterabend",
+  "s": "Beim Polterabend wird altes Geschirr zerschlagen.",
+  "m": "pre-wedding party (with smashed crockery)",
+  "x": "poltern (crash, clatter) + Abend; Scherben bringen Glück",
+  "wk": 7,
+  "th": "familie"
+ },
+ {
+  "w": "duzen / siezen",
+  "s": "Darf ich dich duzen? – Klar, ich bin Michi.",
+  "m": "to address someone with du / with Sie",
+  "x": "du + -zen / Sie + -zen; das Du anbieten = offer to use du",
+  "wk": 1,
+  "th": "familie"
+ },
+ {
+  "w": "sich bedanken",
+  "s": "Ich möchte mich für die Einladung bedanken.",
+  "m": "to say thank you",
+  "x": "be- + Dank (thanks) + -en",
+  "rp": "sich bedanken bei + Dat für + Akk",
+  "wk": 1,
+  "th": "familie"
+ },
+ {
+  "w": "der Gastgeber / die Gastgeberin",
+  "s": "Die Gastgeberin hat einen tollen Kuchen gebacken.",
+  "m": "host",
+  "x": "Gast (guest) + geb(en) (give) + -er → one who gives to guests",
+  "pl": "die Gastgeber / die Gastgeberinnen",
+  "wk": 1,
+  "th": "familie"
+ },
+ {
+  "w": "sich anfreunden",
+  "s": "Ich habe mich mit meinem Nachbarn angefreundet.",
+  "m": "to make friends",
+  "x": "an- + Freund + -en. SEPARABLE",
+  "rp": "sich anfreunden mit + Dat",
+  "wk": 1,
+  "th": "familie"
+ },
+ {
+  "w": "der Stammtisch",
+  "s": "Mein Schwiegervater geht jeden Freitag zum Stammtisch.",
+  "m": "regulars' table (group that meets at a pub)",
+  "x": "Stamm (trunk, regular) + Tisch → the regulars' table",
+  "pl": "die Stammtische",
+  "wk": 9,
+  "th": "freizeit"
+ },
+ {
+  "w": "die Taufe",
+  "s": "Nächsten Monat ist die Taufe meiner Nichte.",
+  "m": "baptism, christening",
+  "x": "tauf(en) (dip, baptise); der Taufpate = godfather",
+  "pl": "die Taufen",
+  "wk": 9,
+  "th": "familie"
+ },
+ {
+  "w": "die Gastfreundschaft",
+  "s": "Danke für eure Gastfreundschaft!",
+  "m": "hospitality",
+  "x": "Gast + Freund + -schaft → being a friend to guests",
+  "wk": 1,
+  "th": "familie"
+ },
+ {
+  "w": "der Mietvertrag",
+  "s": "Bitte lesen Sie den Mietvertrag genau durch.",
+  "m": "rental contract, lease",
+  "x": "Miete (rent) + Vertrag (ver- + trag(en) → what both sides carry)",
+  "pl": "die Mietverträge",
+  "col": "einen Mietvertrag unterschreiben",
+  "wk": 8,
+  "th": "wohnen"
+ },
+ {
+  "w": "die Besichtigung",
+  "s": "Die Besichtigung der Wohnung ist am Montag um 17 Uhr.",
+  "m": "viewing (of a flat)",
+  "x": "be- + sicht (sight) + -ig + -ung → looking something over",
+  "pl": "die Besichtigungen",
+  "wk": 8,
+  "th": "wohnen"
+ },
+ {
+  "w": "der Hausmeister",
+  "s": "Der Hausmeister repariert die Heizung.",
+  "m": "caretaker, building manager",
+  "x": "Haus + Meister (master)",
+  "pl": "die Hausmeister",
+  "wk": 8,
+  "th": "wohnen"
+ },
+ {
+  "w": "die Heizung",
+  "s": "Die Heizung funktioniert seit gestern nicht.",
+  "m": "heating",
+  "x": "heiz(en) (heat) + -ung",
+  "pl": "die Heizungen",
+  "wk": 8,
+  "th": "wohnen"
+ },
+ {
+  "w": "der Schimmel",
+  "s": "Im Bad ist Schimmel an der Wand.",
+  "m": "mould",
+  "x": "root word; schimmelig = mouldy; regelmäßig lüften hilft",
+  "wk": 8,
+  "th": "wohnen"
+ },
+ {
+  "w": "lüften",
+  "s": "Man sollte mehrmals am Tag lüften.",
+  "m": "to air (a room)",
+  "x": "Luft (air) + -en; Stoßlüften = opening windows wide for a few minutes",
+  "wk": 8,
+  "th": "wohnen"
+ },
+ {
+  "w": "die Mülltrennung",
+  "s": "Die Mülltrennung ist in Deutschland sehr wichtig.",
+  "m": "waste separation",
+  "x": "Müll + trenn(en) (separate) + -ung",
+  "wk": 8,
+  "th": "wohnen"
+ },
+ {
+  "w": "der Umzug",
+  "s": "Der Umzug war anstrengend, aber jetzt wohnen wir schön.",
+  "m": "move (house)",
+  "x": "um- (change) + Zug (from ziehen: move)",
+  "pl": "die Umzüge",
+  "wk": 8,
+  "th": "wohnen"
+ },
+ {
+  "w": "die Niederlassungserlaubnis",
+  "s": "Mit dem B1-Zertifikat kann ich früher eine Niederlassungserlaubnis bekommen.",
+  "m": "permanent residence permit",
+  "x": "nieder (down) + lassen (let) → settle down; + Erlaubnis (er- + laub (allow) + -nis)",
+  "wk": 4,
+  "th": "amt"
+ },
+ {
+  "w": "die Ausländerbehörde",
+  "s": "Ich habe einen Termin bei der Ausländerbehörde.",
+  "m": "immigration office",
+  "x": "Ausländer (aus + Land + -er → someone from outside) + Behörde",
+  "wk": 4,
+  "th": "amt"
+ },
+ {
+  "w": "der Bescheid",
+  "s": "Den Bescheid bekommen Sie per Post.",
+  "m": "official decision, notice",
+  "x": "be- + scheid (from scheiden: decide, separate)",
+  "pl": "die Bescheide",
+  "col": "Bescheid sagen (= let someone know)",
+  "wk": 4,
+  "th": "amt"
+ },
+ {
+  "w": "der Nachweis",
+  "s": "Als Nachweis brauchen wir Ihr Sprachzertifikat.",
+  "m": "proof, evidence",
+  "x": "nach- + weis(en) (show) → showing afterwards",
+  "pl": "die Nachweise",
+  "rp": "der Nachweis über + Akk",
+  "wk": 4,
+  "th": "amt"
+ },
+ {
+  "w": "gültig",
+  "s": "Ihr Reisepass ist nur noch drei Monate gültig.",
+  "m": "valid",
+  "x": "gelt(en) (be valid) + -ig; ungültig = invalid",
+  "wk": 4,
+  "th": "amt"
+ },
+ {
+  "w": "ablaufen",
+  "s": "Mein Visum läuft bald ab.",
+  "m": "to expire; to run (a process)",
+  "x": "ab- (off) + laufen (run) → run out. SEPARABLE, Perfekt with sein",
+  "wk": 4,
+  "th": "amt"
+ },
+ {
+  "w": "die Gebühr",
+  "s": "Für den neuen Ausweis zahlt man eine Gebühr.",
+  "m": "fee",
+  "x": "from gebühren (be due) → what is due",
+  "pl": "die Gebühren",
+  "wk": 4,
+  "th": "amt"
+ },
+ {
+  "w": "beglaubigen",
+  "s": "Die Kopie muss beglaubigt werden.",
+  "m": "to certify, authenticate",
+  "x": "be- + glaub(en) (believe) + -ig + -en → make believable",
+  "col": "eine beglaubigte Kopie",
+  "wk": 4,
+  "th": "amt"
+ },
+ {
+  "w": "die Sprechzeiten",
+  "s": "Die Sprechzeiten sind montags bis freitags von 8 bis 12 Uhr.",
+  "m": "office hours",
+  "x": "sprech(en) + Zeit → time for speaking; plural",
+  "wk": 4,
+  "th": "amt"
+ },
+ {
+  "w": "bearbeiten",
+  "s": "Ihr Antrag wird gerade bearbeitet.",
+  "m": "to process, to work on",
+  "x": "be- (transitive) + arbeiten → work on something",
+  "col": "die Bearbeitungszeit (processing time)",
+  "wk": 4,
+  "th": "amt"
+ },
+ {
+  "w": "die Überstunden",
+  "s": "Diese Woche habe ich zehn Überstunden gemacht.",
+  "m": "overtime",
+  "x": "über- (over) + Stunden; plural",
+  "col": "Überstunden machen / abbauen",
+  "wk": 5,
+  "th": "arbeit"
+ },
+ {
+  "w": "die Probezeit",
+  "s": "Die Probezeit dauert sechs Monate.",
+  "m": "probation period",
+  "x": "prob(ieren) (try) + Zeit",
+  "wk": 5,
+  "th": "arbeit"
+ },
+ {
+  "w": "der/die Vorgesetzte",
+  "s": "Ich muss das erst mit meiner Vorgesetzten besprechen.",
+  "m": "boss, supervisor",
+  "x": "vor- (in front) + gesetzt (set) → someone set above you",
+  "pl": "die Vorgesetzten",
+  "wk": 5,
+  "th": "arbeit"
+ },
+ {
+  "w": "das Vorstellungsgespräch",
+  "s": "Morgen habe ich ein Vorstellungsgespräch.",
+  "m": "job interview",
+  "x": "Vorstellung (introduction) + -s- + Gespräch (conversation)",
+  "pl": "die Vorstellungsgespräche",
+  "wk": 5,
+  "th": "arbeit"
+ },
+ {
+  "w": "die Gehaltserhöhung",
+  "s": "Ich möchte um eine Gehaltserhöhung bitten.",
+  "m": "pay rise",
+  "x": "Gehalt (salary) + -s- + er- + höh (high) + -ung → making higher",
+  "pl": "die Gehaltserhöhungen",
+  "wk": 5,
+  "th": "arbeit"
+ },
+ {
+  "w": "der Hausarzt / die Hausärztin",
+  "s": "Bei Fieber geht man zuerst zum Hausarzt.",
+  "m": "family doctor, GP",
+  "x": "Haus + Arzt → the house doctor",
+  "pl": "die Hausärzte",
+  "wk": 6,
+  "th": "gesundheit"
+ },
+ {
+  "w": "die Sprechstunde",
+  "s": "Die Sprechstunde beginnt um acht Uhr.",
+  "m": "surgery hours, consultation time",
+  "x": "sprech(en) + Stunde (hour)",
+  "pl": "die Sprechstunden",
+  "wk": 6,
+  "th": "gesundheit"
+ },
+ {
+  "w": "die Versichertenkarte",
+  "s": "Bitte zeigen Sie Ihre Versichertenkarte.",
+  "m": "health insurance card",
+  "x": "Versicherte (insured person: ver- + sicher + -te) + Karte",
+  "wk": 6,
+  "th": "gesundheit"
+ },
+ {
+  "w": "die Nebenwirkung",
+  "s": "Das Medikament hat kaum Nebenwirkungen.",
+  "m": "side effect",
+  "x": "neben (beside) + Wirkung (effect) → effect on the side",
+  "pl": "die Nebenwirkungen",
+  "wk": 6,
+  "th": "gesundheit"
+ },
+ {
+  "w": "sich krankmelden",
+  "s": "Ich muss mich heute krankmelden.",
+  "m": "to call in sick",
+  "x": "krank + melden (report). SEPARABLE: Ich melde mich krank.",
+  "rp": "sich krankmelden bei + Dat",
+  "wk": 6,
+  "th": "gesundheit"
+ },
+ {
+  "w": "der Notdienst",
+  "s": "Am Wochenende hat nur der ärztliche Notdienst geöffnet.",
+  "m": "emergency service (out of hours)",
+  "x": "Not (emergency) + Dienst (service); Nummer 116 117",
+  "wk": 6,
+  "th": "gesundheit"
+ },
+ {
+  "w": "impfen",
+  "s": "Ich lasse mich gegen Grippe impfen.",
+  "m": "to vaccinate",
+  "x": "root word; die Impfung = vaccination",
+  "rp": "impfen gegen + Akk",
+  "wk": 6,
+  "th": "gesundheit"
+ },
+ {
+  "w": "das Volksfest",
+  "s": "Im Herbst gibt es in fast jeder Stadt ein Volksfest.",
+  "m": "funfair, folk festival",
+  "x": "Volk (people) + -s- + Fest",
+  "pl": "die Volksfeste",
+  "wk": 9,
+  "th": "freizeit"
+ },
+ {
+  "w": "der Biergarten",
+  "s": "Bei schönem Wetter treffen wir uns im Biergarten.",
+  "m": "beer garden",
+  "x": "Bier + Garten; in Bavaria you may bring your own food",
+  "pl": "die Biergärten",
+  "wk": 9,
+  "th": "freizeit"
+ },
+ {
+  "w": "der Feiertag",
+  "s": "Am Feiertag haben die Geschäfte geschlossen.",
+  "m": "public holiday",
+  "x": "Feier (celebration) + Tag",
+  "pl": "die Feiertage",
+  "wk": 9,
+  "th": "freizeit"
+ },
+ {
+  "w": "der Christkindlmarkt",
+  "s": "Im Dezember gehen wir auf den Christkindlmarkt.",
+  "m": "Christmas market (Bavarian word)",
+  "x": "Christkind (Christ child) + -l (Bavarian diminutive) + Markt; elsewhere: Weihnachtsmarkt",
+  "pl": "die Christkindlmärkte",
+  "wk": 9,
+  "th": "freizeit"
+ },
+ {
+  "w": "die Tracht",
+  "s": "Zur Hochzeit tragen viele Gäste Tracht.",
+  "m": "traditional costume (Dirndl, Lederhose)",
+  "x": "trag(en) (wear) → what is worn",
+  "pl": "die Trachten",
+  "wk": 9,
+  "th": "freizeit"
+ },
+ {
+  "w": "die Erfahrung",
+  "s": "Ich habe viel Erfahrung im Vertrieb.",
+  "m": "experience (built up over time)",
+  "x": "er- (reach/complete) + fahren (travel) + -ung (makes a noun) → what you gain by traveling through life",
+  "wk": 0,
+  "th": "alltag",
+  "deck": "Gelernt"
+ },
+ {
+  "w": "das Ergebnis",
+  "s": "Das Ergebnis der Prüfung kommt nach ein paar Wochen.",
+  "m": "result",
+  "x": "er- + geben (give) + -nis → what's given at the end",
+  "wk": 0,
+  "th": "alltag",
+  "deck": "Gelernt"
+ },
+ {
+  "w": "die Möglichkeit",
+  "s": "Gibt es eine Möglichkeit, das zu ändern?",
+  "m": "possibility",
+  "x": "möglich (possible) + -keit (= -ness/-ity)",
+  "wk": 0,
+  "th": "alltag",
+  "deck": "Gelernt"
+ },
+ {
+  "w": "die Gesundheit",
+  "s": "Gesundheit ist wichtiger als Geld.",
+  "m": "health",
+  "x": "gesund (healthy) + -heit (= -ness). -heit/-keit nouns are always \"die\"",
+  "wk": 0,
+  "th": "gesundheit",
+  "deck": "Gelernt"
+ },
+ {
+  "w": "die Freundschaft",
+  "s": "Unsere Freundschaft ist mir wichtig.",
+  "m": "friendship",
+  "x": "Freund + -schaft (= -ship). -schaft is always \"die\"",
+  "wk": 0,
+  "th": "familie",
+  "deck": "Gelernt"
+ },
+ {
+  "w": "die Umgebung",
+  "s": "In der Umgebung gibt es viele Seen.",
+  "m": "surroundings, area",
+  "x": "um- (around) + geben + -ung → what's around you",
+  "wk": 0,
+  "th": "alltag",
+  "deck": "Gelernt"
+ },
+ {
+  "w": "die Voraussetzung",
+  "s": "Deutschkenntnisse sind eine Voraussetzung für den Job.",
+  "m": "prerequisite, requirement",
+  "x": "voraus- (ahead) + setzen (set) + -ung → set in place beforehand",
+  "wk": 0,
+  "th": "alltag",
+  "deck": "Gelernt"
+ },
+ {
+  "w": "die Veranstaltung",
+  "s": "Die Veranstaltung beginnt um 19 Uhr.",
+  "m": "event (organized)",
+  "x": "ver- + anstalten (organize) + -ung",
+  "wk": 0,
+  "th": "alltag",
+  "deck": "Gelernt"
+ },
+ {
+  "w": "die Unterkunft",
+  "s": "Wir suchen noch eine Unterkunft in Berlin.",
+  "m": "accommodation",
+  "x": "unter- (under) + -kunft (noun of kommen) → where you come under a roof. Same -kunft: Ankunft (arrival), Zukunft (future)",
+  "wk": 0,
+  "th": "alltag",
+  "deck": "Gelernt"
+ },
+ {
+  "w": "die Abfahrt",
+  "s": "Die Abfahrt ist um 8 Uhr.",
+  "m": "departure",
+  "x": "ab- (away/off) + Fahrt (trip). Opposite: die Ankunft",
+  "wk": 0,
+  "th": "freizeit",
+  "deck": "Gelernt"
+ },
+ {
+  "w": "der Zusammenhang",
+  "s": "In diesem Zusammenhang ist das wichtig.",
+  "m": "connection, context",
+  "x": "zusammen (together) + hängen (hang) → things hanging together",
+  "wk": 0,
+  "th": "alltag",
+  "deck": "Gelernt"
+ },
+ {
+  "w": "die Ausbildung",
+  "s": "Sie macht eine Ausbildung als Elektrikerin.",
+  "m": "vocational training",
+  "x": "aus- (out) + bilden (form) + -ung → forming someone into a professional",
+  "wk": 0,
+  "th": "amt",
+  "deck": "Gelernt"
+ },
+ {
+  "w": "die Entscheidung",
+  "s": "Das war eine schwierige Entscheidung.",
+  "m": "decision",
+  "x": "ent- (away) + scheiden (separate) + -ung → separating yourself from the other options",
+  "wk": 0,
+  "th": "alltag",
+  "deck": "Gelernt"
+ },
+ {
+  "w": "der Anfänger",
+  "s": "Als Anfänger ist das ganz normal.",
+  "m": "beginner",
+  "x": "anfangen (begin) + -er (person who does it). Female: die Anfängerin",
+  "wk": 0,
+  "th": "alltag",
+  "deck": "Gelernt"
+ },
+ {
+  "w": "vorschlagen (schlägt vor – schlug vor – hat vorgeschlagen)",
+  "s": "Ich schlage vor, dass wir früher anfangen.",
+  "m": "to suggest",
+  "x": "vor- (forward) + schlagen (strike) → put an idea forward. SEPARABLE. Noun: der Vorschlag",
+  "wk": 0,
+  "th": "alltag",
+  "deck": "Gelernt"
+ },
+ {
+  "w": "sich bewerben um + Akk (bewirbt – bewarb – hat beworben)",
+  "s": "Ich bewerbe mich um die Stelle.",
+  "m": "to apply for",
+  "x": "be- + werben. be- NEVER splits off",
+  "wk": 0,
+  "th": "alltag",
+  "deck": "Gelernt"
+ },
+ {
+  "w": "sich entscheiden für + Akk (entschied – hat entschieden)",
+  "s": "Ich habe mich für den Kurs entschieden.",
+  "m": "to decide on",
+  "x": "ent- + scheiden (separate). ent- NEVER splits off",
+  "wk": 0,
+  "th": "alltag",
+  "deck": "Gelernt"
+ },
+ {
+  "w": "vermeiden (vermied – hat vermieden)",
+  "s": "Ich versuche, Stress zu vermeiden.",
+  "m": "to avoid",
+  "x": "ver- + meiden (shun). ver- NEVER splits off",
+  "wk": 0,
+  "th": "alltag",
+  "deck": "Gelernt"
+ },
+ {
+  "w": "verbessern",
+  "s": "Ich will mein Deutsch verbessern.",
+  "m": "to improve",
+  "x": "ver- + besser (better) → make better. ver- + adjective = make it that way (vergrößern = enlarge)",
+  "wk": 0,
+  "th": "alltag",
+  "deck": "Gelernt"
+ },
+ {
+  "w": "empfehlen (empfiehlt – empfahl – hat empfohlen)",
+  "s": "Kannst du mir ein Restaurant empfehlen?",
+  "m": "to recommend",
+  "x": "emp- is a form of ent-, never splits. Noun: die Empfehlung",
+  "wk": 0,
+  "th": "amt",
+  "deck": "Gelernt"
+ },
+ {
+  "w": "ankommen (kam an – ist angekommen)",
+  "s": "Wann kommst du in München an?",
+  "m": "to arrive",
+  "x": "an- (at) + kommen. Perfekt with SEIN. Bonus: \"Es kommt darauf an\" = it depends",
+  "wk": 0,
+  "th": "alltag",
+  "deck": "Gelernt"
+ },
+ {
+  "w": "teilnehmen an + Dat (nimmt teil – nahm teil – hat teilgenommen)",
+  "s": "Ich nehme am Kurs teil.",
+  "m": "to participate",
+  "x": "Teil (part) + nehmen (take) → literally \"take part\"",
+  "wk": 0,
+  "th": "alltag",
+  "deck": "Gelernt"
+ },
+ {
+  "w": "abnehmen (nimmt ab – nahm ab – hat abgenommen)",
+  "s": "Ich habe drei Kilo abgenommen.",
+  "m": "to lose weight; to decrease; to pick up the phone",
+  "x": "ab- (off/down) + nehmen → take off. Opposite: zunehmen (zu- = more)",
+  "wk": 0,
+  "th": "alltag",
+  "deck": "Gelernt"
+ },
+ {
+  "w": "übernehmen (übernimmt – übernahm – hat übernommen)",
+  "s": "Ich übernehme die Planung.",
+  "m": "to take over, take on",
+  "x": "über- (over) + nehmen (take) → literally \"take over\". Does NOT split here",
+  "wk": 0,
+  "th": "alltag",
+  "deck": "Gelernt"
+ },
+ {
+  "w": "sich erinnern an + Akk",
+  "s": "Ich erinnere mich gern an den Urlaub.",
+  "m": "to remember",
+  "x": "er- + inner (inside) → bring something back inside your head",
+  "wk": 0,
+  "th": "alltag",
+  "deck": "Gelernt"
+ },
+ {
+  "w": "sich gewöhnen an + Akk",
+  "s": "Ich habe mich an das Wetter gewöhnt.",
+  "m": "to get used to",
+  "x": "ge- + wohnen (live) → live with it until it's normal",
+  "wk": 0,
+  "th": "alltag",
+  "deck": "Gelernt"
+ },
+ {
+  "w": "sich beschweren über + Akk",
+  "s": "Er beschwert sich über den Lärm.",
+  "m": "to complain about",
+  "x": "be- + schwer (heavy) → making something heavy",
+  "wk": 0,
+  "th": "alltag",
+  "deck": "Gelernt"
+ },
+ {
+  "w": "unterstützen",
+  "s": "Meine Freunde unterstützen mich.",
+  "m": "to support",
+  "x": "unter- (under) + stützen (prop up) → prop up from underneath. Does NOT split",
+  "wk": 0,
+  "th": "alltag",
+  "deck": "Gelernt"
+ },
+ {
+  "w": "feststellen (stellte fest – hat festgestellt)",
+  "s": "Ich habe festgestellt, dass ich mehr üben muss.",
+  "m": "to notice, determine",
+  "x": "fest (firm) + stellen (put) → pin something down as fact. SEPARABLE",
+  "wk": 0,
+  "th": "alltag",
+  "deck": "Gelernt"
+ },
+ {
+  "w": "unabhängig von + Dat",
+  "s": "Sie ist finanziell unabhängig.",
+  "m": "independent",
+  "x": "un- (not) + ab- (off) + hängen (hang) + -ig (makes an adjective) → not hanging off anyone",
+  "wk": 0,
+  "th": "alltag",
+  "deck": "Gelernt"
+ },
+ {
+  "w": "zuverlässig",
+  "s": "Er ist sehr zuverlässig.",
+  "m": "reliable",
+  "x": "from sich verlassen auf (rely on) + -ig → someone you can rely on",
+  "wk": 0,
+  "th": "alltag",
+  "deck": "Gelernt"
+ },
+ {
+  "w": "selbstständig",
+  "s": "Sie arbeitet selbstständig.",
+  "m": "self-employed; independent",
+  "x": "selbst (self) + ständig (standing) → standing on your own",
+  "wk": 0,
+  "th": "arbeit",
+  "deck": "Gelernt"
+ },
+ {
+  "w": "rechtzeitig",
+  "s": "Bitte kommen Sie rechtzeitig.",
+  "m": "on time, in time",
+  "x": "recht (right) + Zeit + -ig → at the right time",
+  "wk": 0,
+  "th": "alltag",
+  "deck": "Gelernt"
+ },
+ {
+  "w": "die Stelle",
+  "s": "Ich habe eine neue Stelle gefunden.",
+  "m": "job, position; also spot/place",
+  "x": "from stellen (to place) → the place you're put in a company",
+  "wk": 0,
+  "th": "arbeit",
+  "deck": "Gelernt"
+ },
+ {
+  "w": "der Arbeitgeber",
+  "s": "Mein Arbeitgeber zahlt die Fortbildung.",
+  "m": "employer",
+  "x": "Arbeit + geben (give) + -er (person) → the one who gives work. Opposite: der Arbeitnehmer (nehmen = take)",
+  "wk": 0,
+  "th": "arbeit",
+  "deck": "Gelernt"
+ },
+ {
+  "w": "die Fortbildung",
+  "s": "Ich mache eine Fortbildung in Python.",
+  "m": "further training",
+  "x": "fort- (onward) + bilden (form) + -ung → keep forming yourself",
+  "wk": 0,
+  "th": "amt",
+  "deck": "Gelernt"
+ },
+ {
+  "w": "die Verantwortung",
+  "s": "Ich trage die Verantwortung für das Projekt.",
+  "m": "responsibility",
+  "x": "ver- + antworten (answer) + -ung → having to answer for something. Adj: verantwortlich",
+  "wk": 0,
+  "th": "alltag",
+  "deck": "Gelernt"
+ },
+ {
+  "w": "das Gehalt",
+  "s": "Das Gehalt ist gut, aber die Arbeitszeiten nicht.",
+  "m": "salary",
+  "x": "from halten (hold) → what holds you in the job",
+  "wk": 0,
+  "th": "arbeit",
+  "deck": "Gelernt"
+ },
+ {
+  "w": "sich kümmern um + Akk",
+  "s": "Ich kümmere mich um die Kinder.",
+  "m": "to take care of",
+  "x": "think Kummer (worry) → you worry about it, so you handle it",
+  "wk": 0,
+  "th": "alltag",
+  "deck": "Gelernt"
+ },
+ {
+  "w": "erledigen",
+  "s": "Ich muss heute noch ein paar Sachen erledigen.",
+  "m": "to get done, take care of",
+  "x": "er- (complete) + ledig (free) → make yourself free of a task",
+  "wk": 0,
+  "th": "arbeit",
+  "deck": "Gelernt"
+ },
+ {
+  "w": "der Erfolg",
+  "s": "Ich wünsche dir viel Erfolg!",
+  "m": "success",
+  "x": "er- (reach) + folgen (follow) → what follows when you reach the goal. Adj: erfolgreich",
+  "wk": 0,
+  "th": "alltag",
+  "deck": "Gelernt"
+ },
+ {
+  "w": "die Miete",
+  "s": "Die Miete in München ist sehr hoch.",
+  "m": "rent",
+  "x": "mieten (to rent). der Mieter = tenant",
+  "wk": 0,
+  "th": "wohnen",
+  "deck": "Gelernt"
+ },
+ {
+  "w": "der Vermieter",
+  "s": "Ich muss den Vermieter anrufen.",
+  "m": "landlord",
+  "x": "ver- (give away) + mieten + -er → the one who rents it out",
+  "wk": 0,
+  "th": "wohnen",
+  "deck": "Gelernt"
+ },
+ {
+  "w": "umziehen (zog um – ist umgezogen)",
+  "s": "Wir ziehen nächsten Monat um.",
+  "m": "to move (house)",
+  "x": "um- (change) + ziehen (pull) → pull your life somewhere else. SEPARABLE, Perfekt with SEIN. Bonus: sich umziehen = change clothes",
+  "wk": 0,
+  "th": "alltag",
+  "deck": "Gelernt"
+ },
+ {
+  "w": "enthalten (enthält – enthielt – hat enthalten)",
+  "s": "Ist das Frühstück im Preis enthalten?",
+  "m": "to contain, include",
+  "x": "ent- + halten (hold) → hold within. Never splits",
+  "wk": 0,
+  "th": "alltag",
+  "deck": "Gelernt"
+ },
+ {
+  "w": "der Nachbar",
+  "s": "Unsere Nachbarn sind sehr nett.",
+  "m": "neighbor",
+  "x": "nach (near, old meaning) + Bauer (dweller) → near-dweller. Same root as English \"neighbor\"",
+  "wk": 0,
+  "th": "wohnen",
+  "deck": "Gelernt"
+ },
+ {
+  "w": "die Einrichtung",
+  "s": "Die Einrichtung der Wohnung war teuer.",
+  "m": "furnishings; also facility",
+  "x": "ein- (in) + richten (arrange) + -ung → arranging the inside",
+  "wk": 0,
+  "th": "alltag",
+  "deck": "Gelernt"
+ },
+ {
+  "w": "die Verspätung",
+  "s": "Der Zug hat 20 Minuten Verspätung.",
+  "m": "delay",
+  "x": "ver- + spät (late) + -ung → being made late",
+  "wk": 0,
+  "th": "alltag",
+  "deck": "Gelernt"
+ },
+ {
+  "w": "umsteigen (stieg um – ist umgestiegen)",
+  "s": "In Augsburg müssen Sie umsteigen.",
+  "m": "to change (trains/buses)",
+  "x": "um- (change) + steigen (climb) → climb onto another one. Family: einsteigen (get on), aussteigen (get off)",
+  "wk": 0,
+  "th": "familie",
+  "deck": "Gelernt"
+ },
+ {
+  "w": "die Rückfahrt",
+  "s": "Die Rückfahrt war entspannt.",
+  "m": "return trip",
+  "x": "Rück- (back, from zurück) + Fahrt. Rück- = back: Rückkehr, Rückseite",
+  "wk": 0,
+  "th": "freizeit",
+  "deck": "Gelernt"
+ },
+ {
+  "w": "der Aufenthalt",
+  "s": "Wie lange dauert Ihr Aufenthalt?",
+  "m": "stay (visit)",
+  "x": "from sich aufhalten (to stay somewhere) → the time you stay",
+  "wk": 0,
+  "th": "alltag",
+  "deck": "Gelernt"
+ },
+ {
+  "w": "die Sehenswürdigkeit",
+  "s": "Das Schloss ist eine bekannte Sehenswürdigkeit.",
+  "m": "sight, attraction",
+  "x": "sehen (see) + würdig (worthy) + -keit → something worth seeing",
+  "wk": 0,
+  "th": "alltag",
+  "deck": "Gelernt"
+ },
+ {
+  "w": "das Gepäck",
+  "s": "Mein Gepäck ist noch nicht angekommen.",
+  "m": "luggage",
+  "x": "Ge- (collective) + packen (pack) → everything packed. Ge- collective nouns are usually \"das\": das Gebirge, das Geschirr",
+  "wk": 0,
+  "th": "alltag",
+  "deck": "Gelernt"
+ },
+ {
+  "w": "die Beschwerden (Pl.)",
+  "s": "Welche Beschwerden haben Sie?",
+  "m": "symptoms, (health) complaints",
+  "x": "from sich beschweren → what you complain about to the doctor",
+  "wk": 0,
+  "th": "gesundheit",
+  "deck": "Gelernt"
+ },
+ {
+  "w": "die Krankenkasse",
+  "s": "Die Krankenkasse bezahlt die Behandlung.",
+  "m": "health insurance",
+  "x": "krank (sick) + Kasse (fund) → the sick-fund",
+  "wk": 0,
+  "th": "gesundheit",
+  "deck": "Gelernt"
+ },
+ {
+  "w": "die Behandlung",
+  "s": "Die Behandlung dauert zwei Wochen.",
+  "m": "treatment",
+  "x": "be- + handeln (handle) + -ung → handling your problem",
+  "wk": 0,
+  "th": "gesundheit",
+  "deck": "Gelernt"
+ },
+ {
+  "w": "sich erholen",
+  "s": "Im Urlaub konnte ich mich gut erholen.",
+  "m": "to recover, relax",
+  "x": "er- + holen (fetch) → fetch your energy back. Noun: die Erholung",
+  "wk": 0,
+  "th": "alltag",
+  "deck": "Gelernt"
+ },
+ {
+  "w": "verletzen",
+  "s": "Ich habe mich am Knie verletzt.",
+  "m": "to injure, hurt",
+  "x": "ver- + letzen (old word: harm). Noun: die Verletzung",
+  "wk": 0,
+  "th": "alltag",
+  "deck": "Gelernt"
+ },
+ {
+  "w": "vorsichtig",
+  "s": "Sei vorsichtig auf der Straße!",
+  "m": "careful",
+  "x": "vor- (ahead) + Sicht (sight) + -ig → looking ahead",
+  "wk": 0,
+  "th": "alltag",
+  "deck": "Gelernt"
+ },
+ {
+  "w": "die Verabredung",
+  "s": "Ich habe heute eine Verabredung mit Freunden.",
+  "m": "plans to meet; a date",
+  "x": "ver- + abreden (agree) + -ung → something agreed on. sich verabreden = make plans",
+  "wk": 0,
+  "th": "alltag",
+  "deck": "Gelernt"
+ },
+ {
+  "w": "absagen (sagte ab – hat abgesagt)",
+  "s": "Leider muss ich das Treffen absagen.",
+  "m": "to cancel",
+  "x": "ab- (off) + sagen → call it off. Opposite: zusagen",
+  "wk": 0,
+  "th": "alltag",
+  "deck": "Gelernt"
+ },
+ {
+  "w": "zusagen (sagte zu – hat zugesagt)",
+  "s": "Ich habe für Samstag zugesagt.",
+  "m": "to accept (invitation), confirm",
+  "x": "zu- (toward/yes) + sagen → say yes to it",
+  "wk": 0,
+  "th": "familie",
+  "deck": "Gelernt"
+ },
+ {
+  "w": "vorhaben (hat vor – hatte vor – hat vorgehabt)",
+  "s": "Was hast du am Wochenende vor?",
+  "m": "to plan, intend",
+  "x": "vor- (ahead) + haben → have something ahead of you. Noun: das Vorhaben",
+  "wk": 0,
+  "th": "alltag",
+  "deck": "Gelernt"
+ },
+ {
+  "w": "unternehmen (unternimmt – unternahm – hat unternommen)",
+  "s": "Wollen wir am Sonntag etwas unternehmen?",
+  "m": "to do something (activity, outing)",
+  "x": "unter- + nehmen. Never splits here. Noun: das Unternehmen = company",
+  "wk": 0,
+  "th": "arbeit",
+  "deck": "Gelernt"
+ },
+ {
+  "w": "sich verabschieden",
+  "s": "Ich muss mich jetzt leider verabschieden.",
+  "m": "to say goodbye",
+  "x": "ver- + Abschied (farewell: ab- + scheiden = part away)",
+  "wk": 0,
+  "th": "alltag",
+  "deck": "Gelernt"
+ },
+ {
+  "w": "die Stimmung",
+  "s": "Die Stimmung auf der Party war super.",
+  "m": "mood, atmosphere",
+  "x": "stimmen (be in tune) + -ung → how in tune the room is",
+  "wk": 0,
+  "th": "alltag",
+  "deck": "Gelernt"
+ },
+ {
+  "w": "zustimmen + Dat",
+  "s": "Da stimme ich dir zu.",
+  "m": "to agree",
+  "x": "zu- (toward) + stimmen (be right) → lean toward \"that's right\". SEPARABLE",
+  "wk": 0,
+  "th": "alltag",
+  "deck": "Gelernt"
+ },
+ {
+  "w": "widersprechen + Dat (widerspricht – widersprach – hat widersprochen)",
+  "s": "Da muss ich dir widersprechen.",
+  "m": "to contradict, disagree",
+  "x": "wider- (against) + sprechen → speak against. Never splits",
+  "wk": 0,
+  "th": "alltag",
+  "deck": "Gelernt"
+ },
+ {
+  "w": "vergleichen (verglich – hat verglichen)",
+  "s": "Man kann die zwei Städte nicht vergleichen.",
+  "m": "to compare",
+  "x": "ver- + gleich (same) → check how same they are. Noun: der Vergleich",
+  "wk": 0,
+  "th": "alltag",
+  "deck": "Gelernt"
+ },
+ {
+  "w": "die Lösung",
+  "s": "Wir müssen eine Lösung finden.",
+  "m": "solution",
+  "x": "lösen (loosen, solve) + -ung → untying the problem",
+  "wk": 0,
+  "th": "alltag",
+  "deck": "Gelernt"
+ },
+ {
+  "w": "bedeuten",
+  "s": "Was bedeutet dieses Wort?",
+  "m": "to mean",
+  "x": "be- + deuten (point) → point to a meaning. Noun: die Bedeutung",
+  "wk": 0,
+  "th": "alltag",
+  "deck": "Gelernt"
+ },
+ {
+  "w": "wahrscheinlich",
+  "s": "Er kommt wahrscheinlich später.",
+  "m": "probably",
+  "x": "wahr (true) + scheinen (seem) + -lich → seems true",
+  "wk": 0,
+  "th": "alltag",
+  "deck": "Gelernt"
+ },
+ {
+  "w": "eigentlich",
+  "s": "Eigentlich wollte ich zu Hause bleiben.",
+  "m": "actually, really",
+  "x": "eigen (own) + -lich → in its own nature. Super common in conversation",
+  "wk": 0,
+  "th": "alltag",
+  "deck": "Gelernt"
+ },
+ {
+  "w": "allerdings",
+  "s": "Die Wohnung ist schön, allerdings etwas teuer.",
+  "m": "however; (that's) true",
+  "x": "aller (of all) + Dinge (things). Classic B1 connector",
+  "wk": 0,
+  "th": "alltag",
+  "deck": "Gelernt"
+ },
+ {
+  "w": "umweltfreundlich",
+  "s": "Ich fahre umweltfreundlich mit dem Rad zur Arbeit.",
+  "m": "eco-friendly",
+  "x": "Umwelt (um- around + Welt world = environment) + freundlich (friendly)",
+  "wk": 0,
+  "th": "familie",
+  "deck": "Gelernt"
+ },
+ {
+  "w": "die Behörde",
+  "s": "Für den neuen Pass muss ich zur Behörde.",
+  "m": "authority, government office",
+  "x": "related to gehören (belong) → where official matters belong. Similar: das Amt",
+  "wk": 0,
+  "th": "amt",
+  "deck": "Gelernt"
+ },
+ {
+  "w": "ausfüllen (füllte aus – hat ausgefüllt)",
+  "s": "Bitte füllen Sie das Formular aus.",
+  "m": "to fill out",
+  "x": "aus- (out/completely) + füllen (fill). SEPARABLE",
+  "wk": 0,
+  "th": "alltag",
+  "deck": "Gelernt"
+ },
+ {
+  "w": "die Unterschrift",
+  "s": "Hier fehlt noch Ihre Unterschrift.",
+  "m": "signature",
+  "x": "unter- (under) + Schrift (writing) → writing at the bottom. Verb: unterschreiben (never splits)",
+  "wk": 0,
+  "th": "amt",
+  "deck": "Gelernt"
+ },
+ {
+  "w": "die Anmeldung",
+  "s": "Die Anmeldung beim Bürgeramt hat lange gedauert.",
+  "m": "registration",
+  "x": "an- + melden (report) + -ung → reporting yourself in. Opposite: die Abmeldung",
+  "wk": 0,
+  "th": "amt",
+  "deck": "Gelernt"
+ },
+ {
+  "w": "die Quittung",
+  "s": "Kann ich bitte eine Quittung haben?",
+  "m": "receipt",
+  "x": "from quitt (settled, even) → proof you're square. Think English \"we're quits\"",
+  "wk": 0,
+  "th": "alltag",
+  "deck": "Gelernt"
+ },
+ {
+  "w": "die Rechnung",
+  "s": "Die Rechnung, bitte!",
+  "m": "bill, invoice",
+  "x": "rechnen (calculate) + -ung → what's been calculated",
+  "wk": 0,
+  "th": "alltag",
+  "deck": "Gelernt"
+ },
+ {
+  "w": "umtauschen (tauschte um – hat umgetauscht)",
+  "s": "Kann ich die Jacke noch umtauschen?",
+  "m": "to exchange (a purchase)",
+  "x": "um- (change) + tauschen (swap). SEPARABLE",
+  "wk": 0,
+  "th": "alltag",
+  "deck": "Gelernt"
+ },
+ {
+  "w": "das Angebot",
+  "s": "Im Supermarkt gibt es heute ein gutes Angebot.",
+  "m": "offer, deal",
+  "x": "an- + bieten (offer) → what's offered to you. Verb: anbieten",
+  "wk": 0,
+  "th": "alltag",
+  "deck": "Gelernt"
+ },
+ {
+  "w": "ausgeben (gibt aus – gab aus – hat ausgegeben)",
+  "s": "Ich gebe zu viel Geld für Essen aus.",
+  "m": "to spend (money)",
+  "x": "aus- (out) + geben (give) → give out. SEPARABLE. Time = verbringen, money = ausgeben",
+  "wk": 0,
+  "th": "alltag",
+  "deck": "Gelernt"
+ },
+ {
+  "w": "der Vertrag",
+  "s": "Ich habe den Vertrag schon unterschrieben.",
+  "m": "contract",
+  "x": "ver- + tragen (carry) → what both sides carry together. sich vertragen = get along",
+  "wk": 0,
+  "th": "amt",
+  "deck": "Gelernt"
+ },
+ {
+  "w": "die Nachricht",
+  "s": "Hast du meine Nachricht bekommen?",
+  "m": "message; die Nachrichten (Pl.) = the news",
+  "x": "nach- + richten (direct) → something sent after you",
+  "wk": 0,
+  "th": "alltag",
+  "deck": "Gelernt"
+ },
+ {
+  "w": "herunterladen (lädt herunter – lud herunter – hat heruntergeladen)",
+  "s": "Du kannst die App kostenlos herunterladen.",
+  "m": "to download",
+  "x": "herunter (down) + laden (load) → literally \"down-load\". SEPARABLE",
+  "wk": 0,
+  "th": "alltag",
+  "deck": "Gelernt"
+ },
+ {
+  "w": "die Werbung",
+  "s": "Im Fernsehen gibt es zu viel Werbung.",
+  "m": "advertising, ads",
+  "x": "werben (advertise) + -ung. Same root as die Bewerbung!",
+  "wk": 0,
+  "th": "alltag",
+  "deck": "Gelernt"
+ },
+ {
+  "w": "die Sendung",
+  "s": "Hast du die Sendung gestern gesehen?",
+  "m": "TV/radio show; also shipment",
+  "x": "senden (send, broadcast) + -ung → what's sent out",
+  "wk": 0,
+  "th": "alltag",
+  "deck": "Gelernt"
+ },
+ {
+  "w": "erreichen",
+  "s": "Ich konnte dich gestern nicht erreichen.",
+  "m": "to reach (a person or goal)",
+  "x": "er- (complete) + reichen (reach). Adj: erreichbar = reachable",
+  "wk": 0,
+  "th": "alltag",
+  "deck": "Gelernt"
+ },
+ {
+  "w": "die Prüfung",
+  "s": "Die Prüfung ist im Dezember.",
+  "m": "exam",
+  "x": "prüfen (test, check) + -ung",
+  "wk": 0,
+  "th": "pruefung",
+  "deck": "Gelernt"
+ },
+ {
+  "w": "bestehen (bestand – hat bestanden)",
+  "s": "Ich will die Prüfung beim ersten Mal bestehen.",
+  "m": "to pass (an exam); bestehen aus = to consist of",
+  "x": "be- + stehen (stand) → stand firm through it",
+  "wk": 0,
+  "th": "pruefung",
+  "deck": "Gelernt"
+ },
+ {
+  "w": "durchfallen (fällt durch – fiel durch – ist durchgefallen)",
+  "s": "Er ist leider durch die Prüfung gefallen.",
+  "m": "to fail (an exam)",
+  "x": "durch (through) + fallen → fall through. SEPARABLE, Perfekt with SEIN",
+  "wk": 0,
+  "th": "pruefung",
+  "deck": "Gelernt"
+ },
+ {
+  "w": "die Kenntnisse (Pl.)",
+  "s": "Gute Deutschkenntnisse sind für den Job wichtig.",
+  "m": "knowledge, skills",
+  "x": "kennen (know) + -nis → what you know",
+  "wk": 0,
+  "th": "alltag",
+  "deck": "Gelernt"
+ },
+ {
+  "w": "sich vorbereiten auf + Akk",
+  "s": "Ich bereite mich auf die Prüfung vor.",
+  "m": "to prepare for",
+  "x": "vor- (ahead) + bereiten (make ready). SEPARABLE. Noun: die Vorbereitung",
+  "wk": 0,
+  "th": "alltag",
+  "deck": "Gelernt"
+ },
+ {
+  "w": "aufgeben (gibt auf – gab auf – hat aufgegeben)",
+  "s": "Gib nicht auf!",
+  "m": "to give up; also to post (a letter, an ad)",
+  "x": "auf- (up) + geben (give) → literally \"give up\". SEPARABLE",
+  "wk": 0,
+  "th": "alltag",
+  "deck": "Gelernt"
+ },
+ {
+  "w": "die Beziehung",
+  "s": "Sie sind seit drei Jahren in einer Beziehung.",
+  "m": "relationship",
+  "x": "be- + ziehen (pull) + -ung → what pulls two people together",
+  "wk": 0,
+  "th": "familie",
+  "deck": "Gelernt"
+ },
+ {
+  "w": "sich verlieben in + Akk",
+  "s": "Er hat sich in sie verliebt.",
+  "m": "to fall in love with",
+  "x": "ver- (become) + lieb (dear) → become in love. verliebt = in love",
+  "wk": 0,
+  "th": "familie",
+  "deck": "Gelernt"
+ },
+ {
+  "w": "sich streiten (stritt – hat gestritten)",
+  "s": "Die Kinder streiten sich schon wieder.",
+  "m": "to argue, fight",
+  "x": "der Streit = argument. Sounds like English \"strife\"",
+  "wk": 0,
+  "th": "alltag",
+  "deck": "Gelernt"
+ },
+ {
+  "w": "sich trennen",
+  "s": "Sie haben sich letztes Jahr getrennt.",
+  "m": "to separate, break up",
+  "x": "trennen (divide). Noun: die Trennung. Also: den Müll trennen = sort the trash",
+  "wk": 0,
+  "th": "alltag",
+  "deck": "Gelernt"
+ },
+ {
+  "w": "die Geduld",
+  "s": "Beim Sprachenlernen braucht man viel Geduld.",
+  "m": "patience",
+  "x": "ge- + dulden (tolerate). Adj: geduldig; ungeduldig = impatient",
+  "wk": 0,
+  "th": "alltag",
+  "deck": "Gelernt"
+ },
+ {
+  "w": "enttäuscht",
+  "s": "Ich war von dem Film enttäuscht.",
+  "m": "disappointed",
+  "x": "ent- (remove) + täuschen (deceive) → the illusion is removed, like \"dis-illusioned\"",
+  "wk": 0,
+  "th": "alltag",
+  "deck": "Gelernt"
+ },
+ {
+  "w": "sich ärgern über + Akk",
+  "s": "Ich ärgere mich über den Stau.",
+  "m": "to be annoyed about",
+  "x": "from arg (bad). der Ärger = annoyance, trouble",
+  "wk": 0,
+  "th": "alltag",
+  "deck": "Gelernt"
+ },
+ {
+  "w": "neugierig",
+  "s": "Ich bin neugierig, wie es weitergeht.",
+  "m": "curious",
+  "x": "neu (new) + Gier (greed) + -ig → greedy for new things",
+  "wk": 0,
+  "th": "alltag",
+  "deck": "Gelernt"
+ },
+ {
+  "w": "stolz auf + Akk",
+  "s": "Ich bin stolz auf dich.",
+  "m": "proud of",
+  "x": "always stolz AUF + Akkusativ",
+  "wk": 0,
+  "th": "alltag",
+  "deck": "Gelernt"
+ },
+ {
+  "w": "die Sorge",
+  "s": "Mach dir keine Sorgen!",
+  "m": "worry",
+  "x": "sich Sorgen machen = to worry. sorgen für = to take care of (same caring root)",
+  "wk": 0,
+  "th": "alltag",
+  "deck": "Gelernt"
+ },
+ {
+  "w": "der Müll",
+  "s": "Wir trennen den Müll in vier Tonnen.",
+  "m": "trash, garbage",
+  "x": "der Mülleimer = trash can",
+  "wk": 0,
+  "th": "alltag",
+  "deck": "Gelernt"
+ },
+ {
+  "w": "verschwenden",
+  "s": "Wir sollten kein Wasser verschwenden.",
+  "m": "to waste",
+  "x": "ver- (away) + schwinden (vanish) → make it vanish. Noun: die Verschwendung",
+  "wk": 0,
+  "th": "alltag",
+  "deck": "Gelernt"
+ },
+ {
+  "w": "der Verbrauch",
+  "s": "Der Stromverbrauch ist im Winter zu hoch.",
+  "m": "consumption",
+  "x": "ver- (use up) + brauchen (use) → using up. Verb: verbrauchen",
+  "wk": 0,
+  "th": "alltag",
+  "deck": "Gelernt"
+ },
+ {
+  "w": "schützen",
+  "s": "Wir müssen die Umwelt schützen.",
+  "m": "to protect",
+  "x": "der Schutz = protection. der Umweltschutz = environmental protection",
+  "wk": 0,
+  "th": "alltag",
+  "deck": "Gelernt"
+ },
+ {
+  "w": "die Folge",
+  "s": "Das hat schlimme Folgen.",
+  "m": "consequence",
+  "x": "folgen (follow) → what follows. folglich = consequently",
+  "wk": 0,
+  "th": "alltag",
+  "deck": "Gelernt"
+ },
+ {
+  "w": "beeinflussen",
+  "s": "Das Wetter beeinflusst meine Stimmung.",
+  "m": "to influence",
+  "x": "be- + Einfluss (ein- in + Fluss flow) → flow into. Noun: der Einfluss",
+  "wk": 0,
+  "th": "alltag",
+  "deck": "Gelernt"
+ },
+ {
+  "w": "entstehen (entstand – ist entstanden)",
+  "s": "Dabei entstehen hohe Kosten.",
+  "m": "to arise, come into being",
+  "x": "ent- (begin) + stehen (stand) → begin to stand. Never splits, Perfekt with SEIN",
+  "wk": 0,
+  "th": "alltag",
+  "deck": "Gelernt"
+ },
+ {
+  "w": "entwickeln",
+  "s": "Die Firma entwickelt neue Software.",
+  "m": "to develop",
+  "x": "ent- (un-) + wickeln (wrap) → unwrap, unfold. Noun: die Entwicklung",
+  "wk": 0,
+  "th": "alltag",
+  "deck": "Gelernt"
+ },
+ {
+  "w": "verbringen (verbrachte – hat verbracht)",
+  "s": "Ich verbringe viel Zeit draußen.",
+  "m": "to spend (time)",
+  "x": "ver- + bringen (bring). Time = verbringen, money = ausgeben",
+  "wk": 0,
+  "th": "alltag",
+  "deck": "Gelernt"
+ },
+ {
+  "w": "benutzen",
+  "s": "Ich benutze jeden Tag das Fahrrad.",
+  "m": "to use",
+  "x": "be- + nutzen (use, benefit). der Nutzen = benefit",
+  "wk": 0,
+  "th": "alltag",
+  "deck": "Gelernt"
+ },
+ {
+  "w": "erwarten",
+  "s": "Ich erwarte eine Antwort bis Freitag.",
+  "m": "to expect",
+  "x": "er- + warten (wait) → wait for something specific. Noun: die Erwartung",
+  "wk": 0,
+  "th": "alltag",
+  "deck": "Gelernt"
+ },
+ {
+  "w": "behaupten",
+  "s": "Er behauptet, dass er Recht hat.",
+  "m": "to claim, assert",
+  "x": "be- + Haupt (head) → put your position at the head. Noun: die Behauptung",
+  "wk": 0,
+  "th": "alltag",
+  "deck": "Gelernt"
+ },
+ {
+  "w": "sich beschäftigen mit + Dat",
+  "s": "Ich beschäftige mich viel mit Datenanalyse.",
+  "m": "to deal with, occupy yourself with",
+  "x": "from Geschäft (business) → keep yourself busy with it. beschäftigt = busy",
+  "wk": 0,
+  "th": "alltag",
+  "deck": "Gelernt"
+ },
+ {
+  "w": "sowieso",
+  "s": "Ich gehe sowieso einkaufen.",
+  "m": "anyway",
+  "x": "so + wie + so → \"so as so\", it's happening regardless",
+  "wk": 0,
+  "th": "alltag",
+  "deck": "Gelernt"
+ },
+ {
+  "w": "offensichtlich",
+  "s": "Er ist offensichtlich müde.",
+  "m": "obviously",
+  "x": "offen (open) + sichtlich (visible) → openly visible",
+  "wk": 0,
+  "th": "alltag",
+  "deck": "Gelernt"
+ },
+ {
+  "w": "gleichzeitig",
+  "s": "Ich kann nicht gleichzeitig kochen und telefonieren.",
+  "m": "at the same time",
+  "x": "gleich (same) + Zeit (time) + -ig",
+  "wk": 0,
+  "th": "alltag",
+  "deck": "Gelernt"
+ },
+ {
+  "w": "inzwischen",
+  "s": "Inzwischen spreche ich viel besser Deutsch.",
+  "m": "meanwhile; by now",
+  "x": "in + zwischen (between) → in the time between",
+  "wk": 0,
+  "th": "alltag",
+  "deck": "Gelernt"
+ },
+ {
+  "w": "die Bestellung",
+  "s": "Die Bestellung kommt morgen an.",
+  "m": "order",
+  "x": "be- + stellen (place) + -ung → placing a request. Verb: bestellen",
+  "wk": 0,
+  "th": "alltag",
+  "deck": "Gelernt"
+ },
+ {
+  "w": "die Speisekarte",
+  "s": "Könnten wir bitte die Speisekarte haben?",
+  "m": "menu",
+  "x": "Speise (dish, from speisen = to dine) + Karte (card) → the dish card",
+  "wk": 0,
+  "th": "alltag",
+  "deck": "Gelernt"
+ },
+ {
+  "w": "das Trinkgeld",
+  "s": "In Deutschland gibt man etwa zehn Prozent Trinkgeld.",
+  "m": "tip (money)",
+  "x": "trinken (drink) + Geld (money) → money for a drink",
+  "wk": 0,
+  "th": "alltag",
+  "deck": "Gelernt"
+ },
+ {
+  "w": "die Zutat",
+  "s": "Für den Kuchen brauche ich nur fünf Zutaten.",
+  "m": "ingredient",
+  "x": "from zutun (to add: zu- + tun) → what gets added in",
+  "wk": 0,
+  "th": "alltag",
+  "deck": "Gelernt"
+ },
+ {
+  "w": "probieren",
+  "s": "Willst du mal probieren?",
+  "m": "to try, taste",
+  "x": "like English \"probe\" → test it out",
+  "wk": 0,
+  "th": "pruefung",
+  "deck": "Gelernt"
+ },
+ {
+  "w": "anprobieren",
+  "s": "Kann ich die Hose anprobieren?",
+  "m": "to try on (clothes)",
+  "x": "an- (on) + probieren (try) → literally \"try on\". SEPARABLE",
+  "wk": 0,
+  "th": "alltag",
+  "deck": "Gelernt"
+ },
+ {
+  "w": "die Umkleidekabine",
+  "s": "Wo ist hier die Umkleidekabine?",
+  "m": "fitting room",
+  "x": "um- (change) + Kleid (clothes) + Kabine (cabin) → cabin for changing clothes",
+  "wk": 0,
+  "th": "alltag",
+  "deck": "Gelernt"
+ },
+ {
+  "w": "passen + Dat",
+  "s": "Die Jacke passt mir leider nicht.",
+  "m": "to fit",
+  "x": "passen zu = to go with (match). Takes Dativ: mir, dir, ihm",
+  "wk": 0,
+  "th": "pruefung",
+  "deck": "Gelernt"
+ },
+ {
+  "w": "die Größe",
+  "s": "Haben Sie das in einer anderen Größe?",
+  "m": "size",
+  "x": "groß (big) + -e → \"bigness\"",
+  "wk": 0,
+  "th": "alltag",
+  "deck": "Gelernt"
+ },
+ {
+  "w": "das Gewitter",
+  "s": "Heute Abend soll es ein Gewitter geben.",
+  "m": "thunderstorm",
+  "x": "Ge- (collective) + Wetter → all the weather at once",
+  "wk": 0,
+  "th": "freizeit",
+  "deck": "Gelernt"
+ },
+ {
+  "w": "die Wettervorhersage",
+  "s": "Laut Wettervorhersage regnet es morgen.",
+  "m": "weather forecast",
+  "x": "Wetter + vorher (beforehand) + sagen (say) → saying the weather beforehand",
+  "wk": 0,
+  "th": "freizeit",
+  "deck": "Gelernt"
+ },
+ {
+  "w": "der Verkehr",
+  "s": "Um acht Uhr ist auf der Straße viel Verkehr.",
+  "m": "traffic",
+  "x": "ver- + kehren (turn, move) → everything moving around",
+  "wk": 0,
+  "th": "alltag",
+  "deck": "Gelernt"
+ },
+ {
+  "w": "der Stau",
+  "s": "Wir standen eine Stunde im Stau.",
+  "m": "traffic jam",
+  "x": "stauen (dam up) → cars dammed up like water",
+  "wk": 0,
+  "th": "alltag",
+  "deck": "Gelernt"
+ },
+ {
+  "w": "die Kreuzung",
+  "s": "An der Kreuzung müssen Sie links abbiegen.",
+  "m": "intersection",
+  "x": "Kreuz (cross) + -ung → where roads cross",
+  "wk": 0,
+  "th": "alltag",
+  "deck": "Gelernt"
+ },
+ {
+  "w": "abbiegen (bog ab – ist abgebogen)",
+  "s": "Biegen Sie an der Ampel rechts ab.",
+  "m": "to turn (off a road)",
+  "x": "ab- (off) + biegen (bend) → bend off the road. SEPARABLE, Perfekt with SEIN",
+  "wk": 0,
+  "th": "alltag",
+  "deck": "Gelernt"
+ },
+ {
+  "w": "die Ampel",
+  "s": "Die Ampel ist rot, wir müssen warten.",
+  "m": "traffic light",
+  "x": "from Latin ampulla (little lamp)",
+  "wk": 0,
+  "th": "alltag",
+  "deck": "Gelernt"
+ },
+ {
+  "w": "die Fußgängerzone",
+  "s": "In der Fußgängerzone gibt es viele Geschäfte.",
+  "m": "pedestrian zone",
+  "x": "Fuß (foot) + Gänger (goer, from gehen) + Zone",
+  "wk": 0,
+  "th": "alltag",
+  "deck": "Gelernt"
+ },
+ {
+  "w": "öffentlich",
+  "s": "Ich fahre lieber mit öffentlichen Verkehrsmitteln.",
+  "m": "public",
+  "x": "offen (open) + -lich → open to everyone. die Öffentlichkeit = the public",
+  "wk": 0,
+  "th": "alltag",
+  "deck": "Gelernt"
+ },
+ {
+  "w": "das Verkehrsmittel",
+  "s": "Das Fahrrad ist mein liebstes Verkehrsmittel.",
+  "m": "means of transport",
+  "x": "Verkehr (traffic) + Mittel (means)",
+  "wk": 0,
+  "th": "alltag",
+  "deck": "Gelernt"
+ },
+ {
+  "w": "die Feier",
+  "s": "Wir machen eine kleine Feier zum Geburtstag.",
+  "m": "party, celebration",
+  "x": "feiern (celebrate). der Feiertag = public holiday",
+  "wk": 0,
+  "th": "familie",
+  "deck": "Gelernt"
+ },
+ {
+  "w": "gratulieren + Dat",
+  "s": "Ich gratuliere dir zum Geburtstag!",
+  "m": "to congratulate",
+  "x": "Latin gratus (thankful), like \"congratulate\". Takes Dativ!",
+  "wk": 0,
+  "th": "familie",
+  "deck": "Gelernt"
+ },
+ {
+  "w": "die Hochzeit",
+  "s": "Die Hochzeit ist im Juli.",
+  "m": "wedding",
+  "x": "hoch (high) + Zeit (time) → the high point in time. Don't confuse with English \"high time\"",
+  "wk": 0,
+  "th": "familie",
+  "deck": "Gelernt"
+ },
+ {
+  "w": "die Verwandten (Pl.)",
+  "s": "Zu Weihnachten besuchen wir die Verwandten.",
+  "m": "relatives",
+  "x": "from verwandt (related) → the related ones",
+  "wk": 0,
+  "th": "familie",
+  "deck": "Gelernt"
+ },
+ {
+  "w": "erziehen (erzog – hat erzogen)",
+  "s": "Sie erziehen ihre Kinder zweisprachig.",
+  "m": "to raise, bring up (children)",
+  "x": "er- + ziehen (pull) → pull a child up. Noun: die Erziehung",
+  "wk": 0,
+  "th": "alltag",
+  "deck": "Gelernt"
+ },
+ {
+  "w": "die Gesellschaft",
+  "s": "Unsere Gesellschaft wird immer älter.",
+  "m": "society; also company",
+  "x": "Geselle (companion) + -schaft (-ship) → companionship at large",
+  "wk": 0,
+  "th": "arbeit",
+  "deck": "Gelernt"
+ },
+ {
+  "w": "die Bevölkerung",
+  "s": "Die Bevölkerung in München wächst schnell.",
+  "m": "population",
+  "x": "be- + Volk (people) + -ung → the people living somewhere",
+  "wk": 0,
+  "th": "alltag",
+  "deck": "Gelernt"
+ },
+ {
+  "w": "die Rente",
+  "s": "Mein Opa ist seit zwei Jahren in Rente.",
+  "m": "pension, retirement",
+  "x": "in Rente gehen = to retire. der Rentner = retiree",
+  "wk": 0,
+  "th": "wohnen",
+  "deck": "Gelernt"
+ },
+ {
+  "w": "das Ehrenamt",
+  "s": "Sie arbeitet im Ehrenamt für den Sportverein.",
+  "m": "volunteer work",
+  "x": "Ehre (honor) + Amt (office) → an office held for honor, not pay. Adj: ehrenamtlich",
+  "wk": 0,
+  "th": "amt",
+  "deck": "Gelernt"
+ },
+ {
+  "w": "das Mitglied",
+  "s": "Wie viele Mitglieder hat der Verein?",
+  "m": "member",
+  "x": "mit (with) + Glied (limb) → a limb of the group",
+  "wk": 0,
+  "th": "alltag",
+  "deck": "Gelernt"
+ },
+ {
+  "w": "der Bildschirm",
+  "s": "Ich sitze zu viel vor dem Bildschirm.",
+  "m": "screen",
+  "x": "Bild (picture) + Schirm (shield) → picture shield",
+  "wk": 0,
+  "th": "alltag",
+  "deck": "Gelernt"
+ },
+ {
+  "w": "speichern",
+  "s": "Vergiss nicht, die Datei zu speichern.",
+  "m": "to save (a file)",
+  "x": "der Speicher (storage, attic) → put it in storage",
+  "wk": 0,
+  "th": "alltag",
+  "deck": "Gelernt"
+ },
+ {
+  "w": "löschen",
+  "s": "Ich habe die E-Mail gelöscht.",
+  "m": "to delete; also to put out (a fire)",
+  "x": "die Feuerwehr löscht das Feuer",
+  "wk": 0,
+  "th": "alltag",
+  "deck": "Gelernt"
+ },
+ {
+  "w": "das Versehen",
+  "s": "Das war nur ein Versehen.",
+  "m": "mistake, oversight",
+  "x": "ver- (wrong) + sehen (see) → seeing wrong. aus Versehen = by accident",
+  "wk": 0,
+  "th": "alltag",
+  "deck": "Gelernt"
+ },
+ {
+  "w": "der Datenschutz",
+  "s": "Datenschutz ist in Deutschland sehr wichtig.",
+  "m": "data protection, privacy",
+  "x": "Daten (data) + Schutz (protection)",
+  "wk": 0,
+  "th": "amt",
+  "deck": "Gelernt"
+ },
+ {
+  "w": "sich anstrengen",
+  "s": "Ich muss mich mehr anstrengen.",
+  "m": "to make an effort",
+  "x": "an- + strengen (tighten, like \"strenuous\"). SEPARABLE",
+  "wk": 0,
+  "th": "alltag",
+  "deck": "Gelernt"
+ },
+ {
+  "w": "anstrengend",
+  "s": "Der Tag war sehr anstrengend.",
+  "m": "exhausting, strenuous",
+  "x": "from sich anstrengen + -end (-ing) → straining",
+  "wk": 0,
+  "th": "alltag",
+  "deck": "Gelernt"
+ },
+ {
+  "w": "sich beeilen",
+  "s": "Beeil dich, der Zug fährt gleich!",
+  "m": "to hurry",
+  "x": "be- + Eile (haste). Never splits",
+  "wk": 0,
+  "th": "alltag",
+  "deck": "Gelernt"
+ },
+ {
+  "w": "sich langweilen",
+  "s": "Am Wochenende langweile ich mich nie.",
+  "m": "to be bored",
+  "x": "lang (long) + Weile (while) → a long while. langweilig = boring",
+  "wk": 0,
+  "th": "alltag",
+  "deck": "Gelernt"
+ },
+ {
+  "w": "sich wundern über + Akk",
+  "s": "Ich wundere mich über seine Reaktion.",
+  "m": "to be surprised about",
+  "x": "das Wunder (wonder, miracle) → to wonder at something",
+  "wk": 0,
+  "th": "alltag",
+  "deck": "Gelernt"
+ },
+ {
+  "w": "vermissen",
+  "s": "Ich vermisse meine Familie in den USA.",
+  "m": "to miss (a person or thing)",
+  "x": "ver- + missen (lack). Miss a bus = verpassen, miss a person = vermissen",
+  "wk": 0,
+  "th": "alltag",
+  "deck": "Gelernt"
+ },
+ {
+  "w": "vertrauen + Dat",
+  "s": "Ich vertraue dir.",
+  "m": "to trust",
+  "x": "ver- + trauen (trust). das Vertrauen = trust. sich trauen = to dare",
+  "wk": 0,
+  "th": "alltag",
+  "deck": "Gelernt"
+ },
+ {
+  "w": "zweifeln an + Dat",
+  "s": "Ich zweifle nicht an dir.",
+  "m": "to doubt",
+  "x": "zwei (two) → torn in two directions. der Zweifel = doubt",
+  "wk": 0,
+  "th": "alltag",
+  "deck": "Gelernt"
+ },
+ {
+  "w": "merken",
+  "s": "Hast du gemerkt, dass er müde war?",
+  "m": "to notice; sich etwas merken = to memorize",
+  "x": "die Marke (mark) → put a mark on it in your head",
+  "wk": 0,
+  "th": "alltag",
+  "deck": "Gelernt"
+ },
+ {
+  "w": "verlangen",
+  "s": "Das ist wirklich zu viel verlangt.",
+  "m": "to demand",
+  "x": "ver- + langen (reach for) → reach for something you want",
+  "wk": 0,
+  "th": "alltag",
+  "deck": "Gelernt"
+ },
+ {
+  "w": "erlauben",
+  "s": "Rauchen ist hier nicht erlaubt.",
+  "m": "to allow",
+  "x": "er- + lauben (old: permit). die Erlaubnis = permission (-nis)",
+  "wk": 0,
+  "th": "amt",
+  "deck": "Gelernt"
+ },
+ {
+  "w": "verbieten (verbot – hat verboten)",
+  "s": "Parken ist hier verboten.",
+  "m": "to forbid",
+  "x": "ver- (against) + bieten (offer) → offer against. das Verbot = ban",
+  "wk": 0,
+  "th": "alltag",
+  "deck": "Gelernt"
+ },
+ {
+  "w": "die Ausnahme",
+  "s": "Das ist eine Ausnahme, keine Regel.",
+  "m": "exception",
+  "x": "aus- (out) + nehmen (take) + -e → something taken out of the rule",
+  "wk": 0,
+  "th": "alltag",
+  "deck": "Gelernt"
+ },
+ {
+  "w": "die Anforderung",
+  "s": "Die Anforderungen an die Stelle sind sehr hoch.",
+  "m": "requirement, demand",
+  "x": "an- + fordern (demand) + -ung → what's demanded of you",
+  "wk": 0,
+  "th": "alltag",
+  "deck": "Gelernt"
+ },
+ {
+  "w": "fordern",
+  "s": "Die Gewerkschaft fordert mehr Lohn.",
+  "m": "to demand",
+  "x": "Watch out: fördern (with ö) = to support, promote. One dot changes everything",
+  "wk": 0,
+  "th": "alltag",
+  "deck": "Gelernt"
+ },
+ {
+  "w": "die Absicht",
+  "s": "Das war keine böse Absicht.",
+  "m": "intention",
+  "x": "ab- + Sicht (view) → what you have in view. absichtlich = on purpose",
+  "wk": 0,
+  "th": "freizeit",
+  "deck": "Gelernt"
+ },
+ {
+  "w": "die Ursache",
+  "s": "Die Ursache des Problems ist noch unklar.",
+  "m": "cause",
+  "x": "Ur- (original) + Sache (thing) → the original thing. Ur- = origin: die Uroma = great-grandma",
+  "wk": 0,
+  "th": "alltag",
+  "deck": "Gelernt"
+ },
+ {
+  "w": "die Wirkung",
+  "s": "Das Medikament zeigt schnell Wirkung.",
+  "m": "effect",
+  "x": "wirken (to have an effect) + -ung. Ursache und Wirkung = cause and effect",
+  "wk": 0,
+  "th": "alltag",
+  "deck": "Gelernt"
+ },
+ {
+  "w": "die Auswirkung",
+  "s": "Die Krise hat Auswirkungen auf alle Branchen.",
+  "m": "impact, consequence",
+  "x": "aus- (out) + wirken + -ung → the effect that spreads outward",
+  "wk": 0,
+  "th": "alltag",
+  "deck": "Gelernt"
+ },
+ {
+  "w": "der Unterschied",
+  "s": "Was ist der Unterschied zwischen den beiden Wörtern?",
+  "m": "difference",
+  "x": "unter- (between) + scheiden (separate) → what separates them. unterschiedlich = different",
+  "wk": 0,
+  "th": "wohnen",
+  "deck": "Gelernt"
+ },
+ {
+  "w": "der Zweck",
+  "s": "Welchen Zweck hat dieses Treffen?",
+  "m": "purpose",
+  "x": "originally the nail in the center of a target → the point you aim at. zwecklos = pointless",
+  "wk": 0,
+  "th": "alltag",
+  "deck": "Gelernt"
+ },
+ {
+  "w": "der Zustand",
+  "s": "Das Auto ist in einem guten Zustand.",
+  "m": "condition, state",
+  "x": "zu- + Stand (standing) → how something stands. Compound gender follows the last part: der Stand → der Zustand",
+  "wk": 0,
+  "th": "alltag",
+  "deck": "Gelernt"
+ },
+ {
+  "w": "die Anzeige",
+  "s": "Ich habe die Wohnung über eine Anzeige gefunden.",
+  "m": "ad; also a police report",
+  "x": "an- + zeigen (show) + -e → something shown publicly. Verb: anzeigen",
+  "wk": 0,
+  "th": "arbeit",
+  "deck": "Gelernt"
+ },
+ {
+  "w": "der Hinweis",
+  "s": "Danke für den Hinweis!",
+  "m": "tip, hint, note",
+  "x": "hin- (toward) + weisen (point) → pointing you toward something",
+  "wk": 0,
+  "th": "alltag",
+  "deck": "Gelernt"
+ },
+ {
+  "w": "die Auskunft",
+  "s": "Können Sie mir eine Auskunft geben?",
+  "m": "information (at a counter or desk)",
+  "x": "aus- (out) + -kunft (from kund = known) → knowledge handed out",
+  "wk": 0,
+  "th": "alltag",
+  "deck": "Gelernt"
+ },
+ {
+  "w": "die Beratung",
+  "s": "Die Beratung bei der Bank ist kostenlos.",
+  "m": "advice, consultation",
+  "x": "be- + raten (advise) + -ung. der Berater = consultant",
+  "wk": 0,
+  "th": "alltag",
+  "deck": "Gelernt"
+ },
+ {
+  "w": "beantragen",
+  "s": "Ich muss einen neuen Pass beantragen.",
+  "m": "to apply for (officially)",
+  "x": "be- + Antrag. be- makes it transitive: einen Antrag stellen → etwas beantragen, no preposition needed",
+  "wk": 0,
+  "th": "amt",
+  "deck": "Gelernt"
+ },
+ {
+  "w": "besitzen (besaß – hat besessen)",
+  "s": "Er besitzt zwei Autos.",
+  "m": "to own",
+  "x": "be- + sitzen (sit) → to sit on something = to own it. der Besitz = property",
+  "wk": 0,
+  "th": "alltag",
+  "deck": "Gelernt"
+ },
+ {
+  "w": "begründen",
+  "s": "Kannst du deine Meinung begründen?",
+  "m": "to justify, give reasons for",
+  "x": "be- + Grund (reason) → give something a reason. Key verb for Sprechen and Schreiben",
+  "wk": 0,
+  "th": "alltag",
+  "deck": "Gelernt"
+ },
+ {
+  "w": "beweisen (bewies – hat bewiesen)",
+  "s": "Kannst du das beweisen?",
+  "m": "to prove",
+  "x": "be- + weisen (show) → show it clearly. der Beweis = proof",
+  "wk": 0,
+  "th": "alltag",
+  "deck": "Gelernt"
+ },
+ {
+  "w": "betreffen (betrifft – betraf – hat betroffen)",
+  "s": "Das Problem betrifft alle Mitarbeiter.",
+  "m": "to concern, affect",
+  "x": "be- + treffen (hit) → it hits you. betroffen = affected",
+  "wk": 0,
+  "th": "alltag",
+  "deck": "Gelernt"
+ },
+ {
+  "w": "verursachen",
+  "s": "Der Unfall hat einen langen Stau verursacht.",
+  "m": "to cause",
+  "x": "ver- + Ursache (cause) → turn into a cause",
+  "wk": 0,
+  "th": "alltag",
+  "deck": "Gelernt"
+ },
+ {
+  "w": "verhindern",
+  "s": "Wir wollen solche Fehler verhindern.",
+  "m": "to prevent",
+  "x": "ver- (fully) + hindern (hinder) → hinder completely",
+  "wk": 0,
+  "th": "alltag",
+  "deck": "Gelernt"
+ },
+ {
+  "w": "verlängern",
+  "s": "Ich möchte meinen Vertrag verlängern.",
+  "m": "to extend",
+  "x": "ver- + länger (longer) → make longer. ver- + comparative = make it more so",
+  "wk": 0,
+  "th": "alltag",
+  "deck": "Gelernt"
+ },
+ {
+  "w": "verringern",
+  "s": "Wir müssen die Kosten verringern.",
+  "m": "to reduce",
+  "x": "ver- + gering (small) → make smaller",
+  "wk": 0,
+  "th": "alltag",
+  "deck": "Gelernt"
+ },
+ {
+  "w": "versichern",
+  "s": "Ist dein Fahrrad versichert?",
+  "m": "to insure; also to assure",
+  "x": "ver- + sicher (safe, sure) → make safe or sure. die Versicherung = insurance",
+  "wk": 0,
+  "th": "gesundheit",
+  "deck": "Gelernt"
+ },
+ {
+  "w": "vertreten (vertritt – vertrat – hat vertreten)",
+  "s": "Wer vertritt dich im Urlaub?",
+  "m": "to represent, fill in for",
+  "x": "ver- + treten (step) → step in for someone. der Vertreter = representative",
+  "wk": 0,
+  "th": "alltag",
+  "deck": "Gelernt"
+ },
+ {
+  "w": "zerstören",
+  "s": "Der Sturm hat viele Häuser zerstört.",
+  "m": "to destroy",
+  "x": "zer- (to pieces) + stören (disturb) → disturb into pieces. zer- always means apart",
+  "wk": 0,
+  "th": "alltag",
+  "deck": "Gelernt"
+ },
+ {
+  "w": "zerbrechen (zerbricht – zerbrach – ist zerbrochen)",
+  "s": "Die Tasse ist zerbrochen.",
+  "m": "to break into pieces, shatter",
+  "x": "zer- (to pieces) + brechen (break). Perfekt with SEIN",
+  "wk": 0,
+  "th": "alltag",
+  "deck": "Gelernt"
+ },
+ {
+  "w": "ausnutzen",
+  "s": "Er nutzt seine Freunde aus.",
+  "m": "to exploit; to make full use of",
+  "x": "aus- (fully, out) + nutzen (use) → use up completely. SEPARABLE",
+  "wk": 0,
+  "th": "alltag",
+  "deck": "Gelernt"
+ },
+ {
+  "w": "auffallen + Dat (fällt auf – fiel auf – ist aufgefallen)",
+  "s": "Mir ist aufgefallen, dass er fehlt.",
+  "m": "to be noticeable; to strike someone",
+  "x": "auf- (up) + fallen → pops up into view. The thing is the subject: MIR fällt etwas auf",
+  "wk": 0,
+  "th": "alltag",
+  "deck": "Gelernt"
+ },
+ {
+  "w": "einfallen + Dat (fällt ein – fiel ein – ist eingefallen)",
+  "s": "Mir fällt kein Beispiel ein.",
+  "m": "to come to mind",
+  "x": "ein- (in) + fallen → falls into your head. der Einfall = idea",
+  "wk": 0,
+  "th": "alltag",
+  "deck": "Gelernt"
+ },
+ {
+  "w": "nachdenken über + Akk (dachte nach – hat nachgedacht)",
+  "s": "Ich muss darüber nachdenken.",
+  "m": "to think about, reflect",
+  "x": "nach- (after) + denken → think it over afterward. SEPARABLE",
+  "wk": 0,
+  "th": "alltag",
+  "deck": "Gelernt"
+ },
+ {
+  "w": "hervorragend",
+  "s": "Das Essen war hervorragend.",
+  "m": "excellent",
+  "x": "hervor (out, forward) + ragen (stick out) + -end → sticking out from the rest, literally \"outstanding\"",
+  "wk": 0,
+  "th": "pruefung",
+  "deck": "Gelernt"
+ },
+ {
+  "w": "vorläufig",
+  "s": "Das ist nur eine vorläufige Lösung.",
+  "m": "temporary, provisional",
+  "x": "vor- (ahead) + laufen (run) + -ig → running ahead of the final version",
+  "wk": 0,
+  "th": "alltag",
+  "deck": "Gelernt"
+ },
+ {
+  "w": "selbstverständlich",
+  "s": "Das ist doch selbstverständlich!",
+  "m": "of course; self-evident",
+  "x": "selbst (self) + verständlich (understandable) → it explains itself",
+  "wk": 0,
+  "th": "alltag",
+  "deck": "Gelernt"
+ },
+ {
+  "w": "unvermeidlich",
+  "s": "Kleine Fehler sind unvermeidlich.",
+  "m": "unavoidable",
+  "x": "un- (not) + vermeiden (avoid) + -lich (-able) → can't be avoided",
+  "wk": 0,
+  "th": "alltag",
+  "deck": "Gelernt"
+ },
+ {
+  "w": "erheblich",
+  "s": "Die Preise sind erheblich gestiegen.",
+  "m": "considerable, significant",
+  "x": "er- + heben (lift) + -lich → lifted up, worth noting",
+  "wk": 0,
+  "th": "alltag",
+  "deck": "Gelernt"
+ },
+ {
+  "w": "beziehungsweise (bzw.)",
+  "s": "Ich komme am Montag beziehungsweise Dienstag.",
+  "m": "or rather; respectively",
+  "x": "Beziehung (relation) + -weise (way) → in relation to. Very common in writing",
+  "wk": 0,
+  "th": "alltag",
+  "deck": "Gelernt"
+ },
+ {
+  "w": "schließlich",
+  "s": "Schließlich haben wir uns geeinigt.",
+  "m": "finally; after all",
+  "x": "schließen (close) + -lich → closing it out",
+  "wk": 0,
+  "th": "alltag",
+  "deck": "Gelernt"
+ },
+ {
+  "w": "die Aufgabe",
+  "s": "Das gehört nicht zu meinen Aufgaben.",
+  "m": "task, duty",
+  "x": "auf- + geben (give) + -e → what's given to you. Don't mix up with aufgeben = to give up",
+  "wk": 0,
+  "th": "arbeit",
+  "deck": "Gelernt"
+ },
+ {
+  "w": "der Auftrag",
+  "s": "Wir haben einen großen Auftrag bekommen.",
+  "m": "order, assignment, contract",
+  "x": "auf- (on) + tragen (carry) → what's put on you to carry. im Auftrag von = on behalf of",
+  "wk": 0,
+  "th": "amt",
+  "deck": "Gelernt"
+ },
+ {
+  "w": "die Leistung",
+  "s": "Ihre Leistung war dieses Jahr sehr gut.",
+  "m": "performance, achievement",
+  "x": "leisten (achieve) + -ung → what you achieve",
+  "wk": 0,
+  "th": "alltag",
+  "deck": "Gelernt"
+ },
+ {
+  "w": "sich leisten + Dat",
+  "s": "Ich kann mir kein neues Auto leisten.",
+  "m": "to afford",
+  "x": "leisten (achieve) used reflexively with Dativ: MIR leisten → achieve it for yourself",
+  "wk": 0,
+  "th": "alltag",
+  "deck": "Gelernt"
+ },
+ {
+  "w": "die Abteilung",
+  "s": "Ich arbeite in der Vertriebsabteilung.",
+  "m": "department",
+  "x": "ab- (off) + teilen (divide) + -ung → a part divided off",
+  "wk": 0,
+  "th": "arbeit",
+  "deck": "Gelernt"
+ },
+ {
+  "w": "der Umsatz",
+  "s": "Der Umsatz ist um zehn Prozent gestiegen.",
+  "m": "revenue, sales",
+  "x": "um- (around) + setzen (set) → what gets turned over",
+  "wk": 0,
+  "th": "alltag",
+  "deck": "Gelernt"
+ },
+ {
+  "w": "der Gewinn",
+  "s": "Der Gewinn war niedriger als erwartet.",
+  "m": "profit; also prize",
+  "x": "gewinnen (win) → what you win. Opposite: der Verlust",
+  "wk": 0,
+  "th": "arbeit",
+  "deck": "Gelernt"
+ },
+ {
+  "w": "der Verlust",
+  "s": "Die Firma hat dieses Jahr Verluste gemacht.",
+  "m": "loss",
+  "x": "from verlieren (lose) → what's lost",
+  "wk": 0,
+  "th": "alltag",
+  "deck": "Gelernt"
+ },
+ {
+  "w": "die Verhandlung",
+  "s": "Die Verhandlungen laufen noch.",
+  "m": "negotiation",
+  "x": "ver- + handeln (deal, trade) + -ung → dealing back and forth. Verb: verhandeln",
+  "wk": 0,
+  "th": "alltag",
+  "deck": "Gelernt"
+ },
+ {
+  "w": "vereinbaren",
+  "s": "Wir haben einen Termin vereinbart.",
+  "m": "to arrange, agree on",
+  "x": "ver- + ein (one) + -bar → make into one agreement. die Vereinbarung = agreement",
+  "wk": 0,
+  "th": "alltag",
+  "deck": "Gelernt"
+ },
+ {
+  "w": "einhalten (hält ein – hielt ein – hat eingehalten)",
+  "s": "Wir müssen die Frist unbedingt einhalten.",
+  "m": "to meet, comply with (deadline, rule)",
+  "x": "ein- (in) + halten (hold) → hold yourself within the limits. SEPARABLE",
+  "wk": 0,
+  "th": "amt",
+  "deck": "Gelernt"
+ },
+ {
+  "w": "zuständig für + Akk",
+  "s": "Wer ist dafür zuständig?",
+  "m": "responsible for, in charge of",
+  "x": "zu- + Stand (position) + -ig → standing at that post. die Zuständigkeit = area of responsibility",
+  "wk": 0,
+  "th": "alltag",
+  "deck": "Gelernt"
+ },
+ {
+  "w": "die Bedingung",
+  "s": "Unter dieser Bedingung bin ich einverstanden.",
+  "m": "condition, requirement",
+  "x": "be- + Ding (thing) + -ung → the thing it depends on. Compare der Zustand = state",
+  "wk": 0,
+  "th": "alltag",
+  "deck": "Gelernt"
+ },
+ {
+  "w": "einverstanden mit + Dat",
+  "s": "Bist du damit einverstanden?",
+  "m": "in agreement, OK with",
+  "x": "ein (one) + verstanden (understood) → understood as one",
+  "wk": 0,
+  "th": "alltag",
+  "deck": "Gelernt"
+ },
+ {
+  "w": "der Ansprechpartner",
+  "s": "Wer ist Ihr Ansprechpartner bei uns?",
+  "m": "contact person",
+  "x": "an- + sprechen (speak) + Partner → the person you speak to. Gender follows the last part: der Partner",
+  "wk": 0,
+  "th": "alltag",
+  "deck": "Gelernt"
+ },
+ {
+  "w": "die Rückmeldung",
+  "s": "Danke für die schnelle Rückmeldung!",
+  "m": "feedback, reply",
+  "x": "Rück- (back) + melden (report) + -ung → reporting back",
+  "wk": 0,
+  "th": "arbeit",
+  "deck": "Gelernt"
+ },
+ {
+  "w": "sich melden bei + Dat",
+  "s": "Ich melde mich morgen bei Ihnen.",
+  "m": "to get in touch",
+  "x": "melden (report) → report yourself. Super common in emails",
+  "wk": 0,
+  "th": "arbeit",
+  "deck": "Gelernt"
+ },
+ {
+  "w": "weiterleiten",
+  "s": "Ich leite dir die E-Mail gleich weiter.",
+  "m": "to forward",
+  "x": "weiter (further) + leiten (lead, direct) → lead it further on. SEPARABLE",
+  "wk": 0,
+  "th": "alltag",
+  "deck": "Gelernt"
+ },
+ {
+  "w": "der Anhang",
+  "s": "Im Anhang finden Sie die Präsentation.",
+  "m": "attachment",
+  "x": "an- (on) + hängen (hang) → something hung on. Standard email phrase",
+  "wk": 0,
+  "th": "alltag",
+  "deck": "Gelernt"
+ },
+ {
+  "w": "beauftragen",
+  "s": "Wir haben eine Agentur beauftragt.",
+  "m": "to commission, hire (for a job)",
+  "x": "be- + Auftrag → give someone an assignment. be- makes it transitive",
+  "wk": 0,
+  "th": "arbeit",
+  "deck": "Gelernt"
+ },
+ {
+  "w": "erstellen",
+  "s": "Ich erstelle den Bericht bis Montag.",
+  "m": "to create, prepare (document, plan)",
+  "x": "er- (complete) + stellen (put) → put together fully",
+  "wk": 0,
+  "th": "amt",
+  "deck": "Gelernt"
+ },
+ {
+  "w": "der Bericht",
+  "s": "Der Bericht ist endlich fertig.",
+  "m": "report",
+  "x": "from berichten (be- + richten = direct) → information directed to someone",
+  "wk": 0,
+  "th": "arbeit",
+  "deck": "Gelernt"
+ },
+ {
+  "w": "die Auswertung",
+  "s": "Die Auswertung der Daten dauert noch.",
+  "m": "analysis, evaluation",
+  "x": "aus- (out) + werten (value) + -ung → draw the value out. Verb: auswerten",
+  "wk": 0,
+  "th": "alltag",
+  "deck": "Gelernt"
+ },
+ {
+  "w": "die Kennzahl",
+  "s": "Die wichtigste Kennzahl ist der Umsatz.",
+  "m": "key figure, KPI",
+  "x": "kennen (know) + Zahl (number) → the number you need to know",
+  "wk": 0,
+  "th": "alltag",
+  "deck": "Gelernt"
+ },
+ {
+  "w": "steigern",
+  "s": "Wir wollen den Umsatz steigern.",
+  "m": "to increase (actively)",
+  "x": "from steigen (rise) → make something rise. steigen = rises by itself",
+  "wk": 0,
+  "th": "alltag",
+  "deck": "Gelernt"
+ },
+ {
+  "w": "sinken (sank – ist gesunken)",
+  "s": "Die Kosten sind gesunken.",
+  "m": "to fall, sink",
+  "x": "like English \"sink\". Perfekt with SEIN. senken = to lower (actively)",
+  "wk": 0,
+  "th": "alltag",
+  "deck": "Gelernt"
+ },
+ {
+  "w": "der Kunde",
+  "s": "Der Kunde ist mit dem Service zufrieden.",
+  "m": "customer, client",
+  "x": "from kund (known) → someone known to the business. Female: die Kundin",
+  "wk": 0,
+  "th": "arbeit",
+  "deck": "Gelernt"
+ },
+ {
+  "w": "zufrieden mit + Dat",
+  "s": "Bist du mit dem Ergebnis zufrieden?",
+  "m": "satisfied",
+  "x": "zu- + Frieden (peace) → at peace with it. unzufrieden = dissatisfied",
+  "wk": 0,
+  "th": "alltag",
+  "deck": "Gelernt"
+ },
+ {
+  "w": "der Ablauf",
+  "s": "Der Ablauf ist ganz einfach.",
+  "m": "process, sequence",
+  "x": "ab- + laufen (run) → how things run off. Bonus: ablaufen = expire (Der Pass läuft ab)",
+  "wk": 0,
+  "th": "alltag",
+  "deck": "Gelernt"
+ },
+ {
+  "w": "die Herausforderung",
+  "s": "Das Projekt ist eine echte Herausforderung.",
+  "m": "challenge",
+  "x": "heraus (out) + fordern (demand) + -ung → something that calls you out",
+  "wk": 0,
+  "th": "alltag",
+  "deck": "Gelernt"
+ },
+ {
+  "w": "die Untersuchung",
+  "s": "Morgen habe ich eine Untersuchung beim Arzt.",
+  "m": "examination, check-up; also investigation",
+  "x": "unter- (under) + suchen (search) + -ung → searching underneath. Verb: untersuchen (never splits)",
+  "wk": 0,
+  "th": "pruefung",
+  "deck": "Gelernt"
+ },
+ {
+  "w": "das Rezept",
+  "s": "Der Arzt hat mir ein Rezept gegeben.",
+  "m": "prescription; also recipe",
+  "x": "from Latin recipe = \"take!\" → instructions for what to take. Both meanings!",
+  "wk": 0,
+  "th": "gesundheit",
+  "deck": "Gelernt"
+ },
+ {
+  "w": "die Krankschreibung",
+  "s": "Ich brauche eine Krankschreibung für die Arbeit.",
+  "m": "sick note",
+  "x": "krank (sick) + schreiben (write) + -ung → writing you sick. sich krankschreiben lassen = get a sick note",
+  "wk": 0,
+  "th": "gesundheit",
+  "deck": "Gelernt"
+ },
+ {
+  "w": "die Erkältung",
+  "s": "Ich habe mich im Regen erkältet und jetzt eine Erkältung.",
+  "m": "a cold",
+  "x": "er- (become) + kalt (cold) + -ung → becoming cold. Verb: sich erkälten = catch a cold",
+  "wk": 0,
+  "th": "gesundheit",
+  "deck": "Gelernt"
+ },
+ {
+  "w": "die Schmerzen (Pl.)",
+  "s": "Ich habe starke Kopfschmerzen.",
+  "m": "pain",
+  "x": "schmerzen (to hurt), like English \"smart\" (sting). Compounds: Kopf-, Bauch-, Rückenschmerzen",
+  "wk": 0,
+  "th": "gesundheit",
+  "deck": "Gelernt"
+ },
+ {
+  "w": "wehtun + Dat",
+  "s": "Mir tut der Rücken weh.",
+  "m": "to hurt",
+  "x": "weh (ow!) + tun (do). The body part is the subject: MIR tut DER RÜCKEN weh",
+  "wk": 0,
+  "th": "alltag",
+  "deck": "Gelernt"
+ },
+ {
+  "w": "der Unfall",
+  "s": "Er hatte einen Unfall mit dem Fahrrad.",
+  "m": "accident",
+  "x": "un- (bad) + Fall (fall, event) → a bad event. Un- can mean bad: das Unwetter = severe storm",
+  "wk": 0,
+  "th": "freizeit",
+  "deck": "Gelernt"
+ },
+ {
+  "w": "die Vorsorge",
+  "s": "Vorsorge ist besser als Nachsorge.",
+  "m": "prevention, preventive care",
+  "x": "vor- (ahead) + Sorge (care) → caring ahead. die Altersvorsorge = retirement saving",
+  "wk": 0,
+  "th": "freizeit",
+  "deck": "Gelernt"
+ },
+ {
+  "w": "das Gleichgewicht",
+  "s": "Ich habe kurz das Gleichgewicht verloren.",
+  "m": "balance",
+  "x": "gleich (equal) + Gewicht (weight) → equal weight on both sides",
+  "wk": 0,
+  "th": "alltag",
+  "deck": "Gelernt"
+ },
+ {
+  "w": "die Ausdauer",
+  "s": "Für lange Radtouren braucht man viel Ausdauer.",
+  "m": "stamina, endurance",
+  "x": "aus- (through to the end) + dauern (last) → lasting it out",
+  "wk": 0,
+  "th": "alltag",
+  "deck": "Gelernt"
+ },
+ {
+  "w": "sich bewegen",
+  "s": "Ich muss mich mehr bewegen.",
+  "m": "to move, get exercise",
+  "x": "be- + wegen (from Weg = way) → get on your way. die Bewegung = movement, exercise",
+  "wk": 0,
+  "th": "alltag",
+  "deck": "Gelernt"
+ },
+ {
+  "w": "sich dehnen",
+  "s": "Nach dem Sport dehne ich mich immer.",
+  "m": "to stretch",
+  "x": "dehnen (stretch, extend). ausdehnen = to expand",
+  "wk": 0,
+  "th": "alltag",
+  "deck": "Gelernt"
+ },
+ {
+  "w": "erschöpft",
+  "s": "Nach der Tour war ich völlig erschöpft.",
+  "m": "exhausted",
+  "x": "er- + schöpfen (scoop out, like water) → all scooped out. die Erschöpfung",
+  "wk": 0,
+  "th": "alltag",
+  "deck": "Gelernt"
+ },
+ {
+  "w": "der Muskelkater",
+  "s": "Ich habe Muskelkater in den Beinen.",
+  "m": "sore muscles",
+  "x": "Muskel + Kater (tomcat) → picture a cat clawing your muscles. der Kater alone = hangover!",
+  "wk": 0,
+  "th": "alltag",
+  "deck": "Gelernt"
+ },
+ {
+  "w": "die Steigung",
+  "s": "Die Steigung am Ende war brutal.",
+  "m": "incline, climb",
+  "x": "steigen (climb) + -ung → where the road climbs. Opposite: das Gefälle",
+  "wk": 0,
+  "th": "alltag",
+  "deck": "Gelernt"
+ },
+ {
+  "w": "das Gefälle",
+  "s": "Auf dem Gefälle muss man vorsichtig bremsen.",
+  "m": "downhill slope",
+  "x": "Ge- + fallen (fall) → the falling part. Also a gap: das Lohngefälle = pay gap",
+  "wk": 0,
+  "th": "pruefung",
+  "deck": "Gelernt"
+ },
+ {
+  "w": "die Strecke",
+  "s": "Die Strecke ist sechzig Kilometer lang.",
+  "m": "route, distance",
+  "x": "strecken (stretch) → what stretches out ahead",
+  "wk": 0,
+  "th": "alltag",
+  "deck": "Gelernt"
+ },
+ {
+  "w": "die Landschaft",
+  "s": "Die Landschaft in Bayern ist wunderschön.",
+  "m": "landscape, scenery",
+  "x": "Land + -schaft → literally land-ship, same idea as landscape",
+  "wk": 0,
+  "th": "alltag",
+  "deck": "Gelernt"
+ },
+ {
+  "w": "der Gipfel",
+  "s": "Auf dem Gipfel haben wir eine Pause gemacht.",
+  "m": "summit, peak",
+  "x": "Idiom: Das ist der Gipfel! = That's the last straw!",
+  "wk": 0,
+  "th": "freizeit",
+  "deck": "Gelernt"
+ },
+ {
+  "w": "die Aussicht",
+  "s": "Vom Gipfel hat man eine tolle Aussicht.",
+  "m": "view; also prospect",
+  "x": "aus- (out) + Sicht (sight) → what you see looking out. aussichtslos = hopeless",
+  "wk": 0,
+  "th": "alltag",
+  "deck": "Gelernt"
+ },
+ {
+  "w": "einkehren (kehrte ein – ist eingekehrt)",
+  "s": "Unterwegs sind wir in einer Hütte eingekehrt.",
+  "m": "to stop off (at an inn or mountain hut)",
+  "x": "ein- (in) + kehren (turn) → turn in. Classic Bavarian hiking word. SEPARABLE, Perfekt with SEIN",
+  "wk": 0,
+  "th": "freizeit",
+  "deck": "Gelernt"
+ },
+ {
+  "w": "die Hitze",
+  "s": "Bei dieser Hitze bleibe ich lieber zu Hause.",
+  "m": "heat",
+  "x": "heiß (hot) + -e → the hot. Opposite: die Kälte",
+  "wk": 0,
+  "th": "alltag",
+  "deck": "Gelernt"
+ },
+ {
+  "w": "die Kälte",
+  "s": "Die Kälte am Morgen ist unangenehm.",
+  "m": "cold (weather)",
+  "x": "kalt + umlaut + -e. Same pattern: warm → die Wärme, lang → die Länge",
+  "wk": 0,
+  "th": "gesundheit",
+  "deck": "Gelernt"
+ },
+ {
+  "w": "feucht",
+  "s": "Die Luft ist heute sehr feucht.",
+  "m": "damp, humid",
+  "x": "die Feuchtigkeit = humidity, moisture",
+  "wk": 0,
+  "th": "alltag",
+  "deck": "Gelernt"
+ },
+ {
+  "w": "rutschig",
+  "s": "Die Straße ist nass und rutschig.",
+  "m": "slippery",
+  "x": "rutschen (slide) + -ig → slidey",
+  "wk": 0,
+  "th": "alltag",
+  "deck": "Gelernt"
+ },
+ {
+  "w": "ausrutschen (rutschte aus – ist ausgerutscht)",
+  "s": "Ich bin auf dem Eis ausgerutscht.",
+  "m": "to slip",
+  "x": "aus- + rutschen (slide). SEPARABLE, Perfekt with SEIN",
+  "wk": 0,
+  "th": "alltag",
+  "deck": "Gelernt"
+ },
+ {
+  "w": "die Panne",
+  "s": "Wir hatten unterwegs eine Panne.",
+  "m": "breakdown (vehicle)",
+  "x": "from French panne. die Reifenpanne = flat tire",
+  "wk": 0,
+  "th": "wohnen",
+  "deck": "Gelernt"
+ },
+ {
+  "w": "der Reifen",
+  "s": "Mein Reifen ist schon wieder platt.",
+  "m": "tire",
+  "x": "Reif (ring, hoop) → the ring around the wheel. platt = flat",
+  "wk": 0,
+  "th": "wohnen",
+  "deck": "Gelernt"
+ },
+ {
+  "w": "sich verfahren (verfährt – verfuhr – hat sich verfahren)",
+  "s": "Wir haben uns im Wald verfahren.",
+  "m": "to get lost (driving or cycling)",
+  "x": "ver- (wrong) + fahren (ride) → ride the wrong way",
+  "wk": 0,
+  "th": "freizeit",
+  "deck": "Gelernt"
+ },
+ {
+  "w": "sich verlaufen (verläuft – verlief – hat sich verlaufen)",
+  "s": "Ohne Karte verlaufe ich mich sofort.",
+  "m": "to get lost (on foot)",
+  "x": "ver- (wrong) + laufen (walk) → walk the wrong way. Same ver- = wrong: sich versprechen (misspeak), sich verhören (mishear)",
+  "wk": 0,
+  "th": "alltag",
+  "deck": "Gelernt"
+ },
+ {
+  "w": "der Haushalt",
+  "s": "Wir teilen uns die Arbeit im Haushalt.",
+  "m": "household; also budget",
+  "x": "Haus + halten (keep) → keeping the house. Also used for a government budget",
+  "wk": 0,
+  "th": "wohnen",
+  "deck": "Gelernt"
+ },
+ {
+  "w": "aufräumen",
+  "s": "Ich muss heute mein Zimmer aufräumen.",
+  "m": "to tidy up",
+  "x": "auf- + räumen (clear space, from Raum = room) → make room. SEPARABLE",
+  "wk": 0,
+  "th": "wohnen",
+  "deck": "Gelernt"
+ },
+ {
+  "w": "die Brille",
+  "s": "Ich brauche eine neue Brille.",
+  "m": "glasses",
+  "x": "Singular in German! eine Brille = one pair of glasses. From Beryll, the gemstone used for early lenses. die Sonnenbrille = sunglasses",
+  "wk": 0,
+  "th": "gesundheit",
+  "deck": "Gelernt"
+ },
+ {
+  "w": "der Optiker",
+  "s": "Morgen gehe ich zum Optiker.",
+  "m": "optician",
+  "x": "from Greek optikos (sight). Female: die Optikerin",
+  "wk": 0,
+  "th": "gesundheit",
+  "deck": "Gelernt"
+ },
+ {
+  "w": "der Augenarzt",
+  "s": "Für ein Rezept muss ich zum Augenarzt.",
+  "m": "eye doctor",
+  "x": "Auge (eye) + Arzt (doctor). Gender follows the last part: der Arzt",
+  "wk": 0,
+  "th": "gesundheit",
+  "deck": "Gelernt"
+ },
+ {
+  "w": "der Sehtest",
+  "s": "Der Sehtest dauert nur zehn Minuten.",
+  "m": "eye test",
+  "x": "sehen (see) + Test",
+  "wk": 0,
+  "th": "gesundheit",
+  "deck": "Gelernt"
+ },
+ {
+  "w": "die Sehstärke",
+  "s": "Meine Sehstärke hat sich verschlechtert.",
+  "m": "eyesight strength, prescription",
+  "x": "sehen + Stärke (strength, from stark)",
+  "wk": 0,
+  "th": "gesundheit",
+  "deck": "Gelernt"
+ },
+ {
+  "w": "kurzsichtig",
+  "s": "Ich bin leicht kurzsichtig.",
+  "m": "nearsighted",
+  "x": "kurz (short) + Sicht (sight) + -ig → literally \"short-sighted\"",
+  "wk": 0,
+  "th": "alltag",
+  "deck": "Gelernt"
+ },
+ {
+  "w": "weitsichtig",
+  "s": "Mit dem Alter wird man oft weitsichtig.",
+  "m": "farsighted",
+  "x": "weit (far) + Sicht + -ig → far-sighted. Figuratively also: visionary",
+  "wk": 0,
+  "th": "alltag",
+  "deck": "Gelernt"
+ },
+ {
+  "w": "die Dioptrie",
+  "s": "Ich habe minus zwei Dioptrien.",
+  "m": "diopter",
+  "x": "Minus = kurzsichtig, plus = weitsichtig",
+  "wk": 0,
+  "th": "alltag",
+  "deck": "Gelernt"
+ },
+ {
+  "w": "das Gestell",
+  "s": "Das Gestell ist mir ein bisschen zu groß.",
+  "m": "frame (of glasses)",
+  "x": "Ge- + stellen (put) → the structure everything sits in. Also: die Fassung (fassen = hold)",
+  "wk": 0,
+  "th": "gesundheit",
+  "deck": "Gelernt"
+ },
+ {
+  "w": "das Brillenglas",
+  "s": "Die Brillengläser sind sehr dünn.",
+  "m": "lens (of glasses)",
+  "x": "Brille + Glas. Gender follows Glas → das. Plural: Gläser",
+  "wk": 0,
+  "th": "gesundheit",
+  "deck": "Gelernt"
+ },
+ {
+  "w": "entspiegelt",
+  "s": "Ich hätte gern entspiegelte Gläser.",
+  "m": "anti-reflective",
+  "x": "ent- (remove) + Spiegel (mirror) + -t → mirror effect removed. die Entspiegelung",
+  "wk": 0,
+  "th": "alltag",
+  "deck": "Gelernt"
+ },
+ {
+  "w": "die Gleitsichtbrille",
+  "s": "Mein Vater trägt eine Gleitsichtbrille.",
+  "m": "progressive lenses, varifocals",
+  "x": "gleiten (glide) + Sicht → vision that glides from near to far",
+  "wk": 0,
+  "th": "gesundheit",
+  "deck": "Gelernt"
+ },
+ {
+  "w": "die Kontaktlinsen (Pl.)",
+  "s": "Beim Sport trage ich lieber Kontaktlinsen.",
+  "m": "contact lenses",
+  "x": "Kontakt + Linse (lentil) → lenses are lentil-shaped!",
+  "wk": 0,
+  "th": "gesundheit",
+  "deck": "Gelernt"
+ },
+ {
+  "w": "tragen (trägt – trug – hat getragen)",
+  "s": "Ich trage seit Jahren eine Brille.",
+  "m": "to wear (glasses, clothes); also to carry",
+  "x": "glasses are \"worn\" like clothes",
+  "wk": 0,
+  "th": "gesundheit",
+  "deck": "Gelernt"
+ },
+ {
+  "w": "anpassen",
+  "s": "Der Optiker passt die Brille noch an.",
+  "m": "to adjust, fit",
+  "x": "an- (on) + passen (fit) → make it fit on you. SEPARABLE. die Anpassung",
+  "wk": 0,
+  "th": "alltag",
+  "deck": "Gelernt"
+ },
+ {
+  "w": "drücken",
+  "s": "Die Brille drückt hinter den Ohren.",
+  "m": "to press, pinch",
+  "x": "like English \"press\". The classic complaint at the optician",
+  "wk": 0,
+  "th": "gesundheit",
+  "deck": "Gelernt"
+ },
+ {
+  "w": "rutschen",
+  "s": "Die Brille rutscht mir ständig von der Nase.",
+  "m": "to slide, slip",
+  "x": "same root as rutschig. MIR rutscht die Brille (Dativ for the person affected)",
+  "wk": 0,
+  "th": "alltag",
+  "deck": "Gelernt"
+ },
+ {
+  "w": "verschwommen",
+  "s": "Ohne Brille sehe ich alles verschwommen.",
+  "m": "blurry",
+  "x": "ver- + schwimmen (swim) → everything swims",
+  "wk": 0,
+  "th": "alltag",
+  "deck": "Gelernt"
+ },
+ {
+  "w": "scharf",
+  "s": "Mit der neuen Brille sehe ich alles scharf.",
+  "m": "sharp, in focus",
+  "x": "also: spicy (food)! scharf sehen = see clearly",
+  "wk": 0,
+  "th": "alltag",
+  "deck": "Gelernt"
+ },
+ {
+  "w": "die Augentropfen (Pl.)",
+  "s": "Der Arzt hat mir Augentropfen verschrieben.",
+  "m": "eye drops",
+  "x": "Auge + Tropfen (drop, from tropfen = drip)",
+  "wk": 0,
+  "th": "gesundheit",
+  "deck": "Gelernt"
+ },
+ {
+  "w": "die Lesebrille",
+  "s": "Zum Lesen brauche ich eine Lesebrille.",
+  "m": "reading glasses",
+  "x": "lesen (read) + Brille",
+  "wk": 0,
+  "th": "gesundheit",
+  "deck": "Gelernt"
+ },
+ {
+  "w": "das Etui",
+  "s": "Die Brille liegt im Etui.",
+  "m": "glasses case",
+  "x": "from French étui. Pronounced \"et-VEE\"",
+  "wk": 0,
+  "th": "gesundheit",
+  "deck": "Gelernt"
+ },
+ {
+  "w": "das Brillenputztuch",
+  "s": "Hast du ein Brillenputztuch für mich?",
+  "m": "lens cleaning cloth",
+  "x": "Brille + putzen (clean) + Tuch (cloth). Gender follows Tuch → das",
+  "wk": 0,
+  "th": "gesundheit",
+  "deck": "Gelernt"
+ },
+ {
+  "w": "der Zuschuss",
+  "s": "Die Krankenkasse zahlt keinen Zuschuss für die Brille.",
+  "m": "subsidy, contribution",
+  "x": "zu- (toward) + schießen (shoot) → shoot money toward something",
+  "wk": 0,
+  "th": "alltag",
+  "deck": "Gelernt"
+ },
+ {
+  "w": "abholen",
+  "s": "Ich kann die Brille nächste Woche abholen.",
+  "m": "to pick up",
+  "x": "ab- (away) + holen (fetch) → fetch it away. SEPARABLE",
+  "wk": 0,
+  "th": "alltag",
+  "deck": "Gelernt"
+ },
+ {
+  "w": "fertig",
+  "s": "Ihre Brille ist am Donnerstag fertig.",
+  "m": "ready, done",
+  "x": "also: exhausted (Ich bin fertig!)",
+  "wk": 0,
+  "th": "alltag",
+  "deck": "Gelernt"
+ },
+ {
+  "w": "aufsetzen",
+  "s": "Setzen Sie bitte die neue Brille auf.",
+  "m": "to put on (glasses, a hat)",
+  "x": "auf- (on top) + setzen (set) → set on top. SEPARABLE",
+  "wk": 0,
+  "th": "gesundheit",
+  "deck": "Gelernt"
+ },
+ {
+  "w": "absetzen",
+  "s": "Setzen Sie die Brille bitte kurz ab.",
+  "m": "to take off (glasses, a hat); also to drop someone off",
+  "x": "ab- (off) + setzen (set). SEPARABLE",
+  "wk": 0,
+  "th": "gesundheit",
+  "deck": "Gelernt"
+ },
+ {
+  "w": "blenden",
+  "s": "Die Sonne blendet mich beim Autofahren.",
+  "m": "to dazzle, blind (with light)",
+  "x": "related to blind. die Blendung = glare",
+  "wk": 0,
+  "th": "alltag",
+  "deck": "Gelernt"
+ },
+ {
+  "w": "lichtempfindlich",
+  "s": "Meine Augen sind sehr lichtempfindlich.",
+  "m": "sensitive to light",
+  "x": "Licht + empfindlich (sensitive, from empfinden = feel) → light-sensitive",
+  "wk": 0,
+  "th": "alltag",
+  "deck": "Gelernt"
+ },
+ {
+  "w": "die Bildschirmarbeit",
+  "s": "Bei viel Bildschirmarbeit werden die Augen müde.",
+  "m": "screen work",
+  "x": "Bildschirm + Arbeit. Real word: die Bildschirmarbeitsplatzbrille = computer glasses",
+  "wk": 0,
+  "th": "gesundheit",
+  "deck": "Gelernt"
+ },
+ {
+  "w": "die Aufgabenstellung",
+  "s": "Lesen Sie die Aufgabenstellung genau.",
+  "m": "task instructions",
+  "x": "Aufgabe (task) + stellen (set) + -ung → how the task is set",
+  "wk": 0,
+  "th": "arbeit",
+  "deck": "Gelernt"
+ },
+ {
+  "w": "ankreuzen",
+  "s": "Kreuzen Sie die richtige Antwort an.",
+  "m": "to tick, mark with an X",
+  "x": "an- + Kreuz (cross) → put a cross on it. SEPARABLE. Classic Lesen/Hören instruction",
+  "wk": 0,
+  "th": "pruefung",
+  "deck": "Gelernt"
+ },
+ {
+  "w": "zuordnen",
+  "s": "Ordnen Sie die Überschriften den Texten zu.",
+  "m": "to match, assign",
+  "x": "zu- (to) + ordnen (put in order) → put each thing to its place. SEPARABLE, takes Dativ",
+  "wk": 0,
+  "th": "pruefung",
+  "deck": "Gelernt"
+ },
+ {
+  "w": "die Überschrift",
+  "s": "Welche Überschrift passt zum Text?",
+  "m": "heading, title",
+  "x": "über- (above) + Schrift (writing) → writing above. Compare Unterschrift = signature (below)",
+  "wk": 0,
+  "th": "amt",
+  "deck": "Gelernt"
+ },
+ {
+  "w": "ergänzen",
+  "s": "Ergänzen Sie die fehlenden Wörter.",
+  "m": "to complete, fill in",
+  "x": "er- + ganz (whole) → make whole. die Ergänzung",
+  "wk": 0,
+  "th": "alltag",
+  "deck": "Gelernt"
+ },
+ {
+  "w": "die Lücke",
+  "s": "Im Text gibt es fünf Lücken.",
+  "m": "gap, blank",
+  "x": "der Lückentext = fill-in-the-gaps text",
+  "wk": 0,
+  "th": "pruefung",
+  "deck": "Gelernt"
+ },
+ {
+  "w": "verzichten",
+  "s": "",
+  "m": "to renounce / to do without",
+  "x": "ver- away + Zicht claim",
+  "wk": 0,
+  "th": "alltag",
+  "deck": "Gelernt"
+ },
+ {
+  "w": "bewältigen",
+  "s": "",
+  "m": "to cope with / to overcome",
+  "x": "be- transitive + walten to govern",
+  "wk": 0,
+  "th": "alltag",
+  "deck": "Gelernt"
+ },
+ {
+  "w": "verfügen",
+  "s": "",
+  "m": "to have at one's disposal",
+  "x": "ver- intensification + fügen to join",
+  "wk": 0,
+  "th": "alltag",
+  "deck": "Gelernt"
+ },
+ {
+  "w": "abwägen",
+  "s": "",
+  "m": "to weigh up / to consider",
+  "x": "ab- off + wägen to weigh",
+  "wk": 0,
+  "th": "alltag",
+  "deck": "Gelernt"
+ },
+ {
+  "w": "einräumen",
+  "s": "",
+  "m": "to concede / to make room for",
+  "x": "ein- into + Raum space or room",
+  "wk": 0,
+  "th": "alltag",
+  "deck": "Gelernt"
+ },
+ {
+  "w": "erschweren",
+  "s": "",
+  "m": "to make harder / to complicate",
+  "x": "er- resultative + schwer hard",
+  "wk": 0,
+  "th": "alltag",
+  "deck": "Gelernt"
+ },
+ {
+  "w": "erleichtern",
+  "s": "",
+  "m": "to make easier / to relieve",
+  "x": "er- resultative + leicht easy",
+  "wk": 0,
+  "th": "alltag",
+  "deck": "Gelernt"
+ },
+ {
+  "w": "schildern",
+  "s": "",
+  "m": "to describe / to depict",
+  "x": "Schild sign or shield root",
+  "wk": 0,
+  "th": "alltag",
+  "deck": "Gelernt"
+ },
+ {
+  "w": "gewähren",
+  "s": "",
+  "m": "to grant / to allow",
+  "x": "ge- completion + währen to endure",
+  "wk": 0,
+  "th": "alltag",
+  "deck": "Gelernt"
+ },
+ {
+  "w": "voraussetzen",
+  "s": "",
+  "m": "to presuppose / to require",
+  "x": "vor- before + aus- out + setzen to set",
+  "wk": 0,
+  "th": "alltag",
+  "deck": "Gelernt"
+ },
+ {
+  "w": "nachweisen",
+  "s": "",
+  "m": "to prove / to demonstrate",
+  "x": "nach- after + weisen to show",
+  "wk": 0,
+  "th": "alltag",
+  "deck": "Gelernt"
+ },
+ {
+  "w": "überwinden",
+  "s": "",
+  "m": "to overcome / to get over",
+  "x": "über- over + winden to struggle",
+  "wk": 0,
+  "th": "alltag",
+  "deck": "Gelernt"
+ },
+ {
+  "w": "gelten",
+  "s": "",
+  "m": "to be valid / to apply",
+  "x": "gelt- worth or value root",
+  "wk": 0,
+  "th": "alltag",
+  "deck": "Gelernt"
+ },
+ {
+  "w": "scheitern",
+  "s": "",
+  "m": "to fail / to founder",
+  "x": "Scheit wreckage root",
+  "wk": 0,
+  "th": "alltag",
+  "deck": "Gelernt"
+ },
+ {
+  "w": "mutig",
+  "s": "",
+  "m": "courageous / having the quality of courage",
+  "x": "-ig + Mut (courage)",
+  "wk": 0,
+  "th": "alltag",
+  "deck": "Gelernt"
+ },
+ {
+  "w": "empfindlich",
+  "s": "",
+  "m": "sensitive / in the manner of feeling deeply",
+  "x": "-lich + Empfind (to feel)",
+  "wk": 0,
+  "th": "alltag",
+  "deck": "Gelernt"
+ },
+ {
+  "w": "freundlich",
+  "s": "",
+  "m": "friendly / in the manner of a friend",
+  "x": "-lich + Freund (friend)",
+  "wk": 0,
+  "th": "familie",
+  "deck": "Gelernt"
+ },
+ {
+  "w": "nachdenklich",
+  "s": "",
+  "m": "thoughtful / pensive",
+  "x": "-lich + nach (after) + denken (to think)",
+  "wk": 0,
+  "th": "alltag",
+  "deck": "Gelernt"
+ },
+ {
+  "w": "rücksichtslos",
+  "s": "",
+  "m": "inconsiderate / without consideration",
+  "x": "-los + Rücksicht (consideration)",
+  "wk": 0,
+  "th": "alltag",
+  "deck": "Gelernt"
+ },
+ {
+  "w": "aufmerksam",
+  "s": "",
+  "m": "attentive / inclined to pay attention",
+  "x": "-sam + auf (up) + Merk (to notice)",
+  "wk": 0,
+  "th": "freizeit",
+  "deck": "Gelernt"
+ },
+ {
+  "w": "vertrauenswürdig",
+  "s": "",
+  "m": "trustworthy / worthy of trust",
+  "x": "-würdig + Vertrauen (trust)",
+  "wk": 0,
+  "th": "alltag",
+  "deck": "Gelernt"
+ },
+ {
+  "w": "wissbegierig",
+  "s": "",
+  "m": "eager to learn",
+  "x": "-ig + Wissen (knowledge) + Begier (hunger/desire)",
+  "wk": 0,
+  "th": "alltag",
+  "deck": "Gelernt"
+ },
+ {
+  "w": "eigensinnig",
+  "s": "",
+  "m": "stubborn / own-minded",
+  "x": "-ig + eigen (own) + Sinn (sense/mind)",
+  "wk": 0,
+  "th": "alltag",
+  "deck": "Gelernt"
+ },
+ {
+  "w": "gelassen",
+  "s": "",
+  "m": "calm / composed / released into stillness",
+  "x": "ge- + lassen (to let go)",
+  "wk": 0,
+  "th": "alltag",
+  "deck": "Gelernt"
+ },
+ {
+  "w": "tapfer",
+  "s": "",
+  "m": "brave / courageous",
+  "x": "root word",
+  "wk": 0,
+  "th": "alltag",
+  "deck": "Gelernt"
+ },
+ {
+  "w": "stolz",
+  "s": "",
+  "m": "proud",
+  "x": "root word",
+  "wk": 0,
+  "th": "alltag",
+  "deck": "Gelernt"
+ },
+ {
+  "w": "bescheiden",
+  "s": "",
+  "m": "modest / unassuming",
+  "x": "be- (transitive) + Scheid (to distinguish)",
+  "wk": 0,
+  "th": "alltag",
+  "deck": "Gelernt"
+ },
+ {
+  "w": "leidenschaftlich",
+  "s": "",
+  "m": "passionate / in the manner of passion",
+  "x": "-lich + Leidenschaft (passion)",
+  "wk": 0,
+  "th": "alltag",
+  "deck": "Gelernt"
+ },
+ {
+  "w": "gleichgültig",
+  "s": "",
+  "m": "indifferent / all things equally valid",
+  "x": "-ig + gleich (equal) + gültig (valid)",
+  "wk": 0,
+  "th": "wohnen",
+  "deck": "Gelernt"
+ },
+ {
+  "w": "selbstbewusst",
+  "s": "",
+  "m": "self-confident / self-aware",
+  "x": "selbst (self) + bewusst (aware)",
+  "wk": 0,
+  "th": "alltag",
+  "deck": "Gelernt"
+ },
+ {
+  "w": "einfühlsam",
+  "s": "",
+  "m": "empathetic / inclined to feel into others",
+  "x": "-sam + ein (into) + Gefühl (feeling)",
+  "wk": 0,
+  "th": "freizeit",
+  "deck": "Gelernt"
+ },
+ {
+  "w": "rückhaltlos",
+  "s": "",
+  "m": "unreserved / without holding back",
+  "x": "-los + Rückhalt (reserve/support)",
+  "wk": 0,
+  "th": "alltag",
+  "deck": "Gelernt"
+ },
+ {
+  "w": "aufrichtig",
+  "s": "",
+  "m": "sincere / upright / directed upward",
+  "x": "-ig + auf (up) + richt (to direct)",
+  "wk": 0,
+  "th": "alltag",
+  "deck": "Gelernt"
+ },
+ {
+  "w": "unerschütterlich",
+  "s": "",
+  "m": "unshakeable / steadfast",
+  "x": "un- + er- + schüttern (to shake) + -lich",
+  "wk": 0,
+  "th": "alltag",
+  "deck": "Gelernt"
+ },
+ {
+  "w": "mitfühlend",
+  "s": "",
+  "m": "compassionate / feeling with others",
+  "x": "mit- (with) + fühlen (to feel)",
+  "wk": 0,
+  "th": "alltag",
+  "deck": "Gelernt"
+ },
+ {
+  "w": "gleichmütig",
+  "s": "",
+  "m": "even-tempered / equanimous",
+  "x": "-ig + gleich (equal) + Mut (courage/mood)",
+  "wk": 0,
+  "th": "alltag",
+  "deck": "Gelernt"
+ },
+ {
+  "w": "verzweifelt",
+  "s": "",
+  "m": "desperate / despairing",
+  "x": "ver- (intensification) + zweifeln (to doubt)",
+  "wk": 0,
+  "th": "alltag",
+  "deck": "Gelernt"
+ },
+ {
+  "w": "überheblich",
+  "s": "",
+  "m": "arrogant / lifting oneself above others",
+  "x": "über- (over) + heben (to lift) + -lich",
+  "wk": 0,
+  "th": "alltag",
+  "deck": "Gelernt"
+ },
+ {
+  "w": "nachgiebig",
+  "s": "",
+  "m": "yielding / accommodating / giving way",
+  "x": "-ig + nach (after) + geben (to give)",
+  "wk": 0,
+  "th": "alltag",
+  "deck": "Gelernt"
+ },
+ {
+  "w": "beharrlich",
+  "s": "",
+  "m": "persistent / tenacious",
+  "x": "-lich + beharren (to persist)",
+  "wk": 0,
+  "th": "freizeit",
+  "deck": "Gelernt"
+ },
+ {
+  "w": "selbstlos",
+  "s": "",
+  "m": "selfless / without self-interest",
+  "x": "-los + selbst (self)",
+  "wk": 0,
+  "th": "alltag",
+  "deck": "Gelernt"
+ },
+ {
+  "w": "zerstreut",
+  "s": "",
+  "m": "absent-minded / scattered",
+  "x": "zer- (apart) + streuen (to scatter)",
+  "wk": 0,
+  "th": "alltag",
+  "deck": "Gelernt"
+ },
+ {
+  "w": "reizbar",
+  "s": "",
+  "m": "irritable / capable of being provoked",
+  "x": "-bar + reizen (to irritate)",
+  "wk": 0,
+  "th": "alltag",
+  "deck": "Gelernt"
+ },
+ {
+  "w": "unvoreingenommen",
+  "s": "",
+  "m": "unbiased / unprejudiced",
+  "x": "un- + vor (before) + ein + genommen (taken)",
+  "wk": 0,
+  "th": "alltag",
+  "deck": "Gelernt"
+ },
+ {
+  "w": "sanftmütig",
+  "s": "",
+  "m": "gentle-natured / meek",
+  "x": "-ig + sanft (gentle) + Mut (mood/spirit)",
+  "wk": 0,
+  "th": "alltag",
+  "deck": "Gelernt"
+ },
+ {
+  "w": "hinterhältig",
+  "s": "",
+  "m": "devious / holding something behind",
+  "x": "-ig + hinter (behind) + halten (to hold)",
+  "wk": 0,
+  "th": "alltag",
+  "deck": "Gelernt"
+ },
+ {
+  "w": "freigiebig",
+  "s": "",
+  "m": "generous / freely giving",
+  "x": "-ig + frei (free) + geben (to give)",
+  "wk": 0,
+  "th": "alltag",
+  "deck": "Gelernt"
+ },
+ {
+  "w": "das Fahrrad",
+  "s": "",
+  "m": "bicycle",
+  "x": "Fahr (travel) + Rad (wheel)",
+  "wk": 0,
+  "th": "freizeit",
+  "deck": "Gelernt"
+ },
+ {
+  "w": "das Mountainbike",
+  "s": "",
+  "m": "mountain bike",
+  "x": "root word",
+  "wk": 0,
+  "th": "freizeit",
+  "deck": "Gelernt"
+ },
+ {
+  "w": "der Lenker",
+  "s": "",
+  "m": "handlebars / one who steers",
+  "x": "-er + lenken (to steer)",
+  "wk": 0,
+  "th": "alltag",
+  "deck": "Gelernt"
+ },
+ {
+  "w": "die Bremse",
+  "s": "",
+  "m": "brake",
+  "x": "root word",
+  "wk": 0,
+  "th": "freizeit",
+  "deck": "Gelernt"
+ },
+ {
+  "w": "bremsen",
+  "s": "",
+  "m": "to brake / to slow down",
+  "x": "root word",
+  "wk": 0,
+  "th": "freizeit",
+  "deck": "Gelernt"
+ },
+ {
+  "w": "die Gangschaltung",
+  "s": "",
+  "m": "gear system / derailleur",
+  "x": "Gang (gear) + Schaltung (switching system)",
+  "wk": 0,
+  "th": "freizeit",
+  "deck": "Gelernt"
+ },
+ {
+  "w": "schalten",
+  "s": "",
+  "m": "to change gear / to switch",
+  "x": "root word",
+  "wk": 0,
+  "th": "freizeit",
+  "deck": "Gelernt"
+ },
+ {
+  "w": "der Gang",
+  "s": "",
+  "m": "gear / passage",
+  "x": "root word",
+  "wk": 0,
+  "th": "freizeit",
+  "deck": "Gelernt"
+ },
+ {
+  "w": "im ersten Gang",
+  "s": "",
+  "m": "in first gear",
+  "x": "im (in the) + ersten (first) + Gang (gear)",
+  "wk": 0,
+  "th": "freizeit",
+  "deck": "Gelernt"
+ },
+ {
+  "w": "hoch schalten",
+  "s": "",
+  "m": "to shift up a gear",
+  "x": "hoch (high) + schalten (to switch)",
+  "wk": 0,
+  "th": "freizeit",
+  "deck": "Gelernt"
+ },
+ {
+  "w": "runter schalten",
+  "s": "",
+  "m": "to shift down a gear",
+  "x": "runter (down) + schalten (to switch)",
+  "wk": 0,
+  "th": "freizeit",
+  "deck": "Gelernt"
+ },
+ {
+  "w": "die Federung",
+  "s": "",
+  "m": "suspension / the springing system",
+  "x": "-ung + federn (to spring)",
+  "wk": 0,
+  "th": "alltag",
+  "deck": "Gelernt"
+ },
+ {
+  "w": "die Felge",
+  "s": "",
+  "m": "rim / wheel rim",
+  "x": "root word",
+  "wk": 0,
+  "th": "alltag",
+  "deck": "Gelernt"
+ },
+ {
+  "w": "der Schlauch",
+  "s": "",
+  "m": "inner tube",
+  "x": "root word",
+  "wk": 0,
+  "th": "alltag",
+  "deck": "Gelernt"
+ },
+ {
+  "w": "die Luftpumpe",
+  "s": "",
+  "m": "air pump / bike pump",
+  "x": "Luft (air) + Pumpe (pump)",
+  "wk": 0,
+  "th": "freizeit",
+  "deck": "Gelernt"
+ },
+ {
+  "w": "aufpumpen",
+  "s": "",
+  "m": "to inflate / to pump up",
+  "x": "auf- (up) + pumpen (to pump)",
+  "wk": 0,
+  "th": "wohnen",
+  "deck": "Gelernt"
+ },
+ {
+  "w": "die Reifenpanne",
+  "s": "",
+  "m": "puncture / flat tyre",
+  "x": "Reifen (tyre) + Panne (breakdown)",
+  "wk": 0,
+  "th": "wohnen",
+  "deck": "Gelernt"
+ },
+ {
+  "w": "flicken",
+  "s": "",
+  "m": "to patch / to repair",
+  "x": "root word",
+  "wk": 0,
+  "th": "alltag",
+  "deck": "Gelernt"
+ },
+ {
+  "w": "das Flickzeug",
+  "s": "",
+  "m": "puncture repair kit",
+  "x": "flicken (to patch) + Zeug (stuff/kit)",
+  "wk": 0,
+  "th": "alltag",
+  "deck": "Gelernt"
+ },
+ {
+  "w": "die Kette",
+  "s": "",
+  "m": "chain",
+  "x": "root word",
+  "wk": 0,
+  "th": "freizeit",
+  "deck": "Gelernt"
+ },
+ {
+  "w": "die Kettenschaltung",
+  "s": "",
+  "m": "chain gear system",
+  "x": "Kette (chain) + Schaltung (switching)",
+  "wk": 0,
+  "th": "freizeit",
+  "deck": "Gelernt"
+ },
+ {
+  "w": "das Kettenöl",
+  "s": "",
+  "m": "chain oil / lubricant",
+  "x": "Kette (chain) + Öl (oil)",
+  "wk": 0,
+  "th": "freizeit",
+  "deck": "Gelernt"
+ },
+ {
+  "w": "der Sattel",
+  "s": "",
+  "m": "saddle",
+  "x": "root word",
+  "wk": 0,
+  "th": "freizeit",
+  "deck": "Gelernt"
+ },
+ {
+  "w": "die Satteltasche",
+  "s": "",
+  "m": "saddle bag",
+  "x": "Sattel (saddle) + Tasche (bag)",
+  "wk": 0,
+  "th": "freizeit",
+  "deck": "Gelernt"
+ },
+ {
+  "w": "der Fahrradständer",
+  "s": "",
+  "m": "bike stand",
+  "x": "Fahrrad (bicycle) + Ständer (stand)",
+  "wk": 0,
+  "th": "freizeit",
+  "deck": "Gelernt"
+ },
+ {
+  "w": "das Fahrradschloss",
+  "s": "",
+  "m": "bike lock",
+  "x": "Fahrrad (bicycle) + Schloss (lock)",
+  "wk": 0,
+  "th": "freizeit",
+  "deck": "Gelernt"
+ },
+ {
+  "w": "der Fahrradhelm",
+  "s": "",
+  "m": "cycling helmet",
+  "x": "Fahrrad (bicycle) + Helm (helmet)",
+  "wk": 0,
+  "th": "freizeit",
+  "deck": "Gelernt"
+ },
+ {
+  "w": "die Fahrradhandschuhe",
+  "s": "",
+  "m": "cycling gloves",
+  "x": "Fahrrad (bicycle) + Handschuhe (gloves)",
+  "wk": 0,
+  "th": "familie",
+  "deck": "Gelernt"
+ },
+ {
+  "w": "die Trinkflasche",
+  "s": "",
+  "m": "water bottle",
+  "x": "trinken (to drink) + Flasche (bottle)",
+  "wk": 0,
+  "th": "alltag",
+  "deck": "Gelernt"
+ },
+ {
+  "w": "der Flaschenhalter",
+  "s": "",
+  "m": "bottle cage / holder",
+  "x": "Flasche (bottle) + Halter (holder)",
+  "wk": 0,
+  "th": "alltag",
+  "deck": "Gelernt"
+ },
+ {
+  "w": "die Fahrradtour",
+  "s": "",
+  "m": "cycling tour / bike ride",
+  "x": "Fahrrad (bicycle) + Tour (tour)",
+  "wk": 0,
+  "th": "freizeit",
+  "deck": "Gelernt"
+ },
+ {
+  "w": "die Etappe",
+  "s": "",
+  "m": "stage / leg of a journey",
+  "x": "root word",
+  "wk": 0,
+  "th": "alltag",
+  "deck": "Gelernt"
+ },
+ {
+  "w": "bergauf fahren",
+  "s": "",
+  "m": "to ride uphill",
+  "x": "Berg (mountain) + auf (up) + fahren (to ride)",
+  "wk": 0,
+  "th": "freizeit",
+  "deck": "Gelernt"
+ },
+ {
+  "w": "bergab fahren",
+  "s": "",
+  "m": "to ride downhill",
+  "x": "Berg (mountain) + ab (down) + fahren (to ride)",
+  "wk": 0,
+  "th": "freizeit",
+  "deck": "Gelernt"
+ },
+ {
+  "w": "überholen",
+  "s": "",
+  "m": "to overtake",
+  "x": "über- (over) + holen (to fetch)",
+  "wk": 0,
+  "th": "alltag",
+  "deck": "Gelernt"
+ },
+ {
+  "w": "die Kurve nehmen",
+  "s": "",
+  "m": "to take a corner",
+  "x": "Kurve (bend) + nehmen (to take)",
+  "wk": 0,
+  "th": "alltag",
+  "deck": "Gelernt"
+ },
+ {
+  "w": "ausweichen",
+  "s": "",
+  "m": "to swerve / to dodge",
+  "x": "aus- (out) + weichen (to yield)",
+  "wk": 0,
+  "th": "alltag",
+  "deck": "Gelernt"
+ },
+ {
+  "w": "stürzen",
+  "s": "",
+  "m": "to crash / to fall",
+  "x": "root word",
+  "wk": 0,
+  "th": "alltag",
+  "deck": "Gelernt"
+ },
+ {
+  "w": "der Sturz",
+  "s": "",
+  "m": "crash / fall",
+  "x": "root word",
+  "wk": 0,
+  "th": "alltag",
+  "deck": "Gelernt"
+ },
+ {
+  "w": "das Trikot",
+  "s": "",
+  "m": "cycling jersey",
+  "x": "root word",
+  "wk": 0,
+  "th": "freizeit",
+  "deck": "Gelernt"
+ },
+ {
+  "w": "die Radhose",
+  "s": "",
+  "m": "cycling shorts",
+  "x": "Rad (wheel/cycle) + Hose (trousers)",
+  "wk": 0,
+  "th": "freizeit",
+  "deck": "Gelernt"
+ },
+ {
+  "w": "die Klickpedale",
+  "s": "",
+  "m": "clipless pedals",
+  "x": "klicken (to click) + Pedale (pedals)",
+  "wk": 0,
+  "th": "alltag",
+  "deck": "Gelernt"
+ },
+ {
+  "w": "einrasten",
+  "s": "",
+  "m": "to clip in / to lock into place",
+  "x": "ein- (in) + rasten (to lock)",
+  "wk": 0,
+  "th": "alltag",
+  "deck": "Gelernt"
+ },
+ {
+  "w": "die Trittfrequenz",
+  "s": "",
+  "m": "cadence",
+  "x": "Tritt (step/pedal stroke) + Frequenz (frequency)",
+  "wk": 0,
+  "th": "alltag",
+  "deck": "Gelernt"
+ },
+ {
+  "w": "die Wattzahl",
+  "s": "",
+  "m": "wattage / power output",
+  "x": "Watt + Zahl (number)",
+  "wk": 0,
+  "th": "alltag",
+  "deck": "Gelernt"
+ },
+ {
+  "w": "ab-",
+  "s": "abfahren to depart",
+  "m": "away / off / down",
+  "x": "Example: abfahren to depart",
+  "wk": 0,
+  "th": "alltag",
+  "deck": "Affixe"
+ },
+ {
+  "w": "an-",
+  "s": "ankommen to arrive",
+  "m": "toward / at / on",
+  "x": "Example: ankommen to arrive",
+  "wk": 0,
+  "th": "alltag",
+  "deck": "Affixe"
+ },
+ {
+  "w": "auf-",
+  "s": "aufmachen to open",
+  "m": "up / open",
+  "x": "Example: aufmachen to open",
+  "wk": 0,
+  "th": "alltag",
+  "deck": "Affixe"
+ },
+ {
+  "w": "aus-",
+  "s": "ausgehen to go out",
+  "m": "out / finished",
+  "x": "Example: ausgehen to go out",
+  "wk": 0,
+  "th": "alltag",
+  "deck": "Affixe"
+ },
+ {
+  "w": "ein-",
+  "s": "einschlafen to fall asleep",
+  "m": "in / into",
+  "x": "Example: einschlafen to fall asleep",
+  "wk": 0,
+  "th": "alltag",
+  "deck": "Affixe"
+ },
+ {
+  "w": "mit-",
+  "s": "mitkommen to come along",
+  "m": "with / along",
+  "x": "Example: mitkommen to come along",
+  "wk": 0,
+  "th": "alltag",
+  "deck": "Affixe"
+ },
+ {
+  "w": "vor-",
+  "s": "vorstellen to introduce",
+  "m": "before / forward",
+  "x": "Example: vorstellen to introduce",
+  "wk": 0,
+  "th": "alltag",
+  "deck": "Affixe"
+ },
+ {
+  "w": "zu-",
+  "s": "zumachen to close",
+  "m": "toward / closed",
+  "x": "Example: zumachen to close",
+  "wk": 0,
+  "th": "alltag",
+  "deck": "Affixe"
+ },
+ {
+  "w": "zurück-",
+  "s": "zurückkommen to come back",
+  "m": "back",
+  "x": "Example: zurückkommen to come back",
+  "wk": 0,
+  "th": "alltag",
+  "deck": "Affixe"
+ },
+ {
+  "w": "weiter-",
+  "s": "weitermachen to continue",
+  "m": "onward / continuing",
+  "x": "Example: weitermachen to continue",
+  "wk": 0,
+  "th": "alltag",
+  "deck": "Affixe"
+ },
+ {
+  "w": "fort-",
+  "s": "fortschreiten to advance",
+  "m": "away / onward",
+  "x": "Example: fortschreiten to advance",
+  "wk": 0,
+  "th": "alltag",
+  "deck": "Affixe"
+ },
+ {
+  "w": "be-",
+  "s": "beantworten to answer something",
+  "m": "makes verb transitive",
+  "x": "Example: beantworten to answer something",
+  "wk": 0,
+  "th": "alltag",
+  "deck": "Affixe"
+ },
+ {
+  "w": "er-",
+  "s": "erarbeiten to work out",
+  "m": "reaching a result",
+  "x": "Example: erarbeiten to work out",
+  "wk": 0,
+  "th": "alltag",
+  "deck": "Affixe"
+ },
+ {
+  "w": "ver-",
+  "s": "verkaufen to sell",
+  "m": "change or wrongness or intensification",
+  "x": "Example: verkaufen to sell",
+  "wk": 0,
+  "th": "alltag",
+  "deck": "Affixe"
+ },
+ {
+  "w": "zer-",
+  "s": "zerreißen to tear apart",
+  "m": "destruction / breaking apart",
+  "x": "Example: zerreißen to tear apart",
+  "wk": 0,
+  "th": "alltag",
+  "deck": "Affixe"
+ },
+ {
+  "w": "ent-",
+  "s": "entdecken to discover",
+  "m": "removal / beginning",
+  "x": "Example: entdecken to discover",
+  "wk": 0,
+  "th": "alltag",
+  "deck": "Affixe"
+ },
+ {
+  "w": "miss-",
+  "s": "missverstehen to misunderstand",
+  "m": "wrongly / badly",
+  "x": "Example: missverstehen to misunderstand",
+  "wk": 0,
+  "th": "alltag",
+  "deck": "Affixe"
+ },
+ {
+  "w": "un-",
+  "s": "unaufhaltsam unstoppable",
+  "m": "negation",
+  "x": "Example: unaufhaltsam unstoppable",
+  "wk": 0,
+  "th": "alltag",
+  "deck": "Affixe"
+ },
+ {
+  "w": "durch-",
+  "s": "stress determines separable or inseparable",
+  "m": "through / thoroughly",
+  "x": "Example: stress determines separable or inseparable",
+  "wk": 0,
+  "th": "alltag",
+  "deck": "Affixe"
+ },
+ {
+  "w": "über-",
+  "s": "stress determines separable or inseparable",
+  "m": "over / across / excessively",
+  "x": "Example: stress determines separable or inseparable",
+  "wk": 0,
+  "th": "alltag",
+  "deck": "Affixe"
+ },
+ {
+  "w": "um-",
+  "s": "stress determines separable or inseparable",
+  "m": "around / re-",
+  "x": "Example: stress determines separable or inseparable",
+  "wk": 0,
+  "th": "alltag",
+  "deck": "Affixe"
+ },
+ {
+  "w": "unter-",
+  "s": "stress determines separable or inseparable",
+  "m": "under / below",
+  "x": "Example: stress determines separable or inseparable",
+  "wk": 0,
+  "th": "alltag",
+  "deck": "Affixe"
+ },
+ {
+  "w": "-ung",
+  "s": "die Bedeutung meaning",
+  "m": "feminine noun / action or process",
+  "x": "Example: die Bedeutung meaning",
+  "wk": 0,
+  "th": "alltag",
+  "deck": "Affixe"
+ },
+ {
+  "w": "-heit",
+  "s": "die Freiheit freedom",
+  "m": "feminine noun / state or quality",
+  "x": "Example: die Freiheit freedom",
+  "wk": 0,
+  "th": "alltag",
+  "deck": "Affixe"
+ },
+ {
+  "w": "-keit",
+  "s": "die Möglichkeit possibility",
+  "m": "feminine noun / state or quality",
+  "x": "Example: die Möglichkeit possibility",
+  "wk": 0,
+  "th": "alltag",
+  "deck": "Affixe"
+ },
+ {
+  "w": "-schaft",
+  "s": "die Freundschaft friendship",
+  "m": "feminine noun / collective or relationship",
+  "x": "Example: die Freundschaft friendship",
+  "wk": 0,
+  "th": "alltag",
+  "deck": "Affixe"
+ },
+ {
+  "w": "-ion",
+  "s": "die Diskussion discussion",
+  "m": "feminine noun / from Latin or French roots",
+  "x": "Example: die Diskussion discussion",
+  "wk": 0,
+  "th": "alltag",
+  "deck": "Affixe"
+ },
+ {
+  "w": "-tät",
+  "s": "die Qualität quality",
+  "m": "feminine noun / from Latin -tas",
+  "x": "Example: die Qualität quality",
+  "wk": 0,
+  "th": "alltag",
+  "deck": "Affixe"
+ },
+ {
+  "w": "-ik",
+  "s": "die Musik music",
+  "m": "feminine noun / field or system",
+  "x": "Example: die Musik music",
+  "wk": 0,
+  "th": "alltag",
+  "deck": "Affixe"
+ },
+ {
+  "w": "-chen",
+  "s": "das Mädchen girl",
+  "m": "neuter noun / diminutive",
+  "x": "Example: das Mädchen girl",
+  "wk": 0,
+  "th": "alltag",
+  "deck": "Affixe"
+ },
+ {
+  "w": "-lein",
+  "s": "das Büchlein little book",
+  "m": "neuter noun / diminutive",
+  "x": "Example: das Büchlein little book",
+  "wk": 0,
+  "th": "alltag",
+  "deck": "Affixe"
+ },
+ {
+  "w": "-nis",
+  "s": "das Erlebnis experience",
+  "m": "neuter noun / result or state",
+  "x": "Example: das Erlebnis experience",
+  "wk": 0,
+  "th": "alltag",
+  "deck": "Affixe"
+ },
+ {
+  "w": "-ment",
+  "s": "das Argument argument",
+  "m": "neuter noun / from Latin",
+  "x": "Example: das Argument argument",
+  "wk": 0,
+  "th": "alltag",
+  "deck": "Affixe"
+ },
+ {
+  "w": "-tum",
+  "s": "das Eigentum property",
+  "m": "neuter noun / state or domain",
+  "x": "Example: das Eigentum property",
+  "wk": 0,
+  "th": "alltag",
+  "deck": "Affixe"
+ },
+ {
+  "w": "-er",
+  "s": "der Lehrer teacher",
+  "m": "masculine noun / agent or person who does",
+  "x": "Example: der Lehrer teacher",
+  "wk": 0,
+  "th": "alltag",
+  "deck": "Affixe"
+ },
+ {
+  "w": "-ling",
+  "s": "der Frühling spring",
+  "m": "masculine noun / person with quality",
+  "x": "Example: der Frühling spring",
+  "wk": 0,
+  "th": "alltag",
+  "deck": "Affixe"
+ },
+ {
+  "w": "-ismus",
+  "s": "der Idealismus idealism",
+  "m": "masculine noun / ideology or system",
+  "x": "Example: der Idealismus idealism",
+  "wk": 0,
+  "th": "alltag",
+  "deck": "Affixe"
+ },
+ {
+  "w": "-lich",
+  "s": "freundlich friendly",
+  "m": "adjective / like or in the manner of",
+  "x": "Example: freundlich friendly",
+  "wk": 0,
+  "th": "alltag",
+  "deck": "Affixe"
+ },
+ {
+  "w": "-ig",
+  "s": "mutig courageous",
+  "m": "adjective / having the quality of",
+  "x": "Example: mutig courageous",
+  "wk": 0,
+  "th": "alltag",
+  "deck": "Affixe"
+ },
+ {
+  "w": "-bar",
+  "s": "machbar doable",
+  "m": "adjective / capable of or -able",
+  "x": "Example: machbar doable",
+  "wk": 0,
+  "th": "alltag",
+  "deck": "Affixe"
+ },
+ {
+  "w": "-los",
+  "s": "arbeitslos unemployed",
+  "m": "adjective / without or -less",
+  "x": "Example: arbeitslos unemployed",
+  "wk": 0,
+  "th": "alltag",
+  "deck": "Affixe"
+ },
+ {
+  "w": "-sam",
+  "s": "langsam slow",
+  "m": "adjective / inclined to",
+  "x": "Example: langsam slow",
+  "wk": 0,
+  "th": "alltag",
+  "deck": "Affixe"
+ },
+ {
+  "w": "-haft",
+  "s": "lebhaft lively",
+  "m": "adjective / having the character of",
+  "x": "Example: lebhaft lively",
+  "wk": 0,
+  "th": "alltag",
+  "deck": "Affixe"
+ },
+ {
+  "w": "-isch",
+  "s": "typisch typical",
+  "m": "adjective / relating to or -ish",
+  "x": "Example: typisch typical",
+  "wk": 0,
+  "th": "alltag",
+  "deck": "Affixe"
+ },
+ {
+  "w": "-frei",
+  "s": "stressfrei stress-free",
+  "m": "adjective / free from or without",
+  "x": "Example: stressfrei stress-free",
+  "wk": 0,
+  "th": "alltag",
+  "deck": "Affixe"
+ },
+ {
+  "w": "-würdig",
+  "s": "vertrauenswürdig trustworthy",
+  "m": "adjective / worthy of",
+  "x": "Example: vertrauenswürdig trustworthy",
+  "wk": 0,
+  "th": "alltag",
+  "deck": "Affixe"
+ },
+ {
+  "w": "-fähig",
+  "s": "arbeitsfähig able to work",
+  "m": "adjective / capable of",
+  "x": "Example: arbeitsfähig able to work",
+  "wk": 0,
+  "th": "alltag",
+  "deck": "Affixe"
+ },
+ {
+  "w": "-reich",
+  "s": "abwechslungsreich varied",
+  "m": "adjective / rich in or full of",
+  "x": "Example: abwechslungsreich varied",
+  "wk": 0,
+  "th": "alltag",
+  "deck": "Affixe"
+ },
+ {
+  "w": "-kraft",
+  "s": "die Willenskraft willpower",
+  "m": "noun suffix / power or force of",
+  "x": "Example: die Willenskraft willpower",
+  "wk": 0,
+  "th": "alltag",
+  "deck": "Affixe"
+ },
+ {
+  "w": "Im Anhang finden Sie den Bericht für das dritte Quartal. Bitte geben Sie mir bis Freitag eine kurze Rückmeldung.",
+  "s": "",
+  "m": "Attached you'll find the report for the third quarter. Please give me brief feedback by Friday.",
+  "x": "Words: der Anhang, der Bericht, die Rückmeldung. Grammar: bis + Akkusativ for deadlines",
+  "wk": 0,
+  "th": "alltag",
+  "deck": "Sätze"
+ },
+ {
+  "w": "Der Umsatz ist gestiegen, aber der Gewinn ist leider gesunken. Wir müssen herausfinden, woran das liegt.",
+  "s": "",
+  "m": "Revenue went up, but unfortunately profit went down. We need to find out what's behind that.",
+  "x": "Words: der Umsatz, der Gewinn, sinken. Grammar: woran liegt das = what's the reason; wo- word in an indirect question",
+  "wk": 0,
+  "th": "alltag",
+  "deck": "Sätze"
+ },
+ {
+  "w": "Wer ist in Ihrer Firma für Partner zuständig? Ich suche einen Ansprechpartner für unsere neue Zusammenarbeit.",
+  "s": "",
+  "m": "Who is responsible for partners at your company? I'm looking for a contact person for our new collaboration.",
+  "x": "Words: zuständig für, der Ansprechpartner. Grammar: zuständig FÜR + Akkusativ",
+  "wk": 0,
+  "th": "alltag",
+  "deck": "Sätze"
+ },
+ {
+  "w": "Wir haben einen Termin für nächste Woche vereinbart. Ich melde mich vorher noch einmal bei Ihnen.",
+  "s": "",
+  "m": "We arranged a meeting for next week. I'll get in touch with you once more beforehand.",
+  "x": "Words: vereinbaren, sich melden bei. Grammar: sich melden BEI + Dativ",
+  "wk": 0,
+  "th": "alltag",
+  "deck": "Sätze"
+ },
+ {
+  "w": "Die Frist ist sehr knapp, trotzdem wollen wir sie einhalten. Das ist eine echte Herausforderung für die ganze Abteilung.",
+  "s": "",
+  "m": "The deadline is very tight, but we still want to meet it. That's a real challenge for the whole department.",
+  "x": "Words: die Frist, einhalten, die Herausforderung, die Abteilung. Grammar: trotzdem + inversion",
+  "wk": 0,
+  "th": "alltag",
+  "deck": "Sätze"
+ },
+ {
+  "w": "Ich bin mit dem Vorschlag einverstanden, aber nur unter einer Bedingung: Die Kosten dürfen nicht steigen.",
+  "s": "",
+  "m": "I agree with the proposal, but only on one condition: the costs must not go up.",
+  "x": "",
+  "wk": 0,
+  "th": "alltag",
+  "deck": "Sätze"
+ },
+ {
+  "w": "Seit Montag habe ich eine Erkältung und starke Kopfschmerzen. Mein Arzt hat mich für drei Tage krankgeschrieben.",
+  "s": "",
+  "m": "Since Monday I've had a cold and a bad headache. My doctor put me on sick leave for three days.",
+  "x": "Words: die Erkältung, die Schmerzen, die Krankschreibung. Grammar: seit + Dativ with present tense = has been ... since",
+  "wk": 0,
+  "th": "alltag",
+  "deck": "Sätze"
+ },
+ {
+  "w": "Nach der Tour tut mir alles weh. Ich habe Muskelkater in den Beinen und bin völlig erschöpft.",
+  "s": "",
+  "m": "After the ride, everything hurts. My legs are sore and I'm completely exhausted.",
+  "x": "Words: wehtun, der Muskelkater, erschöpft. Grammar: MIR tut ... weh (Dativ)",
+  "wk": 0,
+  "th": "alltag",
+  "deck": "Sätze"
+ },
+ {
+  "w": "Die Strecke war nur fünfzig Kilometer lang, aber die Steigung am Ende hat mich fertiggemacht. Dafür war die Aussicht vom Gipfel fantastisch.",
+  "s": "",
+  "m": "The route was only fifty kilometers, but the climb at the end wore me out. In return, the view from the summit was fantastic.",
+  "x": "Words: die Strecke, die Steigung, die Aussicht, der Gipfel. Grammar: dafür = in return, to make up for it",
+  "wk": 0,
+  "th": "alltag",
+  "deck": "Sätze"
+ },
+ {
+  "w": "Auf dem Rückweg sind wir in einer Hütte eingekehrt. Bei dieser Hitze brauchten wir dringend etwas zu trinken.",
+  "s": "",
+  "m": "On the way back we stopped at a mountain hut. In this heat we urgently needed something to drink.",
+  "x": "Words: einkehren, die Hitze. Grammar: bei + Dativ for conditions; Perfekt with SEIN",
+  "wk": 0,
+  "th": "alltag",
+  "deck": "Sätze"
+ },
+ {
+  "w": "Der Weg war nass und rutschig, und ich bin fast ausgerutscht. Zum Glück habe ich das Gleichgewicht nicht verloren.",
+  "s": "",
+  "m": "The path was wet and slippery, and I almost slipped. Luckily I didn't lose my balance.",
+  "x": "Words: rutschig, ausrutschen, das Gleichgewicht. Grammar: fast = almost; zum Glück = luckily",
+  "wk": 0,
+  "th": "alltag",
+  "deck": "Sätze"
+ },
+ {
+  "w": "Unterwegs hatten wir eine Panne, weil ein Reifen platt war. Dann haben wir uns auch noch verfahren.",
+  "s": "",
+  "m": "On the way we had a breakdown because a tire was flat. Then, on top of that, we got lost.",
+  "x": "Words: unterwegs, die Panne, der Reifen, sich verfahren. Grammar: auch noch = on top of that",
+  "wk": 0,
+  "th": "alltag",
+  "deck": "Sätze"
+ },
+ {
+  "w": "Zur Vorsorge gehe ich einmal im Jahr zur Untersuchung. Der Arzt sagt, ich soll mich mehr bewegen.",
+  "s": "",
+  "m": "For preventive care I go for a check-up once a year. The doctor says I should move more.",
+  "x": "Words: die Vorsorge, die Untersuchung, sich bewegen. Grammar: sollen to report someone's advice",
+  "wk": 0,
+  "th": "alltag",
+  "deck": "Sätze"
+ },
+ {
+  "w": "Am Wochenende machen wir einen Ausflug in die Berge. Die Landschaft ist wunderschön, auch wenn die Kälte morgens ziemlich unangenehm ist.",
+  "s": "",
+  "m": "This weekend we're taking a trip to the mountains. The scenery is gorgeous, even if the cold in the morning is pretty unpleasant.",
+  "x": "Words: der Ausflug, die Landschaft, die Kälte. Grammar: auch wenn = even if, verb at the end",
+  "wk": 0,
+  "th": "alltag",
+  "deck": "Sätze"
+ },
+ {
+  "w": "Ohne Brille sehe ich in der Ferne alles verschwommen. Der Optiker sagt, ich bin leicht kurzsichtig.",
+  "s": "",
+  "m": "Without glasses everything in the distance looks blurry. The optician says I'm slightly nearsighted.",
+  "x": "Words: verschwommen, der Optiker, kurzsichtig. Grammar: in der Ferne = in the distance (Dativ)",
+  "wk": 0,
+  "th": "alltag",
+  "deck": "Sätze"
+ },
+ {
+  "w": "Beim Sehtest muss ich Buchstaben an der Wand lesen. Zuerst mit dem linken Auge, dann mit dem rechten.",
+  "s": "",
+  "m": "During the eye test I have to read letters on the wall. First with the left eye, then with the right.",
+  "x": "Words: der Sehtest. Grammar: adjective endings after dem: linken, rechten",
+  "wk": 0,
+  "th": "alltag",
+  "deck": "Sätze"
+ },
+ {
+  "w": "Meine Sehstärke hat sich seit dem letzten Test kaum verändert. Ich brauche also nur ein neues Gestell.",
+  "s": "",
+  "m": "My prescription has barely changed since the last test. So I only need a new frame.",
+  "x": "Words: die Sehstärke, das Gestell. Grammar: seit + Dativ; also = so (NOT \"also\")",
+  "wk": 0,
+  "th": "alltag",
+  "deck": "Sätze"
+ },
+ {
+  "w": "Ich hätte gern entspiegelte Gläser, weil ich viel am Bildschirm arbeite. Was kostet das ungefähr?",
+  "s": "",
+  "m": "I'd like anti-reflective lenses because I work at a screen a lot. Roughly how much does that cost?",
+  "x": "Words: entspiegelt, das Brillenglas, der Bildschirm. Grammar: ich hätte gern = polite Konjunktiv II",
+  "wk": 0,
+  "th": "alltag",
+  "deck": "Sätze"
+ },
+ {
+  "w": "Die neue Brille drückt ein bisschen hinter den Ohren. Könnten Sie sie bitte noch anpassen?",
+  "s": "",
+  "m": "The new glasses pinch a bit behind my ears. Could you please adjust them?",
+  "x": "Words: drücken, anpassen. Grammar: Könnten Sie = polite request; separable verb at the end",
+  "wk": 0,
+  "th": "alltag",
+  "deck": "Sätze"
+ },
+ {
+  "w": "Die Brille rutscht mir ständig von der Nase. Ich glaube, das Gestell ist etwas zu groß.",
+  "s": "",
+  "m": "My glasses keep sliding down my nose. I think the frame is a bit too big.",
+  "x": "Words: rutschen, das Gestell. Grammar: MIR rutscht ... (Dativ for the person affected)",
+  "wk": 0,
+  "th": "alltag",
+  "deck": "Sätze"
+ },
+ {
+  "w": "Ihre Brille ist am Donnerstag fertig. Sie können sie ab zehn Uhr abholen.",
+  "s": "",
+  "m": "Your glasses will be ready on Thursday. You can pick them up from ten o'clock.",
+  "x": "Words: fertig, abholen. Grammar: ab + time = from; present tense used for the future",
+  "wk": 0,
+  "th": "alltag",
+  "deck": "Sätze"
+ },
+ {
+  "w": "Setzen Sie bitte die neue Brille auf und schauen Sie aus dem Fenster. Sehen Sie jetzt alles scharf?",
+  "s": "",
+  "m": "Please put on the new glasses and look out the window. Do you see everything clearly now?",
+  "x": "Words: aufsetzen, scharf. Grammar: Sie-imperative = verb first + Sie",
+  "wk": 0,
+  "th": "alltag",
+  "deck": "Sätze"
  }
 ]
