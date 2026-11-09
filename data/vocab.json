@@ -3,13 +3,18 @@
 "w": "die Ermäßigung",
 "s": "Studenten bekommen eine Ermäßigung.",
 "m": "discount, reduction",
-"x": "er- + mäßig (moderate) + -ung → making it moderate"
+"x": "er- + mäßig (moderate) + -ung → making it moderate",
+"pl": "die Ermäßigungen",
+"rp": "eine Ermäßigung auf + Akk",
+"col": "eine Ermäßigung bekommen"
 },
 {
 "w": "die Anmeldung",
 "s": "Für die Anmeldung brauchen Sie Ihren Pass.",
 "m": "registration (e.g. of your address)",
-"x": "an- (onto) + melden (report) + -ung → reporting yourself onto a list"
+"x": "an- (onto) + melden (report) + -ung → reporting yourself onto a list",
+"pl": "die Anmeldungen",
+"col": "die Anmeldung beim Bürgeramt"
 },
 {
 "w": "die Aufenthaltserlaubnis",
@@ -33,13 +38,18 @@
 "w": "beantragen",
 "s": "Ich möchte einen neuen Reisepass beantragen.",
 "m": "to apply for",
-"x": "be- (makes it transitive) + Antrag (application) → to put in an application for something"
+"x": "be- (makes it transitive) + Antrag (application) → to put in an application for something",
+"rp": "etw. (Akk) bei + Dat beantragen",
+"col": "ein Visum beantragen"
 },
 {
 "w": "der Antrag",
 "s": "Haben Sie den Antrag schon ausgefüllt?",
 "m": "application (form)",
-"x": "an- (towards) + tragen (carry) → something carried to an office"
+"x": "an- (towards) + tragen (carry) → something carried to an office",
+"pl": "die Anträge",
+"rp": "ein Antrag auf + Akk",
+"col": "einen Antrag stellen"
 },
 {
 "w": "ausfüllen",
@@ -57,7 +67,10 @@
 "w": "die Voraussetzung",
 "s": "Gute Deutschkenntnisse sind eine Voraussetzung für die Einbürgerung.",
 "m": "prerequisite, requirement",
-"x": "voraus- (ahead) + setzen (set) + -ung → something set in place beforehand"
+"x": "voraus- (ahead) + setzen (set) + -ung → something set in place beforehand",
+"pl": "die Voraussetzungen",
+"rp": "die Voraussetzung für + Akk",
+"col": "die Voraussetzungen erfüllen"
 },
 {
 "w": "die Einbürgerung",
@@ -87,7 +100,9 @@
 "w": "kündigen",
 "s": "Er hat seine Wohnung zum Monatsende gekündigt.",
 "m": "to cancel, give notice, terminate",
-"x": "related to kund (known) → to make known that something ends"
+"x": "related to kund (known) → to make known that something ends",
+"rp": "etw. (Akk) kündigen / jdm. (Dat) kündigen",
+"col": "den Vertrag kündigen"
 },
 {
 "w": "die Nebenkosten",
@@ -141,7 +156,10 @@
 "w": "die Bewerbung",
 "s": "Meine Bewerbung habe ich per E-Mail geschickt.",
 "m": "job application",
-"x": "bewerben + -ung → the act of applying"
+"x": "bewerben + -ung → the act of applying",
+"pl": "die Bewerbungen",
+"rp": "sich bewerben um + Akk",
+"col": "eine Bewerbung schreiben"
 },
 {
 "w": "die Krankmeldung",
@@ -195,7 +213,9 @@
 "w": "unterstützen",
 "s": "Meine Familie unterstützt mich sehr.",
 "m": "to support",
-"x": "unter- (under) + stützen (prop up) → to prop up from below"
+"x": "unter- (under) + stützen (prop up) → to prop up from below",
+"rp": "jdn. (Akk) bei + Dat unterstützen",
+"col": "jemanden finanziell unterstützen"
 },
 {
 "w": "die Ausbildung",

@@ -14,7 +14,7 @@ let session = null;
 
 /* ---------- storage ---------- */
 function load() {
-  const def = { srs: {}, decks: [], streak: { last: '', n: 0 }, days: {}, seen: {}, settings: { state: '', mix: 6, rate: 0.95 } };
+  const def = { srs: {}, decks: [], streak: { last: '', n: 0 }, days: {}, seen: {}, settings: { state: 'BY', mix: 6, rate: 0.95, week: 1 } };
   try { const s = JSON.parse(localStorage.getItem('d2m') || '{}'); return { ...def, ...s, settings: { ...def.settings, ...(s.settings || {}) } }; }
   catch { return def; }
 }
@@ -56,22 +56,31 @@ function grade(k, g) { // g: 0 again, 1 good, 2 easy
 function choose(pool, n, keyOf) {
   const now = Date.now();
   const due = pool.filter(x => isDue(keyOf(x), now)).sort((a, b) => S.srs[keyOf(a)].d - S.srs[keyOf(b)].d);
-  const fresh = shuffle(pool.filter(x => !srsGet(keyOf(x))));
+  const fresh = shuffle(pool.filter(x => !srsGet(keyOf(x)))).sort(weekFirst);
   return [...due, ...fresh].slice(0, n);
 }
 
 /* ---------- content pools ---------- */
+const inWeek = x => !x.wk || x.wk <= S.settings.week;
+/* prefer the current week's new items, then earlier weeks */
+const weekFirst = (a, b) => ((b.wk === S.settings.week) - (a.wk === S.settings.week));
 function vocabPool() {
   const builtIn = DATA.vocab.map(c => ({ ...c, k: 'v:' + c.w }));
   const mine = S.decks.filter(d => d.on !== false).flatMap(d => d.cards.map((c, i) => ({ ...c, k: `u:${d.id}:${i}`, deck: d.name })));
-  return [...mine, ...builtIn];
+  return [...mine, ...builtIn].filter(inWeek);
 }
-const decodePool = () => DATA.decode.map(c => ({ ...c, k: 'd:' + c.w }));
+const decodePool = () => DATA.decode.filter(inWeek).map(c => ({ ...c, k: 'd:' + c.w }));
 const lidPool = () => DATA.lid.filter(q => !q.s || q.s === S.settings.state).map(q => ({ ...q, k: 'l:' + q.id }));
 function leastSeen(kind, list) {
   const seen = S.seen[kind] || {};
-  const min = Math.min(...list.map((_, i) => seen[i] || 0));
-  const idx = pickRandom(list.map((_, i) => i).filter(i => (seen[i] || 0) === min));
+  let ids = list.map((_, i) => i).filter(i => inWeek(list[i]));
+  if (!ids.length) ids = list.map((_, i) => i);
+  const cur = ids.filter(i => list[i].wk === S.settings.week);
+  const minOf = arr => Math.min(...arr.map(i => seen[i] || 0));
+  // current week's tasks first until each has been seen once
+  if (cur.length && minOf(cur) === 0) ids = cur;
+  const min = minOf(ids);
+  const idx = pickRandom(ids.filter(i => (seen[i] || 0) === min));
   return { i: idx, item: list[idx] };
 }
 function markSeen(kind, i) { (S.seen[kind] ||= {})[i] = ((S.seen[kind] || {})[i] || 0) + 1; save(); }
@@ -87,7 +96,8 @@ function buildMix() {
   const q = [];
   choose(vocabPool(), Math.max(2, n - 3), x => x.k).forEach(c => q.push({ t: 'vocab', c }));
   choose(decodePool(), 1, x => x.k).forEach(c => q.push({ t: 'decode', c }));
-  choose(lidPool(), 1, x => x.k).forEach(c => q.push({ t: 'lid', c }));
+  const lidLeft = Math.max(1, Math.min(2, 5 - ((S.days[today()] || {}).lid || 0)));
+  choose(lidPool(), lidLeft, x => x.k).forEach(c => q.push({ t: 'lid', c }));
   const sk = nextSkill(); q.push(skillItem(sk));
   return q;
 }
@@ -99,7 +109,7 @@ function skillItem(kind) {
 function buildSection(kind) {
   if (kind === 'vocab') return choose(vocabPool(), 8, x => x.k).map(c => ({ t: 'vocab', c }));
   if (kind === 'decode') return choose(decodePool(), 5, x => x.k).map(c => ({ t: 'decode', c }));
-  if (kind === 'lid') return choose(lidPool(), 6, x => x.k).map(c => ({ t: 'lid', c }));
+  if (kind === 'lid') return choose(lidPool(), 5, x => x.k).map(c => ({ t: 'lid', c }));
   const n = kind === 'hoeren' ? 4 : kind === 'lesen' ? 2 : 3;
   const out = []; const used = new Set();
   for (let j = 0; j < n; j++) { const it = skillItem(kind); if (used.has(it.i)) continue; used.add(it.i); markSeen(kind, it.i); out.push(it); }
@@ -107,10 +117,10 @@ function buildSection(kind) {
 }
 
 /* ---------- streak & stats ---------- */
-function recordItem(correct) {
+function recordItem(correct, type) {
   const d = today();
   const day = S.days[d] ||= { n: 0, ok: 0 };
-  day.n++; if (correct) day.ok++;
+  day.n++; if (correct) day.ok++; if (type === 'lid') day.lid = (day.lid || 0) + 1;
   if (S.streak.last !== d) {
     const y = new Date(Date.now() - DAY).toLocaleDateString('sv');
     S.streak.n = S.streak.last === y ? S.streak.n + 1 : 1;
@@ -135,7 +145,8 @@ function home() {
     </div>
     <div class="row" style="margin:14px 0 16px;flex:none">
       <span class="pill fire" style="flex:none">🔥 ${streakNow()} Tag${streakNow() === 1 ? '' : 'e'}</span>
-      <span class="pill" style="flex:none">Heute: ${t.n} Aufgaben</span>
+      <span class="pill" style="flex:none">Woche ${S.settings.week}</span>
+      <span class="pill" style="flex:none">Heute: ${t.n} · 🇩🇪 ${t.lid || 0}/5</span>
     </div>
     <button class="btn primary" data-start="mix">▶ 2-Minuten-Mix</button>
     <p class="muted small" style="text-align:center">Karten, ein Wort entschlüsseln, eine Einbürgerungsfrage und eine Prüfungsaufgabe</p>
@@ -166,6 +177,7 @@ const fmtTime = ms => { const s = Math.floor(ms / 1000); return `${Math.floor(s 
 
 function frame(inner, tag) {
   const { pos, q } = session;
+  const mod = q[pos].c && q[pos].c.mod; if (mod && !tag.includes(mod)) tag += ' · ' + mod;
   return `
     <div class="top">
       <button class="iconbtn" data-go="home" aria-label="Schließen">✕</button>
@@ -177,7 +189,7 @@ function frame(inner, tag) {
 }
 
 function next(correct) {
-  recordItem(correct);
+  recordItem(correct, session.q[session.pos].t);
   if (correct) session.ok++;
   session.pos++;
   if (session.pos >= session.q.length) return finish();
@@ -220,6 +232,7 @@ function vVocab(c) {
       <div class="body">${front}
         <div class="big" style="margin-top:18px">${esc(c.m)}</div>
         ${c.x ? `<div class="morph">${esc(c.x)}</div>` : ''}
+        ${extras(c)}
       </div>
       <div class="rate">
         <button class="btn again" data-g="0">Nochmal</button>
@@ -234,6 +247,12 @@ function vVocab(c) {
     });
   };
 }
+
+function extras(c) {
+  const rows = [['Plural', c.pl], ['Rektion', c.rp], ['Kollokation', c.col]].filter(r => r[1]);
+  return rows.length ? `<div class="small" style="margin-top:10px">${rows.map(([k, v]) => `<div class="statline"><span class="muted">${k}</span><span>${esc(v)}</span></div>`).join('')}</div>` : '';
+}
+const checklist = c => c.chk && c.chk.length ? `<div class="morph" style="margin-top:12px"><b>Check zuerst:</b>${c.chk.map((t, i) => `<label style="display:flex;gap:8px;margin-top:6px"><input type="checkbox" style="width:auto"> ${esc(t)}</label>`).join('')}</div>` : '';
 
 /* --- multiple-choice helper --- */
 function mc({ tag, head, options, answer, onDone, after }) {
@@ -303,7 +322,8 @@ function diffWords(expected, got) {
   }
   return { html: out.join(' '), score: a.length ? L[0][0] / a.length : 0 };
 }
-function vHoeren(text) {
+function vHoeren(item) {
+  const text = typeof item === 'string' ? item : item.t;
   $app.innerHTML = frame(`<div class="body">
     <p>Hör zu und schreib den Satz auf.</p>
     <div class="row" style="margin:14px 0">
@@ -331,6 +351,7 @@ function vSchreiben(c) {
   $app.innerHTML = frame(`<div class="body">
     <p class="big" style="font-size:20px">${esc(c.p)}</p>
     <textarea id="ans" style="margin-top:14px" placeholder="Auf Deutsch schreiben …" autocapitalize="sentences" spellcheck="false"></textarea>
+    ${checklist(c)}
     <div id="fb"></div>
     <button class="btn primary actions" id="chk">Musterlösung zeigen</button></div>`, 'Schreiben');
   document.getElementById('chk').onclick = function () {
@@ -353,6 +374,7 @@ function vSprechen(c) {
     ${Recog ? `<button class="mic" id="mic" aria-label="Aufnehmen">🎤</button><p class="muted small" style="text-align:center" id="hint">Tippen und laut antworten</p>`
       : `<p class="muted small" style="margin-top:16px">Sag deine Antwort laut (ca. 20 Sekunden), dann vergleiche mit dem Muster.</p>`}
     <div id="said"></div>
+    ${checklist(c)}
     <div id="fb"></div>
     <button class="btn primary actions" id="chk">Muster zeigen</button></div>`, 'Sprechen');
   document.getElementById('say').onclick = () => say(c.p);
@@ -440,6 +462,8 @@ function settingsView() {
     <div class="stack" style="margin-top:14px">
       <label>Bundesland (für die 10 Landesfragen im Einbürgerungstest)
         <select id="st">${Object.entries(STATES).map(([k, v]) => `<option value="${k}" ${k === S.settings.state ? 'selected' : ''}>${v}</option>`).join('')}</select></label>
+      <label>Lernwoche (1–12, steuert die Themen im Mix)
+        <select id="wk">${Array.from({ length: 12 }, (_, i) => i + 1).map(n => `<option ${n === S.settings.week ? 'selected' : ''}>${n}</option>`).join('')}</select></label>
       <label>Aufgaben pro Mix
         <select id="mix">${[5, 6, 8, 10].map(n => `<option ${n === S.settings.mix ? 'selected' : ''}>${n}</option>`).join('')}</select></label>
       <label>Sprechtempo der Vorlesestimme
@@ -456,6 +480,7 @@ function settingsView() {
     <input type="file" id="file" accept="application/json" hidden>
     <p class="small muted" style="margin-top:24px">Fragen „Leben in Deutschland“: offizieller Fragenkatalog des BAMF (ohne Bildfragen). Prüfungsformat angelehnt an Goethe-Zertifikat B1.</p>`;
   document.getElementById('st').onchange = e => { S.settings.state = e.target.value; save(); };
+  document.getElementById('wk').onchange = e => { S.settings.week = +e.target.value; save(); };
   document.getElementById('mix').onchange = e => { S.settings.mix = +e.target.value; save(); };
   document.getElementById('rate').onchange = e => { S.settings.rate = +e.target.value; save(); };
   document.getElementById('test').onclick = () => say('Hallo! Schön, dass du heute Deutsch lernst.');
