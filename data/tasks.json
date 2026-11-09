@@ -1,206 +1,4 @@
 {
-"sprechen": [
-{
-"p": "Plan a surprise party for a friend together. Your partner suggests: 'Let's do it on Saturday at a restaurant.' Respond: react, make your own suggestion, and split the tasks.",
-"m": "Samstag passt mir gut, aber ein Restaurant ist ziemlich teuer. Was hältst du davon, wenn wir bei mir feiern? Jeder bringt etwas zu essen mit. Und als Geschenk: Wie wäre es mit einem Gutschein für einen Kletterkurs? Ich kann ihn morgen besorgen, wenn du die Einladungen schreibst.",
-"tip": "Was hältst du davon, wenn … sends the verb to the end: … wenn wir bei mir feiern?",
-"chk": [
-"Did you react to the suggestion?",
-"Did you make your own suggestion?",
-"Did you split a task (Ich kann …, wenn du …)?"
-],
-"wk": 1,
-"th": "freizeit",
-"mod": "Sprechen 1"
-},
-{
-"p": "Plan a visit to a Volksfest with a friend: when to go, how to get there, and whether to reserve a table.",
-"m": "Wie wäre es, wenn wir am Samstagnachmittag aufs Volksfest gehen? Am Abend ist es mir zu voll. Wir könnten mit der S-Bahn fahren, dann muss keiner von uns Auto fahren. Und sollen wir vorher einen Tisch im Bierzelt reservieren, oder schauen wir lieber spontan?",
-"tip": "Wie wäre es, wenn …? is Konjunktiv II plus a verb-last clause, a very natural way to suggest something.",
-"chk": [
-"When, how and where all covered?",
-"At least two different suggestion phrases?",
-"A question back to your partner?"
-],
-"wk": 9,
-"th": "freizeit",
-"mod": "Sprechen 1"
-},
-{
-"p": "Give a 60-second presentation: 'Große oder kleine Hochzeit?' Follow the 5 steps: topic, your experience, your home country, pros and cons with your opinion, conclusion.",
-"m": "Ich möchte heute über das Thema „Große oder kleine Hochzeit?“ sprechen. Ich heirate bald selbst, deshalb ist das Thema für mich gerade sehr aktuell. Ich war schon auf einer großen Hochzeit mit über hundert Gästen, und das war ein tolles Fest. In meinem Heimatland ist das ein bisschen anders: (Erzähl hier, wie man bei dir feiert.) Ein Vorteil einer großen Hochzeit ist, dass alle Freunde und Verwandten dabei sind. Ein Nachteil ist aber, dass sie sehr teuer ist und man kaum Zeit für jeden Gast hat. Meiner Meinung nach ist eine mittelgroße Feier ideal. Zum Schluss möchte ich sagen: Wichtig ist nicht die Größe, sondern die Stimmung. Vielen Dank fürs Zuhören!",
-"tip": "nicht …, sondern … means 'not X but Y'. Use sondern only after a negation; otherwise use aber.",
-"chk": [
-"All 5 steps?",
-"At least one pro and one con?",
-"A clear opinion?",
-"Under 90 seconds?"
-],
-"wk": 7,
-"th": "familie",
-"mod": "Sprechen 2"
-},
-{
-"p": "Your exam partner has just presented 'Homeoffice: ja oder nein?'. Give short feedback and ask one question.",
-"m": "Danke für deine Präsentation! Mir hat besonders gefallen, dass du so viele Beispiele aus deinem Alltag genannt hast. Ich habe eine Frage: Du hast gesagt, dass du zu Hause produktiver bist. Fehlt dir nicht manchmal der Kontakt zu den Kollegen?",
-"tip": "fehlen takes the Dativ for the person: Mir fehlt der Kontakt. Fehlt dir …?",
-"chk": [
-"Positive feedback with a concrete detail?",
-"One clear question?",
-"Du-form with your partner?"
-],
-"wk": 7,
-"th": "arbeit",
-"mod": "Sprechen 3"
-},
-{
-"p": "Stellen Sie sich vor: Name, Herkunft, Beruf, seit wann Sie in Deutschland leben.",
-"m": "Ich heiße …, ich komme aus … und arbeite als … Ich lebe seit drei Jahren in Deutschland.",
-"tip": "Goethe B1 Sprechen Teil 1 usually starts like this. seit + Dativ + present tense."
-},
-{
-"p": "Was machen Sie gern in Ihrer Freizeit? Warum?",
-"m": "In meiner Freizeit fahre ich gern Fahrrad, weil ich dabei abschalten kann und die Natur genieße.",
-"tip": "Give a reason with weil or denn (denn keeps normal word order)."
-},
-{
-"p": "Planen Sie mit einem Freund ein Wochenende. Machen Sie einen Vorschlag.",
-"m": "Wie wäre es, wenn wir am Samstag eine Radtour machen? Danach könnten wir zusammen grillen.",
-"tip": "Goethe B1 Teil 1 is 'gemeinsam etwas planen': Wie wäre es …? / Wir könnten …"
-},
-{
-"p": "Reagieren Sie auf einen Vorschlag, den Sie nicht gut finden.",
-"m": "Das ist eine gute Idee, aber am Samstag habe ich leider keine Zeit. Können wir es am Sonntag machen?",
-"tip": "Polite disagreement: acknowledge first, then aber, then a counter-suggestion."
-},
-{
-"p": "Wie feiert man in Ihrem Heimatland Hochzeit? Und in Deutschland?",
-"m": "In meinem Heimatland feiert man oft sehr groß. In Deutschland heiratet man zuerst auf dem Standesamt, und manche feiern danach noch kirchlich.",
-"tip": "Comparison: In … dagegen … / Im Unterschied zu …"
-},
-{
-"p": "Beschreiben Sie Ihren Arbeitsweg.",
-"m": "Ich fahre jeden Morgen mit dem Fahrrad zur Arbeit. Das dauert ungefähr zwanzig Minuten.",
-"tip": "mit + Dativ (dem Fahrrad), zu + Dativ (zur = zu der Arbeit)."
-},
-{
-"p": "Was finden Sie an Deutschland gut, was ist schwierig?",
-"m": "Mir gefällt, dass man fast alles mit dem Fahrrad erreichen kann. Schwierig finde ich manchmal die Bürokratie.",
-"tip": "gefallen + Dativ: Mir gefällt … The thing liked is the subject."
-},
-{
-"p": "Sie sind beim Arzt. Beschreiben Sie Ihre Beschwerden.",
-"m": "Ich habe seit zwei Tagen Halsschmerzen und Fieber, und ich fühle mich sehr müde.",
-"tip": "seit + Dativ with present tense: seit zwei Tagen habe ich …"
-},
-{
-"p": "Geben Sie Ihre Meinung: Sollte man in der Stadt Autos verbieten?",
-"m": "Meiner Meinung nach sollte man nicht alle Autos verbieten, aber die Innenstadt könnte autofrei sein.",
-"tip": "Meiner Meinung nach + verb second: … sollte man …"
-},
-{
-"p": "Erzählen Sie von Ihrem letzten Urlaub.",
-"m": "Letzten Sommer war ich mit Freunden an der Ostsee. Wir sind viel Fahrrad gefahren und haben Fisch gegessen.",
-"tip": "Movement verbs (fahren, gehen) use sein in the Perfekt: sind gefahren."
-},
-{
-"p": "Ein Freund möchte Deutsch lernen. Geben Sie ihm zwei Tipps.",
-"m": "Du solltest jeden Tag ein bisschen üben, zum Beispiel mit Karteikarten. Außerdem hilft es, mit Muttersprachlern zu sprechen.",
-"tip": "Advice: Du solltest … / Es hilft, … zu …"
-},
-{
-"p": "Bitten Sie Ihre Nachbarin, Ihre Pflanzen zu gießen, während Sie verreist sind.",
-"m": "Hallo Frau Becker, könnten Sie vielleicht meine Pflanzen gießen, während ich nächste Woche verreist bin?",
-"tip": "während as a conjunction sends the verb to the end: … während ich verreist bin."
-}
-],
-"hoeren": [
-{
-"t": "Hallo, hier ist Lena. Wir treffen uns um halb sieben vor dem Restaurant, nicht um sieben.",
-"wk": 1,
-"th": "familie",
-"mod": "Hören 1"
-},
-{
-"t": "Wenn das Wetter schön bleibt, grillen wir am Samstag bei meinen Schwiegereltern.",
-"wk": 1,
-"th": "familie",
-"mod": "Hören 3"
-},
-{
-"t": "Wegen einer Störung hat die S-Bahn etwa fünfzehn Minuten Verspätung.",
-"wk": 2,
-"th": "alltag",
-"mod": "Hören 1"
-},
-{
-"t": "Am Wochenende waren wir auf einer Hochzeit, und ich habe bis drei Uhr morgens getanzt.",
-"wk": 2,
-"th": "familie",
-"mod": "Hören 3"
-},
-{
-"t": "Ich finde, dass man im Urlaub nicht ständig seine E-Mails lesen sollte.",
-"wk": 3,
-"th": "alltag",
-"mod": "Hören 4"
-},
-{
-"t": "Ihre Unterlagen sind leider noch nicht vollständig. Es fehlt die Bescheinigung vom Arbeitgeber.",
-"wk": 4,
-"th": "amt",
-"mod": "Hören 3"
-},
-{
-"t": "Könnten Sie mir bitte sagen, wo ich den Antrag abgeben kann?",
-"wk": 5,
-"th": "amt",
-"mod": "Hören 3"
-},
-{
-"t": "Die Praxis ist am Mittwochnachmittag geschlossen. Bitte rufen Sie morgen ab acht Uhr wieder an.",
-"wk": 6,
-"th": "gesundheit",
-"mod": "Hören 1"
-},
-{
-"t": "Der Regionalexpress nach Rosenheim fährt heute ausnahmsweise von Gleis sieben ab.",
-"wk": 6,
-"th": "alltag",
-"mod": "Hören 1"
-},
-{
-"t": "Auf der linken Seite sehen Sie das Rathaus, das im fünfzehnten Jahrhundert gebaut wurde.",
-"wk": 9,
-"th": "freizeit",
-"mod": "Hören 2"
-},
-"Der Zug nach München fährt heute von Gleis sieben ab.",
-"Können Sie mir bitte sagen, wo das Bürgeramt ist?",
-"Ich hätte gern einen Termin für nächste Woche.",
-"Wegen einer Störung fällt die U-Bahn heute aus.",
-"Bitte bringen Sie Ihren Ausweis und die Meldebescheinigung mit.",
-"Am Wochenende soll es regnen, deshalb bleiben wir zu Hause.",
-"Mein Kollege ist krank, deshalb arbeite ich heute länger.",
-"Die Apotheke hat am Sonntag leider geschlossen.",
-"Wir haben uns vor drei Jahren in Berlin kennengelernt.",
-"Wenn ich mehr Zeit hätte, würde ich öfter Sport machen.",
-"Könnten Sie das bitte noch einmal langsamer sagen?",
-"Die Miete wird jeden Monat am Ersten überwiesen.",
-"Ich interessiere mich sehr für deutsche Geschichte.",
-"Obwohl es kalt war, sind wir spazieren gegangen.",
-"Der Arzt hat mir ein Rezept für Tabletten gegeben.",
-"Nächsten Monat heiraten wir auf dem Standesamt.",
-"Haben Sie diesen Pullover auch in einer anderen Größe?",
-"Ich freue mich schon auf den Urlaub an der Ostsee.",
-"Seit ich in Deutschland wohne, fahre ich fast nur noch Fahrrad.",
-"Entschuldigung, ist dieser Platz noch frei?",
-"Bitte achten Sie auf die Durchsagen am Bahnsteig.",
-"Ich habe die Rechnung schon letzte Woche bezahlt.",
-"Das Paket wurde beim Nachbarn abgegeben.",
-"Morgen muss ich früh aufstehen, weil ich einen Termin habe.",
-"Darf man hier mit Karte bezahlen?"
-],
 "schreiben": [
 {
 "p": "Your friend Jonas couldn't come to your future father-in-law's 60th birthday party. Write him an email (about 80 words): describe the party, say what you liked best, and suggest meeting up soon.",
@@ -648,6 +446,208 @@
 "a": 0
 }
 ]
+}
+],
+"hoeren": [
+{
+"t": "Hallo, hier ist Lena. Wir treffen uns um halb sieben vor dem Restaurant, nicht um sieben.",
+"wk": 1,
+"th": "familie",
+"mod": "Hören 1"
+},
+{
+"t": "Wenn das Wetter schön bleibt, grillen wir am Samstag bei meinen Schwiegereltern.",
+"wk": 1,
+"th": "familie",
+"mod": "Hören 3"
+},
+{
+"t": "Wegen einer Störung hat die S-Bahn etwa fünfzehn Minuten Verspätung.",
+"wk": 2,
+"th": "alltag",
+"mod": "Hören 1"
+},
+{
+"t": "Am Wochenende waren wir auf einer Hochzeit, und ich habe bis drei Uhr morgens getanzt.",
+"wk": 2,
+"th": "familie",
+"mod": "Hören 3"
+},
+{
+"t": "Ich finde, dass man im Urlaub nicht ständig seine E-Mails lesen sollte.",
+"wk": 3,
+"th": "alltag",
+"mod": "Hören 4"
+},
+{
+"t": "Ihre Unterlagen sind leider noch nicht vollständig. Es fehlt die Bescheinigung vom Arbeitgeber.",
+"wk": 4,
+"th": "amt",
+"mod": "Hören 3"
+},
+{
+"t": "Könnten Sie mir bitte sagen, wo ich den Antrag abgeben kann?",
+"wk": 5,
+"th": "amt",
+"mod": "Hören 3"
+},
+{
+"t": "Die Praxis ist am Mittwochnachmittag geschlossen. Bitte rufen Sie morgen ab acht Uhr wieder an.",
+"wk": 6,
+"th": "gesundheit",
+"mod": "Hören 1"
+},
+{
+"t": "Der Regionalexpress nach Rosenheim fährt heute ausnahmsweise von Gleis sieben ab.",
+"wk": 6,
+"th": "alltag",
+"mod": "Hören 1"
+},
+{
+"t": "Auf der linken Seite sehen Sie das Rathaus, das im fünfzehnten Jahrhundert gebaut wurde.",
+"wk": 9,
+"th": "freizeit",
+"mod": "Hören 2"
+},
+"Der Zug nach München fährt heute von Gleis sieben ab.",
+"Können Sie mir bitte sagen, wo das Bürgeramt ist?",
+"Ich hätte gern einen Termin für nächste Woche.",
+"Wegen einer Störung fällt die U-Bahn heute aus.",
+"Bitte bringen Sie Ihren Ausweis und die Meldebescheinigung mit.",
+"Am Wochenende soll es regnen, deshalb bleiben wir zu Hause.",
+"Mein Kollege ist krank, deshalb arbeite ich heute länger.",
+"Die Apotheke hat am Sonntag leider geschlossen.",
+"Wir haben uns vor drei Jahren in Berlin kennengelernt.",
+"Wenn ich mehr Zeit hätte, würde ich öfter Sport machen.",
+"Könnten Sie das bitte noch einmal langsamer sagen?",
+"Die Miete wird jeden Monat am Ersten überwiesen.",
+"Ich interessiere mich sehr für deutsche Geschichte.",
+"Obwohl es kalt war, sind wir spazieren gegangen.",
+"Der Arzt hat mir ein Rezept für Tabletten gegeben.",
+"Nächsten Monat heiraten wir auf dem Standesamt.",
+"Haben Sie diesen Pullover auch in einer anderen Größe?",
+"Ich freue mich schon auf den Urlaub an der Ostsee.",
+"Seit ich in Deutschland wohne, fahre ich fast nur noch Fahrrad.",
+"Entschuldigung, ist dieser Platz noch frei?",
+"Bitte achten Sie auf die Durchsagen am Bahnsteig.",
+"Ich habe die Rechnung schon letzte Woche bezahlt.",
+"Das Paket wurde beim Nachbarn abgegeben.",
+"Morgen muss ich früh aufstehen, weil ich einen Termin habe.",
+"Darf man hier mit Karte bezahlen?"
+],
+"sprechen": [
+{
+"p": "Plan a surprise party for a friend together. Your partner suggests: 'Let's do it on Saturday at a restaurant.' Respond: react, make your own suggestion, and split the tasks.",
+"m": "Samstag passt mir gut, aber ein Restaurant ist ziemlich teuer. Was hältst du davon, wenn wir bei mir feiern? Jeder bringt etwas zu essen mit. Und als Geschenk: Wie wäre es mit einem Gutschein für einen Kletterkurs? Ich kann ihn morgen besorgen, wenn du die Einladungen schreibst.",
+"tip": "Was hältst du davon, wenn … sends the verb to the end: … wenn wir bei mir feiern?",
+"chk": [
+"Did you react to the suggestion?",
+"Did you make your own suggestion?",
+"Did you split a task (Ich kann …, wenn du …)?"
+],
+"wk": 1,
+"th": "freizeit",
+"mod": "Sprechen 1"
+},
+{
+"p": "Plan a visit to a Volksfest with a friend: when to go, how to get there, and whether to reserve a table.",
+"m": "Wie wäre es, wenn wir am Samstagnachmittag aufs Volksfest gehen? Am Abend ist es mir zu voll. Wir könnten mit der S-Bahn fahren, dann muss keiner von uns Auto fahren. Und sollen wir vorher einen Tisch im Bierzelt reservieren, oder schauen wir lieber spontan?",
+"tip": "Wie wäre es, wenn …? is Konjunktiv II plus a verb-last clause, a very natural way to suggest something.",
+"chk": [
+"When, how and where all covered?",
+"At least two different suggestion phrases?",
+"A question back to your partner?"
+],
+"wk": 9,
+"th": "freizeit",
+"mod": "Sprechen 1"
+},
+{
+"p": "Give a 60-second presentation: 'Große oder kleine Hochzeit?' Follow the 5 steps: topic, your experience, your home country, pros and cons with your opinion, conclusion.",
+"m": "Ich möchte heute über das Thema „Große oder kleine Hochzeit?“ sprechen. Ich heirate bald selbst, deshalb ist das Thema für mich gerade sehr aktuell. Ich war schon auf einer großen Hochzeit mit über hundert Gästen, und das war ein tolles Fest. In meinem Heimatland ist das ein bisschen anders: (Erzähl hier, wie man bei dir feiert.) Ein Vorteil einer großen Hochzeit ist, dass alle Freunde und Verwandten dabei sind. Ein Nachteil ist aber, dass sie sehr teuer ist und man kaum Zeit für jeden Gast hat. Meiner Meinung nach ist eine mittelgroße Feier ideal. Zum Schluss möchte ich sagen: Wichtig ist nicht die Größe, sondern die Stimmung. Vielen Dank fürs Zuhören!",
+"tip": "nicht …, sondern … means 'not X but Y'. Use sondern only after a negation; otherwise use aber.",
+"chk": [
+"All 5 steps?",
+"At least one pro and one con?",
+"A clear opinion?",
+"Under 90 seconds?"
+],
+"wk": 7,
+"th": "familie",
+"mod": "Sprechen 2"
+},
+{
+"p": "Your exam partner has just presented 'Homeoffice: ja oder nein?'. Give short feedback and ask one question.",
+"m": "Danke für deine Präsentation! Mir hat besonders gefallen, dass du so viele Beispiele aus deinem Alltag genannt hast. Ich habe eine Frage: Du hast gesagt, dass du zu Hause produktiver bist. Fehlt dir nicht manchmal der Kontakt zu den Kollegen?",
+"tip": "fehlen takes the Dativ for the person: Mir fehlt der Kontakt. Fehlt dir …?",
+"chk": [
+"Positive feedback with a concrete detail?",
+"One clear question?",
+"Du-form with your partner?"
+],
+"wk": 7,
+"th": "arbeit",
+"mod": "Sprechen 3"
+},
+{
+"p": "Stellen Sie sich vor: Name, Herkunft, Beruf, seit wann Sie in Deutschland leben.",
+"m": "Ich heiße …, ich komme aus … und arbeite als … Ich lebe seit drei Jahren in Deutschland.",
+"tip": "Goethe B1 Sprechen Teil 1 usually starts like this. seit + Dativ + present tense."
+},
+{
+"p": "Was machen Sie gern in Ihrer Freizeit? Warum?",
+"m": "In meiner Freizeit fahre ich gern Fahrrad, weil ich dabei abschalten kann und die Natur genieße.",
+"tip": "Give a reason with weil or denn (denn keeps normal word order)."
+},
+{
+"p": "Planen Sie mit einem Freund ein Wochenende. Machen Sie einen Vorschlag.",
+"m": "Wie wäre es, wenn wir am Samstag eine Radtour machen? Danach könnten wir zusammen grillen.",
+"tip": "Goethe B1 Teil 1 is 'gemeinsam etwas planen': Wie wäre es …? / Wir könnten …"
+},
+{
+"p": "Reagieren Sie auf einen Vorschlag, den Sie nicht gut finden.",
+"m": "Das ist eine gute Idee, aber am Samstag habe ich leider keine Zeit. Können wir es am Sonntag machen?",
+"tip": "Polite disagreement: acknowledge first, then aber, then a counter-suggestion."
+},
+{
+"p": "Wie feiert man in Ihrem Heimatland Hochzeit? Und in Deutschland?",
+"m": "In meinem Heimatland feiert man oft sehr groß. In Deutschland heiratet man zuerst auf dem Standesamt, und manche feiern danach noch kirchlich.",
+"tip": "Comparison: In … dagegen … / Im Unterschied zu …"
+},
+{
+"p": "Beschreiben Sie Ihren Arbeitsweg.",
+"m": "Ich fahre jeden Morgen mit dem Fahrrad zur Arbeit. Das dauert ungefähr zwanzig Minuten.",
+"tip": "mit + Dativ (dem Fahrrad), zu + Dativ (zur = zu der Arbeit)."
+},
+{
+"p": "Was finden Sie an Deutschland gut, was ist schwierig?",
+"m": "Mir gefällt, dass man fast alles mit dem Fahrrad erreichen kann. Schwierig finde ich manchmal die Bürokratie.",
+"tip": "gefallen + Dativ: Mir gefällt … The thing liked is the subject."
+},
+{
+"p": "Sie sind beim Arzt. Beschreiben Sie Ihre Beschwerden.",
+"m": "Ich habe seit zwei Tagen Halsschmerzen und Fieber, und ich fühle mich sehr müde.",
+"tip": "seit + Dativ with present tense: seit zwei Tagen habe ich …"
+},
+{
+"p": "Geben Sie Ihre Meinung: Sollte man in der Stadt Autos verbieten?",
+"m": "Meiner Meinung nach sollte man nicht alle Autos verbieten, aber die Innenstadt könnte autofrei sein.",
+"tip": "Meiner Meinung nach + verb second: … sollte man …"
+},
+{
+"p": "Erzählen Sie von Ihrem letzten Urlaub.",
+"m": "Letzten Sommer war ich mit Freunden an der Ostsee. Wir sind viel Fahrrad gefahren und haben Fisch gegessen.",
+"tip": "Movement verbs (fahren, gehen) use sein in the Perfekt: sind gefahren."
+},
+{
+"p": "Ein Freund möchte Deutsch lernen. Geben Sie ihm zwei Tipps.",
+"m": "Du solltest jeden Tag ein bisschen üben, zum Beispiel mit Karteikarten. Außerdem hilft es, mit Muttersprachlern zu sprechen.",
+"tip": "Advice: Du solltest … / Es hilft, … zu …"
+},
+{
+"p": "Bitten Sie Ihre Nachbarin, Ihre Pflanzen zu gießen, während Sie verreist sind.",
+"m": "Hallo Frau Becker, könnten Sie vielleicht meine Pflanzen gießen, während ich nächste Woche verreist bin?",
+"tip": "während as a conjunction sends the verb to the end: … während ich verreist bin."
 }
 ],
 "party": [
