@@ -14,7 +14,7 @@ let session = null;
 
 /* ---------- storage ---------- */
 function load() {
-  const def = { srs: {}, decks: [], streak: { last: '', n: 0 }, days: {}, seen: {}, settings: { state: 'BY', mix: 6, rate: 0.95, week: 1 } };
+  const def = { srs: {}, decks: [], streak: { last: '', n: 0 }, days: {}, seen: {}, settings: { state: '', mix: 6, rate: 0.95, week: 1 } };
   try { const s = JSON.parse(localStorage.getItem('d2m') || '{}'); return { ...def, ...s, settings: { ...def.settings, ...(s.settings || {}) } }; }
   catch { return def; }
 }
