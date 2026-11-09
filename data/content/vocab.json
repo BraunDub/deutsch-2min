@@ -1,0 +1,746 @@
+[
+ {
+  "w": "die Verwandtschaft",
+  "s": "Die ganze Verwandtschaft kommt zur Hochzeit.",
+  "m": "relatives (as a group)",
+  "x": "ver- + wandt (related) + -schaft (collective) → all who are related",
+  "pl": "die Verwandtschaften",
+  "wk": 1,
+  "th": "familie"
+ },
+ {
+  "w": "sich unterhalten",
+  "s": "Wir haben uns lange über den Urlaub unterhalten.",
+  "m": "to chat, to have a conversation",
+  "x": "unter- (between) + halten (hold) → hold a conversation between people",
+  "rp": "sich unterhalten mit + Dat / über + Akk",
+  "col": "sich gut unterhalten",
+  "wk": 1,
+  "th": "familie"
+ },
+ {
+  "w": "vorstellen",
+  "s": "Darf ich dir meine Schwester vorstellen?",
+  "m": "to introduce",
+  "x": "vor- (in front) + stellen (place) → place someone in front of someone",
+  "rp": "jemandem (Dat) jemanden (Akk) vorstellen",
+  "col": "sich etwas vorstellen (= to imagine)",
+  "wk": 1,
+  "th": "familie"
+ },
+ {
+  "w": "die Schwiegereltern",
+  "s": "Meine Schwiegereltern wohnen in der Nähe von Regensburg.",
+  "m": "parents-in-law",
+  "x": "Schwieger- (in-law) + Eltern (parents); plural only",
+  "wk": 1,
+  "th": "familie"
+ },
+ {
+  "w": "kennenlernen",
+  "s": "Wo habt ihr euch kennengelernt?",
+  "m": "to get to know, to meet (for the first time)",
+  "x": "kennen (know) + lernen (learn) → learn to know",
+  "col": "sich kennenlernen",
+  "wk": 1,
+  "th": "familie"
+ },
+ {
+  "w": "die Einladung",
+  "s": "Danke für die Einladung!",
+  "m": "invitation",
+  "x": "ein- (in) + lad(en) (invite) + -ung (noun) → the act of inviting in",
+  "pl": "die Einladungen",
+  "rp": "die Einladung zu + Dat",
+  "col": "eine Einladung annehmen",
+  "wk": 1,
+  "th": "freizeit"
+ },
+ {
+  "w": "gemütlich",
+  "s": "Der Abend bei deinen Eltern war richtig gemütlich.",
+  "m": "cosy, relaxed, comfortable",
+  "x": "Gemüt (mind, mood) + -lich (adjective) → good for the mood",
+  "wk": 1,
+  "th": "familie"
+ },
+ {
+  "w": "der Beruf",
+  "s": "Mein Beruf macht mir viel Spaß.",
+  "m": "job, profession",
+  "x": "be- + Ruf (call) → one's calling",
+  "pl": "die Berufe",
+  "col": "einen Beruf ausüben",
+  "wk": 1,
+  "th": "arbeit"
+ },
+ {
+  "w": "erleben",
+  "s": "Am Wochenende haben wir viel erlebt.",
+  "m": "to experience",
+  "x": "er- (through to a result) + leben (live) → live through",
+  "col": "etwas Schönes erleben",
+  "wk": 2,
+  "th": "alltag"
+ },
+ {
+  "w": "das Erlebnis",
+  "s": "Die Wanderung war ein tolles Erlebnis.",
+  "m": "experience (an event you lived through)",
+  "x": "er- + leb(en) + -nis (result noun) → what you lived through",
+  "pl": "die Erlebnisse",
+  "wk": 2,
+  "th": "freizeit"
+ },
+ {
+  "w": "sich erinnern",
+  "s": "Ich erinnere mich gern an unseren ersten Urlaub.",
+  "m": "to remember",
+  "x": "er- + inner (inside) → bring back inside",
+  "rp": "sich erinnern an + Akk",
+  "wk": 2,
+  "th": "alltag"
+ },
+ {
+  "w": "passieren",
+  "s": "Was ist gestern passiert?",
+  "m": "to happen",
+  "x": "loan from French passer (pass) → pass by, happen; Perfekt with sein",
+  "wk": 2,
+  "th": "alltag"
+ },
+ {
+  "w": "unterwegs",
+  "s": "Wir waren den ganzen Tag unterwegs.",
+  "m": "on the way, out and about",
+  "x": "unter + Weg (way) + -s (adverb ending) → on the way",
+  "wk": 2,
+  "th": "alltag"
+ },
+ {
+  "w": "der Ausflug",
+  "s": "Am Sonntag machen wir einen Ausflug an den Chiemsee.",
+  "m": "day trip, excursion",
+  "x": "aus- (out) + Flug (flight) → a flight out",
+  "pl": "die Ausflüge",
+  "col": "einen Ausflug machen",
+  "wk": 2,
+  "th": "freizeit"
+ },
+ {
+  "w": "verpassen",
+  "s": "Ich habe den Zug verpasst.",
+  "m": "to miss (a train, a chance)",
+  "x": "ver- (wrong) + passen (fit, pass) → let pass by wrongly",
+  "col": "den Bus verpassen",
+  "wk": 2,
+  "th": "alltag"
+ },
+ {
+  "w": "die Meinung",
+  "s": "Meiner Meinung nach ist das zu teuer.",
+  "m": "opinion",
+  "x": "mein(en) (to think, mean) + -ung → what one thinks",
+  "pl": "die Meinungen",
+  "rp": "die Meinung zu + Dat",
+  "col": "anderer Meinung sein",
+  "wk": 3,
+  "th": "alltag"
+ },
+ {
+  "w": "überzeugen",
+  "s": "Dein Argument hat mich überzeugt.",
+  "m": "to convince",
+  "x": "über- (over) + zeug(en) (bear witness) → win someone over with evidence",
+  "rp": "jemanden von etwas (Dat) überzeugen",
+  "wk": 3,
+  "th": "alltag"
+ },
+ {
+  "w": "der Vorteil",
+  "s": "Ein Vorteil vom Fahrrad ist, dass man keinen Parkplatz braucht.",
+  "m": "advantage",
+  "x": "vor- (ahead) + Teil (part) → the part that puts you ahead; opposite: der Nachteil",
+  "pl": "die Vorteile",
+  "col": "Vor- und Nachteile",
+  "wk": 3,
+  "th": "alltag"
+ },
+ {
+  "w": "zustimmen",
+  "s": "Da stimme ich dir völlig zu.",
+  "m": "to agree",
+  "x": "zu- (towards) + stimmen (vote) → vote towards someone",
+  "rp": "jemandem (Dat) zustimmen",
+  "wk": 3,
+  "th": "alltag"
+ },
+ {
+  "w": "der Antrag",
+  "s": "Ich muss einen Antrag auf Verlängerung stellen.",
+  "m": "application (formal request)",
+  "x": "an- (to) + Trag (from tragen: carry) → what you carry to the office",
+  "pl": "die Anträge",
+  "rp": "der Antrag auf + Akk",
+  "col": "einen Antrag stellen",
+  "wk": 4,
+  "th": "amt"
+ },
+ {
+  "w": "die Frist",
+  "s": "Die Frist endet am 30. November.",
+  "m": "deadline, time limit",
+  "x": "single root; related: befristet (fixed-term), fristgerecht (on time)",
+  "pl": "die Fristen",
+  "col": "eine Frist einhalten",
+  "wk": 4,
+  "th": "amt"
+ },
+ {
+  "w": "die Bescheinigung",
+  "s": "Für das Amt brauche ich eine Bescheinigung vom Arbeitgeber.",
+  "m": "certificate, written confirmation",
+  "x": "be- + Schein (appearance, certificate) + -ig + -ung → making something evident on paper",
+  "pl": "die Bescheinigungen",
+  "col": "eine Bescheinigung ausstellen",
+  "wk": 4,
+  "th": "amt"
+ },
+ {
+  "w": "einreichen",
+  "s": "Bitte reichen Sie die Unterlagen bis Freitag ein.",
+  "m": "to submit, hand in",
+  "x": "ein- (in) + reichen (hand, pass) → hand in",
+  "col": "Unterlagen einreichen",
+  "wk": 4,
+  "th": "amt"
+ },
+ {
+  "w": "die Unterlagen",
+  "s": "Haben Sie alle Unterlagen dabei?",
+  "m": "documents, paperwork",
+  "x": "unter- (under) + Lage (layer, position) → what lies underneath as a basis; plural only",
+  "wk": 4,
+  "th": "amt"
+ },
+ {
+  "w": "der Termin",
+  "s": "Ich habe morgen einen Termin beim Bürgeramt.",
+  "m": "appointment",
+  "x": "from Latin terminus (fixed point)",
+  "pl": "die Termine",
+  "rp": "der Termin bei + Dat",
+  "col": "einen Termin vereinbaren",
+  "wk": 4,
+  "th": "amt"
+ },
+ {
+  "w": "zuständig",
+  "s": "Wer ist für meinen Antrag zuständig?",
+  "m": "responsible, in charge",
+  "x": "zu- (at) + Stand (standing) + -ig → the one standing at it",
+  "rp": "zuständig für + Akk",
+  "wk": 4,
+  "th": "amt"
+ },
+ {
+  "w": "der Aufenthaltstitel",
+  "s": "Mein Aufenthaltstitel läuft im März ab.",
+  "m": "residence permit",
+  "x": "Aufenthalt (stay: auf + ent + halt) + -s- + Titel (title) → gender from last part: der Titel",
+  "pl": "die Aufenthaltstitel",
+  "wk": 4,
+  "th": "amt"
+ },
+ {
+  "w": "die Bewerbung",
+  "s": "Ich habe gestern meine Bewerbung abgeschickt.",
+  "m": "job application",
+  "x": "be- + werb(en) (strive for) + -ung → act of striving for something",
+  "pl": "die Bewerbungen",
+  "rp": "sich bewerben um + Akk",
+  "col": "eine Bewerbung schreiben",
+  "wk": 5,
+  "th": "arbeit"
+ },
+ {
+  "w": "die Besprechung",
+  "s": "Die Besprechung wurde auf Donnerstag verschoben.",
+  "m": "meeting (at work)",
+  "x": "be- + sprech(en) (speak) + -ung → talking something over",
+  "pl": "die Besprechungen",
+  "wk": 5,
+  "th": "arbeit"
+ },
+ {
+  "w": "verschieben",
+  "s": "Können wir den Termin verschieben?",
+  "m": "to postpone, to move",
+  "x": "ver- (change) + schieben (push) → push somewhere else",
+  "rp": "verschieben auf + Akk",
+  "wk": 5,
+  "th": "arbeit"
+ },
+ {
+  "w": "die Krankmeldung",
+  "s": "Ich muss meinem Chef die Krankmeldung schicken.",
+  "m": "sick note",
+  "x": "krank (ill) + meld(en) (report) + -ung → reporting sick",
+  "pl": "die Krankmeldungen",
+  "wk": 6,
+  "th": "gesundheit"
+ },
+ {
+  "w": "die Überweisung",
+  "s": "Für den Facharzt brauchen Sie eine Überweisung.",
+  "m": "referral (also: bank transfer)",
+  "x": "über- (across) + weis(en) (direct) + -ung → directing across",
+  "pl": "die Überweisungen",
+  "col": "eine Überweisung ausstellen",
+  "wk": 6,
+  "th": "gesundheit"
+ },
+ {
+  "w": "verschreiben",
+  "s": "Die Ärztin hat mir ein Medikament verschrieben.",
+  "m": "to prescribe",
+  "x": "ver- + schreiben (write) → write out for someone; careful: sich verschreiben = make a typo",
+  "rp": "jemandem (Dat) etwas (Akk) verschreiben",
+  "wk": 6,
+  "th": "gesundheit"
+ },
+ {
+  "w": "die Trauung",
+  "s": "Die standesamtliche Trauung ist im Mai.",
+  "m": "wedding ceremony",
+  "x": "trau(en) (to trust; to marry) + -ung",
+  "pl": "die Trauungen",
+  "wk": 7,
+  "th": "familie"
+ },
+ {
+  "w": "der Trauzeuge",
+  "s": "Mein bester Freund ist mein Trauzeuge.",
+  "m": "wedding witness (≈ best man)",
+  "x": "trau(en) + Zeuge (witness); female: die Trauzeugin",
+  "pl": "die Trauzeugen",
+  "wk": 7,
+  "th": "familie"
+ },
+ {
+  "w": "das Standesamt",
+  "s": "Wir haben einen Termin beim Standesamt.",
+  "m": "registry office",
+  "x": "Stand (civil status) + -es- + Amt (office)",
+  "pl": "die Standesämter",
+  "wk": 7,
+  "th": "amt"
+ },
+ {
+  "w": "heiraten",
+  "s": "Wir heiraten im Sommer.",
+  "m": "to marry, to get married",
+  "x": "Heirat (marriage) + -en; takes a direct object: jemanden heiraten (no preposition!)",
+  "rp": "jemanden (Akk) heiraten",
+  "wk": 7,
+  "th": "familie"
+ },
+ {
+  "w": "die Nebenkosten",
+  "s": "Die Nebenkosten sind dieses Jahr gestiegen.",
+  "m": "utility and service charges (on rent)",
+  "x": "neben (beside) + Kosten (costs) → costs on the side; plural only",
+  "wk": 8,
+  "th": "wohnen"
+ },
+ {
+  "w": "die Kaution",
+  "s": "Die Kaution beträgt drei Monatsmieten.",
+  "m": "rental deposit",
+  "x": "Latin cautio (precaution); -ion = cognate signal",
+  "pl": "die Kautionen",
+  "wk": 8,
+  "th": "wohnen"
+ },
+ {
+  "w": "kündigen",
+  "s": "Ich habe meine Wohnung zum Juni gekündigt.",
+  "m": "to give notice, to cancel (a contract)",
+  "x": "künd- (make known, as in verkünden) + -igen → announce that you're leaving",
+  "rp": "etwas (Akk) kündigen / jemandem (Dat) kündigen",
+  "wk": 8,
+  "th": "wohnen"
+ },
+ {
+  "w": "der Brauch",
+  "s": "Den Maibaum aufzustellen ist ein alter Brauch in Bayern.",
+  "m": "custom, tradition",
+  "x": "brauch(en) (use) → what people use habitually",
+  "pl": "die Bräuche",
+  "wk": 9,
+  "th": "freizeit"
+ },
+ {
+  "w": "der Verein",
+  "s": "Er ist seit Jahren im Fußballverein.",
+  "m": "club, association",
+  "x": "ver- + ein (one) → making into one, uniting",
+  "pl": "die Vereine",
+  "col": "in einen Verein eintreten",
+  "wk": 9,
+  "th": "freizeit"
+ },
+ {
+  "w": "der Feierabend",
+  "s": "Schönen Feierabend!",
+  "m": "end of the working day, time off after work",
+  "x": "Feier (celebration, rest) + Abend (evening)",
+  "col": "Feierabend machen",
+  "wk": 9,
+  "th": "arbeit"
+ },
+ {
+  "w": "die Umfrage",
+  "s": "Laut einer Umfrage arbeiten viele Menschen gern im Homeoffice.",
+  "m": "survey, poll",
+  "x": "um- (around) + Frage (question) → asking around",
+  "pl": "die Umfragen",
+  "wk": 10,
+  "th": "alltag"
+ },
+ {
+  "w": "die Entwicklung",
+  "s": "Die Entwicklung der Mieten macht vielen Menschen Sorgen.",
+  "m": "development",
+  "x": "ent- (out of) + wickel(n) (wrap) + -ung → unwrapping",
+  "pl": "die Entwicklungen",
+  "wk": 10,
+  "th": "alltag"
+ },
+ {
+  "w": "Wie meinst du das?",
+  "s": "Wie meinst du das genau?",
+  "m": "What do you mean?",
+  "x": "Survival phrase: buys time when you're lost",
+  "wk": 1,
+  "th": "alltag",
+  "mod": "Sprechen 1",
+  "deck": "Redemittel"
+ },
+ {
+  "w": "Kannst du das bitte noch mal sagen?",
+  "s": "Sorry, kannst du das bitte noch mal sagen?",
+  "m": "Can you say that again, please?",
+  "x": "Survival phrase; formal: Können Sie das bitte wiederholen?",
+  "wk": 1,
+  "th": "alltag",
+  "mod": "Sprechen 1",
+  "deck": "Redemittel"
+ },
+ {
+  "w": "Moment, wie sagt man ...?",
+  "s": "Moment, wie sagt man das auf Deutsch?",
+  "m": "Hang on, how do you say ...?",
+  "x": "Survival phrase: keeps the conversation going",
+  "wk": 1,
+  "th": "alltag",
+  "mod": "Sprechen 1",
+  "deck": "Redemittel"
+ },
+ {
+  "w": "Was hältst du davon, wenn ...?",
+  "s": "Was hältst du davon, wenn wir am Samstag grillen?",
+  "m": "What do you think about ...?",
+  "x": "Verb goes to the end after wenn",
+  "wk": 1,
+  "th": "alltag",
+  "mod": "Sprechen 1",
+  "deck": "Redemittel"
+ },
+ {
+  "w": "Wie wäre es mit ...?",
+  "s": "Wie wäre es mit einem Picknick am See?",
+  "m": "How about ...?",
+  "x": "mit + Dativ",
+  "wk": 1,
+  "th": "alltag",
+  "mod": "Sprechen 1",
+  "deck": "Redemittel"
+ },
+ {
+  "w": "Gute Idee! Außerdem könnten wir ...",
+  "s": "Gute Idee! Außerdem könnten wir Musik mitbringen.",
+  "m": "Good idea! We could also ...",
+  "x": "Agree and add; außerdem takes position 1, so the verb comes next",
+  "wk": 1,
+  "th": "alltag",
+  "mod": "Sprechen 1",
+  "deck": "Redemittel"
+ },
+ {
+  "w": "Ich bin nicht so sicher, ob ...",
+  "s": "Ich bin nicht so sicher, ob das Wetter hält.",
+  "m": "I'm not so sure whether ...",
+  "x": "Polite disagreement; verb at the end after ob",
+  "wk": 1,
+  "th": "alltag",
+  "mod": "Sprechen 1",
+  "deck": "Redemittel"
+ },
+ {
+  "w": "Sollen wir ... oder lieber ...?",
+  "s": "Sollen wir mit dem Auto fahren oder lieber mit dem Zug?",
+  "m": "Shall we ... or would we rather ...?",
+  "x": "Offering a choice",
+  "wk": 1,
+  "th": "alltag",
+  "mod": "Sprechen 1",
+  "deck": "Redemittel"
+ },
+ {
+  "w": "Dann machen wir es so: ...",
+  "s": "Dann machen wir es so: Du kaufst ein, und ich koche.",
+  "m": "Let's do it like this: ...",
+  "x": "Closing the planning task",
+  "wk": 1,
+  "th": "alltag",
+  "mod": "Sprechen 1",
+  "deck": "Redemittel"
+ },
+ {
+  "w": "Ich möchte heute über das Thema ... sprechen.",
+  "s": "Ich möchte heute über das Thema „Homeoffice“ sprechen.",
+  "m": "Today I'd like to talk about ...",
+  "x": "Teil 2, step 1: introduce the topic",
+  "wk": 7,
+  "th": "alltag",
+  "mod": "Sprechen 2",
+  "deck": "Redemittel"
+ },
+ {
+  "w": "Ich habe damit folgende Erfahrungen gemacht: ...",
+  "s": "Ich habe damit folgende Erfahrungen gemacht: Am Anfang war es schwierig.",
+  "m": "My experience with this is ...",
+  "x": "Teil 2, step 2: your own experience",
+  "wk": 7,
+  "th": "alltag",
+  "mod": "Sprechen 2",
+  "deck": "Redemittel"
+ },
+ {
+  "w": "In meinem Heimatland ist das ganz anders: ...",
+  "s": "In meinem Heimatland ist das ganz anders: Dort feiert man viel größer.",
+  "m": "In my home country it's very different: ...",
+  "x": "Teil 2, step 3: your home country",
+  "wk": 7,
+  "th": "alltag",
+  "mod": "Sprechen 2",
+  "deck": "Redemittel"
+ },
+ {
+  "w": "Ein Vorteil ist ..., ein Nachteil ist aber ...",
+  "s": "Ein Vorteil ist die Zeit, ein Nachteil ist aber der Preis.",
+  "m": "One advantage is ..., but one disadvantage is ...",
+  "x": "Teil 2, step 4: pros and cons",
+  "wk": 7,
+  "th": "alltag",
+  "mod": "Sprechen 2",
+  "deck": "Redemittel"
+ },
+ {
+  "w": "Meiner Meinung nach ...",
+  "s": "Meiner Meinung nach ist das eine gute Lösung.",
+  "m": "In my opinion ...",
+  "x": "Takes position 1, so the verb comes next: Meiner Meinung nach IST ...",
+  "wk": 3,
+  "th": "alltag",
+  "mod": "Sprechen 2",
+  "deck": "Redemittel"
+ },
+ {
+  "w": "Zum Schluss möchte ich sagen, dass ...",
+  "s": "Zum Schluss möchte ich sagen, dass beide Seiten recht haben.",
+  "m": "Finally, I'd like to say that ...",
+  "x": "Teil 2, step 5: conclusion; verb at the end after dass",
+  "wk": 7,
+  "th": "alltag",
+  "mod": "Sprechen 2",
+  "deck": "Redemittel"
+ },
+ {
+  "w": "Vielen Dank für Ihre Aufmerksamkeit.",
+  "s": "Vielen Dank für Ihre Aufmerksamkeit. Haben Sie noch Fragen?",
+  "m": "Thank you for your attention.",
+  "x": "End of the presentation",
+  "wk": 7,
+  "th": "alltag",
+  "mod": "Sprechen 2",
+  "deck": "Redemittel"
+ },
+ {
+  "w": "Danke für deine Präsentation. Mir hat besonders gefallen, dass ...",
+  "s": "Danke für deine Präsentation. Mir hat besonders gefallen, dass du so viele Beispiele hattest.",
+  "m": "Thanks for your presentation. I especially liked that ...",
+  "x": "Teil 3: feedback; gefallen takes Dativ (mir)",
+  "wk": 7,
+  "th": "alltag",
+  "mod": "Sprechen 3",
+  "deck": "Redemittel"
+ },
+ {
+  "w": "Ich habe eine Frage zu ...",
+  "s": "Ich habe eine Frage zu deinem letzten Punkt.",
+  "m": "I have a question about ...",
+  "x": "Teil 3: asking; zu + Dativ",
+  "wk": 7,
+  "th": "alltag",
+  "mod": "Sprechen 3",
+  "deck": "Redemittel"
+ },
+ {
+  "w": "Das ist eine gute Frage. Ich denke, ...",
+  "s": "Das ist eine gute Frage. Ich denke, das hängt von der Situation ab.",
+  "m": "That's a good question. I think ...",
+  "x": "Teil 3: answering; buys you a few seconds",
+  "wk": 7,
+  "th": "alltag",
+  "mod": "Sprechen 3",
+  "deck": "Redemittel"
+ },
+ {
+  "w": "Da hast du recht, aber ...",
+  "s": "Da hast du recht, aber man muss auch an die Kosten denken.",
+  "m": "You're right there, but ...",
+  "x": "Agree partly, then add your point",
+  "wk": 3,
+  "th": "alltag",
+  "mod": "Sprechen 1",
+  "deck": "Redemittel"
+ },
+ {
+  "w": "Servus!",
+  "s": "Servus, wie geht's?",
+  "m": "Hi! / Bye! (informal)",
+  "x": "Standard: Hallo! / Tschüss!",
+  "wk": 1,
+  "th": "familie",
+  "deck": "Bairisch"
+ },
+ {
+  "w": "Grüß Gott!",
+  "s": "Grüß Gott, Frau Huber!",
+  "m": "Good day! (polite greeting)",
+  "x": "Standard: Guten Tag!",
+  "wk": 1,
+  "th": "familie",
+  "deck": "Bairisch"
+ },
+ {
+  "w": "Pfiat di! / Pfiat eich!",
+  "s": "Pfiat di, bis morgen!",
+  "m": "Bye! (to one person / to several)",
+  "x": "Standard: Tschüss! From „Behüte dich Gott“",
+  "wk": 1,
+  "th": "familie",
+  "deck": "Bairisch"
+ },
+ {
+  "w": "i, ned / net, des, a",
+  "s": "I woaß ned, ob des a guade Idee is.",
+  "m": "I, not, that, a",
+  "x": "Standard: ich, nicht, das, ein → Ich weiß nicht, ob das eine gute Idee ist.",
+  "wk": 1,
+  "th": "familie",
+  "deck": "Bairisch"
+ },
+ {
+  "w": "gell?",
+  "s": "Des schmeckt guad, gell?",
+  "m": "right? isn't it?",
+  "x": "Standard: oder? / nicht wahr?",
+  "wk": 1,
+  "th": "familie",
+  "deck": "Bairisch"
+ },
+ {
+  "w": "fei",
+  "s": "Des is fei ned so einfach!",
+  "m": "really, mind you (adds emphasis)",
+  "x": "No direct standard word; like wirklich or übrigens",
+  "wk": 1,
+  "th": "familie",
+  "deck": "Bairisch"
+ },
+ {
+  "w": "freilich!",
+  "s": "Kommst mit? – Freilich!",
+  "m": "of course!",
+  "x": "Standard: natürlich! / klar!",
+  "wk": 1,
+  "th": "familie",
+  "deck": "Bairisch"
+ },
+ {
+  "w": "mei ...",
+  "s": "Mei, so is des halt.",
+  "m": "oh well ... (sigh, resignation)",
+  "x": "Standard: na ja ... / ach ...",
+  "wk": 1,
+  "th": "familie",
+  "deck": "Bairisch"
+ },
+ {
+  "w": "a Semmel, a Brezn, a Mass",
+  "s": "Zwoa Semmeln und a Brezn, bitte!",
+  "m": "a bread roll, a pretzel, a litre of beer",
+  "x": "Standard: ein Brötchen, eine Brezel, ein Liter Bier",
+  "wk": 1,
+  "th": "familie",
+  "deck": "Bairisch"
+ },
+ {
+  "w": "die Brotzeit",
+  "s": "Um zehn mach ma Brotzeit.",
+  "m": "snack, cold meal (bread, cheese, sausage)",
+  "x": "Standard: der Imbiss, die Zwischenmahlzeit",
+  "wk": 1,
+  "th": "familie",
+  "deck": "Bairisch"
+ },
+ {
+  "w": "a Schmarrn!",
+  "s": "Des is doch a Schmarrn!",
+  "m": "nonsense!",
+  "x": "Standard: Unsinn! (Kaiserschmarrn is also a dessert)",
+  "wk": 1,
+  "th": "familie",
+  "deck": "Bairisch"
+ },
+ {
+  "w": "ratschen",
+  "s": "Die zwoa ratschen scho seit a Stund.",
+  "m": "to chat, to gossip",
+  "x": "Standard: plaudern, quatschen",
+  "wk": 1,
+  "th": "familie",
+  "deck": "Bairisch"
+ },
+ {
+  "w": "gscheid",
+  "s": "Iss amoi was Gscheids!",
+  "m": "properly, decent",
+  "x": "Standard: richtig, ordentlich, vernünftig",
+  "wk": 1,
+  "th": "familie",
+  "deck": "Bairisch"
+ },
+ {
+  "w": "da Bua / as Madl",
+  "s": "Der Bua is scho groß worn.",
+  "m": "the boy / the girl",
+  "x": "Standard: der Junge / das Mädchen",
+  "wk": 1,
+  "th": "familie",
+  "deck": "Bairisch"
+ }
+]

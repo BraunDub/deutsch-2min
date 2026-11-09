@@ -4,9 +4,9 @@
 const $app = document.getElementById('app');
 const DAY = 864e5;
 const INTERVALS = [0, 1, 3, 7, 14, 30, 60, 120]; // days per SRS box
-const SKILLS = ['lesen', 'hoeren', 'schreiben', 'sprechen'];
+const SKILLS = ['lesen', 'hoeren', 'schreiben', 'sprechen', 'party'];
 const STATES = { '': 'Noch nicht gewählt', BW: 'Baden-Württemberg', BY: 'Bayern', BE: 'Berlin', BB: 'Brandenburg', HB: 'Bremen', HH: 'Hamburg', HE: 'Hessen', MV: 'Mecklenburg-Vorpommern', NI: 'Niedersachsen', NW: 'Nordrhein-Westfalen', RP: 'Rheinland-Pfalz', SL: 'Saarland', SN: 'Sachsen', ST: 'Sachsen-Anhalt', SH: 'Schleswig-Holstein', TH: 'Thüringen' };
-const TYPE_LABEL = { vocab: 'Wortschatz', decode: 'Entschlüsseln', lid: 'Leben in Deutschland', lesen: 'Lesen', hoeren: 'Hören', schreiben: 'Schreiben', sprechen: 'Sprechen' };
+const TYPE_LABEL = { vocab: 'Wortschatz', decode: 'Entschlüsseln', lid: 'Leben in Deutschland', lesen: 'Lesen', hoeren: 'Hören', schreiben: 'Schreiben', sprechen: 'Sprechen', party: 'Party-Hören' };
 
 let DATA = null;
 let S = load();
@@ -14,7 +14,7 @@ let session = null;
 
 /* ---------- storage ---------- */
 function load() {
-  const def = { srs: {}, decks: [], streak: { last: '', n: 0 }, days: {}, seen: {}, settings: { state: '', mix: 6, rate: 0.95, week: 1 } };
+  const def = { srs: {}, decks: [], streak: { last: '', n: 0 }, days: {}, seen: {}, settings: { state: 'BY', mix: 6, rate: 0.95, week: 1 } };
   try { const s = JSON.parse(localStorage.getItem('d2m') || '{}'); return { ...def, ...s, settings: { ...def.settings, ...(s.settings || {}) } }; }
   catch { return def; }
 }
@@ -110,7 +110,7 @@ function buildSection(kind) {
   if (kind === 'vocab') return choose(vocabPool(), 8, x => x.k).map(c => ({ t: 'vocab', c }));
   if (kind === 'decode') return choose(decodePool(), 5, x => x.k).map(c => ({ t: 'decode', c }));
   if (kind === 'lid') return choose(lidPool(), 5, x => x.k).map(c => ({ t: 'lid', c }));
-  const n = kind === 'hoeren' ? 4 : kind === 'lesen' ? 2 : 3;
+  const n = kind === 'hoeren' ? 4 : kind === 'lesen' || kind === 'party' ? 2 : 3;
   const out = []; const used = new Set();
   for (let j = 0; j < n; j++) { const it = skillItem(kind); if (used.has(it.i)) continue; used.add(it.i); markSeen(kind, it.i); out.push(it); }
   return out;
@@ -148,6 +148,7 @@ function home() {
       <span class="pill" style="flex:none">Woche ${S.settings.week}</span>
       <span class="pill" style="flex:none">Heute: ${t.n} · 🇩🇪 ${t.lid || 0}/5</span>
     </div>
+    ${missionCard()}
     <button class="btn primary" data-start="mix">▶ 2-Minuten-Mix</button>
     <p class="muted small" style="text-align:center">Karten, ein Wort entschlüsseln, eine Einbürgerungsfrage und eine Prüfungsaufgabe</p>
     <h2>Einzeln üben</h2>
@@ -159,6 +160,7 @@ function home() {
       ${tile('hoeren', 'Hören', 'Diktat: hören & tippen')}
       ${tile('schreiben', 'Schreiben', 'Ein Satz, mit Musterlösung')}
       ${tile('sprechen', 'Sprechen', 'Laut antworten')}
+      ${tile('party', 'Party-Hören', 'Schnelle Alltagsdialoge')}
       <button class="tile" data-go="import"><b>＋ Quizlet-Import</b><span>${S.decks.length} eigene Stapel</span></button>
     </div>`;
 }
@@ -213,7 +215,7 @@ function finish() {
 function renderItem() {
   stopSpeech();
   const it = session.q[session.pos];
-  ({ vocab: vVocab, decode: vDecode, lid: vLid, lesen: vLesen, hoeren: vHoeren, schreiben: vSchreiben, sprechen: vSprechen })[it.t](it.c);
+  ({ vocab: vVocab, decode: vDecode, lid: vLid, lesen: vLesen, hoeren: vHoeren, schreiben: vSchreiben, sprechen: vSprechen, party: vParty })[it.t](it.c);
   window.scrollTo(0, 0);
 }
 
@@ -406,6 +408,63 @@ function vSprechen(c) {
     document.querySelectorAll('[data-ok]').forEach(b => b.onclick = () => next(b.dataset.ok === '1'));
   };
 }
+/* --- Party-Hören: fast casual dialogue, transcript hidden until tapped --- */
+function vParty(c) {
+  const lines = c.lines;
+  $app.innerHTML = frame(`<div class="body">
+    <p>Hör dir das Gespräch an. Es ist schnell und umgangssprachlich, wie auf einer Feier.</p>
+    <div class="row" style="margin:14px 0"><button class="btn" id="p1">🔊 Abspielen</button><button class="btn ghost" id="p2">🐢 Langsam</button></div>
+    <details id="tr" style="background:var(--card2)"><summary class="small">Transkript zeigen</summary>
+      ${lines.map(l => `<p class="small"><b>${esc(l.sp)}:</b> ${esc(l.t)}</p>`).join('')}</details>
+    <p style="margin-top:14px;font-weight:600">${esc(c.q)}</p>
+    <div id="opts">${shuffle(c.o.map((o, i) => i)).map(i => `<button class="opt" data-i="${i}">${esc(c.o[i])}</button>`).join('')}</div>
+    <div id="fb"></div></div>`, 'Party-Hören');
+  const play = rate => playLines(lines, rate);
+  document.getElementById('p1').onclick = () => play(1.1);
+  document.getElementById('p2').onclick = () => play(0.8);
+  setTimeout(() => play(1.1), 300);
+  document.querySelectorAll('.opt').forEach(b => b.onclick = () => {
+    const i = +b.dataset.i, ok = i === c.a;
+    document.querySelectorAll('.opt').forEach(x => { x.disabled = true; if (+x.dataset.i === c.a) x.classList.add('right'); });
+    if (!ok) b.classList.add('wrong');
+    document.getElementById('tr').open = true;
+    document.getElementById('fb').innerHTML = `<div class="feedback">${ok ? '✅ Richtig!' : '❌ Leider falsch.'} Lies das Transkript und hör noch einmal.</div><button class="btn primary actions" id="nx">Weiter</button>`;
+    document.getElementById('nx').onclick = () => next(ok);
+  });
+}
+function playLines(lines, rate) {
+  if (!('speechSynthesis' in window)) return toast('Sprachausgabe nicht verfügbar');
+  speechSynthesis.cancel();
+  const voices = speechSynthesis.getVoices().filter(v => /^de/i.test(v.lang));
+  const speakers = [...new Set(lines.map(l => l.sp))];
+  lines.forEach(l => {
+    const u = new SpeechSynthesisUtterance(l.t); u.lang = 'de-DE'; u.rate = rate;
+    const idx = speakers.indexOf(l.sp);
+    if (voices.length > 1) u.voice = voices[idx % voices.length]; else { if (deVoice) u.voice = deVoice; u.pitch = idx % 2 ? 0.8 : 1.15; }
+    speechSynthesis.speak(u);
+  });
+}
+
+/* --- Mission des Tages --- */
+function todaysMission() {
+  const pool = (DATA.missions || []).filter(m => !m.wk || m.wk <= S.settings.week);
+  if (!pool.length) return null;
+  const cur = pool.filter(m => m.wk === S.settings.week);
+  const list = cur.length ? cur : pool;
+  const seed = [...today()].reduce((a, ch) => a * 31 + ch.charCodeAt(0) | 0, 7);
+  return list[Math.abs(seed) % list.length];
+}
+function missionCard() {
+  const m = todaysMission(); if (!m) return '';
+  const done = (S.missions || {})[today()];
+  return `<div class="tile" style="min-height:0;margin-bottom:12px;${done ? 'opacity:.6' : ''}">
+    <span style="text-transform:uppercase;letter-spacing:.06em;font-size:12px">🎯 Mission des Tages</span>
+    <b style="margin:6px 0;font-weight:500">${esc(m.t)}</b>
+    <details><summary class="small muted">English</summary><p class="small">${esc(m.en)}</p></details>
+    <label class="small" style="display:flex;gap:8px;align-items:center;margin-top:8px"><input type="checkbox" id="mission" style="width:auto" ${done ? 'checked' : ''}> Erledigt</label></div>`;
+}
+document.addEventListener('change', e => { if (e.target.id === 'mission') { (S.missions ||= {})[today()] = e.target.checked; save(); home(); } });
+
 function stopSpeech() { if ('speechSynthesis' in window) speechSynthesis.cancel(); }
 
 /* ---------- import ---------- */
@@ -507,8 +566,8 @@ document.addEventListener('click', e => {
 async function boot() {
   $app.innerHTML = '<p class="muted">Lädt …</p>';
   const get = f => fetch(`data/${f}.json`).then(r => r.json());
-  const [vocab, decode, lid, tasks] = await Promise.all(['vocab', 'decode', 'lid', 'tasks'].map(get));
-  DATA = { vocab, decode, lid, tasks };
+  const [vocab, decode, lid, tasks, missions] = await Promise.all(['vocab', 'decode', 'lid', 'tasks', 'missions'].map(get));
+  DATA = { vocab, decode, lid, tasks, missions };
   home();
   if (new URLSearchParams(location.search).get('start') === 'mix') startSession('mix');
 }

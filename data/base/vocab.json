@@ -1,0 +1,292 @@
+[
+{
+"w": "die Ermäßigung",
+"s": "Studenten bekommen eine Ermäßigung.",
+"m": "discount, reduction",
+"x": "er- + mäßig (moderate) + -ung → making it moderate",
+"pl": "die Ermäßigungen",
+"rp": "eine Ermäßigung auf + Akk",
+"col": "eine Ermäßigung bekommen"
+},
+{
+"w": "die Anmeldung",
+"s": "Für die Anmeldung brauchen Sie Ihren Pass.",
+"m": "registration (e.g. of your address)",
+"x": "an- (onto) + melden (report) + -ung → reporting yourself onto a list",
+"pl": "die Anmeldungen",
+"col": "die Anmeldung beim Bürgeramt"
+},
+{
+"w": "die Aufenthaltserlaubnis",
+"s": "Meine Aufenthaltserlaubnis läuft im März ab.",
+"m": "residence permit",
+"x": "Aufenthalt (stay: auf + ent + halten) + -s- + Erlaubnis (permission: erlauben + -nis) → permission to stay"
+},
+{
+"w": "der Termin",
+"s": "Ich habe morgen einen Termin beim Bürgeramt.",
+"m": "appointment",
+"x": "from Latin terminus (boundary, end point) → a fixed point in time"
+},
+{
+"w": "die Bescheinigung",
+"s": "Der Arbeitgeber stellt eine Bescheinigung aus.",
+"m": "certificate, written confirmation",
+"x": "be- + scheinen (to shine/appear) + -ig + -ung → making something visible in writing"
+},
+{
+"w": "beantragen",
+"s": "Ich möchte einen neuen Reisepass beantragen.",
+"m": "to apply for",
+"x": "be- (makes it transitive) + Antrag (application) → to put in an application for something",
+"rp": "etw. (Akk) bei + Dat beantragen",
+"col": "ein Visum beantragen"
+},
+{
+"w": "der Antrag",
+"s": "Haben Sie den Antrag schon ausgefüllt?",
+"m": "application (form)",
+"x": "an- (towards) + tragen (carry) → something carried to an office",
+"pl": "die Anträge",
+"rp": "ein Antrag auf + Akk",
+"col": "einen Antrag stellen"
+},
+{
+"w": "ausfüllen",
+"s": "Bitte füllen Sie das Formular vollständig aus.",
+"m": "to fill in (a form)",
+"x": "aus- (out, completely) + füllen (fill) → fill out"
+},
+{
+"w": "die Unterschrift",
+"s": "Hier fehlt noch Ihre Unterschrift.",
+"m": "signature",
+"x": "unter- (under) + Schrift (writing) → the writing at the bottom"
+},
+{
+"w": "die Voraussetzung",
+"s": "Gute Deutschkenntnisse sind eine Voraussetzung für die Einbürgerung.",
+"m": "prerequisite, requirement",
+"x": "voraus- (ahead) + setzen (set) + -ung → something set in place beforehand",
+"pl": "die Voraussetzungen",
+"rp": "die Voraussetzung für + Akk",
+"col": "die Voraussetzungen erfüllen"
+},
+{
+"w": "die Einbürgerung",
+"s": "Nach der Einbürgerung bekommt man einen deutschen Pass.",
+"m": "naturalisation",
+"x": "ein- (into) + Bürger (citizen) + -ung → making someone into a citizen"
+},
+{
+"w": "die Staatsangehörigkeit",
+"s": "Welche Staatsangehörigkeit haben Sie?",
+"m": "citizenship, nationality",
+"x": "Staat (state) + -s- + angehören (belong to) + -ig + -keit → the state of belonging to a state"
+},
+{
+"w": "verlängern",
+"s": "Ich muss meinen Vertrag verlängern.",
+"m": "to extend, renew",
+"x": "ver- (changes state) + länger (longer) → to make longer"
+},
+{
+"w": "der Vertrag",
+"s": "Lesen Sie den Vertrag genau, bevor Sie unterschreiben.",
+"m": "contract",
+"x": "vertragen (to get along, agree) → what parties agree on"
+},
+{
+"w": "kündigen",
+"s": "Er hat seine Wohnung zum Monatsende gekündigt.",
+"m": "to cancel, give notice, terminate",
+"x": "related to kund (known) → to make known that something ends",
+"rp": "etw. (Akk) kündigen / jdm. (Dat) kündigen",
+"col": "den Vertrag kündigen"
+},
+{
+"w": "die Nebenkosten",
+"s": "Die Miete beträgt 800 Euro plus Nebenkosten.",
+"m": "additional costs (utilities on top of rent)",
+"x": "neben (beside) + Kosten (costs) → costs on the side"
+},
+{
+"w": "die Kaution",
+"s": "Die Kaution beträgt drei Monatsmieten.",
+"m": "security deposit",
+"x": "from Latin cautio (caution, security) → money held as security"
+},
+{
+"w": "der Vermieter",
+"s": "Der Vermieter repariert die Heizung nächste Woche.",
+"m": "landlord",
+"x": "ver- (giving away) + mieten (rent) + -er (person) → the one who rents out"
+},
+{
+"w": "zuständig",
+"s": "Welches Amt ist dafür zuständig?",
+"m": "responsible, in charge",
+"x": "zu- (to) + Stand (standing, position) + -ig → whose position it belongs to"
+},
+{
+"w": "die Behörde",
+"s": "Die Behörde hat meinen Antrag noch nicht bearbeitet.",
+"m": "public authority, government office",
+"x": "old verb behören (to belong) → the body that matters belong to"
+},
+{
+"w": "bearbeiten",
+"s": "Wir bearbeiten Ihre Anfrage so schnell wie möglich.",
+"m": "to process, deal with, edit",
+"x": "be- (act on something) + arbeiten (work) → to work on something"
+},
+{
+"w": "die Erfahrung",
+"s": "Sie hat viel Erfahrung im Kundenservice.",
+"m": "experience",
+"x": "er- (achieve) + fahren (travel) + -ung → what you gain by travelling through life"
+},
+{
+"w": "sich bewerben",
+"s": "Ich bewerbe mich um eine Stelle als Ingenieur.",
+"m": "to apply (for a job)",
+"x": "be- + werben (to advertise, court) → to advertise yourself for something"
+},
+{
+"w": "die Bewerbung",
+"s": "Meine Bewerbung habe ich per E-Mail geschickt.",
+"m": "job application",
+"x": "bewerben + -ung → the act of applying",
+"pl": "die Bewerbungen",
+"rp": "sich bewerben um + Akk",
+"col": "eine Bewerbung schreiben"
+},
+{
+"w": "die Krankmeldung",
+"s": "Schicken Sie uns bitte die Krankmeldung bis Mittwoch.",
+"m": "sick note",
+"x": "krank (sick) + melden (report) + -ung → reporting that you are sick"
+},
+{
+"w": "die Überweisung",
+"s": "Die Überweisung dauert ein bis zwei Werktage.",
+"m": "bank transfer; also a doctor's referral",
+"x": "über- (across) + weisen (point, direct) + -ung → directing something across"
+},
+{
+"w": "die Rechnung",
+"s": "Können Sie mir bitte die Rechnung schicken?",
+"m": "bill, invoice",
+"x": "rechnen (calculate) + -ung → the calculation"
+},
+{
+"w": "rechtzeitig",
+"s": "Bitte kommen Sie rechtzeitig zum Termin.",
+"m": "in time, punctually",
+"x": "recht (right) + Zeit (time) + -ig → at the right time"
+},
+{
+"w": "die Verspätung",
+"s": "Der Zug hat zwanzig Minuten Verspätung.",
+"m": "delay",
+"x": "ver- + spät (late) + -ung → the state of being made late"
+},
+{
+"w": "umsteigen",
+"s": "In Köln müssen Sie umsteigen.",
+"m": "to change (trains, buses)",
+"x": "um- (around, change) + steigen (climb) → climb over into another vehicle"
+},
+{
+"w": "die Gewohnheit",
+"s": "Früh aufzustehen ist eine gute Gewohnheit.",
+"m": "habit",
+"x": "gewohnt (used to) + -heit → the state of being used to something"
+},
+{
+"w": "die Vorstellung",
+"s": "Ich habe keine Vorstellung, wie das funktioniert.",
+"m": "idea, notion; also introduction or performance",
+"x": "vor- (in front) + stellen (place) + -ung → something placed in front of you (or your mind)"
+},
+{
+"w": "unterstützen",
+"s": "Meine Familie unterstützt mich sehr.",
+"m": "to support",
+"x": "unter- (under) + stützen (prop up) → to prop up from below",
+"rp": "jdn. (Akk) bei + Dat unterstützen",
+"col": "jemanden finanziell unterstützen"
+},
+{
+"w": "die Ausbildung",
+"s": "Sie macht eine Ausbildung zur Krankenpflegerin.",
+"m": "vocational training",
+"x": "aus- (out) + bilden (form, shape) + -ung → forming someone out fully"
+},
+{
+"w": "die Ehe",
+"s": "In Deutschland ist die Ehe durch das Grundgesetz geschützt.",
+"m": "marriage",
+"x": "Old High German ewa (law, eternity) → a legal, lasting bond"
+},
+{
+"w": "das Standesamt",
+"s": "Wir heiraten im Mai auf dem Standesamt.",
+"m": "registry office (civil marriages, births)",
+"x": "Stand (civil status) + -es- + Amt (office) → office for civil status"
+},
+{
+"w": "die Gleichberechtigung",
+"s": "Die Gleichberechtigung von Mann und Frau steht im Grundgesetz.",
+"m": "equal rights, equality",
+"x": "gleich (equal) + berechtigen (entitle: be- + Recht) + -ung → being equally entitled"
+},
+{
+"w": "die Meinungsfreiheit",
+"s": "Die Meinungsfreiheit ist ein Grundrecht.",
+"m": "freedom of expression",
+"x": "Meinung (opinion) + -s- + Freiheit (frei + -heit) → freedom of opinion"
+},
+{
+"w": "wählen",
+"s": "Deutsche Staatsbürger dürfen ab 18 den Bundestag wählen.",
+"m": "to vote; to choose; to dial",
+"x": "one root, three uses: choose a party, choose a number, choose a dish"
+},
+{
+"w": "die Rücksicht",
+"s": "Bitte nehmen Sie Rücksicht auf die Nachbarn.",
+"m": "consideration (for others)",
+"x": "Rück- (back) + Sicht (view) → looking back at others"
+},
+{
+"w": "die Mülltrennung",
+"s": "In Deutschland ist Mülltrennung sehr wichtig.",
+"m": "waste separation",
+"x": "Müll (rubbish) + trennen (separate) + -ung"
+},
+{
+"w": "vereinbaren",
+"s": "Können wir einen Termin vereinbaren?",
+"m": "to arrange, agree on",
+"x": "ver- + ein (one) + -bar + -en → to make into one (agreement)"
+},
+{
+"w": "absagen",
+"s": "Leider muss ich den Termin absagen.",
+"m": "to cancel (an appointment, event)",
+"x": "ab- (off, away) + sagen (say) → to say it off"
+},
+{
+"w": "zusagen",
+"s": "Ich habe für die Party zugesagt.",
+"m": "to accept (an invitation), confirm",
+"x": "zu- (towards, yes) + sagen (say) → to say yes to"
+},
+{
+"w": "die Pflicht",
+"s": "In Deutschland gibt es eine Schulpflicht.",
+"m": "duty, obligation",
+"x": "pflegen (care for, tend) → what you are bound to tend to"
+}
+]

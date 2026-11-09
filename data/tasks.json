@@ -1,5 +1,347 @@
 {
+"hoeren": [
+{
+"t": "Hallo, hier ist Lena. Wir treffen uns um halb sieben vor dem Restaurant, nicht um sieben.",
+"wk": 1,
+"th": "familie",
+"mod": "Hören 1"
+},
+{
+"t": "Wenn das Wetter schön bleibt, grillen wir am Samstag bei meinen Schwiegereltern.",
+"wk": 1,
+"th": "familie",
+"mod": "Hören 3"
+},
+{
+"t": "Wegen einer Störung hat die S-Bahn etwa fünfzehn Minuten Verspätung.",
+"wk": 2,
+"th": "alltag",
+"mod": "Hören 1"
+},
+{
+"t": "Am Wochenende waren wir auf einer Hochzeit, und ich habe bis drei Uhr morgens getanzt.",
+"wk": 2,
+"th": "familie",
+"mod": "Hören 3"
+},
+{
+"t": "Ich finde, dass man im Urlaub nicht ständig seine E-Mails lesen sollte.",
+"wk": 3,
+"th": "alltag",
+"mod": "Hören 4"
+},
+{
+"t": "Ihre Unterlagen sind leider noch nicht vollständig. Es fehlt die Bescheinigung vom Arbeitgeber.",
+"wk": 4,
+"th": "amt",
+"mod": "Hören 3"
+},
+{
+"t": "Könnten Sie mir bitte sagen, wo ich den Antrag abgeben kann?",
+"wk": 5,
+"th": "amt",
+"mod": "Hören 3"
+},
+{
+"t": "Die Praxis ist am Mittwochnachmittag geschlossen. Bitte rufen Sie morgen ab acht Uhr wieder an.",
+"wk": 6,
+"th": "gesundheit",
+"mod": "Hören 1"
+},
+{
+"t": "Der Regionalexpress nach Rosenheim fährt heute ausnahmsweise von Gleis sieben ab.",
+"wk": 6,
+"th": "alltag",
+"mod": "Hören 1"
+},
+{
+"t": "Auf der linken Seite sehen Sie das Rathaus, das im fünfzehnten Jahrhundert gebaut wurde.",
+"wk": 9,
+"th": "freizeit",
+"mod": "Hören 2"
+},
+"Der Zug nach München fährt heute von Gleis sieben ab.",
+"Können Sie mir bitte sagen, wo das Bürgeramt ist?",
+"Ich hätte gern einen Termin für nächste Woche.",
+"Wegen einer Störung fällt die U-Bahn heute aus.",
+"Bitte bringen Sie Ihren Ausweis und die Meldebescheinigung mit.",
+"Am Wochenende soll es regnen, deshalb bleiben wir zu Hause.",
+"Mein Kollege ist krank, deshalb arbeite ich heute länger.",
+"Die Apotheke hat am Sonntag leider geschlossen.",
+"Wir haben uns vor drei Jahren in Berlin kennengelernt.",
+"Wenn ich mehr Zeit hätte, würde ich öfter Sport machen.",
+"Könnten Sie das bitte noch einmal langsamer sagen?",
+"Die Miete wird jeden Monat am Ersten überwiesen.",
+"Ich interessiere mich sehr für deutsche Geschichte.",
+"Obwohl es kalt war, sind wir spazieren gegangen.",
+"Der Arzt hat mir ein Rezept für Tabletten gegeben.",
+"Nächsten Monat heiraten wir auf dem Standesamt.",
+"Haben Sie diesen Pullover auch in einer anderen Größe?",
+"Ich freue mich schon auf den Urlaub an der Ostsee.",
+"Seit ich in Deutschland wohne, fahre ich fast nur noch Fahrrad.",
+"Entschuldigung, ist dieser Platz noch frei?",
+"Bitte achten Sie auf die Durchsagen am Bahnsteig.",
+"Ich habe die Rechnung schon letzte Woche bezahlt.",
+"Das Paket wurde beim Nachbarn abgegeben.",
+"Morgen muss ich früh aufstehen, weil ich einen Termin habe.",
+"Darf man hier mit Karte bezahlen?"
+],
+"sprechen": [
+{
+"p": "Plan a surprise party for a friend together. Your partner suggests: 'Let's do it on Saturday at a restaurant.' Respond: react, make your own suggestion, and split the tasks.",
+"m": "Samstag passt mir gut, aber ein Restaurant ist ziemlich teuer. Was hältst du davon, wenn wir bei mir feiern? Jeder bringt etwas zu essen mit. Und als Geschenk: Wie wäre es mit einem Gutschein für einen Kletterkurs? Ich kann ihn morgen besorgen, wenn du die Einladungen schreibst.",
+"tip": "Was hältst du davon, wenn … sends the verb to the end: … wenn wir bei mir feiern?",
+"chk": [
+"Did you react to the suggestion?",
+"Did you make your own suggestion?",
+"Did you split a task (Ich kann …, wenn du …)?"
+],
+"wk": 1,
+"th": "freizeit",
+"mod": "Sprechen 1"
+},
+{
+"p": "Plan a visit to a Volksfest with a friend: when to go, how to get there, and whether to reserve a table.",
+"m": "Wie wäre es, wenn wir am Samstagnachmittag aufs Volksfest gehen? Am Abend ist es mir zu voll. Wir könnten mit der S-Bahn fahren, dann muss keiner von uns Auto fahren. Und sollen wir vorher einen Tisch im Bierzelt reservieren, oder schauen wir lieber spontan?",
+"tip": "Wie wäre es, wenn …? is Konjunktiv II plus a verb-last clause, a very natural way to suggest something.",
+"chk": [
+"When, how and where all covered?",
+"At least two different suggestion phrases?",
+"A question back to your partner?"
+],
+"wk": 9,
+"th": "freizeit",
+"mod": "Sprechen 1"
+},
+{
+"p": "Give a 60-second presentation: 'Große oder kleine Hochzeit?' Follow the 5 steps: topic, your experience, your home country, pros and cons with your opinion, conclusion.",
+"m": "Ich möchte heute über das Thema „Große oder kleine Hochzeit?“ sprechen. Ich heirate bald selbst, deshalb ist das Thema für mich gerade sehr aktuell. Ich war schon auf einer großen Hochzeit mit über hundert Gästen, und das war ein tolles Fest. In meinem Heimatland ist das ein bisschen anders: (Erzähl hier, wie man bei dir feiert.) Ein Vorteil einer großen Hochzeit ist, dass alle Freunde und Verwandten dabei sind. Ein Nachteil ist aber, dass sie sehr teuer ist und man kaum Zeit für jeden Gast hat. Meiner Meinung nach ist eine mittelgroße Feier ideal. Zum Schluss möchte ich sagen: Wichtig ist nicht die Größe, sondern die Stimmung. Vielen Dank fürs Zuhören!",
+"tip": "nicht …, sondern … means 'not X but Y'. Use sondern only after a negation; otherwise use aber.",
+"chk": [
+"All 5 steps?",
+"At least one pro and one con?",
+"A clear opinion?",
+"Under 90 seconds?"
+],
+"wk": 7,
+"th": "familie",
+"mod": "Sprechen 2"
+},
+{
+"p": "Your exam partner has just presented 'Homeoffice: ja oder nein?'. Give short feedback and ask one question.",
+"m": "Danke für deine Präsentation! Mir hat besonders gefallen, dass du so viele Beispiele aus deinem Alltag genannt hast. Ich habe eine Frage: Du hast gesagt, dass du zu Hause produktiver bist. Fehlt dir nicht manchmal der Kontakt zu den Kollegen?",
+"tip": "fehlen takes the Dativ for the person: Mir fehlt der Kontakt. Fehlt dir …?",
+"chk": [
+"Positive feedback with a concrete detail?",
+"One clear question?",
+"Du-form with your partner?"
+],
+"wk": 7,
+"th": "arbeit",
+"mod": "Sprechen 3"
+},
+{
+"p": "Stellen Sie sich vor: Name, Herkunft, Beruf, seit wann Sie in Deutschland leben.",
+"m": "Ich heiße …, ich komme aus … und arbeite als … Ich lebe seit drei Jahren in Deutschland.",
+"tip": "Goethe B1 Sprechen Teil 1 usually starts like this. seit + Dativ + present tense."
+},
+{
+"p": "Was machen Sie gern in Ihrer Freizeit? Warum?",
+"m": "In meiner Freizeit fahre ich gern Fahrrad, weil ich dabei abschalten kann und die Natur genieße.",
+"tip": "Give a reason with weil or denn (denn keeps normal word order)."
+},
+{
+"p": "Planen Sie mit einem Freund ein Wochenende. Machen Sie einen Vorschlag.",
+"m": "Wie wäre es, wenn wir am Samstag eine Radtour machen? Danach könnten wir zusammen grillen.",
+"tip": "Goethe B1 Teil 1 is 'gemeinsam etwas planen': Wie wäre es …? / Wir könnten …"
+},
+{
+"p": "Reagieren Sie auf einen Vorschlag, den Sie nicht gut finden.",
+"m": "Das ist eine gute Idee, aber am Samstag habe ich leider keine Zeit. Können wir es am Sonntag machen?",
+"tip": "Polite disagreement: acknowledge first, then aber, then a counter-suggestion."
+},
+{
+"p": "Wie feiert man in Ihrem Heimatland Hochzeit? Und in Deutschland?",
+"m": "In meinem Heimatland feiert man oft sehr groß. In Deutschland heiratet man zuerst auf dem Standesamt, und manche feiern danach noch kirchlich.",
+"tip": "Comparison: In … dagegen … / Im Unterschied zu …"
+},
+{
+"p": "Beschreiben Sie Ihren Arbeitsweg.",
+"m": "Ich fahre jeden Morgen mit dem Fahrrad zur Arbeit. Das dauert ungefähr zwanzig Minuten.",
+"tip": "mit + Dativ (dem Fahrrad), zu + Dativ (zur = zu der Arbeit)."
+},
+{
+"p": "Was finden Sie an Deutschland gut, was ist schwierig?",
+"m": "Mir gefällt, dass man fast alles mit dem Fahrrad erreichen kann. Schwierig finde ich manchmal die Bürokratie.",
+"tip": "gefallen + Dativ: Mir gefällt … The thing liked is the subject."
+},
+{
+"p": "Sie sind beim Arzt. Beschreiben Sie Ihre Beschwerden.",
+"m": "Ich habe seit zwei Tagen Halsschmerzen und Fieber, und ich fühle mich sehr müde.",
+"tip": "seit + Dativ with present tense: seit zwei Tagen habe ich …"
+},
+{
+"p": "Geben Sie Ihre Meinung: Sollte man in der Stadt Autos verbieten?",
+"m": "Meiner Meinung nach sollte man nicht alle Autos verbieten, aber die Innenstadt könnte autofrei sein.",
+"tip": "Meiner Meinung nach + verb second: … sollte man …"
+},
+{
+"p": "Erzählen Sie von Ihrem letzten Urlaub.",
+"m": "Letzten Sommer war ich mit Freunden an der Ostsee. Wir sind viel Fahrrad gefahren und haben Fisch gegessen.",
+"tip": "Movement verbs (fahren, gehen) use sein in the Perfekt: sind gefahren."
+},
+{
+"p": "Ein Freund möchte Deutsch lernen. Geben Sie ihm zwei Tipps.",
+"m": "Du solltest jeden Tag ein bisschen üben, zum Beispiel mit Karteikarten. Außerdem hilft es, mit Muttersprachlern zu sprechen.",
+"tip": "Advice: Du solltest … / Es hilft, … zu …"
+},
+{
+"p": "Bitten Sie Ihre Nachbarin, Ihre Pflanzen zu gießen, während Sie verreist sind.",
+"m": "Hallo Frau Becker, könnten Sie vielleicht meine Pflanzen gießen, während ich nächste Woche verreist bin?",
+"tip": "während as a conjunction sends the verb to the end: … während ich verreist bin."
+}
+],
 "lesen": [
+{
+"t": "Hallo zusammen! Letztes Wochenende waren wir bei Lenas Eltern in der Nähe von Landshut. Am Samstag hat ihr Vater seinen 60. Geburtstag gefeiert, und es kamen fast dreißig Gäste. Ich war ziemlich nervös, weil viele Verwandte Dialekt sprechen. Am Anfang habe ich kaum etwas verstanden, aber Lenas Tante hat mir die wichtigsten Wörter erklärt. Am Sonntag sind wir dann zusammen auf einen Berg gewandert, obwohl es geregnet hat. Nächstes Mal will ich schon ein paar Sätze auf Bairisch sagen!",
+"q": [
+{
+"q": "Warum war der Autor nervös?",
+"o": [
+"Weil viele Gäste Dialekt sprechen.",
+"Weil er zu spät gekommen ist.",
+"Weil er kein Geschenk hatte."
+],
+"a": 0
+},
+{
+"q": "Wer hat ihm geholfen?",
+"o": [
+"Lenas Tante",
+"Lenas Vater",
+"Lena"
+],
+"a": 0
+},
+{
+"q": "Was haben sie am Sonntag gemacht?",
+"o": [
+"Sie sind trotz Regen gewandert.",
+"Sie sind wegen des Regens zu Hause geblieben.",
+"Sie haben noch einmal gefeiert."
+],
+"a": 0
+}
+],
+"wk": 2,
+"th": "familie",
+"mod": "Lesen 1"
+},
+{
+"t": "Forum: Handys bei Familienfeiern – verbieten oder nicht?\n\nMarkus, 34: Bei uns steht bei jedem Familienessen eine Kiste auf dem Tisch, in die alle ihr Handy legen. Am Anfang fanden das alle komisch, aber jetzt reden wir viel mehr miteinander.\n\nAylin, 27: Ein komplettes Verbot finde ich übertrieben. Meine Oma lebt in der Türkei und freut sich, wenn wir sie kurz per Video dazuholen. Man sollte das Handy nur bewusst benutzen.\n\nSabine, 58: Ich verstehe beide Seiten. Trotzdem ärgere ich mich, wenn meine Kinder beim Kaffeetrinken nur auf den Bildschirm schauen. Deshalb sage ich es ihnen inzwischen direkt.",
+"q": [
+{
+"q": "Was meint Markus?",
+"o": [
+"Ohne Handys sprechen die Familienmitglieder mehr.",
+"Die Kiste war von Anfang an beliebt.",
+"Handys sollte man nur zu Hause verbieten."
+],
+"a": 0
+},
+{
+"q": "Was meint Aylin?",
+"o": [
+"Das Handy kann bei Familienfeiern auch nützlich sein.",
+"Handys sollten komplett verboten werden.",
+"Ihre Oma mag keine Videoanrufe."
+],
+"a": 0
+},
+{
+"q": "Was macht Sabine?",
+"o": [
+"Sie spricht ihre Kinder direkt an.",
+"Sie nimmt ihren Kindern die Handys weg.",
+"Sie schaut selbst oft auf ihr Handy."
+],
+"a": 0
+}
+],
+"wk": 3,
+"th": "familie",
+"mod": "Lesen 4"
+},
+{
+"t": "Hausordnung (Auszug)\n\n1. Ruhezeiten: Von 22 bis 6 Uhr sowie sonntags ist im ganzen Haus Ruhe zu halten. Bitte vermeiden Sie in dieser Zeit laute Musik und Bohren.\n2. Müll: Der Restmüll wird jeden Dienstag abgeholt. Altpapier gehört in die blaue Tonne im Hof. Sperrmüll darf nicht im Hof abgestellt werden; melden Sie ihn bitte bei der Stadt an.\n3. Treppenhaus: Fahrräder und Kinderwagen dürfen nicht im Treppenhaus stehen. Nutzen Sie dafür den Fahrradkeller.\n4. Reinigung: Die Mieter im Erdgeschoss und im ersten Stock reinigen das Treppenhaus abwechselnd. Der Putzplan hängt am Hauseingang.",
+"q": [
+{
+"q": "Wann dürfen Sie keine Löcher in die Wand bohren?",
+"o": [
+"Am Sonntag",
+"Am Dienstag",
+"Am Samstagvormittag"
+],
+"a": 0
+},
+{
+"q": "Was machen Sie mit einem alten Sofa?",
+"o": [
+"Sie melden es bei der Stadt an.",
+"Sie stellen es in den Hof.",
+"Sie bringen es in den Fahrradkeller."
+],
+"a": 0
+},
+{
+"q": "Wo finden Sie den Putzplan?",
+"o": [
+"Am Hauseingang",
+"Im Hof",
+"Im Keller"
+],
+"a": 0
+}
+],
+"wk": 8,
+"th": "wohnen",
+"mod": "Lesen 5"
+},
+{
+"t": "A) Trachtenverleih Huber: Dirndl und Lederhosen für Hochzeiten und Volksfeste. Leihen statt kaufen – ab 39 € pro Wochenende.\n\nB) Bairisch für Zugezogene: jeden Donnerstag von 19 bis 20:30 Uhr in der Volkshochschule. Lernen Sie, was Ihre Nachbarn wirklich sagen! Keine Vorkenntnisse nötig.\n\nC) Wanderverein Isartal: Wir suchen neue Mitglieder! Gemeinsame Touren jeden zweiten Sonntag, danach Einkehr im Biergarten.",
+"q": [
+{
+"q": "Jana arbeitet unter der Woche bis 18 Uhr und möchte die Leute in ihrem Dorf besser verstehen. Welche Anzeige passt?",
+"o": [
+"Anzeige B",
+"Anzeige A",
+"Anzeige C"
+],
+"a": 0
+},
+{
+"q": "Paul ist zu einer Hochzeit eingeladen und braucht passende Kleidung, will aber nicht viel Geld ausgeben. Welche Anzeige passt?",
+"o": [
+"Anzeige A",
+"Anzeige B",
+"Anzeige C"
+],
+"a": 0
+},
+{
+"q": "Mehmet ist gern in der Natur und sucht am Wochenende Kontakt zu Einheimischen. Welche Anzeige passt?",
+"o": [
+"Anzeige C",
+"Anzeige A",
+"Anzeige B"
+],
+"a": 0
+}
+],
+"wk": 9,
+"th": "freizeit",
+"mod": "Lesen 3"
+},
 {
 "t": "Liebe Mieterinnen und Mieter, am Dienstag, den 14. November, wird zwischen 8 und 12 Uhr das Wasser im ganzen Haus abgestellt. Grund sind Reparaturarbeiten an den Leitungen. Bitte füllen Sie sich vorher Wasser ab. Vielen Dank für Ihr Verständnis! Ihre Hausverwaltung",
 "q": [
@@ -168,34 +510,64 @@
 ]
 }
 ],
-"hoeren": [
-"Der Zug nach München fährt heute von Gleis sieben ab.",
-"Können Sie mir bitte sagen, wo das Bürgeramt ist?",
-"Ich hätte gern einen Termin für nächste Woche.",
-"Wegen einer Störung fällt die U-Bahn heute aus.",
-"Bitte bringen Sie Ihren Ausweis und die Meldebescheinigung mit.",
-"Am Wochenende soll es regnen, deshalb bleiben wir zu Hause.",
-"Mein Kollege ist krank, deshalb arbeite ich heute länger.",
-"Die Apotheke hat am Sonntag leider geschlossen.",
-"Wir haben uns vor drei Jahren in Berlin kennengelernt.",
-"Wenn ich mehr Zeit hätte, würde ich öfter Sport machen.",
-"Könnten Sie das bitte noch einmal langsamer sagen?",
-"Die Miete wird jeden Monat am Ersten überwiesen.",
-"Ich interessiere mich sehr für deutsche Geschichte.",
-"Obwohl es kalt war, sind wir spazieren gegangen.",
-"Der Arzt hat mir ein Rezept für Tabletten gegeben.",
-"Nächsten Monat heiraten wir auf dem Standesamt.",
-"Haben Sie diesen Pullover auch in einer anderen Größe?",
-"Ich freue mich schon auf den Urlaub an der Ostsee.",
-"Seit ich in Deutschland wohne, fahre ich fast nur noch Fahrrad.",
-"Entschuldigung, ist dieser Platz noch frei?",
-"Bitte achten Sie auf die Durchsagen am Bahnsteig.",
-"Ich habe die Rechnung schon letzte Woche bezahlt.",
-"Das Paket wurde beim Nachbarn abgegeben.",
-"Morgen muss ich früh aufstehen, weil ich einen Termin habe.",
-"Darf man hier mit Karte bezahlen?"
-],
 "schreiben": [
+{
+"p": "Your friend Jonas couldn't come to your future father-in-law's 60th birthday party. Write him an email (about 80 words): describe the party, say what you liked best, and suggest meeting up soon.",
+"m": "Lieber Jonas,\n\nschade, dass du am Samstag nicht dabei sein konntest! Die Feier für meinen zukünftigen Schwiegervater war wirklich schön. Fast die ganze Verwandtschaft war da, und am Abend hat eine kleine Band gespielt. Am besten hat mir gefallen, dass mir ein Onkel ein paar bairische Wörter beigebracht hat. Jetzt kann ich schon „Servus“ und „Pfiat di“ sagen! Hast du nächste Woche Zeit? Wir könnten am Freitag zusammen etwas trinken gehen. Dann erzähle ich dir alles genauer.\n\nViele Grüße\nBraun",
+"tip": "After dass, the conjugated verb goes to the very end: …, dass mir ein Onkel ein paar Wörter beigebracht hat.",
+"chk": [
+"Did you cover all 3 points?",
+"Informal greeting (Lieber/Liebe) and closing (Viele Grüße)?",
+"At least one weil/dass/obwohl clause with the verb at the end?",
+"Perfekt for past events?",
+"About 80 words?"
+],
+"wk": 2,
+"th": "familie",
+"mod": "Schreiben 1"
+},
+{
+"p": "You have an appointment at the Bürgeramt tomorrow, but you are ill. Write a short formal email (about 40 words): apologise, give the reason, and ask for a new appointment.",
+"m": "Sehr geehrte Damen und Herren,\n\nleider kann ich meinen Termin morgen um 10 Uhr nicht wahrnehmen, weil ich krank bin. Das tut mir sehr leid. Könnten Sie mir bitte einen neuen Termin in der nächsten Woche geben?\n\nMit freundlichen Grüßen\nBraun",
+"tip": "Use Konjunktiv II for polite requests: Könnten Sie …? sounds much more polite than Können Sie …?",
+"chk": [
+"Formal greeting and closing?",
+"Apology, reason and request all included?",
+"Sie-form throughout?",
+"About 40 words?"
+],
+"wk": 5,
+"th": "amt",
+"mod": "Schreiben 3"
+},
+{
+"p": "Write to your friend Mia (about 80 words): invite her to your wedding, say when and where it is, and ask if she could help with something.",
+"m": "Liebe Mia,\n\nich habe tolle Neuigkeiten: Wir heiraten! Die standesamtliche Trauung ist am 15. Mai, und danach feiern wir in einem Gasthaus auf dem Land. Wir würden uns sehr freuen, wenn du kommst. Hättest du vielleicht Lust, am Abend ein paar Fotos zu machen? Du fotografierst doch so gern. Sag mir bitte bis Ende März Bescheid, ob du kommen kannst.\n\nLiebe Grüße\nBraun",
+"tip": "Wir würden uns freuen, wenn du kommst: a polite Konjunktiv II frame for invitations. Hättest du Lust …? is a soft way to ask for a favour.",
+"chk": [
+"Did you cover all 3 points?",
+"Date and place clear?",
+"A polite request (Hättest du Lust …? / Könntest du …?)?",
+"About 80 words?"
+],
+"wk": 7,
+"th": "familie",
+"mod": "Schreiben 1"
+},
+{
+"p": "In an online forum, people are discussing: 'Should people who move to a region learn the local dialect?' Write your opinion (about 80 words).",
+"m": "Ich finde die Frage sehr interessant, weil ich selbst Familie in Bayern habe. Meiner Meinung nach muss man den Dialekt nicht sprechen, aber man sollte ihn verstehen. Bei Familienfesten oder im Dorf sprechen viele Leute Bairisch, und wenn man nichts versteht, fühlt man sich schnell ausgeschlossen. Andererseits ist Hochdeutsch für die Arbeit und für Behörden wichtiger. Deshalb lerne ich zuerst Hochdeutsch und nebenbei ein paar typische Wörter wie „fei“ oder „gell“. Das macht Spaß, und die Leute freuen sich darüber.",
+"tip": "Deshalb and andererseits take position 1, so the verb comes right after them: Deshalb lerne ich …",
+"chk": [
+"A clear opinion (Meiner Meinung nach / Ich finde)?",
+"At least one reason with weil?",
+"One counter-argument (andererseits / aber)?",
+"About 80 words?"
+],
+"wk": 10,
+"th": "alltag",
+"mod": "Schreiben 2"
+},
 {
 "p": "Your colleague invited you to dinner on Saturday, but you can't come. Write one polite sentence declining and giving a reason.",
 "m": "Vielen Dank für die Einladung, aber leider kann ich am Samstag nicht kommen, weil ich schon einen Termin habe.",
@@ -278,66 +650,155 @@
 "tip": "in einer (Dativ, fem.) → kleinen, hellen; mit einem (Dativ, masc.) → großen."
 }
 ],
-"sprechen": [
+"party": [
 {
-"p": "Stellen Sie sich vor: Name, Herkunft, Beruf, seit wann Sie in Deutschland leben.",
-"m": "Ich heiße …, ich komme aus … und arbeite als … Ich lebe seit drei Jahren in Deutschland.",
-"tip": "Goethe B1 Sprechen Teil 1 usually starts like this. seit + Dativ + present tense."
+"lines": [
+{
+"sp": "A",
+"t": "Na, wie war's denn gestern bei der Tante Resi?"
 },
 {
-"p": "Was machen Sie gern in Ihrer Freizeit? Warum?",
-"m": "In meiner Freizeit fahre ich gern Fahrrad, weil ich dabei abschalten kann und die Natur genieße.",
-"tip": "Give a reason with weil or denn (denn keeps normal word order)."
+"sp": "B",
+"t": "Ach, eigentlich ganz nett. Aber die hat halt wieder stundenlang von ihrem Garten erzählt."
 },
 {
-"p": "Planen Sie mit einem Freund ein Wochenende. Machen Sie einen Vorschlag.",
-"m": "Wie wäre es, wenn wir am Samstag eine Radtour machen? Danach könnten wir zusammen grillen.",
-"tip": "Goethe B1 Teil 1 is 'gemeinsam etwas planen': Wie wäre es …? / Wir könnten …"
+"sp": "A",
+"t": "Typisch. Hast du ihr wenigstens gesagt, dass du am Sonntag nicht kommen kannst?"
 },
 {
-"p": "Reagieren Sie auf einen Vorschlag, den Sie nicht gut finden.",
-"m": "Das ist eine gute Idee, aber am Samstag habe ich leider keine Zeit. Können wir es am Sonntag machen?",
-"tip": "Polite disagreement: acknowledge first, then aber, then a counter-suggestion."
+"sp": "B",
+"t": "Nee, hab ich vergessen. Mach ich morgen, gell?"
+}
+],
+"q": "Was hat B vergessen?",
+"o": [
+"Der Tante zu sagen, dass B am Sonntag nicht kommt.",
+"Der Tante ein Geschenk mitzubringen.",
+"Im Garten zu helfen."
+],
+"a": 0,
+"wk": 1,
+"th": "familie"
 },
 {
-"p": "Wie feiert man in Ihrem Heimatland Hochzeit? Und in Deutschland?",
-"m": "In meinem Heimatland feiert man oft sehr groß. In Deutschland heiratet man zuerst auf dem Standesamt, und manche feiern danach noch kirchlich.",
-"tip": "Comparison: In … dagegen … / Im Unterschied zu …"
+"lines": [
+{
+"sp": "A",
+"t": "Und, was machst du so beruflich?"
 },
 {
-"p": "Beschreiben Sie Ihren Arbeitsweg.",
-"m": "Ich fahre jeden Morgen mit dem Fahrrad zur Arbeit. Das dauert ungefähr zwanzig Minuten.",
-"tip": "mit + Dativ (dem Fahrrad), zu + Dativ (zur = zu der Arbeit)."
+"sp": "B",
+"t": "Ich bin Ingenieurin, bei einer Firma bei Freising."
 },
 {
-"p": "Was finden Sie an Deutschland gut, was ist schwierig?",
-"m": "Mir gefällt, dass man fast alles mit dem Fahrrad erreichen kann. Schwierig finde ich manchmal die Bürokratie.",
-"tip": "gefallen + Dativ: Mir gefällt … The thing liked is the subject."
+"sp": "A",
+"t": "Ah, cool. Und gefällt's dir da?"
 },
 {
-"p": "Sie sind beim Arzt. Beschreiben Sie Ihre Beschwerden.",
-"m": "Ich habe seit zwei Tagen Halsschmerzen und Fieber, und ich fühle mich sehr müde.",
-"tip": "seit + Dativ with present tense: seit zwei Tagen habe ich …"
+"sp": "B",
+"t": "Ja, schon. Die Kollegen sind echt nett, nur der Weg ist halt ziemlich weit."
 },
 {
-"p": "Geben Sie Ihre Meinung: Sollte man in der Stadt Autos verbieten?",
-"m": "Meiner Meinung nach sollte man nicht alle Autos verbieten, aber die Innenstadt könnte autofrei sein.",
-"tip": "Meiner Meinung nach + verb second: … sollte man …"
+"sp": "A",
+"t": "Mei, das kenn ich. Ich fahr jeden Tag eine Stunde nach München."
+}
+],
+"q": "Was stört B an der Arbeit?",
+"o": [
+"Der lange Arbeitsweg",
+"Die Kollegen",
+"Das Gehalt"
+],
+"a": 0,
+"wk": 1,
+"th": "arbeit"
 },
 {
-"p": "Erzählen Sie von Ihrem letzten Urlaub.",
-"m": "Letzten Sommer war ich mit Freunden an der Ostsee. Wir sind viel Fahrrad gefahren und haben Fisch gegessen.",
-"tip": "Movement verbs (fahren, gehen) use sein in the Perfekt: sind gefahren."
+"lines": [
+{
+"sp": "A",
+"t": "Kommt ihr am Samstag mit aufs Volksfest?"
 },
 {
-"p": "Ein Freund möchte Deutsch lernen. Geben Sie ihm zwei Tipps.",
-"m": "Du solltest jeden Tag ein bisschen üben, zum Beispiel mit Karteikarten. Außerdem hilft es, mit Muttersprachlern zu sprechen.",
-"tip": "Advice: Du solltest … / Es hilft, … zu …"
+"sp": "B",
+"t": "Mal sehen. Eigentlich wollten wir ja zum Geburtstag von Lukas."
 },
 {
-"p": "Bitten Sie Ihre Nachbarin, Ihre Pflanzen zu gießen, während Sie verreist sind.",
-"m": "Hallo Frau Becker, könnten Sie vielleicht meine Pflanzen gießen, während ich nächste Woche verreist bin?",
-"tip": "während as a conjunction sends the verb to the end: … während ich verreist bin."
+"sp": "A",
+"t": "Ach, der feiert doch erst ab acht. Da könnt ihr vorher locker noch auf eine Mass vorbeischauen."
+},
+{
+"sp": "B",
+"t": "Stimmt eigentlich. Okay, dann schreib mir halt, wo ihr sitzt."
+}
+],
+"q": "Was macht B am Samstag wahrscheinlich?",
+"o": [
+"Erst aufs Volksfest, dann zum Geburtstag",
+"Nur zum Geburtstag",
+"Nur aufs Volksfest"
+],
+"a": 0,
+"wk": 9,
+"th": "freizeit"
+},
+{
+"lines": [
+{
+"sp": "A",
+"t": "Habt ihr schon einen Termin beim Standesamt?"
+},
+{
+"sp": "B",
+"t": "Ja, im Mai. Aber die kirchliche Trauung machen wir erst im Sommer."
+},
+{
+"sp": "A",
+"t": "Ach so, also zweimal feiern? Na, da freut sich die Verwandtschaft!"
+},
+{
+"sp": "B",
+"t": "Nee, groß gefeiert wird nur im Sommer. Im Mai sind's nur wir und die Trauzeugen."
+}
+],
+"q": "Wann ist die große Feier?",
+"o": [
+"Im Sommer",
+"Im Mai",
+"Zweimal, im Mai und im Sommer"
+],
+"a": 0,
+"wk": 7,
+"th": "familie"
+},
+{
+"lines": [
+{
+"sp": "A",
+"t": "Du schaust ja fertig aus. Alles okay?"
+},
+{
+"sp": "B",
+"t": "Geht so. Ich hab seit Tagen Halsweh, und morgen muss ich eigentlich zur Arbeit."
+},
+{
+"sp": "A",
+"t": "Geh doch mal zum Arzt und lass dich krankschreiben. Bringt ja nix, wenn du alle ansteckst."
+},
+{
+"sp": "B",
+"t": "Hast ja recht. Ich ruf gleich in der Praxis an."
+}
+],
+"q": "Was rät A?",
+"o": [
+"Zum Arzt gehen und zu Hause bleiben",
+"Trotzdem zur Arbeit gehen",
+"Tee trinken und früh schlafen"
+],
+"a": 0,
+"wk": 6,
+"th": "gesundheit"
 }
 ]
 }

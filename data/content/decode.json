@@ -1,0 +1,170 @@
+[
+ {
+  "w": "die Verspätung",
+  "s": "Der Zug hat zwanzig Minuten Verspätung.",
+  "p": "ver- (wrong, off) + spät (late) + -ung (noun)",
+  "o": [
+   "delay",
+   "early arrival",
+   "timetable",
+   "cancellation"
+  ],
+  "a": 0,
+  "wk": 2,
+  "th": "alltag"
+ },
+ {
+  "w": "vergesslich",
+  "s": "Mein Schwiegervater ist ein bisschen vergesslich.",
+  "p": "ver- + gess(en) (forget) + -lich (tending to)",
+  "o": [
+   "forgetful",
+   "forgettable",
+   "forgiving",
+   "grateful"
+  ],
+  "a": 0,
+  "wk": 1,
+  "th": "familie"
+ },
+ {
+  "w": "der Gesprächspartner",
+  "s": "Mein Gesprächspartner auf der Party kam aus Passau.",
+  "p": "Gespräch (conversation) + -s- (link) + Partner",
+  "o": [
+   "conversation partner",
+   "business partner",
+   "spokesperson",
+   "interpreter"
+  ],
+  "a": 0,
+  "wk": 1,
+  "th": "familie"
+ },
+ {
+  "w": "ungenießbar",
+  "s": "Die Milch ist leider schon ungenießbar.",
+  "p": "un- (not) + genieß(en) (enjoy, consume) + -bar (-able)",
+  "o": [
+   "inedible / undrinkable",
+   "unaffordable",
+   "unforgettable",
+   "unbearably loud"
+  ],
+  "a": 0,
+  "wk": 2,
+  "th": "alltag"
+ },
+ {
+  "w": "nachvollziehbar",
+  "s": "Deine Entscheidung ist absolut nachvollziehbar.",
+  "p": "nach- (after) + voll (full) + zieh(en) (pull) + -bar → can be followed all the way through",
+  "o": [
+   "understandable",
+   "reversible",
+   "fully paid",
+   "noticeable"
+  ],
+  "a": 0,
+  "wk": 3,
+  "th": "alltag"
+ },
+ {
+  "w": "die Abmeldung",
+  "s": "Wenn du ins Ausland ziehst, brauchst du eine Abmeldung.",
+  "p": "ab- (off, away) + meld(en) (report) + -ung",
+  "o": [
+   "deregistration",
+   "registration",
+   "change of address",
+   "complaint"
+  ],
+  "a": 0,
+  "wk": 4,
+  "th": "amt"
+ },
+ {
+  "w": "befristet",
+  "s": "Der Vertrag ist auf zwei Jahre befristet.",
+  "p": "be- + Frist (deadline) + -et (participle)",
+  "o": [
+   "fixed-term",
+   "permanent",
+   "signed",
+   "cancelled"
+  ],
+  "a": 0,
+  "wk": 5,
+  "th": "arbeit"
+ },
+ {
+  "w": "die Unterkunft",
+  "s": "Wir suchen noch eine Unterkunft für die Hochzeitsgäste.",
+  "p": "unter- (under) + -kunft (from kommen: coming) → a place to come under, shelter",
+  "o": [
+   "accommodation",
+   "arrival",
+   "transport",
+   "guest list"
+  ],
+  "a": 0,
+  "wk": 7,
+  "th": "familie"
+ },
+ {
+  "w": "unvermeidlich",
+  "s": "Ein bisschen Stress vor der Hochzeit ist unvermeidlich.",
+  "p": "un- (not) + ver- + meid(en) (avoid) + -lich (-able)",
+  "o": [
+   "unavoidable",
+   "unbearable",
+   "unexpected",
+   "unnecessary"
+  ],
+  "a": 0,
+  "wk": 7,
+  "th": "familie"
+ },
+ {
+  "w": "zuverlässig",
+  "s": "Unser Handwerker ist sehr zuverlässig.",
+  "p": "zu- + ver- + läss (from lassen; sich verlassen auf = rely on) + -ig",
+  "o": [
+   "reliable",
+   "relaxed",
+   "careless",
+   "available"
+  ],
+  "a": 0,
+  "wk": 8,
+  "th": "wohnen"
+ },
+ {
+  "w": "die Nachbarschaft",
+  "s": "In unserer Nachbarschaft wohnen viele junge Familien.",
+  "p": "nach (from nah: near) + bar (old word for dweller) + -schaft (collective)",
+  "o": [
+   "neighbourhood",
+   "friendship",
+   "community centre",
+   "landlord"
+  ],
+  "a": 0,
+  "wk": 8,
+  "th": "wohnen"
+ },
+ {
+  "w": "die Vorbereitung",
+  "s": "Die Vorbereitung auf die Prüfung dauert drei Monate.",
+  "p": "vor- (before) + be- + reit (ready) + -ung",
+  "o": [
+   "preparation",
+   "presentation",
+   "prevention",
+   "application"
+  ],
+  "a": 0,
+  "wk": 11,
+  "th": "alltag"
+ }
+]

@@ -17,6 +17,6 @@ Open the GitHub Pages URL in Safari (iPhone) or Chrome (Android) → Share → *
 
 ## Develop
 No build step. Serve the folder (`python3 -m http.server`) and open `http://localhost:8000`.
-Content lives in `data/*.json`. After changing files, bump `CACHE` in `sw.js` so phones pick up the update.
+Content lives in `data/*.json`. The study-plan content pack goes in `data/content/`; run `python3 merge_content.py .` to merge it with `data/base/` into the files the app loads. After changing files, bump `CACHE` in `sw.js` so phones pick up the update.
 
 Civics questions: BAMF Gesamtfragenkatalog, via the MIT-licensed [leben-in-deutschland-scrapper](https://github.com/leben-in-deutschland/leben-in-deutschland-scrapper) dataset.
