@@ -11,16 +11,16 @@
 "m": "nervous, excited"
 },
 {
-"w": "nicken",
-"m": "to nod"
+"w": "genickt",
+"m": "nodded (nicken = to nod)"
 },
 {
-"w": "sich etwas merken",
-"m": "to remember something"
+"w": "gemerkt",
+"m": "remembered, noted (sich etwas merken)"
 },
 {
-"w": "der Abschied",
-"m": "goodbye, farewell"
+"w": "Abschied",
+"m": "goodbye, farewell (der Abschied)"
 },
 {
 "w": "Kimm bald wieder!",
@@ -118,16 +118,16 @@
 "m": "annoying"
 },
 {
-"w": "das Beste daraus machen",
-"m": "to make the best of it"
+"w": "das Beste daraus gemacht",
+"m": "made the best of it"
 },
 {
-"w": "die Hütte",
-"m": "(mountain) hut"
+"w": "Hütte",
+"m": "(mountain) hut (die Hütte)"
 },
 {
-"w": "der Rückweg",
-"m": "the way back"
+"w": "Rückweg",
+"m": "the way back (der Rückweg)"
 },
 {
 "w": "schmutzig",
@@ -221,24 +221,24 @@
 "passage": "In Deutschland sind die meisten Geschäfte am Sonntag geschlossen. Viele Zugezogene finden das am Anfang seltsam. Auch beim Abendessen mit der Familie gab es neulich eine Diskussion darüber.\n\nMein Schwager meint, dass der Sonntag ein Ruhetag bleiben sollte. Die Verkäuferinnen und Verkäufer brauchen schließlich auch Zeit für ihre Familien. Außerdem genießt er es, dass die Stadt am Sonntag so ruhig ist.\n\nSeine Freundin sieht das anders. Sie arbeitet die ganze Woche und hat deshalb nur am Samstag Zeit zum Einkaufen. Trotzdem will sie nicht, dass alle Geschäfte immer geöffnet sind. Ihr Vorschlag: Kleine Supermärkte sollten sonntags ein paar Stunden öffnen dürfen.\n\nIch habe beiden zugestimmt – teilweise. Einerseits finde ich den ruhigen Sonntag schön, andererseits habe ich schon oft am Samstagabend gemerkt, dass ich etwas vergessen habe. Am Ende waren wir uns einig: Nicht die Geschäfte sind das Problem, sondern meine Einkaufsliste!",
 "gloss": [
 {
-"w": "der/die Zugezogene",
-"m": "newcomer (someone who moved to the area)"
+"w": "Zugezogene",
+"m": "newcomers (people who moved to the area)"
 },
 {
 "w": "seltsam",
 "m": "strange"
 },
 {
-"w": "genießen",
-"m": "to enjoy"
+"w": "genießt",
+"m": "enjoys (genießen = to enjoy)"
 },
 {
 "w": "teilweise",
 "m": "partly"
 },
 {
-"w": "sich einig sein",
-"m": "to agree"
+"w": "einig",
+"m": "in agreement (sich einig sein = to agree)"
 }
 ],
 "comp": [
@@ -329,12 +329,12 @@
 "passage": "Landratsamt – Ausländerbehörde\n\nSehr geehrter Herr Okafor,\n\nIhr Antrag auf Erteilung einer Niederlassungserlaubnis vom 3. Oktober ist bei uns eingegangen. Ihr Antrag wird zurzeit bearbeitet. Für die weitere Bearbeitung fehlen jedoch noch folgende Unterlagen:\n\n– eine aktuelle Bescheinigung Ihres Arbeitgebers (nicht älter als vier Wochen)\n– der Nachweis über Ihre Deutschkenntnisse (mindestens Niveau B1)\n– das Zertifikat über den Test „Leben in Deutschland“\n\nBitte reichen Sie die fehlenden Unterlagen innerhalb von vier Wochen ein. Die Dokumente können per Post geschickt oder während der Sprechzeiten persönlich abgegeben werden. Wenn die Unterlagen nicht rechtzeitig eingereicht werden, kann Ihr Antrag leider nicht weiter bearbeitet werden.\n\nDie Gebühr wird bei der Abholung des Aufenthaltstitels fällig.\n\nMit freundlichen Grüßen\nIm Auftrag\nM. Brandl",
 "gloss": [
 {
-"w": "die Erteilung",
-"m": "issuing, granting"
+"w": "Erteilung",
+"m": "issuing, granting (die Erteilung)"
 },
 {
-"w": "eingehen (ist eingegangen)",
-"m": "to arrive, to be received (letters, applications)"
+"w": "eingegangen",
+"m": "received, arrived (eingehen: letters, applications)"
 },
 {
 "w": "jedoch",
@@ -345,8 +345,8 @@
 "m": "due (payment)"
 },
 {
-"w": "Im Auftrag (i. A.)",
-"m": "on behalf of (signature line)"
+"w": "Im Auftrag",
+"m": "on behalf of (signature line, short: i. A.)"
 }
 ],
 "comp": [
