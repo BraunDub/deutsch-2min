@@ -189,7 +189,8 @@ function home() {
     <div class="grid" style="margin-top:12px">
       ${wbTile()}
       ${tile('vocab', '10 Wörter', `${dueV} zum Wiederholen · ${newV} neu`)}
-      ${tile('lid', 'Leben in Deutschland', `${lidDone}/${lidAll.length} sicher`)}
+      <button class="tile" data-go="lid"><b>Leben in Deutschland</b><span>Lektionen + Fragen · ${lidDone}/${lidAll.length} sicher</span></button>
+      <button class="tile" data-go="grammar"><b>Grammatik-Training</b><span>Ein Thema, so lange du willst</span></button>
       ${tile('lesen', 'Lesen', 'Kurze Texte, B1')}
       ${tile('party', 'Party-Hören', 'Schnelle Alltagsdialoge')}
     </div>
@@ -304,7 +305,7 @@ function mc({ tag, head, options, answer, onDone, after }) {
     const i = +b.dataset.i, ok = i === answer;
     document.querySelectorAll('.opt').forEach(x => { x.disabled = true; if (+x.dataset.i === answer) x.classList.add('right'); });
     if (!ok) b.classList.add('wrong');
-    document.getElementById('fb').innerHTML = `<div class="feedback">${ok ? '✅ Richtig!' : '❌ Leider falsch.'} ${after || ''}</div>
+    document.getElementById('fb').innerHTML = `<div class="feedback">${ok ? '✅ Richtig!' : '❌ Leider falsch.'} ${(typeof after === 'function' ? after(ok) : after) || ''}</div>
       <button class="btn primary actions" id="nx">Weiter</button>`;
     document.getElementById('nx').onclick = () => { onDone(ok); };
   });
@@ -326,8 +327,10 @@ function vLid(c) {
   mc({
     tag: `Leben in Deutschland${c.s ? ' · ' + STATES[c.s] : ''}`,
     head: `<div class="big" style="font-size:22px">${esc(c.q)}</div>
-      ${c.en ? `<details style="background:var(--card2)"><summary class="small muted">English</summary><p class="small">${esc(c.en)}</p></details>` : ''}`,
+      ${c.en ? `<details style="background:var(--card2)"><summary class="small muted">English</summary><p class="small">${esc(c.en)}</p></details>` : ''}
+      ${lessonById(c.lesson) ? `<details style="background:var(--card2)"><summary class="small muted">📘 Lektion: ${esc(lessonById(c.lesson).title)}</summary>${lessonPointsHtml(lessonById(c.lesson))}</details>` : ''}`,
     options: c.o, answer: c.a,
+    after: ok => { const l = lessonById(c.lesson); return l ? `<details ${ok ? '' : 'open'} style="background:var(--card2);margin-top:10px"><summary class="small">📘 Zum Merken: ${esc(l.title)}</summary>${visualHtml(l.visual)}${lessonPointsHtml(l)}</details>` : ''; },
     onDone: ok => { grade(c.k, ok ? 1 : 0); next(ok); }
   });
 }
@@ -398,13 +401,25 @@ function vSchreiben(c) {
     document.getElementById('fb').innerHTML = `<div class="morph"><b>Muster:</b> ${esc(c.m)}</div>
       <p class="feedback">💡 ${esc(c.tip)}</p>
       <p class="muted small">Vergleiche: Stimmen Verbposition, Fall und Endungen?</p>
+      ${askBtn}
       <div class="rate" style="grid-template-columns:1fr 1fr">
         <button class="btn again" data-ok="0">Noch unsicher</button>
         <button class="btn easy" data-ok="1">Hab ich gut gemacht</button></div>`;
+    document.getElementById('askc').onclick = () => askClaude(c.p, document.getElementById('ans').value, c.m);
     this.remove();
     document.querySelectorAll('[data-ok]').forEach(b => b.onclick = () => next(b.dataset.ok === '1'));
   };
 }
+
+/* Feedback on free writing: copy a ready prompt and open Claude with it. */
+function askClaude(task, text, model, kind) {
+  if (!text || !text.trim()) return toast(kind === 'speak' ? 'Nimm zuerst etwas auf' : 'Schreib zuerst etwas');
+  const prompt = `Ich lerne Deutsch (Niveau B1, Ziel C1). Bitte korrigiere meinen ${kind === 'speak' ? 'gesprochenen Text (automatisch transkribiert, Satzzeichen ignorieren)' : 'Text'} wie ein freundlicher Lehrer.\n\nAufgabe: ${task}\n\nMein Text: ${text.trim()}\n\nBitte: 1) korrigierte Version, 2) jeden Fehler kurz auf Englisch erklären (warum), 3) eine natürlichere Formulierung, wie Muttersprachler es sagen würden, 4) eine Note von 1 bis 5 für Grammatik und Natürlichkeit. ${model ? `Zum Vergleich, eine Musterlösung: ${model}` : ''}`;
+  const url = 'https://claude.ai/new?q=' + encodeURIComponent(prompt);
+  if (navigator.clipboard) navigator.clipboard.writeText(prompt).catch(() => {});
+  window.open(url, '_blank');
+}
+const askBtn = '<button class="btn ghost" id="askc" style="margin-top:10px">✨ Mit Claude prüfen</button>';
 
 /* --- Sprechen --- */
 function vSprechen(c) {
@@ -438,10 +453,12 @@ function vSprechen(c) {
   document.getElementById('chk').onclick = function () {
     document.getElementById('fb').innerHTML = `<div class="morph"><b>Muster:</b> ${esc(c.m)} <button class="speak" id="saym">🔊</button></div>
       <p class="feedback">💡 ${esc(c.tip)}</p>
+      ${askBtn}
       <div class="rate" style="grid-template-columns:1fr 1fr">
         <button class="btn again" data-ok="0">Noch unsicher</button>
         <button class="btn easy" data-ok="1">Lief gut</button></div>`;
     document.getElementById('saym').onclick = () => say(c.m);
+    document.getElementById('askc').onclick = () => askClaude(c.p, (document.getElementById('said').textContent || '').replace(/^Du hast gesagt:\s*/, ''), c.m, 'speak');
     this.remove();
     document.querySelectorAll('[data-ok]').forEach(b => b.onclick = () => next(b.dataset.ok === '1'));
   };
@@ -583,7 +600,9 @@ function vWb(c) {
       <button class="btn primary actions" id="chk">Musterlösung zeigen</button></div>`, tag);
     document.getElementById('chk').onclick = function () {
       document.getElementById('fb').innerHTML = `<div class="morph"><b>Muster:</b> ${esc(w.m)}</div>
+        ${askBtn}
         <div class="rate" style="grid-template-columns:1fr 1fr"><button class="btn again" data-ok="0">Noch unsicher</button><button class="btn easy" data-ok="1">Hab ich gut gemacht</button></div>`;
+      document.getElementById('askc').onclick = () => askClaude(w.p, document.getElementById('ans').value, w.m);
       this.remove();
       document.querySelectorAll('[data-ok]').forEach(b => b.onclick = () => done(b.dataset.ok === '1'));
     };
@@ -763,14 +782,15 @@ document.addEventListener('click', e => {
   const s = e.target.closest('[data-start]'); if (s) return startSession(s.dataset.start);
   const g = e.target.closest('[data-go]'); if (!g) return;
   clearInterval(window._tick);
-  ({ home, settings: settingsView, import: importView, progress: progressView })[g.dataset.go]();
+  ({ home, settings: settingsView, import: importView, progress: progressView, grammar: grammarHome, lid: lidHome })[g.dataset.go]();
 });
 
 async function boot() {
   $app.innerHTML = '<p class="muted">Lädt …</p>';
   const get = f => fetch(`data/${f}.json`).then(r => r.json());
-  const [vocab, decode, lid, tasks, missions, workbook] = await Promise.all(['vocab', 'decode', 'lid', 'tasks', 'missions', 'workbook'].map(get));
-  DATA = { vocab, decode, lid, tasks, missions, workbook };
+  const [vocab, decode, lid, tasks, missions, workbook, grammar, lessons] = await Promise.all(['vocab', 'decode', 'lid', 'tasks', 'missions', 'workbook', 'grammar', 'lessons'].map(get));
+  DATA = { vocab, decode, lid, tasks, missions, workbook, grammar, lessons };
+  linkLessons();
   seedLearned();
   home();
   if (new URLSearchParams(location.search).get('start') === 'mix') startSession('mix');

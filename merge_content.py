@@ -8,9 +8,10 @@ words={c['w'] for c in new}; W(os.path.join(D,'vocab.json'), new+[c for c in bas
 base=L(os.path.join(D,'base','decode.json')); new=L(os.path.join(C,'decode.json'))
 words={c['w'] for c in new}; W(os.path.join(D,'decode.json'), new+[c for c in base if c['w'] not in words])
 base=L(os.path.join(D,'base','tasks.json')); new=L(os.path.join(C,'tasks.json'))
-out={k: new.get(k,[])+base.get(k,[]) for k in set(base)|set(new)}
+out={k: new.get(k,[])+base.get(k,[]) for k in sorted(set(base)|set(new))}
 out['party']=L(os.path.join(C,'dialogues.json'))
 W(os.path.join(D,'tasks.json'),out)
 W(os.path.join(D,'missions.json'),L(os.path.join(C,'missions.json')))
 W(os.path.join(D,'workbook.json'),L(os.path.join(C,'workbook.json')))
+W(os.path.join(D,'lessons.json'),L(os.path.join(C,'lid_lessons.json')))
 print({k:len(v) for k,v in out.items()}, 'vocab',len(L(os.path.join(D,'vocab.json'))),'decode',len(L(os.path.join(D,'decode.json'))))

@@ -1,0 +1,1069 @@
+{
+"nouns": [
+{
+"n": "Tisch",
+"g": "m"
+},
+{
+"n": "Hund",
+"g": "m"
+},
+{
+"n": "Freund",
+"g": "m",
+"p": 1
+},
+{
+"n": "Bahnhof",
+"g": "m"
+},
+{
+"n": "Termin",
+"g": "m"
+},
+{
+"n": "Vertrag",
+"g": "m"
+},
+{
+"n": "Kuchen",
+"g": "m"
+},
+{
+"n": "Stuhl",
+"g": "m"
+},
+{
+"n": "Garten",
+"g": "m"
+},
+{
+"n": "Arzt",
+"g": "m",
+"p": 1
+},
+{
+"n": "Brief",
+"g": "m"
+},
+{
+"n": "Computer",
+"g": "m"
+},
+{
+"n": "Schlüssel",
+"g": "m"
+},
+{
+"n": "Bruder",
+"g": "m",
+"p": 1
+},
+{
+"n": "Zug",
+"g": "m"
+},
+{
+"n": "Pass",
+"g": "m"
+},
+{
+"n": "Schrank",
+"g": "m",
+"f": 1
+},
+{
+"n": "Mantel",
+"g": "m"
+},
+{
+"n": "Onkel",
+"g": "m",
+"p": 1
+},
+{
+"n": "Chef",
+"g": "m",
+"p": 1
+},
+{
+"n": "Wohnung",
+"g": "f"
+},
+{
+"n": "Stadt",
+"g": "f"
+},
+{
+"n": "Frau",
+"g": "f",
+"p": 1
+},
+{
+"n": "Freundin",
+"g": "f",
+"p": 1
+},
+{
+"n": "Tasche",
+"g": "f"
+},
+{
+"n": "Lampe",
+"g": "f",
+"f": 1
+},
+{
+"n": "Schwester",
+"g": "f",
+"p": 1
+},
+{
+"n": "Rechnung",
+"g": "f"
+},
+{
+"n": "Küche",
+"g": "f"
+},
+{
+"n": "Tür",
+"g": "f",
+"f": 1
+},
+{
+"n": "Familie",
+"g": "f"
+},
+{
+"n": "Firma",
+"g": "f"
+},
+{
+"n": "Ärztin",
+"g": "f",
+"p": 1
+},
+{
+"n": "Hochzeit",
+"g": "f"
+},
+{
+"n": "Uhr",
+"g": "f"
+},
+{
+"n": "Jacke",
+"g": "f"
+},
+{
+"n": "Tante",
+"g": "f",
+"p": 1
+},
+{
+"n": "Kommode",
+"g": "f",
+"f": 1
+},
+{
+"n": "Chefin",
+"g": "f",
+"p": 1
+},
+{
+"n": "Auto",
+"g": "n"
+},
+{
+"n": "Haus",
+"g": "n"
+},
+{
+"n": "Kind",
+"g": "n",
+"p": 1
+},
+{
+"n": "Buch",
+"g": "n"
+},
+{
+"n": "Fahrrad",
+"g": "n"
+},
+{
+"n": "Zimmer",
+"g": "n"
+},
+{
+"n": "Geschenk",
+"g": "n"
+},
+{
+"n": "Handy",
+"g": "n"
+},
+{
+"n": "Formular",
+"g": "n"
+},
+{
+"n": "Bild",
+"g": "n"
+},
+{
+"n": "Restaurant",
+"g": "n"
+},
+{
+"n": "Fenster",
+"g": "n",
+"f": 1
+},
+{
+"n": "Bett",
+"g": "n",
+"f": 1
+},
+{
+"n": "Kleid",
+"g": "n"
+},
+{
+"n": "Sofa",
+"g": "n",
+"f": 1
+},
+{
+"n": "Regal",
+"g": "n",
+"f": 1
+}
+],
+"adjectives": [
+"neu",
+"alt",
+"groß",
+"klein",
+"schön",
+"rot",
+"blau",
+"gut",
+"schnell",
+"billig",
+"modern",
+"jung",
+"nett",
+"lang",
+"kurz",
+"warm",
+"kalt",
+"frisch",
+"interessant",
+"praktisch",
+"bequem",
+"wichtig",
+"freundlich",
+"grün",
+"schwarz",
+"weiß"
+],
+"verbs": [
+{
+"i": "machen",
+"p": [
+"mache",
+"machst",
+"macht",
+"machen",
+"macht",
+"machen"
+],
+"pp": "gemacht",
+"a": "h"
+},
+{
+"i": "arbeiten",
+"p": [
+"arbeite",
+"arbeitest",
+"arbeitet",
+"arbeiten",
+"arbeitet",
+"arbeiten"
+],
+"pp": "gearbeitet",
+"a": "h"
+},
+{
+"i": "fahren",
+"p": [
+"fahre",
+"fährst",
+"fährt",
+"fahren",
+"fahrt",
+"fahren"
+],
+"pp": "gefahren",
+"a": "s"
+},
+{
+"i": "schlafen",
+"p": [
+"schlafe",
+"schläfst",
+"schläft",
+"schlafen",
+"schlaft",
+"schlafen"
+],
+"pp": "geschlafen",
+"a": "h"
+},
+{
+"i": "lesen",
+"p": [
+"lese",
+"liest",
+"liest",
+"lesen",
+"lest",
+"lesen"
+],
+"pp": "gelesen",
+"a": "h"
+},
+{
+"i": "sprechen",
+"p": [
+"spreche",
+"sprichst",
+"spricht",
+"sprechen",
+"sprecht",
+"sprechen"
+],
+"pp": "gesprochen",
+"a": "h"
+},
+{
+"i": "essen",
+"p": [
+"esse",
+"isst",
+"isst",
+"essen",
+"esst",
+"essen"
+],
+"pp": "gegessen",
+"a": "h"
+},
+{
+"i": "nehmen",
+"p": [
+"nehme",
+"nimmst",
+"nimmt",
+"nehmen",
+"nehmt",
+"nehmen"
+],
+"pp": "genommen",
+"a": "h"
+},
+{
+"i": "geben",
+"p": [
+"gebe",
+"gibst",
+"gibt",
+"geben",
+"gebt",
+"geben"
+],
+"pp": "gegeben",
+"a": "h"
+},
+{
+"i": "sehen",
+"p": [
+"sehe",
+"siehst",
+"sieht",
+"sehen",
+"seht",
+"sehen"
+],
+"pp": "gesehen",
+"a": "h"
+},
+{
+"i": "helfen",
+"p": [
+"helfe",
+"hilfst",
+"hilft",
+"helfen",
+"helft",
+"helfen"
+],
+"pp": "geholfen",
+"a": "h"
+},
+{
+"i": "treffen",
+"p": [
+"treffe",
+"triffst",
+"trifft",
+"treffen",
+"trefft",
+"treffen"
+],
+"pp": "getroffen",
+"a": "h"
+},
+{
+"i": "laufen",
+"p": [
+"laufe",
+"läufst",
+"läuft",
+"laufen",
+"lauft",
+"laufen"
+],
+"pp": "gelaufen",
+"a": "s"
+},
+{
+"i": "gehen",
+"p": [
+"gehe",
+"gehst",
+"geht",
+"gehen",
+"geht",
+"gehen"
+],
+"pp": "gegangen",
+"a": "s"
+},
+{
+"i": "kommen",
+"p": [
+"komme",
+"kommst",
+"kommt",
+"kommen",
+"kommt",
+"kommen"
+],
+"pp": "gekommen",
+"a": "s"
+},
+{
+"i": "bleiben",
+"p": [
+"bleibe",
+"bleibst",
+"bleibt",
+"bleiben",
+"bleibt",
+"bleiben"
+],
+"pp": "geblieben",
+"a": "s"
+},
+{
+"i": "werden",
+"p": [
+"werde",
+"wirst",
+"wird",
+"werden",
+"werdet",
+"werden"
+],
+"pp": "geworden",
+"a": "s"
+},
+{
+"i": "sein",
+"p": [
+"bin",
+"bist",
+"ist",
+"sind",
+"seid",
+"sind"
+],
+"pp": "gewesen",
+"a": "s"
+},
+{
+"i": "haben",
+"p": [
+"habe",
+"hast",
+"hat",
+"haben",
+"habt",
+"haben"
+],
+"pp": "gehabt",
+"a": "h"
+},
+{
+"i": "wissen",
+"p": [
+"weiß",
+"weißt",
+"weiß",
+"wissen",
+"wisst",
+"wissen"
+],
+"pp": "gewusst",
+"a": "h"
+},
+{
+"i": "tanzen",
+"p": [
+"tanze",
+"tanzt",
+"tanzt",
+"tanzen",
+"tanzt",
+"tanzen"
+],
+"pp": "getanzt",
+"a": "h"
+},
+{
+"i": "finden",
+"p": [
+"finde",
+"findest",
+"findet",
+"finden",
+"findet",
+"finden"
+],
+"pp": "gefunden",
+"a": "h"
+},
+{
+"i": "schreiben",
+"p": [
+"schreibe",
+"schreibst",
+"schreibt",
+"schreiben",
+"schreibt",
+"schreiben"
+],
+"pp": "geschrieben",
+"a": "h"
+},
+{
+"i": "trinken",
+"p": [
+"trinke",
+"trinkst",
+"trinkt",
+"trinken",
+"trinkt",
+"trinken"
+],
+"pp": "getrunken",
+"a": "h"
+},
+{
+"i": "verstehen",
+"p": [
+"verstehe",
+"verstehst",
+"versteht",
+"verstehen",
+"versteht",
+"verstehen"
+],
+"pp": "verstanden",
+"a": "h"
+},
+{
+"i": "besuchen",
+"p": [
+"besuche",
+"besuchst",
+"besucht",
+"besuchen",
+"besucht",
+"besuchen"
+],
+"pp": "besucht",
+"a": "h"
+},
+{
+"i": "reisen",
+"p": [
+"reise",
+"reist",
+"reist",
+"reisen",
+"reist",
+"reisen"
+],
+"pp": "gereist",
+"a": "s"
+},
+{
+"i": "fliegen",
+"p": [
+"fliege",
+"fliegst",
+"fliegt",
+"fliegen",
+"fliegt",
+"fliegen"
+],
+"pp": "geflogen",
+"a": "s"
+},
+{
+"i": "vergessen",
+"p": [
+"vergesse",
+"vergisst",
+"vergisst",
+"vergessen",
+"vergesst",
+"vergessen"
+],
+"pp": "vergessen",
+"a": "h"
+},
+{
+"i": "warten",
+"p": [
+"warte",
+"wartest",
+"wartet",
+"warten",
+"wartet",
+"warten"
+],
+"pp": "gewartet",
+"a": "h"
+},
+{
+"i": "können",
+"p": [
+"kann",
+"kannst",
+"kann",
+"können",
+"könnt",
+"können"
+],
+"m": 1
+},
+{
+"i": "müssen",
+"p": [
+"muss",
+"musst",
+"muss",
+"müssen",
+"müsst",
+"müssen"
+],
+"m": 1
+},
+{
+"i": "dürfen",
+"p": [
+"darf",
+"darfst",
+"darf",
+"dürfen",
+"dürft",
+"dürfen"
+],
+"m": 1
+},
+{
+"i": "wollen",
+"p": [
+"will",
+"willst",
+"will",
+"wollen",
+"wollt",
+"wollen"
+],
+"m": 1
+},
+{
+"i": "sollen",
+"p": [
+"soll",
+"sollst",
+"soll",
+"sollen",
+"sollt",
+"sollen"
+],
+"m": 1
+},
+{
+"i": "mögen",
+"p": [
+"mag",
+"magst",
+"mag",
+"mögen",
+"mögt",
+"mögen"
+],
+"m": 1
+},
+{
+"i": "aufstehen",
+"pp": "aufgestanden",
+"a": "s",
+"sep": 1
+},
+{
+"i": "einkaufen",
+"pp": "eingekauft",
+"a": "h",
+"sep": 1
+},
+{
+"i": "anrufen",
+"pp": "angerufen",
+"a": "h",
+"sep": 1
+},
+{
+"i": "ankommen",
+"pp": "angekommen",
+"a": "s",
+"sep": 1
+},
+{
+"i": "einladen",
+"pp": "eingeladen",
+"a": "h",
+"sep": 1
+},
+{
+"i": "kennenlernen",
+"pp": "kennengelernt",
+"a": "h",
+"sep": 1
+},
+{
+"i": "umziehen",
+"pp": "umgezogen",
+"a": "s",
+"sep": 1
+},
+{
+"i": "fernsehen",
+"pp": "ferngesehen",
+"a": "h",
+"sep": 1
+}
+],
+"konj2": [
+{
+"i": "haben",
+"p": [
+"hätte",
+"hättest",
+"hätte",
+"hätten",
+"hättet",
+"hätten"
+],
+"t": "{P} ___ gern mehr Zeit."
+},
+{
+"i": "sein",
+"p": [
+"wäre",
+"wärst",
+"wäre",
+"wären",
+"wärt",
+"wären"
+],
+"t": "Wenn {p} jetzt nur im Urlaub ___!"
+},
+{
+"i": "werden",
+"p": [
+"würde",
+"würdest",
+"würde",
+"würden",
+"würdet",
+"würden"
+],
+"t": "{P} ___ gern nach Italien fahren."
+},
+{
+"i": "können",
+"p": [
+"könnte",
+"könntest",
+"könnte",
+"könnten",
+"könntet",
+"könnten"
+],
+"t": "___ {p} bitte das Fenster aufmachen?"
+},
+{
+"i": "müssen",
+"p": [
+"müsste",
+"müsstest",
+"müsste",
+"müssten",
+"müsstet",
+"müssten"
+],
+"t": "{P} ___ eigentlich mehr Sport machen."
+},
+{
+"i": "sollen",
+"p": [
+"sollte",
+"solltest",
+"sollte",
+"sollten",
+"solltet",
+"sollten"
+],
+"t": "{P} ___ früher ins Bett gehen."
+}
+],
+"order": [
+{
+"m": "Ich bleibe heute zu Hause,",
+"c": "weil",
+"s": [
+"ich",
+"krank",
+"bin"
+],
+"en": "because I'm ill"
+},
+{
+"m": "Ich lerne Deutsch,",
+"c": "weil",
+"s": [
+"ich",
+"in Deutschland",
+"lebe"
+],
+"en": "because I live in Germany"
+},
+{
+"m": "Ich glaube,",
+"c": "dass",
+"s": [
+"der Zug",
+"Verspätung",
+"hat"
+],
+"en": "that the train is late"
+},
+{
+"m": "Sie sagt,",
+"c": "dass",
+"s": [
+"sie",
+"morgen",
+"nicht",
+"kommen",
+"kann"
+],
+"en": "that she can't come tomorrow"
+},
+{
+"m": "Ich weiß nicht,",
+"c": "ob",
+"s": [
+"das Amt",
+"heute",
+"geöffnet",
+"ist"
+],
+"en": "whether the office is open today"
+},
+{
+"m": "Wir gehen spazieren,",
+"c": "obwohl",
+"s": [
+"es",
+"regnet"
+],
+"en": "although it's raining"
+},
+{
+"m": "Ruf mich an,",
+"c": "wenn",
+"s": [
+"du",
+"Zeit",
+"hast"
+],
+"en": "if you have time"
+},
+{
+"m": "Ich bin müde,",
+"c": "weil",
+"s": [
+"ich",
+"gestern",
+"lange",
+"gearbeitet",
+"habe"
+],
+"en": "because I worked late yesterday"
+},
+{
+"m": "Er freut sich,",
+"c": "dass",
+"s": [
+"seine Familie",
+"ihn",
+"besucht"
+],
+"en": "that his family is visiting him"
+},
+{
+"m": "Kannst du mir sagen,",
+"c": "wann",
+"s": [
+"der Bus",
+"abfährt"
+],
+"en": "when the bus leaves"
+},
+{
+"m": "Ich frage mich,",
+"c": "warum",
+"s": [
+"er",
+"nicht",
+"angerufen",
+"hat"
+],
+"en": "why he didn't call"
+},
+{
+"m": "Wir heiraten im Mai,",
+"c": "weil",
+"s": [
+"das Wetter",
+"dann",
+"schön",
+"ist"
+],
+"en": "because the weather is nice then"
+},
+{
+"m": "Ich habe vergessen,",
+"c": "dass",
+"s": [
+"wir",
+"heute",
+"einen Termin",
+"haben"
+],
+"en": "that we have an appointment today"
+},
+{
+"m": "Sie kommt mit,",
+"c": "wenn",
+"s": [
+"sie",
+"früher",
+"Feierabend",
+"hat"
+],
+"en": "if she finishes work earlier"
+},
+{
+"m": "Ich möchte wissen,",
+"c": "ob",
+"s": [
+"man",
+"hier",
+"mit Karte",
+"bezahlen",
+"kann"
+],
+"en": "whether you can pay by card here"
+},
+{
+"m": "Er ist zu spät gekommen,",
+"c": "weil",
+"s": [
+"er",
+"den Zug",
+"verpasst",
+"hat"
+],
+"en": "because he missed the train"
+},
+{
+"m": "Es ist wichtig,",
+"c": "dass",
+"s": [
+"man",
+"die Nachbarn",
+"grüßt"
+],
+"en": "that you greet the neighbours"
+},
+{
+"m": "Ich gehe zum Arzt,",
+"c": "weil",
+"s": [
+"mein Rücken",
+"seit Tagen",
+"wehtut"
+],
+"en": "because my back has hurt for days"
+},
+{
+"m": "Weißt du,",
+"c": "wo",
+"s": [
+"das Standesamt",
+"ist"
+],
+"en": "where the registry office is"
+},
+{
+"m": "Wir bleiben noch,",
+"c": "bis",
+"s": [
+"die Party",
+"zu Ende",
+"ist"
+],
+"en": "until the party is over"
+}
+]
+}
