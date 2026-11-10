@@ -29,9 +29,21 @@ function toast(msg) { const t = document.createElement('div'); t.className = 'to
 
 /* ---------- speech ---------- */
 let deVoice = null;
+/* Prefer the most natural German voices the device has (iOS "Premium"/"Enhanced",
+   Edge/Chrome "Natural"/"Online"/Google). */
+function voiceScore(v) {
+  let sc = 0;
+  if (/de-DE/i.test(v.lang)) sc += 2;
+  if (/(premium|enhanced|natural|neural|online)/i.test(v.name)) sc += 6;
+  if (/google/i.test(v.name)) sc += 3;
+  if (/(Anna|Helena|Petra|Markus|Yannick|Katja|Conrad|Amala|Florian|Seraphina)/.test(v.name)) sc += 1;
+  if (/(eloquence|grandma|grandpa|shelley|sandy|rocko|reed|flo|eddy)/i.test(v.name)) sc -= 5;
+  return sc;
+}
+let deVoices = [];
 function pickVoice() {
-  const vs = speechSynthesis.getVoices().filter(v => /^de(-|_|$)/i.test(v.lang));
-  deVoice = vs.find(v => /de-DE/i.test(v.lang) && /(Anna|Helena|Google|Petra|Markus|Yannick)/.test(v.name)) || vs.find(v => /de-DE/i.test(v.lang)) || vs[0] || null;
+  deVoices = speechSynthesis.getVoices().filter(v => /^de(-|_|$)/i.test(v.lang)).sort((a, b) => voiceScore(b) - voiceScore(a));
+  deVoice = deVoices[0] || null;
 }
 if ('speechSynthesis' in window) { pickVoice(); speechSynthesis.onvoiceschanged = pickVoice; }
 function say(text, rate) {
@@ -50,6 +62,7 @@ function grade(k, g) { // g: 0 again, 1 good, 2 easy
   const r = S.srs[k] || { b: 0, d: 0 };
   if (g === 0) r.b = 1; else r.b = Math.min(INTERVALS.length - 1, r.b + g);
   r.d = g === 0 ? Date.now() + 10 * 60e3 : Date.now() + INTERVALS[r.b] * DAY - 3 * 3600e3;
+  r.l = Date.now();
   S.srs[k] = r; save();
 }
 /* choose n keys from a pool: due first (oldest due), then new ones */
@@ -58,6 +71,23 @@ function choose(pool, n, keyOf) {
   const due = pool.filter(x => isDue(keyOf(x), now)).sort((a, b) => S.srs[keyOf(a)].d - S.srs[keyOf(b)].d);
   const fresh = shuffle(pool.filter(x => !srsGet(keyOf(x)))).sort(weekFirst);
   return [...due, ...fresh].slice(0, n);
+}
+
+/* Balanced round of exactly n: due reviews first, but always some new words
+   (about a third) so you keep progressing, and if there is room, a few
+   already-known cards you haven't seen for the longest time. */
+function balanced(pool, n, keyOf) {
+  const now = Date.now();
+  const due = pool.filter(x => isDue(keyOf(x), now)).sort((a, b) => S.srs[keyOf(a)].d - S.srs[keyOf(b)].d);
+  const fresh = shuffle(pool.filter(x => !srsGet(keyOf(x)))).sort(weekFirst);
+  const known = pool.filter(x => { const r = srsGet(keyOf(x)); return r && r.d > now; })
+    .sort((a, b) => (S.srs[keyOf(a)].l || 0) - (S.srs[keyOf(b)].l || 0));
+  const minReview = Math.min(Math.ceil(n * 0.2), due.length + known.length); // always some review
+  const nNew = Math.min(fresh.length, Math.max(Math.ceil(n * 0.3), n - due.length), n - minReview);
+  const out = [...due.slice(0, n - nNew), ...fresh.slice(0, nNew)];
+  out.push(...known.slice(0, n - out.length));
+  out.push(...fresh.slice(nNew, nNew + n - out.length)); // pool too small: more new
+  return shuffle(out);
 }
 
 /* ---------- content pools ---------- */
@@ -84,17 +114,18 @@ function leastSeen(kind, list) {
   return { i: idx, item: list[idx] };
 }
 function markSeen(kind, i) { (S.seen[kind] ||= {})[i] = ((S.seen[kind] || {})[i] || 0) + 1; save(); }
+const MIX_SKILLS = SKILLS.filter(s => s !== 'sprechen');
 function nextSkill() {
   const c = S.seen._skills || {};
-  const min = Math.min(...SKILLS.map(s => c[s] || 0));
-  return pickRandom(SKILLS.filter(s => (c[s] || 0) === min));
+  const min = Math.min(...MIX_SKILLS.map(s => c[s] || 0));
+  return pickRandom(MIX_SKILLS.filter(s => (c[s] || 0) === min));
 }
 
 /* ---------- build sessions ---------- */
 function buildMix() {
   const n = S.settings.mix;
   const q = [];
-  choose(vocabPool(), Math.max(2, n - 3), x => x.k).forEach(c => q.push({ t: 'vocab', c }));
+  balanced(vocabPool(), Math.max(2, n - 3), x => x.k).forEach(c => q.push({ t: 'vocab', c }));
   choose(decodePool(), 1, x => x.k).forEach(c => q.push({ t: 'decode', c }));
   const lidLeft = Math.max(1, Math.min(2, 5 - ((S.days[today()] || {}).lid || 0)));
   choose(lidPool(), lidLeft, x => x.k).forEach(c => q.push({ t: 'lid', c }));
@@ -109,8 +140,8 @@ function skillItem(kind) {
 }
 function buildSection(kind) {
   if (kind === 'wb') return [wbItem()];
-  if (kind === 'vocab') return choose(vocabPool(), 8, x => x.k).map(c => ({ t: 'vocab', c }));
-  if (kind === 'decode') return choose(decodePool(), 5, x => x.k).map(c => ({ t: 'decode', c }));
+  if (kind === 'vocab') return balanced(vocabPool(), 10, x => x.k).map(c => ({ t: 'vocab', c }));
+  if (kind === 'decode') return balanced(decodePool(), 5, x => x.k).map(c => ({ t: 'decode', c }));
   if (kind === 'lid') return choose(lidPool(), 5, x => x.k).map(c => ({ t: 'lid', c }));
   const n = kind === 'hoeren' ? 4 : kind === 'lesen' || kind === 'party' ? 2 : 3;
   const out = []; const used = new Set();
@@ -127,6 +158,7 @@ function recordItem(correct, type) {
     const y = new Date(Date.now() - DAY).toLocaleDateString('sv');
     S.streak.n = S.streak.last === y ? S.streak.n + 1 : 1;
     S.streak.last = d;
+    S.streak.best = Math.max(S.streak.best || 0, S.streak.n);
   }
   save();
 }
@@ -152,19 +184,23 @@ function home() {
     </div>
     ${missionCard()}
     <button class="btn primary" data-start="mix">▶ 2-Minuten-Mix</button>
-    <p class="muted small" style="text-align:center">Karten, ein Wort entschlüsseln, eine Einbürgerungsfrage und eine Prüfungsaufgabe</p>
-    <h2>Einzeln üben</h2>
-    <div class="grid">
+    <p class="muted small" style="text-align:center">Ein paar Wörter, eine Einbürgerungsfrage und eine kurze Übung</p>
+    ${progressCard()}
+    <div class="grid" style="margin-top:12px">
       ${wbTile()}
-      ${tile('vocab', 'Wortschatz', `${dueV} fällig · ${newV} neu`)}
-      ${tile('decode', 'Entschlüsseln', 'Wörter aus Teilen erraten')}
-      ${tile('lid', 'Leben in Deutschland', `${lidDone}/${lidAll.length} sicher${S.settings.state ? '' : ' · Bundesland wählen'}`)}
+      ${tile('vocab', '10 Wörter', `${dueV} zum Wiederholen · ${newV} neu`)}
+      ${tile('lid', 'Leben in Deutschland', `${lidDone}/${lidAll.length} sicher`)}
       ${tile('lesen', 'Lesen', 'Kurze Texte, B1')}
-      ${tile('hoeren', 'Hören', 'Diktat: hören & tippen')}
-      ${tile('schreiben', 'Schreiben', 'Ein Satz, mit Musterlösung')}
-      ${tile('sprechen', 'Sprechen', 'Laut antworten')}
       ${tile('party', 'Party-Hören', 'Schnelle Alltagsdialoge')}
-      <button class="tile" data-go="import"><b>＋ Quizlet-Import</b><span>${S.decks.length} eigene Stapel</span></button>
+    </div>
+    <details style="margin-top:12px"><summary>Mehr üben</summary>
+      <div class="grid" style="margin-top:10px">
+        ${tile('decode', 'Entschlüsseln', 'Wörter aus Teilen')}
+        ${tile('hoeren', 'Diktat', 'Hören & tippen')}
+        ${tile('schreiben', 'Schreiben', 'Ein Satz, mit Muster')}
+        ${tile('sprechen', 'Sprechen', 'Für zu Hause: laut antworten')}
+        <button class="tile" data-go="import"><b>＋ Quizlet-Import</b><span>${S.decks.length} eigene Stapel</span></button>
+      </div></details>
     </div>`;
 }
 const tile = (k, title, sub) => `<button class="tile" data-start="${k}"><b>${esc(title)}</b><span>${esc(sub)}</span></button>`;
@@ -247,7 +283,6 @@ function vVocab(c) {
     document.getElementById('say').onclick = () => say(speakText);
     document.querySelectorAll('[data-g]').forEach(b => b.onclick = () => {
       const g = +b.dataset.g; grade(c.k, g);
-      if (g === 0 && !session.requeued.has(c.k)) { session.requeued.add(c.k); session.q.push({ t: 'vocab', c }); }
       next(g > 0);
     });
   };
@@ -277,20 +312,11 @@ function mc({ tag, head, options, answer, onDone, after }) {
 
 /* --- Entschlüsseln --- */
 function vDecode(c) {
-  const tag = 'Entschlüsseln · Was bedeutet das?';
-  $app.innerHTML = frame(`<div class="body">
-    <div class="word">${esc(c.w)}</div><div class="sentence">${esc(c.s)}</div>
-    <p class="muted small" style="margin-top:18px">Zerleg das Wort im Kopf: Präfix? Stamm? Suffix? Was könnte es heißen?</p>
-    <input id="guess" placeholder="Deine Vermutung (optional, auch auf Englisch)" autocomplete="off">
-    <button class="btn primary actions" id="go">Ich habe eine Vermutung</button></div>`, tag);
-  document.getElementById('go').onclick = () => decodeReveal(c, document.getElementById('guess').value.trim());
-}
-function decodeReveal(c, guess) {
   mc({
     tag: 'Entschlüsseln · Was bedeutet das?',
-    head: `<div class="word">${esc(c.w)}</div><div class="sentence">${esc(c.s)}</div><div class="morph">${esc(c.p)}</div>${guess ? `<p class="small muted" style="margin-top:8px">Deine Vermutung: <i>${esc(guess)}</i></p>` : ''}`,
+    head: `<div class="word">${esc(c.w)}</div><div class="sentence">${esc(c.s)}</div>`,
     options: c.o, answer: c.a,
-    after: '',
+    after: `<div class="morph" style="margin-top:10px">${esc(c.p)}</div>`,
     onDone: ok => { grade(c.k, ok ? 1 : 0); next(ok); }
   });
 }
@@ -432,9 +458,9 @@ function vParty(c) {
     <div id="opts">${shuffle(c.o.map((o, i) => i)).map(i => `<button class="opt" data-i="${i}">${esc(c.o[i])}</button>`).join('')}</div>
     <div id="fb"></div></div>`, 'Party-Hören');
   const play = rate => playLines(lines, rate);
-  document.getElementById('p1').onclick = () => play(1.1);
+  document.getElementById('p1').onclick = () => play(1.0);
   document.getElementById('p2').onclick = () => play(0.8);
-  setTimeout(() => play(1.1), 300);
+  setTimeout(() => play(1.0), 300);
   document.querySelectorAll('.opt').forEach(b => b.onclick = () => {
     const i = +b.dataset.i, ok = i === c.a;
     document.querySelectorAll('.opt').forEach(x => { x.disabled = true; if (+x.dataset.i === c.a) x.classList.add('right'); });
@@ -447,12 +473,15 @@ function vParty(c) {
 function playLines(lines, rate) {
   if (!('speechSynthesis' in window)) return toast('Sprachausgabe nicht verfügbar');
   speechSynthesis.cancel();
-  const voices = speechSynthesis.getVoices().filter(v => /^de/i.test(v.lang));
+  pickVoice();
   const speakers = [...new Set(lines.map(l => l.sp))];
+  // the two best-sounding voices with different names, so speakers differ
+  const cast = [];
+  deVoices.forEach(v => { const base = v.name.split(/[\s(]/)[0]; if (cast.length < 2 && !cast.some(c => c.name.split(/[\s(]/)[0] === base)) cast.push(v); });
   lines.forEach(l => {
     const u = new SpeechSynthesisUtterance(l.t); u.lang = 'de-DE'; u.rate = rate;
     const idx = speakers.indexOf(l.sp);
-    if (voices.length > 1) u.voice = voices[idx % voices.length]; else { if (deVoice) u.voice = deVoice; u.pitch = idx % 2 ? 0.8 : 1.15; }
+    if (cast.length > 1) u.voice = cast[idx % cast.length]; else { if (deVoice) u.voice = deVoice; u.pitch = idx % 2 ? 0.92 : 1.06; }
     speechSynthesis.speak(u);
   });
 }
@@ -567,6 +596,56 @@ function seedLearned() {
   let n = 0;
   DATA.vocab.forEach(c => { if (c.deck === 'Gelernt' && !S.srs['v:' + c.w]) { S.srs['v:' + c.w] = { b: 2, d: Date.now() + Math.random() * 14 * DAY }; n++; } });
   if (n) save();
+}
+
+/* --- Fortschritt --- */
+function progressData() {
+  const words = vocabPool();
+  const sure = words.filter(x => (srsGet(x.k) || {}).b >= 3).length;
+  const learning = words.filter(x => { const r = srsGet(x.k); return r && r.b < 3; }).length;
+  const lid = lidPool(); const lidSure = lid.filter(x => (srsGet(x.k) || {}).b >= 2).length;
+  const wb = S.wb || { u: 0, s: 0 }; const wbTotal = (DATA.workbook || []).length * WB_STEPS.length;
+  return { words: words.length, sure, learning, lid: lid.length, lidSure, wbDone: Math.min(wbTotal, wb.u * WB_STEPS.length + wb.s), wbTotal };
+}
+const bar = (parts, total) => `<div class="pbar">${parts.map(([v, c]) => `<i style="width:${total ? (v / total) * 100 : 0}%;background:${c}"></i>`).join('')}</div>`;
+function progressCard() {
+  const p = progressData();
+  return `<button class="tile" data-go="progress" style="width:100%;min-height:0;margin-top:14px">
+    <b>📈 Dein Fortschritt</b>
+    <span style="margin-top:8px">Wörter sicher: ${p.sure} von ${p.words}</span>${bar([[p.sure, 'var(--good)'], [p.learning, 'var(--accent)']], p.words)}
+    <span>Arbeitsheft: ${p.wbDone} von ${p.wbTotal} Schritten</span>${bar([[p.wbDone, 'var(--warn)']], p.wbTotal)}
+    <span>Einbürgerungstest: ${p.lidSure} von ${p.lid} Fragen sicher</span>${bar([[p.lidSure, '#5cc8ff']], p.lid)}
+  </button>`;
+}
+function progressView() {
+  const p = progressData();
+  const days = Object.keys(S.days).sort();
+  const total = Object.values(S.days).reduce((a, d) => a + d.n, 0);
+  const decks = {};
+  vocabPool().forEach(x => { const d = x.deck || 'Basis'; const o = decks[d] ||= { n: 0, sure: 0, seen: 0 }; o.n++; const r = srsGet(x.k); if (r) o.seen++; if (r && r.b >= 3) o.sure++; });
+  const last7 = Array.from({ length: 7 }, (_, i) => new Date(Date.now() - (6 - i) * DAY).toLocaleDateString('sv'));
+  const max = Math.max(1, ...last7.map(d => (S.days[d] || {}).n || 0));
+  $app.innerHTML = `
+    <div class="top"><button class="iconbtn" data-go="home" aria-label="Zurück">←</button><h1 style="flex:1">Fortschritt</h1></div>
+    <div class="row" style="margin:14px 0;flex:none">
+      <span class="pill fire" style="flex:none">🔥 ${streakNow()} Tag${streakNow() === 1 ? "" : "e"}</span>
+      <span class="pill" style="flex:none">Rekord: ${S.streak.best || streakNow()}</span>
+      <span class="pill" style="flex:none">Seit ${days[0] ? new Date(days[0]).toLocaleDateString('de-DE') : 'heute'}</span>
+    </div>
+    <h2>Diese Woche</h2>
+    <div class="week">${last7.map(d => { const n = (S.days[d] || {}).n || 0; return `<div><i style="height:${(n / max) * 70 + 2}px"></i><span>${new Date(d).toLocaleDateString('de-DE', { weekday: 'short' }).slice(0, 2)}</span></div>`; }).join('')}</div>
+    <p class="small muted">${days.length} Lerntage · ${total} Aufgaben insgesamt</p>
+    <h2>Wörter</h2>
+    <p class="small"><span style="color:var(--good)">■</span> sicher (eine Woche+ gemerkt) · <span style="color:var(--accent)">■</span> im Lernen · grau: noch neu</p>
+    ${bar([[p.sure, 'var(--good)'], [p.learning, 'var(--accent)']], p.words)}
+    ${Object.entries(decks).sort((a, b) => b[1].n - a[1].n).map(([d, o]) => `<div class="statline"><span>${esc(d)}</span><span>${o.sure} sicher · ${o.seen - o.sure} im Lernen · ${o.n - o.seen} neu</span></div>`).join('')}
+    <h2>Arbeitsheft</h2>
+    ${bar([[p.wbDone, 'var(--warn)']], p.wbTotal)}
+    <p class="small muted">Einheit ${Math.min((S.wb || { u: 0 }).u + 1, (DATA.workbook || []).length)} von ${(DATA.workbook || []).length}</p>
+    <h2>Einbürgerungstest</h2>
+    ${bar([[p.lidSure, '#5cc8ff']], p.lid)}
+    <p class="small muted">${p.lidSure} von ${p.lid} Fragen zweimal richtig. Im Test: 33 Fragen, 17 richtig zum Bestehen.</p>
+    <p class="small muted" style="margin-top:18px">Wie Wiederholung funktioniert: Jede Karte, die du kannst, kommt nach 1, 3, 7, 14, 30, 60 Tagen wieder. Jede 10er-Runde mischt fällige Wiederholungen mit neuen Wörtern. Wenn nichts fällig ist, kommen Wörter, die du am längsten nicht gesehen hast.</p>`;
 }
 
 /* --- Mission des Tages --- */
@@ -684,7 +763,7 @@ document.addEventListener('click', e => {
   const s = e.target.closest('[data-start]'); if (s) return startSession(s.dataset.start);
   const g = e.target.closest('[data-go]'); if (!g) return;
   clearInterval(window._tick);
-  ({ home, settings: settingsView, import: importView })[g.dataset.go]();
+  ({ home, settings: settingsView, import: importView, progress: progressView })[g.dataset.go]();
 });
 
 async function boot() {
