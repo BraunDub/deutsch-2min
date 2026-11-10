@@ -70,3 +70,9 @@ summary{cursor:pointer;font-weight:600}
 .chip:disabled{opacity:.3}
 .gl{background:none;color:inherit;font:inherit;padding:0;border-bottom:2px dotted var(--accent)}
 .passage p{font-size:17px;line-height:1.6;margin:0 0 10px}
+.pbar{display:flex;height:8px;background:var(--line);border-radius:6px;overflow:hidden;margin:4px 0 8px;width:100%}
+.pbar i{display:block;height:100%}
+.week{display:flex;align-items:flex-end;justify-content:space-between;height:100px;padding:6px 4px;background:var(--card);border-radius:14px}
+.week div{display:flex;flex-direction:column;align-items:center;gap:4px;flex:1}
+.week i{display:block;width:60%;background:var(--accent);border-radius:4px}
+.week span{font-size:12px;color:var(--muted)}
