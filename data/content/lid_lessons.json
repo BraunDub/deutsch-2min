@@ -1,0 +1,1077 @@
+[
+ {
+  "id": "grundrechte",
+  "title": "Das Grundgesetz und die Grundrechte",
+  "en": "Germany's constitution and the basic rights every person has.",
+  "points": [
+   {
+    "de": "Das Grundgesetz ist die Verfassung der Bundesrepublik Deutschland. Es gilt seit 1949.",
+    "en": "The Basic Law is Germany's constitution. It has applied since 1949."
+   },
+   {
+    "de": "Artikel 1: „Die Würde des Menschen ist unantastbar.“",
+    "en": "Article 1: 'Human dignity is inviolable.'"
+   },
+   {
+    "de": "Die Grundrechte stehen am Anfang des Grundgesetzes (Artikel 1 bis 19).",
+    "en": "The basic rights are at the start of the Basic Law (Articles 1 to 19)."
+   },
+   {
+    "de": "Alle Menschen sind vor dem Gesetz gleich. Männer und Frauen sind gleichberechtigt.",
+    "en": "Everyone is equal before the law. Men and women have equal rights."
+   },
+   {
+    "de": "Es gibt Meinungsfreiheit und Pressefreiheit: Man darf seine Meinung sagen und die Regierung kritisieren.",
+    "en": "There is freedom of opinion and of the press: you may say what you think and criticise the government."
+   },
+   {
+    "de": "Es gibt Glaubens- und Religionsfreiheit.",
+    "en": "There is freedom of belief and religion."
+   },
+   {
+    "de": "Man darf sich friedlich versammeln und demonstrieren (Versammlungsfreiheit).",
+    "en": "People may assemble and demonstrate peacefully (freedom of assembly)."
+   },
+   {
+    "de": "Jeder darf seinen Beruf frei wählen. Ehe und Familie stehen unter dem besonderen Schutz des Staates.",
+    "en": "Everyone may choose their job freely. Marriage and family are specially protected by the state."
+   },
+   {
+    "de": "Politisch Verfolgte haben Asylrecht.",
+    "en": "People persecuted for political reasons have the right to asylum."
+   }
+  ],
+  "visual": {
+   "type": "boxes",
+   "items": [
+    {
+     "h": "Art. 1",
+     "t": "Würde des Menschen"
+    },
+    {
+     "h": "Art. 3",
+     "t": "Gleichheit, Gleichberechtigung"
+    },
+    {
+     "h": "Art. 4",
+     "t": "Glaubensfreiheit"
+    },
+    {
+     "h": "Art. 5",
+     "t": "Meinungs- und Pressefreiheit"
+    },
+    {
+     "h": "Art. 8",
+     "t": "Versammlungsfreiheit"
+    },
+    {
+     "h": "Art. 12",
+     "t": "freie Berufswahl"
+    }
+   ]
+  },
+  "keys": [
+   "grundgesetz",
+   "artikel",
+   "grundrecht",
+   "grundrechte",
+   "würde",
+   "meinungsfreiheit",
+   "pressefreiheit",
+   "versammlungsfreiheit",
+   "gleichberechtigt",
+   "gleichberechtigung",
+   "verfassung",
+   "asyl",
+   "berufswahl"
+  ]
+ },
+ {
+  "id": "staatsprinzipien",
+  "title": "Wie ist Deutschland organisiert?",
+  "en": "The core principles of the German state and its symbols.",
+  "points": [
+   {
+    "de": "Deutschland ist ein demokratischer und sozialer Bundesstaat.",
+    "en": "Germany is a democratic and social federal state."
+   },
+   {
+    "de": "Demokratie: Die Macht geht vom Volk aus. Das Volk wählt das Parlament.",
+    "en": "Democracy: power comes from the people. The people elect the parliament."
+   },
+   {
+    "de": "Rechtsstaat: Alle müssen sich an die Gesetze halten – auch der Staat und die Regierung.",
+    "en": "Rule of law: everyone must obey the laws, including the state and the government."
+   },
+   {
+    "de": "Sozialstaat: Der Staat hilft Menschen, die Hilfe brauchen, zum Beispiel bei Krankheit oder Arbeitslosigkeit.",
+    "en": "Welfare state: the state helps people in need, e.g. when ill or unemployed."
+   },
+   {
+    "de": "Bundesstaat: Deutschland besteht aus 16 Bundesländern.",
+    "en": "Federal state: Germany consists of 16 federal states."
+   },
+   {
+    "de": "Deutschland ist eine Republik. Die Hauptstadt ist Berlin.",
+    "en": "Germany is a republic. The capital is Berlin."
+   },
+   {
+    "de": "Die Farben der Bundesflagge sind Schwarz, Rot und Gold. Das Wappen zeigt den Bundesadler.",
+    "en": "The flag's colours are black, red and gold. The coat of arms shows the federal eagle."
+   },
+   {
+    "de": "Die Wirtschaftsordnung heißt soziale Marktwirtschaft.",
+    "en": "The economic system is called the social market economy."
+   }
+  ],
+  "visual": {
+   "type": "boxes",
+   "items": [
+    {
+     "h": "Demokratie",
+     "t": "Das Volk wählt"
+    },
+    {
+     "h": "Rechtsstaat",
+     "t": "Alle halten sich an Gesetze"
+    },
+    {
+     "h": "Sozialstaat",
+     "t": "Hilfe bei Krankheit, Alter, Arbeitslosigkeit"
+    },
+    {
+     "h": "Bundesstaat",
+     "t": "16 Bundesländer"
+    }
+   ]
+  },
+  "keys": [
+   "demokratie",
+   "rechtsstaat",
+   "sozialstaat",
+   "bundesstaat",
+   "republik",
+   "flagge",
+   "farben",
+   "wappen",
+   "adler",
+   "hauptstadt",
+   "soziale marktwirtschaft",
+   "staatsform"
+  ]
+ },
+ {
+  "id": "gewaltenteilung",
+  "title": "Gewaltenteilung",
+  "en": "The separation of powers into three branches that check each other.",
+  "points": [
+   {
+    "de": "Die Staatsgewalt ist in drei Teile geteilt. Das nennt man Gewaltenteilung.",
+    "en": "State power is divided into three parts. This is called the separation of powers."
+   },
+   {
+    "de": "Legislative (gesetzgebende Gewalt): Bundestag und Bundesrat machen die Gesetze.",
+    "en": "Legislative: the Bundestag and Bundesrat make the laws."
+   },
+   {
+    "de": "Exekutive (ausführende Gewalt): Die Regierung, die Verwaltung und die Polizei führen die Gesetze aus.",
+    "en": "Executive: the government, administration and police carry out the laws."
+   },
+   {
+    "de": "Judikative (rechtsprechende Gewalt): Die Gerichte sprechen Recht.",
+    "en": "Judiciary: the courts administer justice."
+   },
+   {
+    "de": "Die Gerichte sind unabhängig. Die Regierung darf ihnen nicht sagen, wie sie urteilen sollen.",
+    "en": "Courts are independent. The government may not tell them how to rule."
+   },
+   {
+    "de": "Die Gewaltenteilung verhindert, dass eine Person oder Gruppe zu viel Macht hat.",
+    "en": "It stops any one person or group from having too much power."
+   },
+   {
+    "de": "Die Opposition und die Presse kontrollieren die Regierung.",
+    "en": "The opposition and the press scrutinise the government."
+   }
+  ],
+  "visual": {
+   "type": "boxes",
+   "items": [
+    {
+     "h": "Legislative",
+     "t": "Bundestag, Bundesrat – machen Gesetze"
+    },
+    {
+     "h": "Exekutive",
+     "t": "Regierung, Verwaltung, Polizei – führen Gesetze aus"
+    },
+    {
+     "h": "Judikative",
+     "t": "Gerichte – sprechen Recht"
+    }
+   ]
+  },
+  "keys": [
+   "gewaltenteilung",
+   "legislative",
+   "exekutive",
+   "judikative",
+   "gesetzgebung",
+   "gericht",
+   "gerichte",
+   "unabhängig",
+   "polizei",
+   "opposition",
+   "kontrolle",
+   "staatsgewalt"
+  ]
+ },
+ {
+  "id": "wahlen",
+  "title": "Wahlen in Deutschland",
+  "en": "How elections work: principles, two votes, and the 5% hurdle.",
+  "points": [
+   {
+    "de": "Wahlen sind allgemein, unmittelbar, frei, gleich und geheim.",
+    "en": "Elections are universal, direct, free, equal and secret."
+   },
+   {
+    "de": "Geheim heißt: Niemand darf sehen oder kontrollieren, wen ich wähle.",
+    "en": "Secret means: nobody may see or check whom I vote for."
+   },
+   {
+    "de": "Der Bundestag wird alle vier Jahre gewählt. Wählen darf man ab 18 Jahren mit deutscher Staatsangehörigkeit.",
+    "en": "The Bundestag is elected every four years. German citizens may vote from age 18."
+   },
+   {
+    "de": "Mit der Erststimme wählt man eine Person im Wahlkreis, mit der Zweitstimme eine Partei.",
+    "en": "With the first vote you choose a person in your constituency, with the second vote a party."
+   },
+   {
+    "de": "Eine Partei braucht mindestens 5 % der Zweitstimmen, um in den Bundestag zu kommen (Fünf-Prozent-Hürde).",
+    "en": "A party needs at least 5% of second votes to enter the Bundestag (5% hurdle)."
+   },
+   {
+    "de": "Man kann auch per Briefwahl wählen.",
+    "en": "You can also vote by post."
+   },
+   {
+    "de": "Bürgerinnen und Bürger aus EU-Ländern dürfen bei Kommunalwahlen wählen.",
+    "en": "Citizens of EU countries may vote in local elections."
+   },
+   {
+    "de": "Wer nicht wählt, hat keine Strafe zu befürchten: Es gibt keine Wahlpflicht.",
+    "en": "There is no penalty for not voting: voting is not compulsory."
+   }
+  ],
+  "visual": {
+   "type": "flow",
+   "items": [
+    "Bürger wählen",
+    "Bundestag",
+    "Bundestag wählt Kanzler/in",
+    "Bundesregierung"
+   ]
+  },
+  "keys": [
+   "wahl",
+   "wahlen",
+   "wählen",
+   "geheim",
+   "frei",
+   "erststimme",
+   "zweitstimme",
+   "wahlkreis",
+   "fünf-prozent",
+   "prozent",
+   "briefwahl",
+   "wahlrecht",
+   "kommunalwahl",
+   "18 jahre",
+   "alle vier jahre"
+  ]
+ },
+ {
+  "id": "verfassungsorgane",
+  "title": "Bundestag, Bundesrat, Präsident, Kanzler, Gerichte",
+  "en": "Who does what at federal level.",
+  "points": [
+   {
+    "de": "Der Bundestag ist das Parlament. Er macht die Gesetze und wählt den Bundeskanzler oder die Bundeskanzlerin.",
+    "en": "The Bundestag is the parliament. It makes laws and elects the chancellor."
+   },
+   {
+    "de": "Der Bundesrat ist die Vertretung der Bundesländer. Er wirkt an den Gesetzen mit.",
+    "en": "The Bundesrat represents the federal states. It takes part in making laws."
+   },
+   {
+    "de": "Der Bundeskanzler / die Bundeskanzlerin ist der Regierungschef und bestimmt die Richtlinien der Politik.",
+    "en": "The chancellor heads the government and sets the policy guidelines."
+   },
+   {
+    "de": "Die Bundesregierung besteht aus dem Kanzler / der Kanzlerin und den Ministern.",
+    "en": "The federal government consists of the chancellor and the ministers."
+   },
+   {
+    "de": "Der Bundespräsident / die Bundespräsidentin ist das Staatsoberhaupt. Er unterschreibt die Gesetze und vertritt Deutschland.",
+    "en": "The federal president is head of state, signs laws and represents Germany."
+   },
+   {
+    "de": "Der Bundespräsident wird von der Bundesversammlung für fünf Jahre gewählt.",
+    "en": "The president is elected by the Federal Convention for five years."
+   },
+   {
+    "de": "Das Bundesverfassungsgericht in Karlsruhe prüft, ob Gesetze mit dem Grundgesetz übereinstimmen.",
+    "en": "The Federal Constitutional Court in Karlsruhe checks whether laws comply with the Basic Law."
+   },
+   {
+    "de": "Oft bilden mehrere Parteien zusammen eine Regierung. Das nennt man Koalition.",
+    "en": "Often several parties form a government together. This is called a coalition."
+   }
+  ],
+  "visual": {
+   "type": "boxes",
+   "items": [
+    {
+     "h": "Bundestag",
+     "t": "Parlament, Gesetze, wählt Kanzler/in"
+    },
+    {
+     "h": "Bundesrat",
+     "t": "Vertretung der Länder"
+    },
+    {
+     "h": "Bundesregierung",
+     "t": "Kanzler/in + Minister"
+    },
+    {
+     "h": "Bundespräsident/in",
+     "t": "Staatsoberhaupt, 5 Jahre"
+    },
+    {
+     "h": "Bundesverfassungsgericht",
+     "t": "Karlsruhe, prüft Gesetze"
+    }
+   ]
+  },
+  "keys": [
+   "bundestag",
+   "bundesrat",
+   "bundeskanzler",
+   "bundeskanzlerin",
+   "bundespräsident",
+   "bundespräsidentin",
+   "bundesregierung",
+   "minister",
+   "bundesversammlung",
+   "bundesverfassungsgericht",
+   "karlsruhe",
+   "koalition",
+   "staatsoberhaupt",
+   "parlament"
+  ]
+ },
+ {
+  "id": "laender_bayern",
+  "title": "Die Bundesländer und Bayern",
+  "en": "Federalism, the 16 states, and what to know about Bavaria.",
+  "points": [
+   {
+    "de": "Deutschland hat 16 Bundesländer. Jedes Land hat eine eigene Regierung und ein eigenes Parlament (Landtag).",
+    "en": "Germany has 16 states, each with its own government and parliament (Landtag)."
+   },
+   {
+    "de": "Berlin, Hamburg und Bremen sind Stadtstaaten.",
+    "en": "Berlin, Hamburg and Bremen are city-states."
+   },
+   {
+    "de": "Für Schule, Polizei und Kultur sind vor allem die Bundesländer zuständig.",
+    "en": "The states are mainly responsible for schools, police and culture."
+   },
+   {
+    "de": "Bayern ist ein Freistaat. Die Landeshauptstadt ist München.",
+    "en": "Bavaria is a 'Freistaat' (free state). Its capital is Munich."
+   },
+   {
+    "de": "Das bayerische Parlament heißt Landtag. Er sitzt in München und wird alle fünf Jahre gewählt.",
+    "en": "Bavaria's parliament is the Landtag, based in Munich and elected every five years."
+   },
+   {
+    "de": "Der Landtag wählt den Ministerpräsidenten oder die Ministerpräsidentin. Er oder sie leitet die Landesregierung.",
+    "en": "The Landtag elects the minister-president, who leads the state government."
+   },
+   {
+    "de": "Bayern hat eine eigene Verfassung. Die Landesfarben sind Weiß und Blau.",
+    "en": "Bavaria has its own constitution. Its colours are white and blue."
+   },
+   {
+    "de": "Bayern grenzt an Österreich und Tschechien.",
+    "en": "Bavaria borders Austria and the Czech Republic."
+   },
+   {
+    "de": "In Bayern werden Gemeinderat und Bürgermeister alle sechs Jahre bei der Kommunalwahl gewählt.",
+    "en": "In Bavaria, local councils and mayors are elected every six years."
+   }
+  ],
+  "visual": {
+   "type": "boxes",
+   "items": [
+    {
+     "h": "Bund",
+     "t": "Bundestag, Bundesregierung"
+    },
+    {
+     "h": "Land Bayern",
+     "t": "Landtag, Ministerpräsident/in, München"
+    },
+    {
+     "h": "Gemeinde",
+     "t": "Gemeinderat, Bürgermeister/in"
+    }
+   ]
+  },
+  "keys": [
+   "bundesland",
+   "bundesländer",
+   "land",
+   "landtag",
+   "landesregierung",
+   "ministerpräsident",
+   "freistaat",
+   "bayern",
+   "bayerisch",
+   "münchen",
+   "stadtstaat",
+   "föderalismus",
+   "gemeinde",
+   "bürgermeister",
+   "kommunal"
+  ]
+ },
+ {
+  "id": "parteien",
+  "title": "Parteien und Mitbestimmung",
+  "en": "Political parties and other ways citizens take part.",
+  "points": [
+   {
+    "de": "Parteien wirken an der politischen Willensbildung mit.",
+    "en": "Parties help shape the political will of the people."
+   },
+   {
+    "de": "Große Parteien sind zum Beispiel CDU, CSU, SPD, Bündnis 90/Die Grünen, FDP, Die Linke und AfD.",
+    "en": "Major parties include CDU, CSU, SPD, Greens, FDP, Die Linke and AfD."
+   },
+   {
+    "de": "Die CSU gibt es nur in Bayern. CDU und CSU bilden zusammen die Union.",
+    "en": "The CSU only exists in Bavaria. Together, CDU and CSU form 'the Union'."
+   },
+   {
+    "de": "Eine Partei kann nur vom Bundesverfassungsgericht verboten werden.",
+    "en": "Only the Federal Constitutional Court can ban a party."
+   },
+   {
+    "de": "Die Parteien, die nicht in der Regierung sind, bilden die Opposition.",
+    "en": "Parties not in government form the opposition."
+   },
+   {
+    "de": "Bürger können auch in Bürgerinitiativen, Vereinen, Gewerkschaften oder durch Demonstrationen mitbestimmen.",
+    "en": "Citizens can also take part via citizens' groups, clubs, unions or demonstrations."
+   },
+   {
+    "de": "Viele Menschen engagieren sich ehrenamtlich, zum Beispiel bei der Freiwilligen Feuerwehr.",
+    "en": "Many people volunteer, e.g. in the volunteer fire brigade."
+   }
+  ],
+  "visual": {
+   "type": "boxes",
+   "items": [
+    {
+     "h": "Regierung",
+     "t": "Koalition aus Parteien"
+    },
+    {
+     "h": "Opposition",
+     "t": "kontrolliert die Regierung"
+    },
+    {
+     "h": "Bürger",
+     "t": "Wahlen, Bürgerinitiativen, Vereine, Ehrenamt"
+    }
+   ]
+  },
+  "keys": [
+   "partei",
+   "parteien",
+   "cdu",
+   "csu",
+   "spd",
+   "fdp",
+   "grünen",
+   "linke",
+   "afd",
+   "union",
+   "verbot",
+   "opposition",
+   "bürgerinitiative",
+   "ehrenamt",
+   "ehrenamtlich",
+   "gewerkschaft",
+   "engagieren"
+  ]
+ },
+ {
+  "id": "ns_zeit",
+  "title": "Nationalsozialismus 1933–1945",
+  "en": "The Nazi dictatorship, persecution, war and resistance.",
+  "points": [
+   {
+    "de": "Am 30. Januar 1933 wurde Adolf Hitler Reichskanzler. Danach wurde Deutschland eine Diktatur.",
+    "en": "On 30 January 1933 Hitler became chancellor, and Germany became a dictatorship."
+   },
+   {
+    "de": "In der NS-Zeit gab es keine Meinungsfreiheit, keine freien Wahlen und keine unabhängigen Gerichte.",
+    "en": "Under the Nazis there was no free speech, no free elections and no independent courts."
+   },
+   {
+    "de": "Jüdinnen und Juden, Sinti und Roma, politische Gegner, Homosexuelle und Menschen mit Behinderung wurden verfolgt.",
+    "en": "Jews, Sinti and Roma, political opponents, gay people and disabled people were persecuted."
+   },
+   {
+    "de": "In der Pogromnacht am 9. November 1938 wurden Synagogen und jüdische Geschäfte zerstört.",
+    "en": "In the pogrom of 9 November 1938, synagogues and Jewish shops were destroyed."
+   },
+   {
+    "de": "Im Holocaust wurden etwa sechs Millionen Jüdinnen und Juden ermordet.",
+    "en": "About six million Jews were murdered in the Holocaust."
+   },
+   {
+    "de": "Der Zweite Weltkrieg begann am 1. September 1939 mit dem Angriff auf Polen und endete in Europa am 8. Mai 1945.",
+    "en": "WWII began on 1 Sept 1939 with the attack on Poland and ended in Europe on 8 May 1945."
+   },
+   {
+    "de": "Es gab Widerstand, zum Beispiel die „Weiße Rose“ in München und das Attentat am 20. Juli 1944.",
+    "en": "There was resistance, e.g. the 'White Rose' in Munich and the 20 July 1944 assassination attempt."
+   },
+   {
+    "de": "Dachau in Bayern war eines der ersten Konzentrationslager. Heute ist dort eine Gedenkstätte.",
+    "en": "Dachau in Bavaria was one of the first concentration camps; today it is a memorial site."
+   }
+  ],
+  "visual": {
+   "type": "timeline",
+   "items": [
+    {
+     "y": "1933",
+     "t": "Hitler wird Reichskanzler – Diktatur"
+    },
+    {
+     "y": "1938",
+     "t": "Pogromnacht (9. November)"
+    },
+    {
+     "y": "1939",
+     "t": "Angriff auf Polen – Zweiter Weltkrieg beginnt"
+    },
+    {
+     "y": "1944",
+     "t": "Attentat vom 20. Juli"
+    },
+    {
+     "y": "1945",
+     "t": "Kriegsende am 8. Mai"
+    }
+   ]
+  },
+  "keys": [
+   "1933",
+   "hitler",
+   "nationalsozialismus",
+   "nationalsozialisten",
+   "ns",
+   "diktatur",
+   "juden",
+   "jüdisch",
+   "holocaust",
+   "verfolgung",
+   "verfolgt",
+   "pogromnacht",
+   "konzentrationslager",
+   "weltkrieg",
+   "1939",
+   "1945",
+   "widerstand",
+   "weiße rose",
+   "20. juli"
+  ]
+ },
+ {
+  "id": "teilung_einheit",
+  "title": "Geteiltes Deutschland und Wiedervereinigung",
+  "en": "Occupation, two German states, the Wall, and reunification.",
+  "points": [
+   {
+    "de": "Nach 1945 wurde Deutschland in vier Besatzungszonen geteilt: USA, Großbritannien, Frankreich und Sowjetunion.",
+    "en": "After 1945 Germany was divided into four occupation zones: US, UK, France, USSR."
+   },
+   {
+    "de": "1949 wurden die Bundesrepublik Deutschland (BRD) und die Deutsche Demokratische Republik (DDR) gegründet.",
+    "en": "In 1949 the FRG (West) and the GDR (East) were founded."
+   },
+   {
+    "de": "Die Hauptstadt der BRD war Bonn. Der erste Bundeskanzler war Konrad Adenauer.",
+    "en": "The FRG's capital was Bonn. The first chancellor was Konrad Adenauer."
+   },
+   {
+    "de": "Die DDR war eine Diktatur der SED. Es gab keine freien Wahlen, und die Stasi überwachte die Menschen.",
+    "en": "The GDR was an SED dictatorship with no free elections; the Stasi spied on people."
+   },
+   {
+    "de": "Am 17. Juni 1953 gab es in der DDR einen Volksaufstand.",
+    "en": "On 17 June 1953 there was a popular uprising in the GDR."
+   },
+   {
+    "de": "Am 13. August 1961 wurde die Berliner Mauer gebaut.",
+    "en": "On 13 August 1961 the Berlin Wall was built."
+   },
+   {
+    "de": "1989 demonstrierten viele Menschen in der DDR („Wir sind das Volk“). Am 9. November 1989 fiel die Mauer.",
+    "en": "In 1989 many in the GDR demonstrated ('We are the people'); the Wall fell on 9 November 1989."
+   },
+   {
+    "de": "Am 3. Oktober 1990 wurde Deutschland wiedervereinigt. Seitdem ist der 3. Oktober der Tag der Deutschen Einheit.",
+    "en": "Germany reunified on 3 October 1990, now the Day of German Unity."
+   },
+   {
+    "de": "In den 1950er-Jahren gab es in der BRD das „Wirtschaftswunder“. Ab 1955 kamen Gastarbeiter nach Deutschland.",
+    "en": "The 1950s brought the West German 'economic miracle'; guest workers came from 1955."
+   }
+  ],
+  "visual": {
+   "type": "timeline",
+   "items": [
+    {
+     "y": "1945",
+     "t": "Vier Besatzungszonen"
+    },
+    {
+     "y": "1949",
+     "t": "Gründung von BRD und DDR"
+    },
+    {
+     "y": "1953",
+     "t": "Volksaufstand in der DDR (17. Juni)"
+    },
+    {
+     "y": "1961",
+     "t": "Bau der Mauer (13. August)"
+    },
+    {
+     "y": "1989",
+     "t": "Mauerfall (9. November)"
+    },
+    {
+     "y": "1990",
+     "t": "Wiedervereinigung (3. Oktober)"
+    }
+   ]
+  },
+  "keys": [
+   "besatzungszone",
+   "besatzungszonen",
+   "1949",
+   "brd",
+   "ddr",
+   "bonn",
+   "adenauer",
+   "sed",
+   "stasi",
+   "1953",
+   "mauer",
+   "1961",
+   "1989",
+   "mauerfall",
+   "wiedervereinigung",
+   "1990",
+   "3. oktober",
+   "einheit",
+   "wirtschaftswunder",
+   "gastarbeiter"
+  ]
+ },
+ {
+  "id": "europa",
+  "title": "Deutschland in Europa",
+  "en": "The EU, its institutions, and Germany's role.",
+  "points": [
+   {
+    "de": "Deutschland ist ein Gründungsmitglied der Europäischen Gemeinschaft. 1957 wurden die Römischen Verträge unterschrieben.",
+    "en": "Germany is a founding member; the Treaties of Rome were signed in 1957."
+   },
+   {
+    "de": "Heute hat die Europäische Union 27 Mitgliedstaaten.",
+    "en": "Today the EU has 27 member states."
+   },
+   {
+    "de": "Das Europäische Parlament wird alle fünf Jahre von den Bürgerinnen und Bürgern der EU gewählt.",
+    "en": "The European Parliament is elected by EU citizens every five years."
+   },
+   {
+    "de": "Das Europäische Parlament tagt in Straßburg und Brüssel.",
+    "en": "The European Parliament meets in Strasbourg and Brussels."
+   },
+   {
+    "de": "Der Euro ist seit 2002 das Bargeld in Deutschland.",
+    "en": "The euro has been Germany's cash currency since 2002."
+   },
+   {
+    "de": "EU-Bürger dürfen in jedem EU-Land wohnen und arbeiten (Freizügigkeit).",
+    "en": "EU citizens may live and work in any EU country (freedom of movement)."
+   },
+   {
+    "de": "Die Europaflagge zeigt zwölf goldene Sterne auf blauem Grund.",
+    "en": "The European flag shows twelve gold stars on blue."
+   },
+   {
+    "de": "Deutschland und Frankreich sind seit dem Élysée-Vertrag 1963 enge Partner.",
+    "en": "Germany and France have been close partners since the 1963 Élysée Treaty."
+   }
+  ],
+  "visual": {
+   "type": "timeline",
+   "items": [
+    {
+     "y": "1957",
+     "t": "Römische Verträge"
+    },
+    {
+     "y": "1963",
+     "t": "Deutsch-französischer Freundschaftsvertrag"
+    },
+    {
+     "y": "1990",
+     "t": "Wiedervereinigung – Ostdeutschland wird Teil der EG"
+    },
+    {
+     "y": "2002",
+     "t": "Euro als Bargeld"
+    }
+   ]
+  },
+  "keys": [
+   "europa",
+   "europäische union",
+   "eu",
+   "römische verträge",
+   "1957",
+   "europäisches parlament",
+   "straßburg",
+   "brüssel",
+   "euro",
+   "mitgliedstaaten",
+   "gründungsmitglied",
+   "europaflagge",
+   "sterne",
+   "frankreich",
+   "freizügigkeit"
+  ]
+ },
+ {
+  "id": "gesellschaft_familie",
+  "title": "Zusammenleben und Familie",
+  "en": "Equality, marriage, children's rights and family support.",
+  "points": [
+   {
+    "de": "Männer und Frauen haben die gleichen Rechte. Eine Frau braucht keine Erlaubnis ihres Mannes, um zu arbeiten.",
+    "en": "Men and women have equal rights; a woman needs no permission from her husband to work."
+   },
+   {
+    "de": "Heiraten darf man in Deutschland ab 18 Jahren. Eine Ehe ist nur gültig, wenn sie beim Standesamt geschlossen wird.",
+    "en": "You may marry from 18; a marriage is only valid if concluded at the registry office."
+   },
+   {
+    "de": "Seit 2017 dürfen auch zwei Männer oder zwei Frauen heiraten.",
+    "en": "Since 2017 same-sex couples may marry."
+   },
+   {
+    "de": "Niemand darf zu einer Ehe gezwungen werden.",
+    "en": "No one may be forced into a marriage."
+   },
+   {
+    "de": "Eltern dürfen ihre Kinder nicht schlagen. Kinder haben ein Recht auf gewaltfreie Erziehung.",
+    "en": "Parents may not hit their children; children have a right to a non-violent upbringing."
+   },
+   {
+    "de": "Gewalt in der Ehe und in der Familie ist verboten und wird bestraft.",
+    "en": "Violence in marriage and the family is illegal and punished."
+   },
+   {
+    "de": "Familien bekommen Unterstützung, zum Beispiel Kindergeld, Elterngeld und Elternzeit.",
+    "en": "Families get support such as child benefit, parental allowance and parental leave."
+   },
+   {
+    "de": "Das Jugendamt hilft Eltern und Kindern bei Problemen in der Familie.",
+    "en": "The youth welfare office helps parents and children with family problems."
+   }
+  ],
+  "visual": {
+   "type": "boxes",
+   "items": [
+    {
+     "h": "Gleichberechtigung",
+     "t": "gleiche Rechte für Frauen und Männer"
+    },
+    {
+     "h": "Ehe",
+     "t": "ab 18, Standesamt, freiwillig"
+    },
+    {
+     "h": "Kinder",
+     "t": "gewaltfreie Erziehung"
+    },
+    {
+     "h": "Hilfe",
+     "t": "Kindergeld, Elterngeld, Jugendamt"
+    }
+   ]
+  },
+  "keys": [
+   "frau",
+   "frauen",
+   "mann",
+   "männer",
+   "ehe",
+   "heiraten",
+   "standesamt",
+   "18 jahren",
+   "kinder",
+   "erziehung",
+   "gewalt",
+   "schlagen",
+   "kindergeld",
+   "elterngeld",
+   "elternzeit",
+   "jugendamt",
+   "familie",
+   "gleichgeschlechtlich"
+  ]
+ },
+ {
+  "id": "bildung",
+  "title": "Schule und Ausbildung",
+  "en": "Compulsory schooling, school types and vocational training.",
+  "points": [
+   {
+    "de": "In Deutschland gibt es eine Schulpflicht. Für die Schulen sind die Bundesländer zuständig.",
+    "en": "School is compulsory; the states are responsible for schools."
+   },
+   {
+    "de": "Der Kindergarten ist freiwillig. Die Schule beginnt meistens mit sechs Jahren.",
+    "en": "Kindergarten is voluntary; school usually starts at six."
+   },
+   {
+    "de": "Nach der Grundschule gehen die Kinder zum Beispiel auf die Mittelschule (Hauptschule), die Realschule oder das Gymnasium.",
+    "en": "After primary school children go to e.g. Mittelschule, Realschule or Gymnasium."
+   },
+   {
+    "de": "Mit dem Abitur darf man an einer Universität studieren.",
+    "en": "The Abitur qualifies you to study at university."
+   },
+   {
+    "de": "Bei einer dualen Ausbildung lernt man im Betrieb und in der Berufsschule.",
+    "en": "In dual training you learn at a company and at a vocational school."
+   },
+   {
+    "de": "Eltern können in der Schule mitbestimmen, zum Beispiel beim Elternabend oder im Elternbeirat.",
+    "en": "Parents can take part via parents' evenings or the parents' council."
+   },
+   {
+    "de": "Volkshochschulen bieten Kurse für Erwachsene an, zum Beispiel Sprach- und Integrationskurse.",
+    "en": "Adult education centres offer courses, e.g. language and integration courses."
+   }
+  ],
+  "visual": {
+   "type": "flow",
+   "items": [
+    "Kindergarten (freiwillig)",
+    "Grundschule",
+    "Mittelschule / Realschule / Gymnasium",
+    "Ausbildung oder Studium"
+   ]
+  },
+  "keys": [
+   "schule",
+   "schulpflicht",
+   "kindergarten",
+   "grundschule",
+   "hauptschule",
+   "mittelschule",
+   "realschule",
+   "gymnasium",
+   "abitur",
+   "universität",
+   "ausbildung",
+   "berufsschule",
+   "elternabend",
+   "elternbeirat",
+   "volkshochschule"
+  ]
+ },
+ {
+  "id": "arbeit_sozial",
+  "title": "Arbeit und Sozialversicherung",
+  "en": "Workers' rights, unions, and the five social insurances.",
+  "points": [
+   {
+    "de": "Die Sozialversicherung hat fünf Teile: Kranken-, Pflege-, Renten-, Arbeitslosen- und Unfallversicherung.",
+    "en": "Social insurance has five parts: health, long-term care, pension, unemployment and accident."
+   },
+   {
+    "de": "Arbeitnehmer und Arbeitgeber zahlen die Beiträge meistens gemeinsam. Die Unfallversicherung zahlt nur der Arbeitgeber.",
+    "en": "Employees and employers usually share contributions; only employers pay accident insurance."
+   },
+   {
+    "de": "Eine Krankenversicherung ist in Deutschland Pflicht.",
+    "en": "Health insurance is compulsory in Germany."
+   },
+   {
+    "de": "Gewerkschaften vertreten die Interessen der Arbeitnehmer. Sie verhandeln mit den Arbeitgebern über Löhne (Tarifvertrag).",
+    "en": "Unions represent employees and negotiate wages with employers (collective agreement)."
+   },
+   {
+    "de": "Der Betriebsrat vertritt die Arbeitnehmer in einem Betrieb.",
+    "en": "The works council represents employees within a company."
+   },
+   {
+    "de": "Bei Streit mit dem Arbeitgeber kann man zum Arbeitsgericht gehen.",
+    "en": "In a dispute with your employer you can go to the labour court."
+   },
+   {
+    "de": "Mit den Steuern bezahlt der Staat zum Beispiel Schulen, Straßen und die Polizei.",
+    "en": "With taxes the state pays for e.g. schools, roads and police."
+   },
+   {
+    "de": "In Deutschland gibt es einen gesetzlichen Mindestlohn.",
+    "en": "Germany has a statutory minimum wage."
+   }
+  ],
+  "visual": {
+   "type": "boxes",
+   "items": [
+    {
+     "h": "Kranken",
+     "t": "Arzt, Krankenhaus"
+    },
+    {
+     "h": "Pflege",
+     "t": "Pflege im Alter"
+    },
+    {
+     "h": "Rente",
+     "t": "Geld im Alter"
+    },
+    {
+     "h": "Arbeitslosen",
+     "t": "Geld ohne Arbeit"
+    },
+    {
+     "h": "Unfall",
+     "t": "Unfall bei der Arbeit – zahlt der Arbeitgeber"
+    }
+   ]
+  },
+  "keys": [
+   "sozialversicherung",
+   "versicherung",
+   "krankenversicherung",
+   "pflegeversicherung",
+   "rentenversicherung",
+   "arbeitslosenversicherung",
+   "unfallversicherung",
+   "rente",
+   "gewerkschaft",
+   "gewerkschaften",
+   "tarifvertrag",
+   "betriebsrat",
+   "arbeitsgericht",
+   "arbeitgeber",
+   "arbeitnehmer",
+   "steuern",
+   "mindestlohn"
+  ]
+ },
+ {
+  "id": "religion_toleranz",
+  "title": "Religion und Toleranz",
+  "en": "Religious freedom, the state's neutrality, and respect for others.",
+  "points": [
+   {
+    "de": "In Deutschland gibt es Religionsfreiheit. Jeder darf seine Religion frei wählen, wechseln oder keine Religion haben.",
+    "en": "There is religious freedom: you may choose, change or have no religion."
+   },
+   {
+    "de": "Es gibt keine Staatsreligion. Staat und Kirche sind getrennt.",
+    "en": "There is no state religion; state and church are separate."
+   },
+   {
+    "de": "Religionsunterricht ist in vielen Schulen ein Schulfach. Statt Religion kann man oft Ethik wählen.",
+    "en": "Religious education is a school subject in many schools; often you can choose ethics instead."
+   },
+   {
+    "de": "Viele Feiertage sind christlich, zum Beispiel Weihnachten, Ostern und Pfingsten.",
+    "en": "Many public holidays are Christian, e.g. Christmas, Easter and Pentecost."
+   },
+   {
+    "de": "Mitglieder der Kirchen zahlen Kirchensteuer.",
+    "en": "Church members pay church tax."
+   },
+   {
+    "de": "Niemand darf wegen seiner Herkunft, Religion, seines Geschlechts oder seiner sexuellen Orientierung diskriminiert werden.",
+    "en": "No one may be discriminated against for origin, religion, sex or sexual orientation."
+   },
+   {
+    "de": "Toleranz bedeutet, andere Meinungen und Lebensweisen zu respektieren.",
+    "en": "Tolerance means respecting other opinions and ways of life."
+   },
+   {
+    "de": "Antisemitismus und Hetze gegen Gruppen sind nicht erlaubt und können bestraft werden.",
+    "en": "Antisemitism and incitement against groups are not allowed and can be punished."
+   }
+  ],
+  "visual": {
+   "type": "boxes",
+   "items": [
+    {
+     "h": "Religionsfreiheit",
+     "t": "glauben, wechseln oder nicht glauben"
+    },
+    {
+     "h": "Neutraler Staat",
+     "t": "keine Staatsreligion"
+    },
+    {
+     "h": "Toleranz",
+     "t": "andere respektieren, keine Diskriminierung"
+    }
+   ]
+  },
+  "keys": [
+   "religion",
+   "religionsfreiheit",
+   "glaube",
+   "kirche",
+   "kirchensteuer",
+   "staatsreligion",
+   "religionsunterricht",
+   "ethik",
+   "weihnachten",
+   "ostern",
+   "pfingsten",
+   "feiertag",
+   "toleranz",
+   "diskriminierung",
+   "antisemitismus",
+   "jüdisch",
+   "muslim"
+  ]
+ }
+]
