@@ -1,0 +1,434 @@
+[
+{
+"w": "die Verspätung",
+"s": "Der Zug hat zwanzig Minuten Verspätung.",
+"p": "ver- (wrong, off) + spät (late) + -ung (noun)",
+"o": [
+"delay",
+"early arrival",
+"timetable",
+"cancellation"
+],
+"a": 0,
+"wk": 2,
+"th": "alltag"
+},
+{
+"w": "vergesslich",
+"s": "Mein Schwiegervater ist ein bisschen vergesslich.",
+"p": "ver- + gess(en) (forget) + -lich (tending to)",
+"o": [
+"forgetful",
+"forgettable",
+"forgiving",
+"grateful"
+],
+"a": 0,
+"wk": 1,
+"th": "familie"
+},
+{
+"w": "der Gesprächspartner",
+"s": "Mein Gesprächspartner auf der Party kam aus Passau.",
+"p": "Gespräch (conversation) + -s- (link) + Partner",
+"o": [
+"conversation partner",
+"business partner",
+"spokesperson",
+"interpreter"
+],
+"a": 0,
+"wk": 1,
+"th": "familie"
+},
+{
+"w": "ungenießbar",
+"s": "Die Milch ist leider schon ungenießbar.",
+"p": "un- (not) + genieß(en) (enjoy, consume) + -bar (-able)",
+"o": [
+"inedible / undrinkable",
+"unaffordable",
+"unforgettable",
+"unbearably loud"
+],
+"a": 0,
+"wk": 2,
+"th": "alltag"
+},
+{
+"w": "nachvollziehbar",
+"s": "Deine Entscheidung ist absolut nachvollziehbar.",
+"p": "nach- (after) + voll (full) + zieh(en) (pull) + -bar → can be followed all the way through",
+"o": [
+"understandable",
+"reversible",
+"fully paid",
+"noticeable"
+],
+"a": 0,
+"wk": 3,
+"th": "alltag"
+},
+{
+"w": "die Abmeldung",
+"s": "Wenn du ins Ausland ziehst, brauchst du eine Abmeldung.",
+"p": "ab- (off, away) + meld(en) (report) + -ung",
+"o": [
+"deregistration",
+"registration",
+"change of address",
+"complaint"
+],
+"a": 0,
+"wk": 4,
+"th": "amt"
+},
+{
+"w": "befristet",
+"s": "Der Vertrag ist auf zwei Jahre befristet.",
+"p": "be- + Frist (deadline) + -et (participle)",
+"o": [
+"fixed-term",
+"permanent",
+"signed",
+"cancelled"
+],
+"a": 0,
+"wk": 5,
+"th": "arbeit"
+},
+{
+"w": "die Unterkunft",
+"s": "Wir suchen noch eine Unterkunft für die Hochzeitsgäste.",
+"p": "unter- (under) + -kunft (from kommen: coming) → a place to come under, shelter",
+"o": [
+"accommodation",
+"arrival",
+"transport",
+"guest list"
+],
+"a": 0,
+"wk": 7,
+"th": "familie"
+},
+{
+"w": "unvermeidlich",
+"s": "Ein bisschen Stress vor der Hochzeit ist unvermeidlich.",
+"p": "un- (not) + ver- + meid(en) (avoid) + -lich (-able)",
+"o": [
+"unavoidable",
+"unbearable",
+"unexpected",
+"unnecessary"
+],
+"a": 0,
+"wk": 7,
+"th": "familie"
+},
+{
+"w": "zuverlässig",
+"s": "Unser Handwerker ist sehr zuverlässig.",
+"p": "zu- + ver- + läss (from lassen; sich verlassen auf = rely on) + -ig",
+"o": [
+"reliable",
+"relaxed",
+"careless",
+"available"
+],
+"a": 0,
+"wk": 8,
+"th": "wohnen"
+},
+{
+"w": "die Nachbarschaft",
+"s": "In unserer Nachbarschaft wohnen viele junge Familien.",
+"p": "nach (from nah: near) + bar (old word for dweller) + -schaft (collective)",
+"o": [
+"neighbourhood",
+"friendship",
+"community centre",
+"landlord"
+],
+"a": 0,
+"wk": 8,
+"th": "wohnen"
+},
+{
+"w": "die Vorbereitung",
+"s": "Die Vorbereitung auf die Prüfung dauert drei Monate.",
+"p": "vor- (before) + be- + reit (ready) + -ung",
+"o": [
+"preparation",
+"presentation",
+"prevention",
+"application"
+],
+"a": 0,
+"wk": 11,
+"th": "alltag"
+},
+{
+"w": "unvermeidbar",
+"s": "Ein kleiner Fehler war leider unvermeidbar.",
+"p": "un- (not) + vermeiden (avoid) + -bar (-able)",
+"o": [
+"unavoidable",
+"unexpected",
+"unforgivable",
+"unnecessary"
+],
+"a": 0
+},
+{
+"w": "die Erreichbarkeit",
+"s": "Die Erreichbarkeit der Praxis ist am Telefon schlecht.",
+"p": "erreichen (reach) + -bar (-able) + -keit (-ness)",
+"o": [
+"reachability, being contactable",
+"achievement",
+"richness",
+"responsibility"
+],
+"a": 0
+},
+{
+"w": "verschlafen",
+"s": "Tut mir leid, ich habe heute verschlafen.",
+"p": "ver- (wrongly, too much) + schlafen (sleep)",
+"o": [
+"to oversleep",
+"to fall asleep",
+"to sleep badly",
+"to stay awake"
+],
+"a": 0
+},
+{
+"w": "sich verlaufen",
+"s": "In der Altstadt kann man sich leicht verlaufen.",
+"p": "sich + ver- (wrongly) + laufen (walk)",
+"o": [
+"to get lost (on foot)",
+"to run away",
+"to walk through",
+"to stroll"
+],
+"a": 0
+},
+{
+"w": "die Ausnahme",
+"s": "Heute machen wir eine Ausnahme.",
+"p": "aus- (out) + nehmen (take) → Nahme",
+"o": [
+"exception",
+"excuse",
+"exit",
+"expense"
+],
+"a": 0
+},
+{
+"w": "entlasten",
+"s": "Die neue Kollegin soll das Team entlasten.",
+"p": "ent- (removal) + Last (burden) + -en",
+"o": [
+"to relieve, take a load off",
+"to burden",
+"to dismiss",
+"to delay"
+],
+"a": 0
+},
+{
+"w": "umweltfreundlich",
+"s": "Das Fahrrad ist ein umweltfreundliches Verkehrsmittel.",
+"p": "Umwelt (environment) + freundlich (friendly)",
+"o": [
+"environmentally friendly",
+"around the world",
+"friendly to everyone",
+"worldly"
+],
+"a": 0
+},
+{
+"w": "die Einsamkeit",
+"s": "Viele ältere Menschen leiden unter Einsamkeit.",
+"p": "ein (one) + -sam (tending to) + -keit (-ness)",
+"o": [
+"loneliness",
+"unity",
+"simplicity",
+"entry"
+],
+"a": 0
+},
+{
+"w": "nachvollziehen",
+"s": "Ich kann deine Entscheidung gut nachvollziehen.",
+"p": "nach- (after) + voll (full) + ziehen (pull) → to follow a path fully after someone",
+"o": [
+"to understand, comprehend (someone's reasoning)",
+"to complete later",
+"to pull back",
+"to imitate"
+],
+"a": 0
+},
+{
+"w": "die Rückgabe",
+"s": "Die Rückgabe ist innerhalb von 14 Tagen möglich.",
+"p": "Rück- (back) + geben (give) → Gabe",
+"o": [
+"return (of goods)",
+"refund only",
+"delivery",
+"gift"
+],
+"a": 0
+},
+{
+"w": "zweisprachig",
+"s": "Unsere Kinder sollen zweisprachig aufwachsen.",
+"p": "zwei (two) + Sprache (language) + -ig",
+"o": [
+"bilingual",
+"two-faced",
+"talkative",
+"doubtful"
+],
+"a": 0
+},
+{
+"w": "missverstehen",
+"s": "Bitte missverstehen Sie mich nicht.",
+"p": "miss- (wrongly) + verstehen (understand)",
+"o": [
+"to misunderstand",
+"to miss someone",
+"to fail to hear",
+"to disagree"
+],
+"a": 0
+},
+{
+"w": "die Unabhängigkeit",
+"s": "Für viele junge Leute ist finanzielle Unabhängigkeit wichtig.",
+"p": "un- (not) + ab- (off) + hängen (hang) + -ig + -keit",
+"o": [
+"independence",
+"inability",
+"dependence",
+"unhappiness"
+],
+"a": 0
+},
+{
+"w": "verbieten",
+"s": "Rauchen ist hier verboten.",
+"p": "ver- (reverses) + bieten (offer)",
+"o": [
+"to forbid",
+"to offer",
+"to announce",
+"to bid"
+],
+"a": 0
+},
+{
+"w": "die Vorsicht",
+"s": "Vorsicht, die Treppe ist nass!",
+"p": "vor- (ahead) + Sicht (view)",
+"o": [
+"caution",
+"foresight only",
+"preview",
+"view"
+],
+"a": 0
+},
+{
+"w": "aufräumen",
+"s": "Am Samstag räumen wir die Wohnung auf.",
+"p": "auf- (up) + Raum (room, space) + -en",
+"o": [
+"to tidy up",
+"to move out",
+"to build up",
+"to air out"
+],
+"a": 0
+},
+{
+"w": "die Lebensmittel",
+"s": "Lebensmittel sind in Deutschland relativ günstig.",
+"p": "Leben (life) + -s- + Mittel (means)",
+"o": [
+"groceries, food",
+"medicine",
+"middle age",
+"living costs"
+],
+"a": 0
+},
+{
+"w": "unzuverlässig",
+"s": "Der Handwerker war leider sehr unzuverlässig.",
+"p": "un- (not) + zu- + verlassen (rely on) + -ig",
+"o": [
+"unreliable",
+"unbelievable",
+"unfinished",
+"unpaid"
+],
+"a": 0
+},
+{
+"w": "die Gesetzgebung",
+"s": "Die Gesetzgebung ist Aufgabe des Parlaments.",
+"p": "Gesetz (law) + geben (give) + -ung",
+"o": [
+"legislation",
+"law enforcement",
+"jurisdiction",
+"constitution"
+],
+"a": 0
+},
+{
+"w": "verständlich",
+"s": "Er erklärt die Regeln sehr verständlich.",
+"p": "verstehen (understand) → Verstand + -lich",
+"o": [
+"understandable, clear",
+"sensible",
+"sympathetic",
+"complicated"
+],
+"a": 0
+},
+{
+"w": "die Wohngemeinschaft",
+"s": "Als Studentin habe ich in einer Wohngemeinschaft gewohnt.",
+"p": "wohnen (live) + Gemeinschaft (community: gemein + -schaft)",
+"o": [
+"shared flat (WG)",
+"housing estate",
+"neighbourhood",
+"residents' association"
+],
+"a": 0
+},
+{
+"w": "enttäuschen",
+"s": "Das Ergebnis hat mich enttäuscht.",
+"p": "ent- (removal) + täuschen (deceive) → removing an illusion",
+"o": [
+"to disappoint",
+"to deceive",
+"to surprise",
+"to annoy"
+],
+"a": 0
+}
+]

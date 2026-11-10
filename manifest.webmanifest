@@ -1,0 +1,17 @@
+{
+  "name": "Deutsch in 2 Minuten",
+  "short_name": "Deutsch 2min",
+  "description": "Micro-learning German: flashcards, Goethe B1 tasks and Leben in Deutschland.",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#0b0b24",
+  "theme_color": "#0b0b24",
+  "lang": "de",
+  "icons": [
+    { "src": "icons/icon-192.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "icons/icon-512.png", "sizes": "512x512", "type": "image/png" },
+    { "src": "icons/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
+  ],
+  "shortcuts": [{ "name": "2-Minuten-Mix", "url": "./?start=mix" }]
+}

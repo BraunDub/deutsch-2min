@@ -1,0 +1,151 @@
+[
+ {
+  "lines": [
+   {
+    "sp": "A",
+    "t": "Na, wie war's denn gestern bei der Tante Resi?"
+   },
+   {
+    "sp": "B",
+    "t": "Ach, eigentlich ganz nett. Aber die hat halt wieder stundenlang von ihrem Garten erzählt."
+   },
+   {
+    "sp": "A",
+    "t": "Typisch. Hast du ihr wenigstens gesagt, dass du am Sonntag nicht kommen kannst?"
+   },
+   {
+    "sp": "B",
+    "t": "Nee, hab ich vergessen. Mach ich morgen, gell?"
+   }
+  ],
+  "q": "Was hat B vergessen?",
+  "o": [
+   "Der Tante zu sagen, dass B am Sonntag nicht kommt.",
+   "Der Tante ein Geschenk mitzubringen.",
+   "Im Garten zu helfen."
+  ],
+  "a": 0,
+  "wk": 1,
+  "th": "familie"
+ },
+ {
+  "lines": [
+   {
+    "sp": "A",
+    "t": "Und, was machst du so beruflich?"
+   },
+   {
+    "sp": "B",
+    "t": "Ich bin Ingenieurin, bei einer Firma bei Freising."
+   },
+   {
+    "sp": "A",
+    "t": "Ah, cool. Und gefällt's dir da?"
+   },
+   {
+    "sp": "B",
+    "t": "Ja, schon. Die Kollegen sind echt nett, nur der Weg ist halt ziemlich weit."
+   },
+   {
+    "sp": "A",
+    "t": "Mei, das kenn ich. Ich fahr jeden Tag eine Stunde nach München."
+   }
+  ],
+  "q": "Was stört B an der Arbeit?",
+  "o": [
+   "Der lange Arbeitsweg",
+   "Die Kollegen",
+   "Das Gehalt"
+  ],
+  "a": 0,
+  "wk": 1,
+  "th": "arbeit"
+ },
+ {
+  "lines": [
+   {
+    "sp": "A",
+    "t": "Kommt ihr am Samstag mit aufs Volksfest?"
+   },
+   {
+    "sp": "B",
+    "t": "Mal sehen. Eigentlich wollten wir ja zum Geburtstag von Lukas."
+   },
+   {
+    "sp": "A",
+    "t": "Ach, der feiert doch erst ab acht. Da könnt ihr vorher locker noch auf eine Mass vorbeischauen."
+   },
+   {
+    "sp": "B",
+    "t": "Stimmt eigentlich. Okay, dann schreib mir halt, wo ihr sitzt."
+   }
+  ],
+  "q": "Was macht B am Samstag wahrscheinlich?",
+  "o": [
+   "Erst aufs Volksfest, dann zum Geburtstag",
+   "Nur zum Geburtstag",
+   "Nur aufs Volksfest"
+  ],
+  "a": 0,
+  "wk": 9,
+  "th": "freizeit"
+ },
+ {
+  "lines": [
+   {
+    "sp": "A",
+    "t": "Habt ihr schon einen Termin beim Standesamt?"
+   },
+   {
+    "sp": "B",
+    "t": "Ja, im Mai. Aber die kirchliche Trauung machen wir erst im Sommer."
+   },
+   {
+    "sp": "A",
+    "t": "Ach so, also zweimal feiern? Na, da freut sich die Verwandtschaft!"
+   },
+   {
+    "sp": "B",
+    "t": "Nee, groß gefeiert wird nur im Sommer. Im Mai sind's nur wir und die Trauzeugen."
+   }
+  ],
+  "q": "Wann ist die große Feier?",
+  "o": [
+   "Im Sommer",
+   "Im Mai",
+   "Zweimal, im Mai und im Sommer"
+  ],
+  "a": 0,
+  "wk": 7,
+  "th": "familie"
+ },
+ {
+  "lines": [
+   {
+    "sp": "A",
+    "t": "Du schaust ja fertig aus. Alles okay?"
+   },
+   {
+    "sp": "B",
+    "t": "Geht so. Ich hab seit Tagen Halsweh, und morgen muss ich eigentlich zur Arbeit."
+   },
+   {
+    "sp": "A",
+    "t": "Geh doch mal zum Arzt und lass dich krankschreiben. Bringt ja nix, wenn du alle ansteckst."
+   },
+   {
+    "sp": "B",
+    "t": "Hast ja recht. Ich ruf gleich in der Praxis an."
+   }
+  ],
+  "q": "Was rät A?",
+  "o": [
+   "Zum Arzt gehen und zu Hause bleiben",
+   "Trotzdem zur Arbeit gehen",
+   "Tee trinken und früh schlafen"
+  ],
+  "a": 0,
+  "wk": 6,
+  "th": "gesundheit"
+ }
+]

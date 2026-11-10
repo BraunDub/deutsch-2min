@@ -1,0 +1,1304 @@
+[
+ {
+  "wk": 1,
+  "th": "familie",
+  "title": "Das erste Treffen mit der Familie",
+  "grammar": "Wortstellung: Verb auf Position 2 / Verb am Ende",
+  "passage": "Letzten Sonntag hat mich meine Freundin Anna zum ersten Mal zu ihren Eltern mitgenommen. Ich war ziemlich aufgeregt, weil ich die Familie noch nicht kannte. Annas Mutter hatte uns zum Kaffee eingeladen, und als wir ankamen, war schon die halbe Verwandtschaft da: Onkel, Tanten, Cousins und sogar die Oma. Anna hat mich allen vorgestellt, und natürlich habe ich mir keinen einzigen Namen gemerkt.\n\nAm Anfang habe ich nur gelächelt und genickt, denn alle haben schnell und mit Dialekt gesprochen. Dann hat sich ihr Onkel neben mich gesetzt und mich gefragt, woher ich komme. Wir haben uns lange über Fußball und das Wetter unterhalten. Er hat halt ein bisschen Bairisch gesprochen, aber er hat langsam geredet, damit ich ihn verstehe.\n\nAm Ende war der Nachmittag richtig gemütlich. Beim Abschied hat die Oma gesagt: „Kimm bald wieder!“ Ich glaube, ich habe die Familie ein bisschen kennengelernt – und sie mich auch.",
+  "gloss": [
+   {
+    "w": "aufgeregt",
+    "m": "nervous, excited"
+   },
+   {
+    "w": "genickt",
+    "m": "nodded (nicken = to nod)"
+   },
+   {
+    "w": "gemerkt",
+    "m": "remembered, noted (sich etwas merken)"
+   },
+   {
+    "w": "Abschied",
+    "m": "goodbye, farewell (der Abschied)"
+   },
+   {
+    "w": "Kimm bald wieder!",
+    "m": "Bairisch for: Komm bald wieder!"
+   }
+  ],
+  "comp": [
+   {
+    "q": "Warum war der Erzähler aufgeregt?",
+    "o": [
+     "Er kannte die Familie noch nicht.",
+     "Er ist zu spät gekommen.",
+     "Er hatte kein Geschenk dabei."
+    ],
+    "a": 0
+   },
+   {
+    "q": "Warum hat er am Anfang nur gelächelt?",
+    "o": [
+     "Alle haben schnell und mit Dialekt gesprochen.",
+     "Er war sehr müde.",
+     "Niemand hat mit ihm gesprochen."
+    ],
+    "a": 0
+   },
+   {
+    "q": "Wie hat der Onkel ihm geholfen?",
+    "o": [
+     "Er hat langsam gesprochen.",
+     "Er hat Englisch gesprochen.",
+     "Er hat ihm die Namen aufgeschrieben."
+    ],
+    "a": 0
+   }
+  ],
+  "cloze": {
+   "t": "Anna hat mich der ganzen {1} {2}. Mit ihrem Onkel habe ich mich lange über Fußball {3}. Am Ende war der Nachmittag richtig {4}, und ich habe die Familie ein bisschen {5}.",
+   "ans": [
+    "Verwandtschaft",
+    "vorgestellt",
+    "unterhalten",
+    "gemütlich",
+    "kennengelernt"
+   ],
+   "bank": true
+  },
+  "gram": {
+   "rule": "In a main clause the conjugated verb is in position 2 (even if something other than the subject comes first). After weil, dass, wenn, ob, obwohl the conjugated verb goes to the END. If the sentence starts with a weil/wenn-clause, the main verb comes right after the comma.",
+   "items": [
+    {
+     "t": "Am Sonntag ___ wir zu Annas Eltern. (fahren)",
+     "a": "fahren"
+    },
+    {
+     "t": "Ich glaube, dass die Oma mich ___ . (mögen)",
+     "a": "mag"
+    },
+    {
+     "t": "Gestern ___ ich lange mit dem Onkel gesprochen. (haben)",
+     "a": "habe"
+    },
+    {
+     "t": "Weil alle Dialekt sprechen, ___ ich nicht viel. (verstehen)",
+     "a": "verstehe"
+    },
+    {
+     "t": "Wenn du Zeit ___, komm doch am Sonntag vorbei. (haben)",
+     "a": "hast"
+    },
+    {
+     "t": "Ich weiß nicht, ob Anna heute ___ . (kommen)",
+     "a": "kommt"
+    }
+   ]
+  },
+  "write": {
+   "p": "Write 3–4 sentences about the first time you met your partner's family (or a new group of people). Use weil and dass at least once each.",
+   "m": "Beim ersten Treffen war ich sehr nervös, weil ich kaum Bairisch verstanden habe. Aber alle waren sehr freundlich. Ich fand es schön, dass die Oma mir sofort Kuchen angeboten hat. Heute fühle ich mich in der Familie schon richtig wohl.",
+   "chk": [
+    "Is the verb in position 2 in every main clause?",
+    "Is the verb at the end after weil and dass?",
+    "Did you use the Perfekt for past events?"
+   ]
+  }
+ },
+ {
+  "wk": 2,
+  "th": "freizeit",
+  "title": "Ein Ausflug mit Hindernissen",
+  "grammar": "Perfekt und Präteritum",
+  "passage": "Am Samstag wollten wir einen Ausflug an den Tegernsee machen. Leider hat alles anders angefangen als geplant. Zuerst hatte die S-Bahn zwanzig Minuten Verspätung, und deshalb haben wir unseren Zug verpasst. Wir mussten eine Stunde am Bahnhof warten. Das war ärgerlich, aber wir haben uns einen Kaffee geholt und das Beste daraus gemacht.\n\nAm See war es dann wunderschön. Wir sind drei Stunden gewandert und haben unterwegs in einer Hütte Brotzeit gemacht. Auf dem Rückweg ist dann noch etwas passiert: Mein Freund ist auf einem nassen Stein ausgerutscht. Zum Glück hat er sich nicht verletzt, nur seine Hose war schmutzig.\n\nAm Abend waren wir müde, aber glücklich. Wir haben an einem Tag mehr erlebt als sonst in einer ganzen Woche.",
+  "gloss": [
+   {
+    "w": "ärgerlich",
+    "m": "annoying"
+   },
+   {
+    "w": "das Beste daraus gemacht",
+    "m": "made the best of it"
+   },
+   {
+    "w": "Hütte",
+    "m": "(mountain) hut (die Hütte)"
+   },
+   {
+    "w": "Rückweg",
+    "m": "the way back (der Rückweg)"
+   },
+   {
+    "w": "schmutzig",
+    "m": "dirty"
+   }
+  ],
+  "comp": [
+   {
+    "q": "Warum haben sie ihren Zug verpasst?",
+    "o": [
+     "Die S-Bahn hatte Verspätung.",
+     "Sie haben verschlafen.",
+     "Der Zug ist ausgefallen."
+    ],
+    "a": 0
+   },
+   {
+    "q": "Was haben sie unterwegs gemacht?",
+    "o": [
+     "Brotzeit in einer Hütte",
+     "Im See gebadet",
+     "Kaffee am Bahnhof getrunken"
+    ],
+    "a": 0
+   },
+   {
+    "q": "Was ist auf dem Rückweg passiert?",
+    "o": [
+     "Der Freund ist ausgerutscht.",
+     "Der Freund hat sich schwer verletzt.",
+     "Sie haben sich verlaufen."
+    ],
+    "a": 0
+   }
+  ],
+  "cloze": {
+   "t": "Wir wollten einen {1} an den See machen. Wegen der {2} haben wir unseren Zug {3}. {4} haben wir in einer Hütte gegessen. Auf dem Rückweg ist noch etwas {5}.",
+   "ans": [
+    "Ausflug",
+    "Verspätung",
+    "verpasst",
+    "Unterwegs",
+    "passiert"
+   ],
+   "bank": true
+  },
+  "gram": {
+   "rule": "When speaking, use the Perfekt for most verbs: haben + Partizip II, or sein for movement and change of state (gehen, fahren, wandern, passieren, ausrutschen). Use the Präteritum for sein, haben and the modal verbs: war, hatte, wollte, musste, konnte.",
+   "items": [
+    {
+     "t": "Wir ___ um acht Uhr losgefahren. (sein/haben)",
+     "a": "sind"
+    },
+    {
+     "t": "Die S-Bahn ___ zwanzig Minuten Verspätung. (haben, Präteritum)",
+     "a": "hatte"
+    },
+    {
+     "t": "Wir ___ eine Stunde warten. (müssen, Präteritum)",
+     "a": "mussten"
+    },
+    {
+     "t": "Was ist denn ___ ? (passieren)",
+     "a": "passiert"
+    },
+    {
+     "t": "Wir haben in einer Hütte Brotzeit ___ . (machen)",
+     "a": "gemacht"
+    },
+    {
+     "t": "Er ist auf einem Stein ___ . (ausrutschen)",
+     "a": "ausgerutscht"
+    }
+   ]
+  },
+  "write": {
+   "p": "Write 3–4 sentences about your last weekend. Use war or hatte, and at least two Perfekt verbs (one with sein).",
+   "m": "Letztes Wochenende war ich mit Freunden in den Bergen. Wir sind früh losgefahren, weil das Wetter so gut war. Oben auf dem Gipfel haben wir Brotzeit gemacht. Am Abend hatte ich Muskelkater, aber es hat sich gelohnt.",
+   "chk": [
+    "sein with movement verbs (gefahren, gewandert)?",
+    "war/hatte instead of ist gewesen/hat gehabt?",
+    "Partizip II at the end of the clause?"
+   ]
+  }
+ },
+ {
+  "wk": 3,
+  "th": "familie",
+  "title": "Einkaufen am Sonntag?",
+  "grammar": "Konnektoren: deshalb, trotzdem, obwohl, sondern",
+  "passage": "In Deutschland sind die meisten Geschäfte am Sonntag geschlossen. Viele Zugezogene finden das am Anfang seltsam. Auch beim Abendessen mit der Familie gab es neulich eine Diskussion darüber.\n\nMein Schwager meint, dass der Sonntag ein Ruhetag bleiben sollte. Die Verkäuferinnen und Verkäufer brauchen schließlich auch Zeit für ihre Familien. Außerdem genießt er es, dass die Stadt am Sonntag so ruhig ist.\n\nSeine Freundin sieht das anders. Sie arbeitet die ganze Woche und hat deshalb nur am Samstag Zeit zum Einkaufen. Trotzdem will sie nicht, dass alle Geschäfte immer geöffnet sind. Ihr Vorschlag: Kleine Supermärkte sollten sonntags ein paar Stunden öffnen dürfen.\n\nIch habe beiden zugestimmt – teilweise. Einerseits finde ich den ruhigen Sonntag schön, andererseits habe ich schon oft am Samstagabend gemerkt, dass ich etwas vergessen habe. Am Ende waren wir uns einig: Nicht die Geschäfte sind das Problem, sondern meine Einkaufsliste!",
+  "gloss": [
+   {
+    "w": "Zugezogene",
+    "m": "newcomers (people who moved to the area)"
+   },
+   {
+    "w": "seltsam",
+    "m": "strange"
+   },
+   {
+    "w": "genießt",
+    "m": "enjoys (genießen = to enjoy)"
+   },
+   {
+    "w": "teilweise",
+    "m": "partly"
+   },
+   {
+    "w": "einig",
+    "m": "in agreement (sich einig sein = to agree)"
+   }
+  ],
+  "comp": [
+   {
+    "q": "Was meint der Schwager?",
+    "o": [
+     "Der Sonntag soll ein Ruhetag bleiben.",
+     "Alle Geschäfte sollen sonntags öffnen.",
+     "Er kauft gern am Sonntag ein."
+    ],
+    "a": 0
+   },
+   {
+    "q": "Was schlägt seine Freundin vor?",
+    "o": [
+     "Kleine Supermärkte sollen sonntags kurz öffnen dürfen.",
+     "Alle Geschäfte sollen immer geöffnet sein.",
+     "Man soll nur am Samstag einkaufen."
+    ],
+    "a": 0
+   },
+   {
+    "q": "Was ist am Ende das Ergebnis?",
+    "o": [
+     "Der Erzähler sollte seine Einkäufe besser planen.",
+     "Die Geschäfte sollten länger öffnen.",
+     "Der Sonntag ist langweilig."
+    ],
+    "a": 0
+   }
+  ],
+  "cloze": {
+   "t": "Die Verkäufer brauchen Zeit für ihre Familien. {1} genießt er die Ruhe. Sie arbeitet die ganze Woche, {2} hat sie nur am Samstag Zeit. {3} will sie nicht, dass alles immer offen ist. {4} finde ich den Sonntag schön, {5} vergesse ich oft etwas. Nicht die Geschäfte sind das Problem, {6} meine Einkaufsliste.",
+   "ans": [
+    "Außerdem",
+    "deshalb",
+    "Trotzdem",
+    "Einerseits",
+    "andererseits",
+    "sondern"
+   ],
+   "bank": true
+  },
+  "gram": {
+   "rule": "deshalb, trotzdem, außerdem, einerseits/andererseits take position 1, so the verb comes next (Deshalb HAT sie …). weil, obwohl, dass send the verb to the end. und, aber, oder, denn, sondern change nothing.",
+   "items": [
+    {
+     "t": "Sie hat keine Zeit. Deshalb ___ sie am Samstag einkaufen. (wollen)",
+     "a": "will"
+    },
+    {
+     "t": "Obwohl die Stadt so ruhig ___, langweilt er sich nicht. (sein)",
+     "a": "ist"
+    },
+    {
+     "t": "Ich bleibe heute zu Hause, ___ ich müde bin. (weil / deshalb)",
+     "a": "weil"
+    },
+    {
+     "t": "Es regnet. ___ gehen wir spazieren. (Trotzdem / Obwohl)",
+     "a": "Trotzdem"
+    },
+    {
+     "t": "Das ist nicht billig, ___ ziemlich teuer. (aber / sondern)",
+     "a": "sondern"
+    },
+    {
+     "t": "Je mehr ich übe, ___ besser spreche ich. (desto / dann)",
+     "a": "desto"
+    }
+   ]
+  },
+  "write": {
+   "p": "Give your opinion in 3–4 sentences: should shops open on Sundays? Use einerseits/andererseits and one weil.",
+   "m": "Einerseits finde ich es praktisch, wenn man am Sonntag einkaufen kann. Andererseits brauchen die Verkäufer auch einen freien Tag. Ich bin gegen eine komplette Öffnung, weil der ruhige Sonntag zur deutschen Kultur gehört. Deshalb plane ich meine Einkäufe jetzt besser.",
+   "chk": [
+    "Verb right after Einerseits/Andererseits/Deshalb?",
+    "Verb at the end after weil?",
+    "A clear opinion?"
+   ]
+  }
+ },
+ {
+  "wk": 4,
+  "th": "amt",
+  "title": "Post von der Ausländerbehörde",
+  "grammar": "Passiv: werden + Partizip II",
+  "passage": "Landratsamt – Ausländerbehörde\n\nSehr geehrter Herr Okafor,\n\nIhr Antrag auf Erteilung einer Niederlassungserlaubnis vom 3. Oktober ist bei uns eingegangen. Ihr Antrag wird zurzeit bearbeitet. Für die weitere Bearbeitung fehlen jedoch noch folgende Unterlagen:\n\n– eine aktuelle Bescheinigung Ihres Arbeitgebers (nicht älter als vier Wochen)\n– der Nachweis über Ihre Deutschkenntnisse (mindestens Niveau B1)\n– das Zertifikat über den Test „Leben in Deutschland“\n\nBitte reichen Sie die fehlenden Unterlagen innerhalb von vier Wochen ein. Die Dokumente können per Post geschickt oder während der Sprechzeiten persönlich abgegeben werden. Wenn die Unterlagen nicht rechtzeitig eingereicht werden, kann Ihr Antrag leider nicht weiter bearbeitet werden.\n\nDie Gebühr wird bei der Abholung des Aufenthaltstitels fällig.\n\nMit freundlichen Grüßen\nIm Auftrag\nM. Brandl",
+  "gloss": [
+   {
+    "w": "Erteilung",
+    "m": "issuing, granting (die Erteilung)"
+   },
+   {
+    "w": "eingegangen",
+    "m": "received, arrived (eingehen: letters, applications)"
+   },
+   {
+    "w": "jedoch",
+    "m": "however"
+   },
+   {
+    "w": "fällig",
+    "m": "due (payment)"
+   },
+   {
+    "w": "Im Auftrag",
+    "m": "on behalf of (signature line, short: i. A.)"
+   }
+  ],
+  "comp": [
+   {
+    "q": "Wie ist der Stand des Antrags?",
+    "o": [
+     "Er wird bearbeitet, aber es fehlen Unterlagen.",
+     "Er wurde abgelehnt.",
+     "Er ist schon genehmigt."
+    ],
+    "a": 0
+   },
+   {
+    "q": "Bis wann müssen die Unterlagen da sein?",
+    "o": [
+     "Innerhalb von vier Wochen",
+     "Bis zum 3. Oktober",
+     "Bei der Abholung"
+    ],
+    "a": 0
+   },
+   {
+    "q": "Wie kann man die Unterlagen abgeben?",
+    "o": [
+     "Per Post oder persönlich während der Sprechzeiten",
+     "Nur online",
+     "Nur per E-Mail"
+    ],
+    "a": 0
+   }
+  ],
+  "cloze": {
+   "t": "Ihr {1} wird zurzeit bearbeitet. Es fehlen noch einige {2}, zum Beispiel ein {3} über Ihre Deutschkenntnisse. Bitte {4} Sie diese innerhalb von vier Wochen ein. Die {5} zahlen Sie bei der Abholung.",
+   "ans": [
+    "Antrag",
+    "Unterlagen",
+    "Nachweis",
+    "reichen",
+    "Gebühr"
+   ],
+   "bank": true
+  },
+  "gram": {
+   "rule": "Passiv = werden + Partizip II (the action matters, not who does it). Present: Der Antrag wird bearbeitet. Past: Der Antrag wurde bearbeitet. With a modal verb: Die Unterlagen können abgegeben werden.",
+   "items": [
+    {
+     "t": "Ihr Antrag ___ zurzeit bearbeitet.",
+     "a": "wird"
+    },
+    {
+     "t": "Die Unterlagen ___ letzte Woche geschickt.",
+     "a": "wurden"
+    },
+    {
+     "t": "Die Dokumente können persönlich abgegeben ___ .",
+     "a": "werden"
+    },
+    {
+     "t": "Der Aufenthaltstitel wird nächste Woche ___ . (ausstellen)",
+     "a": "ausgestellt"
+    },
+    {
+     "t": "Hier ___ nur Deutsch gesprochen.",
+     "a": "wird"
+    },
+    {
+     "t": "Das Formular muss noch ___ werden. (unterschreiben)",
+     "a": "unterschrieben"
+    }
+   ]
+  },
+  "write": {
+   "p": "Write a short formal email (3–4 sentences) to the Ausländerbehörde: thank them for the letter, say you will send the documents by post this week, and ask whether a copy of the B1 certificate is enough.",
+   "m": "Sehr geehrte Frau Brandl,\n\nvielen Dank für Ihr Schreiben. Die fehlenden Unterlagen schicke ich Ihnen noch diese Woche per Post. Könnten Sie mir bitte sagen, ob eine Kopie des B1-Zertifikats ausreicht oder ob ich das Original vorlegen muss?\n\nMit freundlichen Grüßen\nBraun",
+   "chk": [
+    "Formal greeting and closing?",
+    "Könnten Sie … for the request?",
+    "Verb at the end after ob?"
+   ]
+  }
+ },
+ {
+  "wk": 5,
+  "th": "arbeit",
+  "title": "Eine Bitte an die Chefin",
+  "grammar": "Konjunktiv II für höfliche Bitten",
+  "passage": "Liebe Frau Weber,\n\nich hätte eine Bitte: Wäre es möglich, dass ich ab Januar zwei Tage pro Woche im Homeoffice arbeite? Mein Arbeitsweg dauert jeden Tag fast zwei Stunden, und zu Hause könnte ich mich besser auf meine Projekte konzentrieren.\n\nNatürlich würde ich an diesen Tagen jederzeit erreichbar sein. Die Besprechungen am Montag und Donnerstag würde ich weiterhin im Büro besuchen. Falls es für das Team besser passt, könnten wir die Regel auch erst einmal drei Monate testen.\n\nHätten Sie diese Woche kurz Zeit, um darüber zu sprechen? Ich würde mich über eine Rückmeldung freuen.\n\nViele Grüße\nDaniel",
+  "gloss": [
+   {
+    "w": "Bitte",
+    "m": "request (die Bitte)"
+   },
+   {
+    "w": "Arbeitsweg",
+    "m": "commute (der Arbeitsweg)"
+   },
+   {
+    "w": "erreichbar",
+    "m": "reachable, available"
+   },
+   {
+    "w": "weiterhin",
+    "m": "still, as before"
+   },
+   {
+    "w": "Rückmeldung",
+    "m": "feedback, reply (die Rückmeldung)"
+   }
+  ],
+  "comp": [
+   {
+    "q": "Was möchte Daniel?",
+    "o": [
+     "Zwei Tage pro Woche zu Hause arbeiten",
+     "Mehr Gehalt",
+     "Ab Januar weniger arbeiten"
+    ],
+    "a": 0
+   },
+   {
+    "q": "Warum möchte er das?",
+    "o": [
+     "Sein Arbeitsweg ist sehr lang.",
+     "Er ist oft krank.",
+     "Er mag seine Kollegen nicht."
+    ],
+    "a": 0
+   },
+   {
+    "q": "Was schlägt er vor, falls das Team unsicher ist?",
+    "o": [
+     "Die Regel drei Monate zu testen",
+     "Nur montags ins Büro zu kommen",
+     "Ein neues Team zu suchen"
+    ],
+    "a": 0
+   }
+  ],
+  "cloze": {
+   "t": "Ich {1} eine Bitte. {2} es möglich, dass ich im Homeoffice arbeite? Zu Hause {3} ich mich besser konzentrieren. Natürlich {4} ich immer erreichbar sein. {5} Sie diese Woche kurz Zeit?",
+   "ans": [
+    "hätte",
+    "Wäre",
+    "könnte",
+    "würde",
+    "Hätten"
+   ],
+   "bank": true
+  },
+  "gram": {
+   "rule": "Konjunktiv II makes requests polite: hätte (haben), wäre (sein), könnte (können), würde + infinitive (most other verbs). Könnten Sie …? / Würden Sie …? / Ich hätte gern … / Wäre es möglich, dass …?",
+   "items": [
+    {
+     "t": "___ Sie mir bitte helfen? (können)",
+     "a": "Könnten"
+    },
+    {
+     "t": "Ich ___ gern einen Termin am Freitag. (haben)",
+     "a": "hätte"
+    },
+    {
+     "t": "___ es möglich, den Termin zu verschieben? (sein)",
+     "a": "Wäre"
+    },
+    {
+     "t": "___ Sie mir die Unterlagen bitte schicken? (werden)",
+     "a": "Würden"
+    },
+    {
+     "t": "An deiner Stelle ___ ich mit der Chefin sprechen. (werden)",
+     "a": "würde"
+    },
+    {
+     "t": "Wenn ich mehr Zeit ___, würde ich öfter Sport machen. (haben)",
+     "a": "hätte"
+    }
+   ]
+  },
+  "write": {
+   "p": "Write a polite message (3–4 sentences) to your boss or a colleague asking to move a meeting. Use at least two Konjunktiv II forms.",
+   "m": "Hallo Frau Weber,\n\nhätten Sie etwas dagegen, wenn wir unsere Besprechung auf Donnerstag verschieben? Am Mittwoch habe ich leider einen Arzttermin. Wäre 10 Uhr für Sie in Ordnung?\n\nViele Grüße",
+   "chk": [
+    "Polite greeting and closing?",
+    "At least two of hätte / wäre / könnte / würde?",
+    "A reason for the request?"
+   ]
+  }
+ },
+ {
+  "wk": 6,
+  "th": "gesundheit",
+  "title": "Anruf in der Arztpraxis",
+  "grammar": "Verben mit Präpositionen",
+  "passage": "– Praxis Dr. Huber, Sie sprechen mit Frau Maier. Was kann ich für Sie tun?\n– Guten Morgen, mein Name ist Sam Taylor. Ich bräuchte heute einen Termin. Ich leide seit drei Tagen an starken Halsschmerzen, und seit gestern habe ich auch Fieber.\n– Das tut mir leid. Waren Sie schon einmal bei uns?\n– Ja, ich bin seit letztem Jahr Patient bei Dr. Huber.\n– Gut. Heute ist es leider sehr voll. Ich kann Ihnen aber einen Termin um 11:30 Uhr anbieten. Bitte denken Sie an Ihre Versichertenkarte.\n– Perfekt, vielen Dank. Ich brauche wahrscheinlich auch eine Krankschreibung für meinen Arbeitgeber.\n– Darum kümmert sich Dr. Huber nach der Untersuchung. Bitte melden Sie sich bei der Anmeldung, wenn Sie da sind.\n– Mache ich. Bis später!",
+  "gloss": [
+   {
+    "w": "bräuchte",
+    "m": "would need (Konjunktiv II of brauchen)"
+   },
+   {
+    "w": "leide",
+    "m": "suffer (leiden an + Dat)"
+   },
+   {
+    "w": "Halsschmerzen",
+    "m": "sore throat (die Halsschmerzen)"
+   },
+   {
+    "w": "Krankschreibung",
+    "m": "sick note (die Krankschreibung)"
+   },
+   {
+    "w": "Anmeldung",
+    "m": "reception desk (die Anmeldung)"
+   }
+  ],
+  "comp": [
+   {
+    "q": "Warum ruft Sam an?",
+    "o": [
+     "Er hat Halsschmerzen und Fieber.",
+     "Er möchte eine Impfung.",
+     "Er braucht ein Rezept für Augentropfen."
+    ],
+    "a": 0
+   },
+   {
+    "q": "Wann ist der Termin?",
+    "o": [
+     "Heute um 11:30 Uhr",
+     "Morgen früh",
+     "Heute Nachmittag"
+    ],
+    "a": 0
+   },
+   {
+    "q": "Was soll Sam mitbringen?",
+    "o": [
+     "Seine Versichertenkarte",
+     "Eine Überweisung",
+     "Seine Krankschreibung"
+    ],
+    "a": 0
+   }
+  ],
+  "cloze": {
+   "t": "Ich leide {1} starken Halsschmerzen. Bitte denken Sie {2} Ihre Versichertenkarte. {3} die Krankschreibung kümmert sich der Arzt. Bitte melden Sie sich {4} der Anmeldung. Ich warte {5} den Arzt.",
+   "ans": [
+    "an",
+    "an",
+    "Um",
+    "bei",
+    "auf"
+   ],
+   "bank": true
+  },
+  "gram": {
+   "rule": "Many verbs come with a fixed preposition and case – learn them as one chunk: denken an + Akk, warten auf + Akk, sich kümmern um + Akk, leiden an + Dat, sich melden bei + Dat, sich freuen auf + Akk (future) / über + Akk (now). Questions: Woran denkst du? Worauf wartest du? For people: An wen denkst du?",
+   "items": [
+    {
+     "t": "Ich freue mich schon ___ das Wochenende. (on → future)",
+     "a": "auf"
+    },
+    {
+     "t": "Wir warten seit zwanzig Minuten ___ den Bus.",
+     "a": "auf"
+    },
+    {
+     "t": "Ich muss mich ___ meine Mutter kümmern.",
+     "a": "um"
+    },
+    {
+     "t": "___ denkst du gerade? (what about)",
+     "a": "Woran"
+    },
+    {
+     "t": "Bitte melden Sie sich ___ Frau Maier.",
+     "a": "bei"
+    },
+    {
+     "t": "Er hat sich sehr ___ das Geschenk gefreut. (now, about)",
+     "a": "über"
+    }
+   ]
+  },
+  "write": {
+   "p": "Write a short message (3–4 sentences) to your boss: you're ill, you have a doctor's appointment, and you'll send the sick note.",
+   "m": "Hallo Herr Schmidt,\n\nleider bin ich heute krank und kann nicht zur Arbeit kommen. Um 11:30 Uhr habe ich einen Termin beim Arzt. Die Krankschreibung schicke ich Ihnen danach per E-Mail. Um die dringenden Aufgaben kümmert sich heute Frau Klein.\n\nViele Grüße",
+   "chk": [
+    "Reason and plan both clear?",
+    "At least one verb + preposition chunk?",
+    "Polite tone?"
+   ]
+  }
+ },
+ {
+  "wk": 7,
+  "th": "familie",
+  "title": "Hochzeitsplanung",
+  "grammar": "Relativsätze",
+  "passage": "Unsere Hochzeit ist in sechs Monaten, und die Liste wird jeden Tag länger. Die standesamtliche Trauung findet im Rathaus statt, das direkt am Marktplatz liegt. Danach feiern wir in einem Gasthaus, dessen Biergarten Platz für hundert Gäste hat.\n\nDie Frage, über die wir am meisten diskutiert haben, war die Gästeliste. Meine Verlobte möchte alle Verwandten einladen, die sie seit ihrer Kindheit kennt. Ich dagegen kenne viele dieser Leute noch gar nicht. Am Ende haben wir einen Kompromiss gefunden: Wir laden nur die Leute ein, mit denen wir im letzten Jahr Kontakt hatten.\n\nMein Trauzeuge ist mein bester Freund Tom, den ich seit dem Studium kenne. Er hat schon versprochen, eine Rede zu halten, die „nicht zu peinlich“ wird. Ich bin gespannt!",
+  "gloss": [
+   {
+    "w": "findet",
+    "m": "takes place (stattfinden)"
+   },
+   {
+    "w": "dessen",
+    "m": "whose (masc./neuter)"
+   },
+   {
+    "w": "Verlobte",
+    "m": "fiancée (die Verlobte)"
+   },
+   {
+    "w": "dagegen",
+    "m": "on the other hand"
+   },
+   {
+    "w": "peinlich",
+    "m": "embarrassing"
+   },
+   {
+    "w": "gespannt",
+    "m": "curious, excited (to see what happens)"
+   }
+  ],
+  "comp": [
+   {
+    "q": "Wo findet die Trauung statt?",
+    "o": [
+     "Im Rathaus am Marktplatz",
+     "Im Gasthaus",
+     "In der Kirche"
+    ],
+    "a": 0
+   },
+   {
+    "q": "Worüber haben die beiden am meisten diskutiert?",
+    "o": [
+     "Über die Gästeliste",
+     "Über das Essen",
+     "Über den Ort der Feier"
+    ],
+    "a": 0
+   },
+   {
+    "q": "Wen laden sie am Ende ein?",
+    "o": [
+     "Leute, mit denen sie im letzten Jahr Kontakt hatten",
+     "Alle Verwandten",
+     "Nur die Familie"
+    ],
+    "a": 0
+   }
+  ],
+  "cloze": {
+   "t": "Die Trauung ist im Rathaus, {1} am Marktplatz liegt. Wir feiern in einem Gasthaus, {2} Biergarten sehr groß ist. Wir laden die Leute ein, mit {3} wir Kontakt hatten. Tom ist der Freund, {4} ich seit dem Studium kenne. Er hält eine Rede, {5} nicht zu peinlich wird.",
+   "ans": [
+    "das",
+    "dessen",
+    "denen",
+    "den",
+    "die"
+   ],
+   "bank": true
+  },
+  "gram": {
+   "rule": "A relative clause describes a noun. The relative pronoun takes its gender and number from the noun, and its case from its job in the relative clause. Verb at the end. der/die/das → Akk: den/die/das, Dat: dem/der/dem, Pl. Dat: denen. Genitive: dessen (m/n), deren (f/Pl).",
+   "items": [
+    {
+     "t": "Das ist der Mann, ___ mir geholfen hat. (subject)",
+     "a": "der"
+    },
+    {
+     "t": "Das ist der Mann, ___ ich gestern getroffen habe. (object)",
+     "a": "den"
+    },
+    {
+     "t": "Das ist die Frau, mit ___ ich gesprochen habe.",
+     "a": "der"
+    },
+    {
+     "t": "Das sind die Gäste, ___ wir eingeladen haben.",
+     "a": "die"
+    },
+    {
+     "t": "Das ist das Gasthaus, ___ Garten so schön ist.",
+     "a": "dessen"
+    },
+    {
+     "t": "Das sind die Freunde, mit ___ ich wandern gehe.",
+     "a": "denen"
+    }
+   ]
+  },
+  "write": {
+   "p": "Describe two people who will be (or were) important at your wedding, using a relative clause for each.",
+   "m": "Mein Trauzeuge ist mein Freund Alex, den ich schon seit der Schule kenne. Außerdem freue ich mich auf meine Schwiegermutter, die uns bei der ganzen Planung hilft. Beide sind Menschen, auf die ich mich immer verlassen kann.",
+   "chk": [
+    "Correct relative pronoun (gender + case)?",
+    "Verb at the end of the relative clause?",
+    "Comma before the relative pronoun?"
+   ]
+  }
+ },
+ {
+  "wk": 8,
+  "th": "wohnen",
+  "title": "Die neue Wohnung",
+  "grammar": "Wechselpräpositionen (Wo? / Wohin?)",
+  "passage": "Endlich sind wir umgezogen! Unsere neue Wohnung liegt im dritten Stock eines Altbaus, nicht weit vom Zentrum. Am Umzugstag haben uns zum Glück mein Schwager und zwei Freunde geholfen.\n\nZuerst haben wir das Sofa ins Wohnzimmer getragen und an die Wand gestellt. Der große Spiegel hängt jetzt im Flur neben der Tür, und das Bett steht unter dem Dachfenster. Nur die Kartons liegen noch überall auf dem Boden.\n\nAm Abend hat eine Nachbarin geklingelt. Sie hat sich vorgestellt und uns erklärt, wo die Mülltonnen stehen und wann der Hausmeister kommt. Dann hat sie gelächelt und gesagt: „Und bitte stellen Sie Ihre Fahrräder nicht in den Hausflur, sondern in den Keller.“ Willkommen in Deutschland!",
+  "gloss": [
+   {
+    "w": "Altbaus",
+    "m": "old building, usually pre-1945 (der Altbau)"
+   },
+   {
+    "w": "Spiegel",
+    "m": "mirror (der Spiegel)"
+   },
+   {
+    "w": "Dachfenster",
+    "m": "skylight (das Dachfenster)"
+   },
+   {
+    "w": "Kartons",
+    "m": "boxes (der Karton)"
+   },
+   {
+    "w": "geklingelt",
+    "m": "rang the doorbell (klingeln)"
+   }
+  ],
+  "comp": [
+   {
+    "q": "Wer hat beim Umzug geholfen?",
+    "o": [
+     "Der Schwager und zwei Freunde",
+     "Eine Umzugsfirma",
+     "Die Nachbarin"
+    ],
+    "a": 0
+   },
+   {
+    "q": "Wo steht das Bett?",
+    "o": [
+     "Unter dem Dachfenster",
+     "Im Flur",
+     "An der Wand im Wohnzimmer"
+    ],
+    "a": 0
+   },
+   {
+    "q": "Was soll man mit den Fahrrädern machen?",
+    "o": [
+     "Sie in den Keller stellen",
+     "Sie in den Hausflur stellen",
+     "Sie vor das Haus stellen"
+    ],
+    "a": 0
+   }
+  ],
+  "cloze": {
+   "t": "Wir haben das Sofa {1} Wohnzimmer getragen. Der Spiegel hängt {2} Flur. Das Bett steht unter {3} Dachfenster. Die Kartons liegen auf {4} Boden. Bitte stellen Sie die Fahrräder in {5} Keller.",
+   "ans": [
+    "ins",
+    "im",
+    "dem",
+    "dem",
+    "den"
+   ],
+   "bank": true
+  },
+  "gram": {
+   "rule": "in, an, auf, unter, über, vor, hinter, neben, zwischen: Wohin? (movement to a place) → Akkusativ: Ich stelle das Sofa an die Wand. Wo? (location) → Dativ: Das Sofa steht an der Wand. Movement verbs: stellen, legen, hängen (+ Akk). Position verbs: stehen, liegen, hängen (+ Dat).",
+   "items": [
+    {
+     "t": "Ich lege das Buch auf ___ Tisch.",
+     "a": "den"
+    },
+    {
+     "t": "Das Buch liegt auf ___ Tisch.",
+     "a": "dem"
+    },
+    {
+     "t": "Wir hängen das Bild an ___ Wand.",
+     "a": "die"
+    },
+    {
+     "t": "Das Bild hängt an ___ Wand.",
+     "a": "der"
+    },
+    {
+     "t": "Er ___ die Flasche in den Kühlschrank. (stellen/stehen)",
+     "a": "stellt"
+    },
+    {
+     "t": "Die Flasche ___ im Kühlschrank. (stellen/stehen)",
+     "a": "steht"
+    }
+   ]
+  },
+  "write": {
+   "p": "Describe your living room in 3–4 sentences: where things are, and one thing you'd like to move.",
+   "m": "In unserem Wohnzimmer steht das Sofa vor dem Fenster. Über dem Sofa hängt ein großes Bild aus Italien. Der Fernseher steht in der Ecke neben dem Regal. Ich würde gern den Tisch an die Wand stellen, damit wir mehr Platz haben.",
+   "chk": [
+    "Wo? → Dativ, Wohin? → Akkusativ?",
+    "stehen/liegen/hängen vs stellen/legen/hängen?",
+    "At least four prepositions?"
+   ]
+  }
+ },
+ {
+  "wk": 9,
+  "th": "freizeit",
+  "title": "Der Maibaum",
+  "grammar": "um … zu, damit, Infinitiv mit zu",
+  "passage": "In vielen bayerischen Dörfern steht ein Maibaum: ein hoher, blau-weiß bemalter Baumstamm mit Figuren, die zeigen, welche Handwerke und Vereine es im Ort gibt. Am 1. Mai wird er aufgestellt, und das ganze Dorf feiert mit Blasmusik, Bier und Brezn.\n\nDie Vorbereitung beginnt schon Wochen vorher. Die jungen Leute aus dem Burschenverein bewachen den Baum Tag und Nacht, um ihn vor den Nachbardörfern zu schützen. Es ist nämlich ein alter Brauch, den Maibaum eines anderen Dorfes zu stehlen. Wer es schafft, verlangt ein Lösegeld – meistens Bier und eine Brotzeit für alle.\n\nMein Schwiegervater hat mir erzählt, dass er als junger Mann selbst einmal einen Maibaum „entführt“ hat. Damit niemand etwas merkt, haben sie es mitten in der Nacht gemacht. „Das war a Gaudi!“, sagt er heute noch und lacht.",
+  "gloss": [
+   {
+    "w": "Baumstamm",
+    "m": "tree trunk (der Baumstamm)"
+   },
+   {
+    "w": "Handwerke",
+    "m": "trades, crafts (das Handwerk)"
+   },
+   {
+    "w": "Blasmusik",
+    "m": "brass band music (die Blasmusik)"
+   },
+   {
+    "w": "bewachen",
+    "m": "to guard"
+   },
+   {
+    "w": "Lösegeld",
+    "m": "ransom (das Lösegeld)"
+   },
+   {
+    "w": "Gaudi",
+    "m": "Bavarian: great fun (die Gaudi)"
+   }
+  ],
+  "comp": [
+   {
+    "q": "Wann wird der Maibaum aufgestellt?",
+    "o": [
+     "Am 1. Mai",
+     "Im Herbst",
+     "An Weihnachten"
+    ],
+    "a": 0
+   },
+   {
+    "q": "Warum bewachen die jungen Leute den Baum?",
+    "o": [
+     "Damit andere Dörfer ihn nicht stehlen",
+     "Weil er umfallen könnte",
+     "Weil sie ihn noch bemalen müssen"
+    ],
+    "a": 0
+   },
+   {
+    "q": "Was bekommt man, wenn man einen Maibaum „entführt“?",
+    "o": [
+     "Bier und eine Brotzeit",
+     "Geld von der Gemeinde",
+     "Einen neuen Baum"
+    ],
+    "a": 0
+   }
+  ],
+  "cloze": {
+   "t": "Sie bewachen den Baum, {1} ihn vor den Nachbardörfern {2} schützen. Es ist ein alter Brauch, den Maibaum {3} stehlen. {4} niemand etwas merkt, machen sie es nachts.",
+   "ans": [
+    "um",
+    "zu",
+    "zu",
+    "Damit"
+   ],
+   "bank": true
+  },
+  "gram": {
+   "rule": "um … zu + infinitive = in order to (same subject in both parts): Ich lerne Deutsch, um meine Familie zu verstehen. damit = so that (different subjects, or when you want a full clause): Ich spreche langsam, damit du mich verstehst. Infinitive with zu after many verbs and phrases: Ich habe keine Lust, … zu …; Es ist wichtig, … zu …; Separable verbs: aufzustellen.",
+   "items": [
+    {
+     "t": "Ich lerne jeden Tag, ___ die Prüfung zu bestehen.",
+     "a": "um"
+    },
+    {
+     "t": "Er erklärt es langsam, ___ ich es verstehe.",
+     "a": "damit"
+    },
+    {
+     "t": "Es ist schwer, den Dialekt ___ verstehen.",
+     "a": "zu"
+    },
+    {
+     "t": "Wir treffen uns früh, um den Baum ___ . (aufstellen)",
+     "a": "aufzustellen"
+    },
+    {
+     "t": "Hast du Lust, am Samstag ___ ? (mitkommen)",
+     "a": "mitzukommen"
+    },
+    {
+     "t": "Ich spare Geld, ___ wir eine schöne Hochzeit feiern können.",
+     "a": "damit"
+    }
+   ]
+  },
+  "write": {
+   "p": "Describe a tradition from your home country or from Bavaria in 3–4 sentences. Use um … zu and damit at least once each.",
+   "m": "In meiner Heimat feiern wir Silvester mit der ganzen Familie. Viele Leute essen um Mitternacht zwölf Weintrauben, um Glück im neuen Jahr zu haben. Die Kinder dürfen lange aufbleiben, damit sie das Feuerwerk sehen können.",
+   "chk": [
+    "um … zu with the same subject?",
+    "damit with a different subject?",
+    "zu right before the infinitive at the end?"
+   ]
+  }
+ },
+ {
+  "wk": 10,
+  "th": "alltag",
+  "title": "Nachrichten: Mieten steigen weiter",
+  "grammar": "Genitiv und wegen, trotz, während",
+  "passage": "München. Die Mieten in Bayerns Großstädten steigen weiter. Laut einer aktuellen Umfrage des Mieterbundes zahlen viele Haushalte inzwischen mehr als ein Drittel ihres Einkommens für die Miete.\n\nWegen der hohen Preise ziehen immer mehr Familien ins Umland. Trotz des längeren Arbeitswegs sind viele mit dieser Entscheidung zufrieden: Die Wohnungen sind größer, und die Kinder haben mehr Platz zum Spielen. Während der Woche pendeln dann viele mit der S-Bahn oder dem Regionalzug in die Stadt.\n\nDie Stadt will mit neuen Bauprojekten gegen die Entwicklung kämpfen. Kritiker meinen jedoch, dass das Problem dadurch nicht schnell genug gelöst wird. Die Zahl der freien Wohnungen bleibt sehr gering.",
+  "gloss": [
+   {
+    "w": "Mieterbundes",
+    "m": "tenants' association (der Mieterbund)"
+   },
+   {
+    "w": "Einkommens",
+    "m": "income (das Einkommen)"
+   },
+   {
+    "w": "Umland",
+    "m": "surrounding area (das Umland)"
+   },
+   {
+    "w": "pendeln",
+    "m": "to commute"
+   },
+   {
+    "w": "gering",
+    "m": "low, small"
+   }
+  ],
+  "comp": [
+   {
+    "q": "Was zahlen viele Haushalte für die Miete?",
+    "o": [
+     "Mehr als ein Drittel ihres Einkommens",
+     "Die Hälfte ihres Einkommens",
+     "Weniger als früher"
+    ],
+    "a": 0
+   },
+   {
+    "q": "Warum sind viele Familien im Umland zufrieden?",
+    "o": [
+     "Die Wohnungen sind größer.",
+     "Der Arbeitsweg ist kürzer.",
+     "Die Mieten sind gleich."
+    ],
+    "a": 0
+   },
+   {
+    "q": "Was denken Kritiker?",
+    "o": [
+     "Die Bauprojekte lösen das Problem nicht schnell genug.",
+     "Die Mieten werden bald sinken.",
+     "Die S-Bahn ist zu teuer."
+    ],
+    "a": 0
+   }
+  ],
+  "cloze": {
+   "t": "Viele zahlen ein Drittel {1} Einkommens für die Miete. {2} der hohen Preise ziehen Familien ins Umland. {3} des längeren Arbeitswegs sind sie zufrieden. {4} der Woche pendeln sie in die Stadt.",
+   "ans": [
+    "ihres",
+    "Wegen",
+    "Trotz",
+    "Während"
+   ],
+   "bank": true
+  },
+  "gram": {
+   "rule": "The Genitive shows possession, especially in writing: das Auto des Mannes, die Miete der Wohnung. Masculine and neuter nouns add -s or -es. wegen (because of), trotz (despite) and während (during) take the Genitive in writing: wegen des Wetters, trotz der Kosten, während des Urlaubs. In speech you'll often hear the Dativ: wegen dem Wetter.",
+   "items": [
+    {
+     "t": "Das ist das Auto ___ Nachbarn. (der Nachbar)",
+     "a": "des"
+    },
+    {
+     "t": "___ des Regens sind wir zu Hause geblieben.",
+     "a": "Wegen"
+    },
+    {
+     "t": "Trotz ___ Kälte sind wir spazieren gegangen. (die Kälte)",
+     "a": "der"
+    },
+    {
+     "t": "Während ___ Urlaubs habe ich viel gelesen. (der Urlaub)",
+     "a": "des"
+    },
+    {
+     "t": "Die Farbe des Hauses ___ schön. (sein)",
+     "a": "ist"
+    },
+    {
+     "t": "Die Preise ___ Wohnungen sind gestiegen. (die Wohnungen)",
+     "a": "der"
+    }
+   ]
+  },
+  "write": {
+   "p": "Summarise the article in 3 sentences, using wegen, trotz or während at least twice.",
+   "m": "Wegen der hohen Mieten ziehen viele Familien aus München ins Umland. Trotz des längeren Arbeitswegs sind viele zufrieden, weil die Wohnungen größer sind. Die Stadt baut neue Wohnungen, aber das Problem bleibt.",
+   "chk": [
+    "Genitive after wegen / trotz / während?",
+    "Main point of the article covered?",
+    "Three clear sentences?"
+   ]
+  }
+ },
+ {
+  "wk": 11,
+  "th": "politik",
+  "title": "Wie funktioniert die Bundestagswahl?",
+  "grammar": "Wiederholung: Passiv, Relativsätze, Konnektoren",
+  "passage": "Alle vier Jahre wird in Deutschland der Bundestag gewählt. Wählen dürfen alle deutschen Staatsangehörigen, die mindestens 18 Jahre alt sind. Die Wahl ist allgemein, unmittelbar, frei, gleich und geheim. Das bedeutet zum Beispiel, dass niemand sehen darf, wen man wählt, und dass jede Stimme gleich viel zählt.\n\nJeder Wähler hat zwei Stimmen. Mit der Erststimme wählt man eine Person aus dem eigenen Wahlkreis. Mit der Zweitstimme wählt man eine Partei. Die Zweitstimme ist wichtiger, weil sie bestimmt, wie viele Sitze eine Partei im Bundestag bekommt. Eine Partei braucht allerdings mindestens fünf Prozent der Zweitstimmen, um in den Bundestag zu kommen.\n\nNach der Wahl bilden meistens mehrere Parteien zusammen eine Koalition. Der Bundestag wählt dann den Bundeskanzler oder die Bundeskanzlerin.",
+  "gloss": [
+   {
+    "w": "allgemein",
+    "m": "universal (everyone may vote)"
+   },
+   {
+    "w": "unmittelbar",
+    "m": "direct"
+   },
+   {
+    "w": "Stimme",
+    "m": "vote; voice (die Stimme)"
+   },
+   {
+    "w": "Wahlkreis",
+    "m": "constituency (der Wahlkreis)"
+   },
+   {
+    "w": "Sitze",
+    "m": "seats (der Sitz)"
+   },
+   {
+    "w": "Koalition",
+    "m": "coalition (die Koalition)"
+   }
+  ],
+  "comp": [
+   {
+    "q": "Wer darf den Bundestag wählen?",
+    "o": [
+     "Deutsche Staatsangehörige ab 18 Jahren",
+     "Alle Menschen, die in Deutschland wohnen",
+     "Deutsche Staatsangehörige ab 16 Jahren"
+    ],
+    "a": 0
+   },
+   {
+    "q": "Wofür ist die Zweitstimme?",
+    "o": [
+     "Für eine Partei",
+     "Für eine Person aus dem Wahlkreis",
+     "Für den Bundespräsidenten"
+    ],
+    "a": 0
+   },
+   {
+    "q": "Wer wählt den Bundeskanzler?",
+    "o": [
+     "Der Bundestag",
+     "Das Volk direkt",
+     "Der Bundesrat"
+    ],
+    "a": 0
+   }
+  ],
+  "cloze": {
+   "t": "Der Bundestag {1} alle vier Jahre gewählt. Wählen dürfen alle Deutschen, {2} mindestens 18 sind. Die Zweitstimme ist wichtig, {3} sie die Sitze bestimmt. Eine Partei braucht fünf Prozent, {4} in den Bundestag zu kommen. Danach {5} meistens eine Koalition gebildet.",
+   "ans": [
+    "wird",
+    "die",
+    "weil",
+    "um",
+    "wird"
+   ],
+   "bank": true
+  },
+  "gram": {
+   "rule": "Review: Passiv (wird gewählt), relative clauses (die Wähler, die …), weil/dass (verb at the end), um … zu.",
+   "items": [
+    {
+     "t": "Der Bundeskanzler ___ vom Bundestag gewählt.",
+     "a": "wird"
+    },
+    {
+     "t": "Das ist die Partei, ___ ich gewählt habe.",
+     "a": "die"
+    },
+    {
+     "t": "Ich gehe wählen, ___ meine Stimme zählt. (because)",
+     "a": "weil"
+    },
+    {
+     "t": "Man braucht fünf Prozent, um in den Bundestag zu ___ . (kommen)",
+     "a": "kommen"
+    },
+    {
+     "t": "Die Wahl ist geheim. Das bedeutet, dass niemand meine Wahl sehen ___ . (dürfen)",
+     "a": "darf"
+    },
+    {
+     "t": "Die Abgeordneten, ___ im Bundestag sitzen, vertreten das Volk.",
+     "a": "die"
+    }
+   ]
+  },
+  "write": {
+   "p": "Explain in 3 sentences, as if to a friend, why people should vote.",
+   "m": "Ich finde, dass jeder wählen gehen sollte. Nur so kann man mitbestimmen, wer das Land regiert. Wer nicht wählt, überlässt die Entscheidung anderen.",
+   "chk": [
+    "Verb at the end after dass?",
+    "A clear reason?",
+    "Relative clause (wer …, die …) used?"
+   ]
+  }
+ },
+ {
+  "wk": 12,
+  "th": "familie",
+  "title": "Ein Jahr in Bayern – ein Rückblick",
+  "grammar": "Wiederholung: alles zusammen",
+  "passage": "Vor einem Jahr habe ich bei Familienfeiern kaum etwas verstanden. Wenn alle gleichzeitig geredet haben, habe ich nur gelächelt und genickt. Heute sieht das ganz anders aus.\n\nWas hat geholfen? Erstens habe ich jeden Tag ein bisschen gelernt, statt am Wochenende stundenlang zu sitzen. Zweitens hat meine Familie mitgemacht: Einmal pro Woche sprechen wir beim Abendessen nur Deutsch, und niemand korrigiert mich, wenn ich nicht darum bitte. Drittens habe ich gelernt, nachzufragen, statt so zu tun, als hätte ich alles verstanden.\n\nNatürlich mache ich immer noch Fehler, und wenn mein Schwiegervater schnell Bairisch spricht, bin ich manchmal verloren. Trotzdem traue ich mich jetzt, selbst Geschichten zu erzählen. Letzte Woche haben alle über meinen Witz gelacht – und zwar nicht über meine Grammatik!",
+  "gloss": [
+   {
+    "w": "gleichzeitig",
+    "m": "at the same time"
+   },
+   {
+    "w": "statt",
+    "m": "instead of"
+   },
+   {
+    "w": "nachzufragen",
+    "m": "to ask (again) for clarification (nachfragen)"
+   },
+   {
+    "w": "verloren",
+    "m": "lost"
+   },
+   {
+    "w": "traue",
+    "m": "dare (sich trauen)"
+   },
+   {
+    "w": "Witz",
+    "m": "joke (der Witz)"
+   }
+  ],
+  "comp": [
+   {
+    "q": "Was war vor einem Jahr das Problem?",
+    "o": [
+     "Bei Familienfeiern hat er kaum etwas verstanden.",
+     "Er hatte keine Zeit zum Lernen.",
+     "Die Familie wollte kein Deutsch sprechen."
+    ],
+    "a": 0
+   },
+   {
+    "q": "Was hat beim Lernen geholfen?",
+    "o": [
+     "Jeden Tag ein bisschen lernen",
+     "Am Wochenende stundenlang lernen",
+     "Nur Grammatik lernen"
+    ],
+    "a": 0
+   },
+   {
+    "q": "Was ist letzte Woche passiert?",
+    "o": [
+     "Alle haben über seinen Witz gelacht.",
+     "Er hat einen Grammatikfehler gemacht.",
+     "Er hat kein Wort verstanden."
+    ],
+    "a": 0
+   }
+  ],
+  "cloze": {
+   "t": "Vor einem Jahr {1} ich kaum etwas verstanden. Ich habe jeden Tag gelernt, {2} am Wochenende stundenlang zu sitzen. Niemand korrigiert mich, {3} ich nicht darum bitte. {4} traue ich mich jetzt, Geschichten zu {5}.",
+   "ans": [
+    "habe",
+    "statt",
+    "wenn",
+    "Trotzdem",
+    "erzählen"
+   ],
+   "bank": true
+  },
+  "gram": {
+   "rule": "Final review: verb position, Perfekt, connectors, Konjunktiv II and zu-infinitives together.",
+   "items": [
+    {
+     "t": "Gestern ___ ich mit meiner Schwiegermutter telefoniert.",
+     "a": "habe"
+    },
+    {
+     "t": "Ich verstehe mehr, seitdem ich jeden Tag Podcasts ___ . (hören)",
+     "a": "höre"
+    },
+    {
+     "t": "Ich ___ gern noch mehr Bairisch verstehen. (Konjunktiv II von mögen)",
+     "a": "möchte",
+     "alt": [
+      "würde"
+     ]
+    },
+    {
+     "t": "Es macht mir Spaß, Geschichten ___ erzählen.",
+     "a": "zu"
+    },
+    {
+     "t": "Ich mache Fehler. ___ spreche ich weiter. (nevertheless)",
+     "a": "Trotzdem"
+    },
+    {
+     "t": "Wenn ich nichts verstehe, ___ ich einfach nach. (fragen)",
+     "a": "frage"
+    }
+   ]
+  },
+  "write": {
+   "p": "Write 4–5 sentences: how has your German changed since you started this plan, and what is your next goal?",
+   "m": "Seit ich jeden Tag ein bisschen lerne, verstehe ich viel mehr. Früher war ich beim Sprechen sehr nervös, aber jetzt traue ich mich mehr. Besonders die Redemittel haben mir geholfen. Mein nächstes Ziel ist die B1-Prüfung, und danach möchte ich B2 schaffen.",
+   "chk": [
+    "Perfekt and Präsens used correctly?",
+    "At least one connector (seit, aber, danach, trotzdem)?",
+    "A clear next goal?"
+   ]
+  }
+ }
+]
