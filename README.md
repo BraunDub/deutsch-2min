@@ -7,7 +7,7 @@ A tiny, offline-first web app (PWA) for 2-minute German practice sessions, aimed
 - **Wortschatz**: flashcards with example sentences and word-formation breakdowns, spaced repetition (Nochmal / Gut / Leicht).
 - **Quizlet import**: paste a Quizlet export (tab between term and definition, one card per line). `Wort – Satz` on the front and `Bedeutung / Wortbildung` on the back are split automatically.
 - **Entschlüsseln**: guess a word's meaning from its parts.
-- **Leben in Deutschland**: 417 official BAMF questions (general + your Bundesland, image questions left out for now).
+- **Leben in Deutschland**: 14 short lessons, each with its own numbered question set (417 official BAMF questions, general + your Bundesland; image questions left out for now). Rounds of 5 continue where you stopped, missed questions come back first, and the 2-Minuten-Mix picks up from the same spot.
 - **Lesen, Hören (dictation), Schreiben, Sprechen** micro-tasks shaped like Goethe B1.
 
 Progress lives in the browser's localStorage on your device. Use Settings → Export to back it up.
