@@ -301,7 +301,7 @@ function extras(c) {
 const checklist = c => c.chk && c.chk.length ? `<div class="morph" style="margin-top:12px"><b>Check zuerst:</b>${c.chk.map((t, i) => `<label style="display:flex;gap:8px;margin-top:6px"><input type="checkbox" style="width:auto"> ${esc(t)}</label>`).join('')}</div>` : '';
 
 /* --- multiple-choice helper --- */
-function mc({ tag, head, options, answer, onDone, after }) {
+function mc({ tag, head, options, answer, onDone, after, en }) {
   const order = shuffle(options.map((o, i) => i));
   $app.innerHTML = frame(`<div class="body">${head}
     <div id="opts">${order.map(i => `<button class="opt" data-i="${i}">${esc(options[i])}</button>`).join('')}</div>
@@ -310,6 +310,7 @@ function mc({ tag, head, options, answer, onDone, after }) {
     const i = +b.dataset.i, ok = i === answer;
     document.querySelectorAll('.opt').forEach(x => { x.disabled = true; if (+x.dataset.i === answer) x.classList.add('right'); });
     if (!ok) b.classList.add('wrong');
+    if (en) document.querySelectorAll('.opt').forEach(x => { const t = en[+x.dataset.i]; if (t) x.insertAdjacentHTML('beforeend', `<span class="opt-en">${esc(t)}</span>`); });
     document.getElementById('fb').innerHTML = `<div class="feedback">${ok ? '✅ Richtig!' : '❌ Leider falsch.'} ${(typeof after === 'function' ? after(ok) : after) || ''}</div>
       <button class="btn primary actions" id="nx">Weiter</button>`;
     document.getElementById('nx').onclick = () => { onDone(ok); };
@@ -329,13 +330,18 @@ function vDecode(c) {
 
 /* --- Leben in Deutschland --- */
 function vLid(c) {
+  const l = lessonById(c.lesson);
   mc({
     tag: `Leben in Deutschland${c.s ? ' · ' + STATES[c.s] : ''}${c.n ? ` · Lektion ${lessonNum(c.lesson)}, Frage ${c.n}/${c.of}` : ''}`,
-    head: `<div class="big" style="font-size:22px">${esc(c.q)}</div>
-      ${c.en ? `<details style="background:var(--card2)"><summary class="small muted">English</summary><p class="small">${esc(c.en)}</p></details>` : ''}
-      ${lessonHasText(lessonById(c.lesson)) ? `<details style="background:var(--card2)"><summary class="small muted">📘 Lektion: ${esc(lessonById(c.lesson).title)}</summary>${lessonPointsHtml(lessonById(c.lesson))}</details>` : ''}`,
-    options: c.o, answer: c.a,
-    after: ok => { const l = lessonById(c.lesson); return lessonHasText(l) ? `<details ${ok ? '' : 'open'} style="background:var(--card2);margin-top:10px"><summary class="small">📘 Zum Merken: ${esc(l.title)}</summary>${visualHtml(l.visual)}${lessonPointsHtml(l)}</details>` : ''; },
+    head: `<div class="big" style="font-size:22px">${esc(c.q)}</div><div id="qen"></div>
+      ${lessonHasText(l) ? `<details style="background:var(--card2)"><summary class="small muted">📘 Lektion: ${esc(l.title)}</summary>${lessonPointsHtml(l)}</details>` : ''}`,
+    options: c.o, answer: c.a, en: c.oe,
+    after: ok => {
+      if (c.en) document.getElementById('qen').innerHTML = `<p class="q-en">${esc(c.en)}</p>`;
+      const why = c.x ? `<div class="why"><b>Warum?</b> ${esc(c.x)}</div>` : '';
+      const more = lessonHasText(l) ? `<details style="background:var(--card2);margin-top:10px"><summary class="small">📘 Mehr in der Lektion: ${esc(l.title)}</summary>${visualHtml(l.visual)}${lessonPointsHtml(l)}</details>` : '';
+      return why + more;
+    },
     onDone: ok => { grade(c.k, ok ? 1 : 0); next(ok); }
   });
 }

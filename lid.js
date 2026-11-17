@@ -5,12 +5,14 @@
 const LID_ROUND = 5;
 const MORE_ID = 'mehr';
 
-/* Link each question to one lesson: the lesson whose keywords match best (longer keys weigh more).
+/* Link each question to one lesson: the hand-picked one (q.l) if set, else the lesson whose
+   keywords match best (longer keys weigh more).
    State questions go to the Bundesland lesson; anything left goes to "Weitere Fragen",
    so every question belongs to exactly one section. */
 function linkLessons() {
   const L = DATA.lessons || [];
   DATA.lid.forEach(q => {
+    if (q.l && L.some(l => l.id === q.l)) { q.lesson = q.l; return; } // hand-assigned
     if (q.s) { q.lesson = 'laender_bayern'; return; }
     const text = ' ' + (q.q + ' ' + q.o.join(' ')).toLowerCase() + ' ';
     let best = null, bestScore = 0;
