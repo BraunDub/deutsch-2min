@@ -128,7 +128,7 @@ function buildMix() {
   balanced(vocabPool(), Math.max(2, n - 3), x => x.k).forEach(c => q.push({ t: 'vocab', c }));
   choose(decodePool(), 1, x => x.k).forEach(c => q.push({ t: 'decode', c }));
   const lidLeft = Math.max(1, Math.min(2, 5 - ((S.days[today()] || {}).lid || 0)));
-  choose(lidPool(), lidLeft, x => x.k).forEach(c => q.push({ t: 'lid', c }));
+  lidPick(lidLeft).forEach(c => q.push({ t: 'lid', c })); // continues where the lessons left off
   const sk = nextSkill(); q.push(skillItem(sk));
   return q;
 }
@@ -170,7 +170,7 @@ function home() {
   session = null;
   const dueV = vocabPool().filter(x => isDue(x.k)).length;
   const newV = vocabPool().filter(x => !srsGet(x.k)).length;
-  const lidAll = lidPool(); const lidDone = lidAll.filter(x => { const r = srsGet(x.k); return r && r.b >= 2; }).length;
+  const lidAll = lidPool(); const lidDone = lidAll.filter(x => srsGet(x.k)).length;
   const t = S.days[today()] || { n: 0 };
   $app.innerHTML = `
     <div class="top">
@@ -189,7 +189,7 @@ function home() {
     <div class="grid" style="margin-top:12px">
       ${wbTile()}
       ${tile('vocab', '10 Wörter', `${dueV} zum Wiederholen · ${newV} neu`)}
-      <button class="tile" data-go="lid"><b>Leben in Deutschland</b><span>Lektionen + Fragen · ${lidDone}/${lidAll.length} sicher</span></button>
+      <button class="tile" data-go="lid"><b>Leben in Deutschland</b><span>Lektionen + Fragen · ${lidDone}/${lidAll.length} beantwortet</span></button>
       <button class="tile" data-go="grammar"><b>Grammatik-Training</b><span>Ein Thema, so lange du willst</span></button>
       ${tile('lesen', 'Lesen', 'Kurze Texte, B1')}
       ${tile('party', 'Party-Hören', 'Schnelle Alltagsdialoge')}
@@ -210,7 +210,10 @@ function startSession(kind) {
   const q = kind === 'mix' ? buildMix() : buildSection(kind);
   if (kind === 'mix') q.filter(x => SKILLS.includes(x.t)).forEach(x => { if (x.i !== undefined) markSeen(x.t, x.i); (S.seen._skills ||= {})[x.t] = (S.seen._skills[x.t] || 0) + 1; save(); });
   if (!q.length) { toast('Gerade nichts fällig. Komm später wieder!'); return; }
-  session = { kind, q, pos: 0, ok: 0, start: Date.now(), requeued: new Set() };
+  startQueue(kind, q);
+}
+function startQueue(kind, q, extra) {
+  session = { kind, q, pos: 0, ok: 0, start: Date.now(), requeued: new Set(), ...extra };
   clearInterval(window._tick);
   window._tick = setInterval(() => { const el = document.querySelector('.timer'); if (el && session) el.textContent = fmtTime(Date.now() - session.start); }, 1000);
   renderItem();
@@ -245,11 +248,13 @@ function finish() {
       <div class="big">${streakNow() > 1 ? '🔥' : '✅'}</div>
       <h1>Gut gemacht!</h1>
       <p class="muted">${session.q.length} Aufgaben in ${fmtTime(secs * 1000)} · Serie: ${streakNow()} Tag${streakNow() === 1 ? '' : 'e'}</p>
+      ${session.lesson ? lessonFinishHtml(session.lesson) : ''}
     </div>
-    <div class="stack actions">
+    <div class="stack actions">${session.lesson ? lessonFinishActions(session.lesson) : `
       <button class="btn primary" data-start="${session.kind}">Noch eine Runde</button>
-      <button class="btn ghost" data-go="home">Fertig</button>
+      <button class="btn ghost" data-go="home">Fertig</button>`}
     </div></div>`;
+  if (session.lesson) wireLessonFinish(session.lesson);
 }
 
 function renderItem() {
@@ -296,7 +301,7 @@ function extras(c) {
 const checklist = c => c.chk && c.chk.length ? `<div class="morph" style="margin-top:12px"><b>Check zuerst:</b>${c.chk.map((t, i) => `<label style="display:flex;gap:8px;margin-top:6px"><input type="checkbox" style="width:auto"> ${esc(t)}</label>`).join('')}</div>` : '';
 
 /* --- multiple-choice helper --- */
-function mc({ tag, head, options, answer, onDone, after }) {
+function mc({ tag, head, options, answer, onDone, after, en }) {
   const order = shuffle(options.map((o, i) => i));
   $app.innerHTML = frame(`<div class="body">${head}
     <div id="opts">${order.map(i => `<button class="opt" data-i="${i}">${esc(options[i])}</button>`).join('')}</div>
@@ -305,6 +310,7 @@ function mc({ tag, head, options, answer, onDone, after }) {
     const i = +b.dataset.i, ok = i === answer;
     document.querySelectorAll('.opt').forEach(x => { x.disabled = true; if (+x.dataset.i === answer) x.classList.add('right'); });
     if (!ok) b.classList.add('wrong');
+    if (en) document.querySelectorAll('.opt').forEach(x => { const t = en[+x.dataset.i]; if (t) x.insertAdjacentHTML('beforeend', `<span class="opt-en">${esc(t)}</span>`); });
     document.getElementById('fb').innerHTML = `<div class="feedback">${ok ? '✅ Richtig!' : '❌ Leider falsch.'} ${(typeof after === 'function' ? after(ok) : after) || ''}</div>
       <button class="btn primary actions" id="nx">Weiter</button>`;
     document.getElementById('nx').onclick = () => { onDone(ok); };
@@ -324,13 +330,18 @@ function vDecode(c) {
 
 /* --- Leben in Deutschland --- */
 function vLid(c) {
+  const l = lessonById(c.lesson);
   mc({
-    tag: `Leben in Deutschland${c.s ? ' · ' + STATES[c.s] : ''}`,
-    head: `<div class="big" style="font-size:22px">${esc(c.q)}</div>
-      ${c.en ? `<details style="background:var(--card2)"><summary class="small muted">English</summary><p class="small">${esc(c.en)}</p></details>` : ''}
-      ${lessonById(c.lesson) ? `<details style="background:var(--card2)"><summary class="small muted">📘 Lektion: ${esc(lessonById(c.lesson).title)}</summary>${lessonPointsHtml(lessonById(c.lesson))}</details>` : ''}`,
-    options: c.o, answer: c.a,
-    after: ok => { const l = lessonById(c.lesson); return l ? `<details ${ok ? '' : 'open'} style="background:var(--card2);margin-top:10px"><summary class="small">📘 Zum Merken: ${esc(l.title)}</summary>${visualHtml(l.visual)}${lessonPointsHtml(l)}</details>` : ''; },
+    tag: `Leben in Deutschland${c.s ? ' · ' + STATES[c.s] : ''}${c.n ? ` · Lektion ${lessonNum(c.lesson)}, Frage ${c.n}/${c.of}` : ''}`,
+    head: `<div class="big" style="font-size:22px">${esc(c.q)}</div><div id="qen"></div>
+      ${lessonHasText(l) ? `<details style="background:var(--card2)"><summary class="small muted">📘 Lektion: ${esc(l.title)}</summary>${lessonPointsHtml(l)}</details>` : ''}`,
+    options: c.o, answer: c.a, en: c.oe,
+    after: ok => {
+      if (c.en) document.getElementById('qen').innerHTML = `<p class="q-en">${esc(c.en)}</p>`;
+      const why = c.x ? `<div class="why"><b>Warum?</b> ${esc(c.x)}</div>` : '';
+      const more = lessonHasText(l) ? `<details style="background:var(--card2);margin-top:10px"><summary class="small">📘 Mehr in der Lektion: ${esc(l.title)}</summary>${visualHtml(l.visual)}${lessonPointsHtml(l)}</details>` : '';
+      return why + more;
+    },
     onDone: ok => { grade(c.k, ok ? 1 : 0); next(ok); }
   });
 }
