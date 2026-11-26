@@ -4,7 +4,7 @@
   "th": "familie",
   "title": "Das erste Treffen mit der Familie",
   "grammar": "Wortstellung: Verb auf Position 2 / Verb am Ende",
-  "passage": "Letzten Sonntag hat mich meine Freundin Anna zum ersten Mal zu ihren Eltern mitgenommen. Ich war ziemlich aufgeregt, weil ich die Familie noch nicht kannte. Annas Mutter hatte uns zum Kaffee eingeladen, und als wir ankamen, war schon die halbe Verwandtschaft da: Onkel, Tanten, Cousins und sogar die Oma. Anna hat mich allen vorgestellt, und natürlich habe ich mir keinen einzigen Namen gemerkt.\n\nAm Anfang habe ich nur gelächelt und genickt, denn alle haben schnell und mit Dialekt gesprochen. Dann hat sich ihr Onkel neben mich gesetzt und mich gefragt, woher ich komme. Wir haben uns lange über Fußball und das Wetter unterhalten. Er hat halt ein bisschen Bairisch gesprochen, aber er hat langsam geredet, damit ich ihn verstehe.\n\nAm Ende war der Nachmittag richtig gemütlich. Beim Abschied hat die Oma gesagt: „Kimm bald wieder!“ Ich glaube, ich habe die Familie ein bisschen kennengelernt – und sie mich auch.",
+  "passage": "Letzten Sonntag hat mich meine Freundin Anna zum ersten Mal zu ihren Eltern mitgenommen. Ich war ziemlich aufgeregt, weil ich die Familie noch nicht kannte. Annas Mutter hatte uns zum Kaffee eingeladen, und als wir ankamen, war schon die halbe Verwandtschaft da: Onkel, Tanten, Cousins und sogar die Oma. Anna hat mich allen vorgestellt, und natürlich habe ich mir keinen einzigen Namen gemerkt.\n\nAm Anfang habe ich nur gelächelt und genickt, denn alle haben schnell und mit Dialekt gesprochen. Dann hat sich ihr Onkel neben mich gesetzt und mich gefragt, woher ich komme. Wir haben uns lange über Fußball und das Wetter unterhalten. Er hat halt ein bisschen Bairisch gesprochen, aber er hat langsam geredet, damit ich ihn verstehe.\n\nAm Ende war der Nachmittag richtig gemütlich. Beim Abschied hat die Oma gesagt: „Komm bald wieder!“ Ich glaube, ich habe die Familie ein bisschen kennengelernt – und sie mich auch.",
   "gloss": [
    {
     "w": "aufgeregt",
@@ -21,10 +21,6 @@
    {
     "w": "Abschied",
     "m": "goodbye, farewell (der Abschied)"
-   },
-   {
-    "w": "Kimm bald wieder!",
-    "m": "Bairisch for: Komm bald wieder!"
    }
   ],
   "comp": [
@@ -98,20 +94,21 @@
   },
   "write": {
    "p": "Write 3–4 sentences about the first time you met your partner's family (or a new group of people). Use weil and dass at least once each.",
-   "m": "Beim ersten Treffen war ich sehr nervös, weil ich kaum Bairisch verstanden habe. Aber alle waren sehr freundlich. Ich fand es schön, dass die Oma mir sofort Kuchen angeboten hat. Heute fühle ich mich in der Familie schon richtig wohl.",
+   "m": "Beim ersten Treffen war ich sehr nervös, weil ich kaum etwas verstanden habe. Aber alle waren sehr freundlich. Ich fand es schön, dass die Oma mir sofort Kuchen angeboten hat. Heute fühle ich mich in der Familie schon richtig wohl.",
    "chk": [
     "Is the verb in position 2 in every main clause?",
     "Is the verb at the end after weil and dass?",
     "Did you use the Perfekt for past events?"
    ]
-  }
+  },
+  "lv": "B1"
  },
  {
   "wk": 2,
   "th": "freizeit",
   "title": "Ein Ausflug mit Hindernissen",
   "grammar": "Perfekt und Präteritum",
-  "passage": "Am Samstag wollten wir einen Ausflug an den Tegernsee machen. Leider hat alles anders angefangen als geplant. Zuerst hatte die S-Bahn zwanzig Minuten Verspätung, und deshalb haben wir unseren Zug verpasst. Wir mussten eine Stunde am Bahnhof warten. Das war ärgerlich, aber wir haben uns einen Kaffee geholt und das Beste daraus gemacht.\n\nAm See war es dann wunderschön. Wir sind drei Stunden gewandert und haben unterwegs in einer Hütte Brotzeit gemacht. Auf dem Rückweg ist dann noch etwas passiert: Mein Freund ist auf einem nassen Stein ausgerutscht. Zum Glück hat er sich nicht verletzt, nur seine Hose war schmutzig.\n\nAm Abend waren wir müde, aber glücklich. Wir haben an einem Tag mehr erlebt als sonst in einer ganzen Woche.",
+  "passage": "Am Samstag wollten wir einen Ausflug an den Tegernsee machen. Leider hat alles anders angefangen als geplant. Zuerst hatte die S-Bahn zwanzig Minuten Verspätung, und deshalb haben wir unseren Zug verpasst. Wir mussten eine Stunde am Bahnhof warten. Das war ärgerlich, aber wir haben uns einen Kaffee geholt und das Beste daraus gemacht.\n\nAm See war es dann wunderschön. Wir sind drei Stunden gewandert und haben unterwegs in einer Hütte Pause gemacht. Auf dem Rückweg ist dann noch etwas passiert: Mein Freund ist auf einem nassen Stein ausgerutscht. Zum Glück hat er sich nicht verletzt, nur seine Hose war schmutzig.\n\nAm Abend waren wir müde, aber glücklich. Wir haben an einem Tag mehr erlebt als sonst in einer ganzen Woche.",
   "gloss": [
    {
     "w": "ärgerlich",
@@ -147,7 +144,7 @@
    {
     "q": "Was haben sie unterwegs gemacht?",
     "o": [
-     "Brotzeit in einer Hütte",
+     "Pause in einer Hütte",
      "Im See gebadet",
      "Kaffee am Bahnhof getrunken"
     ],
@@ -194,7 +191,7 @@
      "a": "passiert"
     },
     {
-     "t": "Wir haben in einer Hütte Brotzeit ___ . (machen)",
+     "t": "Wir haben in einer Hütte Pause ___ . (machen)",
      "a": "gemacht"
     },
     {
@@ -205,13 +202,14 @@
   },
   "write": {
    "p": "Write 3–4 sentences about your last weekend. Use war or hatte, and at least two Perfekt verbs (one with sein).",
-   "m": "Letztes Wochenende war ich mit Freunden in den Bergen. Wir sind früh losgefahren, weil das Wetter so gut war. Oben auf dem Gipfel haben wir Brotzeit gemacht. Am Abend hatte ich Muskelkater, aber es hat sich gelohnt.",
+   "m": "Letztes Wochenende war ich mit Freunden in den Bergen. Wir sind früh losgefahren, weil das Wetter so gut war. Oben auf dem Gipfel haben wir gepicknickt. Am Abend hatte ich Muskelkater, aber es hat sich gelohnt.",
    "chk": [
     "sein with movement verbs (gefahren, gewandert)?",
     "war/hatte instead of ist gewesen/hat gehabt?",
     "Partizip II at the end of the clause?"
    ]
-  }
+  },
+  "lv": "B1"
  },
  {
   "wk": 3,
@@ -319,7 +317,8 @@
     "Verb at the end after weil?",
     "A clear opinion?"
    ]
-  }
+  },
+  "lv": "B1"
  },
  {
   "wk": 4,
@@ -426,7 +425,8 @@
     "Könnten Sie … for the request?",
     "Verb at the end after ob?"
    ]
-  }
+  },
+  "lv": "B1"
  },
  {
   "wk": 5,
@@ -533,7 +533,8 @@
     "At least two of hätte / wäre / könnte / würde?",
     "A reason for the request?"
    ]
-  }
+  },
+  "lv": "B1"
  },
  {
   "wk": 6,
@@ -640,7 +641,8 @@
     "At least one verb + preposition chunk?",
     "Polite tone?"
    ]
-  }
+  },
+  "lv": "B1"
  },
  {
   "wk": 7,
@@ -751,7 +753,8 @@
     "Verb at the end of the relative clause?",
     "Comma before the relative pronoun?"
    ]
-  }
+  },
+  "lv": "B1"
  },
  {
   "wk": 8,
@@ -858,14 +861,15 @@
     "stehen/liegen/hängen vs stellen/legen/hängen?",
     "At least four prepositions?"
    ]
-  }
+  },
+  "lv": "B1"
  },
  {
   "wk": 9,
   "th": "freizeit",
   "title": "Der Maibaum",
   "grammar": "um … zu, damit, Infinitiv mit zu",
-  "passage": "In vielen bayerischen Dörfern steht ein Maibaum: ein hoher, blau-weiß bemalter Baumstamm mit Figuren, die zeigen, welche Handwerke und Vereine es im Ort gibt. Am 1. Mai wird er aufgestellt, und das ganze Dorf feiert mit Blasmusik, Bier und Brezn.\n\nDie Vorbereitung beginnt schon Wochen vorher. Die jungen Leute aus dem Burschenverein bewachen den Baum Tag und Nacht, um ihn vor den Nachbardörfern zu schützen. Es ist nämlich ein alter Brauch, den Maibaum eines anderen Dorfes zu stehlen. Wer es schafft, verlangt ein Lösegeld – meistens Bier und eine Brotzeit für alle.\n\nMein Schwiegervater hat mir erzählt, dass er als junger Mann selbst einmal einen Maibaum „entführt“ hat. Damit niemand etwas merkt, haben sie es mitten in der Nacht gemacht. „Das war a Gaudi!“, sagt er heute noch und lacht.",
+  "passage": "In vielen bayerischen Dörfern steht ein Maibaum: ein hoher, blau-weiß bemalter Baumstamm mit Figuren, die zeigen, welche Handwerke und Vereine es im Ort gibt. Am 1. Mai wird er aufgestellt, und das ganze Dorf feiert mit Blasmusik, Bier und Brezeln.\n\nDie Vorbereitung beginnt schon Wochen vorher. Die jungen Leute aus dem Burschenverein bewachen den Baum Tag und Nacht, um ihn vor den Nachbardörfern zu schützen. Es ist nämlich ein alter Brauch, den Maibaum eines anderen Dorfes zu stehlen. Wer es schafft, verlangt ein Lösegeld – meistens Bier und ein Essen für alle.\n\nMein Schwiegervater hat mir erzählt, dass er als junger Mann selbst einmal einen Maibaum „entführt“ hat. Damit niemand etwas merkt, haben sie es mitten in der Nacht gemacht. „Das war a Gaudi!“, sagt er heute noch und lacht.",
   "gloss": [
    {
     "w": "Baumstamm",
@@ -914,7 +918,7 @@
    {
     "q": "Was bekommt man, wenn man einen Maibaum „entführt“?",
     "o": [
-     "Bier und eine Brotzeit",
+     "Bier und ein Essen",
      "Geld von der Gemeinde",
      "Einen neuen Baum"
     ],
@@ -968,7 +972,8 @@
     "damit with a different subject?",
     "zu right before the infinitive at the end?"
    ]
-  }
+  },
+  "lv": "B1"
  },
  {
   "wk": 10,
@@ -1074,7 +1079,8 @@
     "Main point of the article covered?",
     "Three clear sentences?"
    ]
-  }
+  },
+  "lv": "B1"
  },
  {
   "wk": 11,
@@ -1185,14 +1191,15 @@
     "A clear reason?",
     "Relative clause (wer …, die …) used?"
    ]
-  }
+  },
+  "lv": "B1"
  },
  {
   "wk": 12,
   "th": "familie",
   "title": "Ein Jahr in Bayern – ein Rückblick",
   "grammar": "Wiederholung: alles zusammen",
-  "passage": "Vor einem Jahr habe ich bei Familienfeiern kaum etwas verstanden. Wenn alle gleichzeitig geredet haben, habe ich nur gelächelt und genickt. Heute sieht das ganz anders aus.\n\nWas hat geholfen? Erstens habe ich jeden Tag ein bisschen gelernt, statt am Wochenende stundenlang zu sitzen. Zweitens hat meine Familie mitgemacht: Einmal pro Woche sprechen wir beim Abendessen nur Deutsch, und niemand korrigiert mich, wenn ich nicht darum bitte. Drittens habe ich gelernt, nachzufragen, statt so zu tun, als hätte ich alles verstanden.\n\nNatürlich mache ich immer noch Fehler, und wenn mein Schwiegervater schnell Bairisch spricht, bin ich manchmal verloren. Trotzdem traue ich mich jetzt, selbst Geschichten zu erzählen. Letzte Woche haben alle über meinen Witz gelacht – und zwar nicht über meine Grammatik!",
+  "passage": "Vor einem Jahr habe ich bei Familienfeiern kaum etwas verstanden. Wenn alle gleichzeitig geredet haben, habe ich nur gelächelt und genickt. Heute sieht das ganz anders aus.\n\nWas hat geholfen? Erstens habe ich jeden Tag ein bisschen gelernt, statt am Wochenende stundenlang zu sitzen. Zweitens hat meine Familie mitgemacht: Einmal pro Woche sprechen wir beim Abendessen nur Deutsch, und niemand korrigiert mich, wenn ich nicht darum bitte. Drittens habe ich gelernt, nachzufragen, statt so zu tun, als hätte ich alles verstanden.\n\nNatürlich mache ich immer noch Fehler, und wenn mein Schwiegervater schnell Dialekt spricht, bin ich manchmal verloren. Trotzdem traue ich mich jetzt, selbst Geschichten zu erzählen. Letzte Woche haben alle über meinen Witz gelacht – und zwar nicht über meine Grammatik!",
   "gloss": [
    {
     "w": "gleichzeitig",
@@ -1271,7 +1278,7 @@
      "a": "höre"
     },
     {
-     "t": "Ich ___ gern noch mehr Bairisch verstehen. (Konjunktiv II von mögen)",
+     "t": "Ich ___ gern noch mehr Dialekt verstehen. (Konjunktiv II von mögen)",
      "a": "möchte",
      "alt": [
       "würde"
@@ -1299,6 +1306,7 @@
     "At least one connector (seit, aber, danach, trotzdem)?",
     "A clear next goal?"
    ]
-  }
+  },
+  "lv": "B1"
  }
 ]

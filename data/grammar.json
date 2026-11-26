@@ -1065,5 +1065,877 @@
 ],
 "en": "until the party is over"
 }
+],
+"bank": {
+"praeteritum": [
+{
+"t": "Gestern ___ ich keine Zeit. (haben)",
+"a": "hatte",
+"w": "haben → hatte"
+},
+{
+"t": "Als Kind ___ er oft krank. (sein)",
+"a": "war",
+"w": "sein → war"
+},
+{
+"t": "Wir ___ den Zug nicht mehr erreichen. (können)",
+"a": "konnten",
+"w": "können → konnten (ohne Umlaut)"
+},
+{
+"t": "Sie ___ jeden Tag mit dem Bus zur Arbeit. (fahren)",
+"a": "fuhr",
+"w": "fahren → fuhr (stark)"
+},
+{
+"t": "Plötzlich ___ das Telefon. (klingeln)",
+"a": "klingelte",
+"w": "regelmäßig: Stamm + -te"
+},
+{
+"t": "Meine Großeltern ___ auf einem Bauernhof. (wohnen)",
+"a": "wohnten",
+"w": "wohnen → wohnten"
+},
+{
+"t": "Er ___ mir einen langen Brief. (schreiben)",
+"a": "schrieb",
+"w": "schreiben → schrieb"
+},
+{
+"t": "Ich ___ nicht, wo der Schlüssel war. (wissen)",
+"a": "wusste",
+"w": "wissen → wusste (gemischt)"
+},
+{
+"t": "Der Film ___ um acht Uhr an. (fangen)",
+"a": "fing",
+"w": "anfangen → fing … an"
+},
+{
+"t": "Wir ___ lange auf den Arzt. (warten)",
+"a": "warteten",
+"w": "Stamm auf -t → -ete"
+},
+{
+"t": "Sie ___ im Urlaub viele Freunde kennen. (lernen)",
+"a": "lernte",
+"w": "kennenlernen → lernte … kennen"
+},
+{
+"t": "Du ___ damals noch kein Deutsch. (sprechen)",
+"a": "sprachst",
+"w": "sprechen → sprach, du sprachst"
+},
+{
+"t": "Der Chef ___ uns zum Essen ein. (laden)",
+"a": "lud",
+"w": "einladen → lud … ein"
+},
+{
+"t": "Es ___ die ganze Nacht. (regnen)",
+"a": "regnete",
+"w": "regnen → regnete"
+}
+],
+"passiv": [
+{
+"t": "Das Paket ___ morgen ___. (liefern, Präsens)",
+"a": "wird geliefert",
+"w": "werden + Partizip II"
+},
+{
+"t": "Hier ___ kein Deutsch ___. (sprechen, Präsens)",
+"a": "wird gesprochen",
+"w": "Subjekt Deutsch → wird"
+},
+{
+"t": "Die Fenster ___ jeden Monat ___. (putzen, Präsens)",
+"a": "werden geputzt",
+"w": "Plural → werden"
+},
+{
+"t": "Das Haus ___ 1910 ___. (bauen, Präteritum)",
+"a": "wurde gebaut",
+"w": "Präteritum: wurde + Partizip II"
+},
+{
+"t": "Die Briefe ___ gestern ___. (abschicken, Präteritum)",
+"a": "wurden abgeschickt",
+"w": "Plural → wurden"
+},
+{
+"t": "Der Antrag ist schon ___ ___. (bearbeiten, Perfekt)",
+"a": "bearbeitet worden",
+"w": "Perfekt: ist + Partizip II + worden"
+},
+{
+"t": "Das Formular muss bis Freitag ___ ___. (ausfüllen)",
+"a": "ausgefüllt werden",
+"w": "Modalverb + Partizip II + werden"
+},
+{
+"t": "Im Restaurant darf nicht ___ ___. (rauchen)",
+"a": "geraucht werden",
+"w": "Modalverb + Partizip II + werden"
+},
+{
+"t": "Ich ___ vom Bahnhof ___. (abholen, Präsens)",
+"a": "werde abgeholt",
+"w": "ich werde + Partizip II"
+},
+{
+"t": "Die Straße ___ letztes Jahr ___. (reparieren, Präteritum)",
+"a": "wurde repariert",
+"w": "-ieren: ohne ge-"
+},
+{
+"t": "Der Termin kann leider nicht ___ ___. (verschieben)",
+"a": "verschoben werden",
+"w": "Modalverb + Partizip II + werden"
+},
+{
+"t": "Die Gäste ___ herzlich ___. (begrüßen, Präteritum)",
+"a": "wurden begrüßt",
+"w": "be-: ohne ge-"
+}
+],
+"relativ": [
+{
+"t": "Das ist der Mann, ___ neben uns wohnt.",
+"a": "der",
+"w": "Mann (m), Subjekt → Nominativ: der"
+},
+{
+"t": "Das ist die Frau, ___ ich gestern getroffen habe.",
+"a": "die",
+"w": "Frau (f), Akkusativ → die"
+},
+{
+"t": "Der Kollege, ___ ich geholfen habe, hat sich bedankt.",
+"a": "dem",
+"w": "helfen + Dativ, m → dem"
+},
+{
+"t": "Das Buch, ___ du mir geliehen hast, ist super.",
+"a": "das",
+"w": "Buch (n), Akkusativ → das"
+},
+{
+"t": "Die Leute, ___ wir eingeladen haben, kommen um acht.",
+"a": "die",
+"w": "Plural, Akkusativ → die"
+},
+{
+"t": "Die Kinder, ___ ich Deutsch unterrichte, sind sehr nett.",
+"a": "denen",
+"w": "Plural Dativ → denen"
+},
+{
+"t": "Die Freundin, ___ ich vertraue, heißt Anna.",
+"a": "der",
+"w": "vertrauen + Dativ, f → der"
+},
+{
+"t": "Der Freund, ___ Auto kaputt ist, fährt mit dem Rad.",
+"a": "dessen",
+"w": "Genitiv m/n → dessen"
+},
+{
+"t": "Die Nachbarin, ___ Hund immer bellt, ist nie zu Hause.",
+"a": "deren",
+"w": "Genitiv f → deren"
+},
+{
+"t": "Die Stadt, in ___ ich wohne, ist klein.",
+"a": "der",
+"w": "in + Dativ (wo?), f → der"
+},
+{
+"t": "Der Kurs, für ___ ich mich angemeldet habe, beginnt bald.",
+"a": "den",
+"w": "für + Akkusativ, m → den"
+},
+{
+"t": "Das Thema, über ___ wir gesprochen haben, war wichtig.",
+"a": "das",
+"w": "über + Akkusativ, n → das"
+},
+{
+"t": "Der Arzt, zu ___ ich immer gehe, hat Urlaub.",
+"a": "dem",
+"w": "zu + Dativ, m → dem"
+}
+],
+"verbpraep": [
+{
+"t": "Ich warte schon lange ___ den Bus.",
+"a": "auf",
+"w": "warten auf + Akk"
+},
+{
+"t": "Sie interessiert sich sehr ___ Politik.",
+"a": "für",
+"w": "sich interessieren für + Akk"
+},
+{
+"t": "Wir freuen uns ___ die Ferien.",
+"a": "auf",
+"w": "sich freuen auf (Zukunft) + Akk"
+},
+{
+"t": "Er hat sich ___ das Geschenk sehr gefreut.",
+"a": "über",
+"w": "sich freuen über (schon da) + Akk"
+},
+{
+"t": "Ich habe mich ___ die Stelle beworben.",
+"a": "um",
+"w": "sich bewerben um + Akk"
+},
+{
+"t": "Kannst du dich ___ seinen Namen erinnern?",
+"a": "an",
+"w": "sich erinnern an + Akk"
+},
+{
+"t": "Ich muss mich noch ___ die Prüfung vorbereiten.",
+"a": "auf",
+"w": "sich vorbereiten auf + Akk"
+},
+{
+"t": "Wir haben lange ___ dem Problem gesprochen.",
+"a": "über",
+"w": "sprechen über + Akk"
+},
+{
+"t": "Sie hat ___ ihrer Mutter telefoniert.",
+"a": "mit",
+"w": "telefonieren mit + Dat"
+},
+{
+"t": "___ wartest du? – Auf meine Freundin.",
+"a": "Auf wen",
+"w": "Person → Präposition + wen/wem"
+},
+{
+"t": "___ denkst du? – An den Urlaub.",
+"a": "Woran",
+"w": "Sache → wo(r) + Präposition"
+},
+{
+"t": "Freust du dich auf das Wochenende? – Ja, ich freue mich sehr ___.",
+"a": "darauf",
+"w": "Sache → da(r) + Präposition"
+},
+{
+"t": "Hast du dich über den Lärm beschwert? – Ja, ich habe mich ___ beschwert.",
+"a": "darüber",
+"w": "da(r) + über"
+},
+{
+"t": "___ interessierst du dich? – Für Musik.",
+"a": "Wofür",
+"w": "wo + für"
+}
+],
+"konnektoren": [
+{
+"t": "Ich spreche ___ Englisch ___ Spanisch. (beides)",
+"a": "sowohl als auch",
+"w": "sowohl … als auch = both … and"
+},
+{
+"t": "Er trinkt ___ Kaffee ___ Tee. (keins von beiden)",
+"a": "weder noch",
+"w": "weder … noch = neither … nor"
+},
+{
+"t": "Wir fahren ___ mit dem Zug ___ mit dem Auto. (eins von beiden)",
+"a": "entweder oder",
+"w": "entweder … oder = either … or"
+},
+{
+"t": "Sie ist ___ klug, ___ auch sehr lustig.",
+"a": "nicht nur sondern",
+"w": "nicht nur … sondern auch"
+},
+{
+"t": "___ mehr ich übe, ___ besser spreche ich.",
+"a": "Je desto",
+"w": "je + Komparativ …, desto + Komparativ"
+},
+{
+"t": "Die Wohnung ist schön, aber teuer: ___ ist sie hell, ___ ist sie zu klein.",
+"a": "einerseits andererseits",
+"w": "einerseits … andererseits"
+},
+{
+"t": "Ich war krank. ___ bin ich nicht zur Arbeit gegangen.",
+"a": "Deshalb",
+"w": "deshalb = Position 1, dann Verb"
+},
+{
+"t": "Es hat geregnet. ___ sind wir spazieren gegangen.",
+"a": "Trotzdem",
+"w": "trotzdem = Gegensatz, Verb auf Position 2"
+},
+{
+"t": "Wir sind spazieren gegangen, ___ es geregnet hat.",
+"a": "obwohl",
+"w": "obwohl → Nebensatz, Verb am Ende"
+},
+{
+"t": "Ich nehme das Fahrrad, ___ das Wetter schön ist. (Grund)",
+"a": "weil",
+"w": "weil → Nebensatz",
+"alt": [
+"da"
 ]
+},
+{
+"t": "Er hat zwar wenig Zeit, ___ er hilft uns trotzdem.",
+"a": "aber",
+"w": "zwar … aber"
+},
+{
+"t": "Ich trinke keinen Kaffee, ___ Tee.",
+"a": "sondern",
+"w": "nach Verneinung: sondern"
+},
+{
+"t": "Ruf mich an, ___ du Fragen hast. (Bedingung)",
+"a": "falls",
+"w": "falls/wenn = Bedingung",
+"alt": [
+"wenn"
+]
+}
+],
+"infinitiv": [
+{
+"t": "Ich habe keine Lust, heute ___ ___. (kochen)",
+"a": "zu kochen",
+"w": "Lust haben + zu + Infinitiv"
+},
+{
+"t": "Es ist wichtig, regelmäßig Sport ___ ___. (machen)",
+"a": "zu machen",
+"w": "Es ist wichtig, … zu …"
+},
+{
+"t": "Vergiss nicht, die Tür ___. (abschließen)",
+"a": "abzuschließen",
+"w": "trennbar: ab-zu-schließen"
+},
+{
+"t": "Ich lerne Deutsch, ___ in Deutschland ___ arbeiten.",
+"a": "um zu",
+"w": "um … zu = Ziel (gleiches Subjekt)"
+},
+{
+"t": "Ich spreche langsam, ___ mich alle verstehen.",
+"a": "damit",
+"w": "damit = Ziel (anderes Subjekt)"
+},
+{
+"t": "Er ging ___ ein Wort ___ sagen.",
+"a": "ohne zu",
+"w": "ohne … zu"
+},
+{
+"t": "___ zu lernen, hat er den ganzen Tag gespielt.",
+"a": "Statt",
+"w": "statt … zu",
+"alt": [
+"Anstatt"
+]
+},
+{
+"t": "Ich versuche, jeden Tag zehn Wörter ___ ___. (lernen)",
+"a": "zu lernen",
+"w": "versuchen + zu"
+},
+{
+"t": "Hast du Zeit, mir ___ ___? (helfen)",
+"a": "zu helfen",
+"w": "Zeit haben + zu"
+},
+{
+"t": "Wir haben vor, im Sommer nach Italien ___ ___. (fahren)",
+"a": "zu fahren",
+"w": "vorhaben + zu"
+},
+{
+"t": "Ich spare Geld, ___ ich mir ein Auto kaufen kann.",
+"a": "damit",
+"w": "damit + Nebensatz (Modalverb am Ende)"
+},
+{
+"t": "Sie ruft an, ___ einen Termin ___ vereinbaren.",
+"a": "um zu",
+"w": "um … zu"
+},
+{
+"t": "Er hat angefangen, Gitarre ___ ___. (spielen)",
+"a": "zu spielen",
+"w": "anfangen + zu"
+}
+],
+"temporal": [
+{
+"t": "___ ich klein war, wohnten wir in Hamburg. (einmal, Vergangenheit)",
+"a": "Als",
+"w": "einmalig in der Vergangenheit → als"
+},
+{
+"t": "___ ich nach Hause komme, koche ich immer zuerst Tee. (jedes Mal)",
+"a": "Wenn",
+"w": "wiederholt/Gegenwart → wenn"
+},
+{
+"t": "___ wir gegessen hatten, gingen wir spazieren. (zuerst essen)",
+"a": "Nachdem",
+"w": "nachdem + Plusquamperfekt"
+},
+{
+"t": "___ du gehst, mach bitte das Licht aus. (vorher)",
+"a": "Bevor",
+"w": "bevor = before"
+},
+{
+"t": "___ ich koche, höre ich Musik. (gleichzeitig)",
+"a": "Während",
+"w": "während = while"
+},
+{
+"t": "___ ich in München wohne, fahre ich viel Fahrrad. (Beginn bis jetzt)",
+"a": "Seit",
+"w": "seit/seitdem = since",
+"alt": [
+"Seitdem"
+]
+},
+{
+"t": "Warte hier, ___ ich zurückkomme. (Endpunkt)",
+"a": "bis",
+"w": "bis = until"
+},
+{
+"t": "___ ich den Brief bekommen habe, rufe ich dich an. (sofort danach)",
+"a": "Sobald",
+"w": "sobald = as soon as"
+},
+{
+"t": "Immer ___ es regnet, bleibe ich zu Hause.",
+"a": "wenn",
+"w": "immer wenn → wenn"
+},
+{
+"t": "___ ich zum ersten Mal in Deutschland war, sprach ich kein Wort Deutsch.",
+"a": "Als",
+"w": "einmalig, Vergangenheit → als"
+},
+{
+"t": "Ich putze die Wohnung, ___ die Gäste kommen.",
+"a": "bevor",
+"w": "bevor"
+},
+{
+"t": "___ er die Prüfung bestanden hatte, feierte er mit Freunden.",
+"a": "Nachdem",
+"w": "nachdem"
+}
+],
+"genitiv": [
+{
+"t": "Das ist das Auto ___ Vaters. (mein)",
+"a": "meines",
+"w": "Genitiv m: meines + -s am Nomen"
+},
+{
+"t": "Die Farbe ___ Hauses gefällt mir. (das)",
+"a": "des",
+"w": "Genitiv n: des … -es/-s"
+},
+{
+"t": "Der Name ___ Lehrerin ist Frau Kaya. (die)",
+"a": "der",
+"w": "Genitiv f: der"
+},
+{
+"t": "Die Meinung ___ Leute ist wichtig. (die, Plural)",
+"a": "der",
+"w": "Genitiv Plural: der"
+},
+{
+"t": "___ des Regens bleiben wir zu Hause.",
+"a": "Wegen",
+"w": "wegen + Genitiv = Grund"
+},
+{
+"t": "___ des Regens gehen wir spazieren.",
+"a": "Trotz",
+"w": "trotz + Genitiv = Gegensatz"
+},
+{
+"t": "___ der Woche arbeite ich viel.",
+"a": "Während",
+"w": "während + Genitiv = Zeit"
+},
+{
+"t": "Bitte zahlen Sie ___ eines Monats.",
+"a": "innerhalb",
+"w": "innerhalb + Genitiv"
+},
+{
+"t": "Wegen ___ Staus kam ich zu spät. (der Stau)",
+"a": "des",
+"w": "Genitiv m: des Staus"
+},
+{
+"t": "Trotz ___ Erkältung ging sie zur Arbeit. (eine Erkältung)",
+"a": "einer",
+"w": "Genitiv f: einer"
+},
+{
+"t": "Das ist die Wohnung ___ Eltern. (meine, Plural)",
+"a": "meiner",
+"w": "Genitiv Plural: meiner"
+},
+{
+"t": "Statt ___ Autos nehme ich das Fahrrad. (das Auto)",
+"a": "des",
+"w": "statt + Genitiv"
+}
+],
+"plusquam": [
+{
+"t": "Nachdem ich gefrühstückt ___, ging ich zur Arbeit.",
+"a": "hatte",
+"w": "hatte + Partizip II"
+},
+{
+"t": "Als wir ankamen, ___ der Zug schon abgefahren.",
+"a": "war",
+"w": "Bewegung → war + Partizip II"
+},
+{
+"t": "Ich hatte den Film schon ___. (sehen)",
+"a": "gesehen",
+"w": "Partizip II von sehen"
+},
+{
+"t": "Sie war vorher nie in Deutschland ___. (sein)",
+"a": "gewesen",
+"w": "sein → war … gewesen"
+},
+{
+"t": "Nachdem er die E-Mail ___ ___, rief er an. (lesen)",
+"a": "gelesen hatte",
+"w": "Plusquamperfekt am Ende des Nebensatzes"
+},
+{
+"t": "Wir ___ die Wohnung schon geputzt, als die Gäste kamen.",
+"a": "hatten",
+"w": "wir hatten"
+},
+{
+"t": "Nachdem sie ___ ___, legte sie sich hin. (ankommen)",
+"a": "angekommen war",
+"w": "ankommen → sein"
+},
+{
+"t": "Ich ___ den Schlüssel vergessen und kam nicht ins Haus.",
+"a": "hatte",
+"w": "vergessen → haben"
+},
+{
+"t": "Er war müde, weil er schlecht ___ ___. (schlafen)",
+"a": "geschlafen hatte",
+"w": "Plusquamperfekt"
+},
+{
+"t": "Bevor ich nach Deutschland kam, ___ ich schon ein Jahr Deutsch gelernt.",
+"a": "hatte",
+"w": "früheres Ereignis → Plusquamperfekt"
+}
+],
+"indirekt": [
+{
+"t": "Weißt du, ___ der Zug abfährt? (Uhrzeit)",
+"a": "wann",
+"w": "W-Frage → W-Wort + Verb am Ende"
+},
+{
+"t": "Können Sie mir sagen, ___ das Rathaus ist? (Ort)",
+"a": "wo",
+"w": "wo"
+},
+{
+"t": "Ich weiß nicht, ___ er morgen kommt. (ja/nein)",
+"a": "ob",
+"w": "Ja/Nein-Frage → ob"
+},
+{
+"t": "Kannst du mir sagen, wie spät ___ ___?",
+"a": "es ist",
+"w": "Verb am Ende: es ist"
+},
+{
+"t": "Ich frage mich, ___ sie so traurig ist. (Grund)",
+"a": "warum",
+"w": "warum"
+},
+{
+"t": "Wissen Sie, ___ das kostet? (Preis)",
+"a": "wie viel",
+"w": "wie viel"
+},
+{
+"t": "Weißt du, ob der Supermarkt heute geöffnet ___?",
+"a": "hat",
+"w": "Verb am Ende"
+},
+{
+"t": "Könnten Sie mir sagen, ___ ich die Formulare abgeben muss? (Ort)",
+"a": "wo",
+"w": "wo + … + muss"
+},
+{
+"t": "Ich möchte wissen, ___ ich einen Termin brauche. (ja/nein)",
+"a": "ob",
+"w": "ob"
+},
+{
+"t": "Sag mir bitte, ___ du heißt.",
+"a": "wie",
+"w": "wie"
+}
+],
+"komparativ": [
+{
+"t": "Der Zug ist ___ als der Bus. (schnell)",
+"a": "schneller",
+"w": "Komparativ: -er + als"
+},
+{
+"t": "Mein Bruder ist ___ als ich. (alt)",
+"a": "älter",
+"w": "kurze Adjektive: oft Umlaut"
+},
+{
+"t": "Im Sommer sind die Tage am ___. (lang)",
+"a": "längsten",
+"w": "Superlativ: am …-sten"
+},
+{
+"t": "Ich trinke ___ Tee als Kaffee. (gern)",
+"a": "lieber",
+"w": "gern → lieber → am liebsten"
+},
+{
+"t": "Das ist das ___ Restaurant der Stadt. (gut)",
+"a": "beste",
+"w": "gut → besser → best-"
+},
+{
+"t": "Heute ist es ___ als gestern. (warm)",
+"a": "wärmer",
+"w": "warm → wärmer"
+},
+{
+"t": "Berlin ist ___ als München. (groß)",
+"a": "größer",
+"w": "groß → größer"
+},
+{
+"t": "Sie ist genauso alt ___ ich.",
+"a": "wie",
+"w": "gleich: so/genauso … wie"
+},
+{
+"t": "Er verdient ___ als ich. (viel)",
+"a": "mehr",
+"w": "viel → mehr → am meisten"
+},
+{
+"t": "Das ist am ___. (teuer)",
+"a": "teuersten",
+"w": "teuer → am teuersten"
+},
+{
+"t": "Diese Wohnung ist ___ als die andere. (teuer)",
+"a": "teurer",
+"w": "teuer → teurer (e fällt weg)"
+},
+{
+"t": "Wer läuft am ___? (schnell)",
+"a": "schnellsten",
+"w": "am schnellsten"
+}
+],
+"ndekl": [
+{
+"t": "Ich habe gestern einen ___ getroffen. (der Kollege)",
+"a": "Kollegen",
+"w": "n-Deklination: -n"
+},
+{
+"t": "Kannst du dem ___ helfen? (der Junge)",
+"a": "Jungen",
+"w": "Dativ: dem Jungen"
+},
+{
+"t": "Wir fragen den ___. (der Polizist)",
+"a": "Polizisten",
+"w": "-ist → -en"
+},
+{
+"t": "Ich spreche mit dem ___. (der Nachbar)",
+"a": "Nachbarn",
+"w": "der Nachbar → den/dem Nachbarn"
+},
+{
+"t": "Der Arzt untersucht den ___. (der Patient)",
+"a": "Patienten",
+"w": "-ent → -en"
+},
+{
+"t": "Das ist das Auto des ___. (der Student)",
+"a": "Studenten",
+"w": "Genitiv: des Studenten"
+},
+{
+"t": "Ich kenne keinen ___. (der Franzose)",
+"a": "Franzosen",
+"w": "-e → -n"
+},
+{
+"t": "Wir haben dem ___ gratuliert. (der Kunde)",
+"a": "Kunden",
+"w": "Dativ: dem Kunden"
+},
+{
+"t": "Hast du den ___ gesehen? (der Mensch)",
+"a": "Menschen",
+"w": "der Mensch → den Menschen"
+},
+{
+"t": "Der Chef spricht mit dem ___. (der Praktikant)",
+"a": "Praktikanten",
+"w": "-ant → -en"
+}
+],
+"reflexiv": [
+{
+"t": "Ich freue ___ auf das Wochenende.",
+"a": "mich",
+"w": "ich → mich (Akk)"
+},
+{
+"t": "Wasch ___ bitte die Hände! (du)",
+"a": "dir",
+"w": "Dativ, weil es ein Akk-Objekt gibt (die Hände)"
+},
+{
+"t": "Er hat ___ beim Sport verletzt.",
+"a": "sich",
+"w": "er → sich"
+},
+{
+"t": "Wir treffen ___ um acht.",
+"a": "uns",
+"w": "wir → uns"
+},
+{
+"t": "Habt ihr ___ gut erholt?",
+"a": "euch",
+"w": "ihr → euch"
+},
+{
+"t": "Ich kaufe ___ ein neues Handy.",
+"a": "mir",
+"w": "Dativ, Akk-Objekt ist das Handy"
+},
+{
+"t": "Kannst du ___ das vorstellen? (du)",
+"a": "dir",
+"w": "sich etwas vorstellen → Dativ"
+},
+{
+"t": "Ich muss ___ beeilen.",
+"a": "mich",
+"w": "sich beeilen"
+},
+{
+"t": "Sie interessieren ___ für Kunst. (sie, Plural)",
+"a": "sich",
+"w": "sie → sich"
+},
+{
+"t": "Du musst ___ entscheiden.",
+"a": "dich",
+"w": "du → dich"
+},
+{
+"t": "Ich putze ___ die Zähne.",
+"a": "mir",
+"w": "Dativ: mir die Zähne"
+}
+],
+"futur": [
+{
+"t": "Morgen ___ es regnen.",
+"a": "wird",
+"w": "werden + Infinitiv"
+},
+{
+"t": "Ich ___ nächstes Jahr heiraten.",
+"a": "werde",
+"w": "ich werde"
+},
+{
+"t": "___ du mir helfen? (du, Frage)",
+"a": "Wirst",
+"w": "du wirst"
+},
+{
+"t": "Wir ___ das sicher schaffen.",
+"a": "werden",
+"w": "wir werden"
+},
+{
+"t": "Ihr ___ die Prüfung bestehen.",
+"a": "werdet",
+"w": "ihr werdet"
+},
+{
+"t": "Er wird nächste Woche nach Berlin ___. (fahren)",
+"a": "fahren",
+"w": "Infinitiv am Ende"
+},
+{
+"t": "Sie ___ wohl krank sein. (Vermutung)",
+"a": "wird",
+"w": "werden + wohl = Vermutung"
+},
+{
+"t": "Ich verspreche dir, ich ___ pünktlich sein.",
+"a": "werde",
+"w": "Versprechen"
+},
+{
+"t": "Die Preise ___ weiter steigen.",
+"a": "werden",
+"w": "Plural → werden"
+},
+{
+"t": "Ich glaube, dass er bald ___ ___. (anrufen)",
+"a": "anrufen wird",
+"w": "Nebensatz: werden am Ende"
+}
+]
+}
 }

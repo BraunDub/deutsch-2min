@@ -24,7 +24,7 @@ const art = (t, c, n) => ART[t][c][n.g];
 /* ---------- generators: each returns {html, answer(s), alt[], why, chips?} ---------- */
 const TOPICS = [
   {
-    id: 'artikel', title: 'Artikel: Akkusativ & Dativ', sub: 'den, dem, der … nach Verben',
+    id: 'artikel', lv: 'A2', title: 'Artikel: Akkusativ & Dativ', sub: 'den, dem, der … nach Verben',
     rule: `<p>Das direkte Objekt (wen/was?) steht im <b>Akkusativ</b>. Nach Verben wie <i>helfen, danken, gefallen, gehören</i> und beim Empfänger (wem?) steht der <b>Dativ</b>.</p>${artTable()}`,
     gen() {
       const akk = [['Ich sehe ___ {N}.', 0], ['Kannst du ___ {N} holen?', 0], ['Wir brauchen ___ {N}.', 0], ['Ich finde ___ {N} sehr schön.', 0]];
@@ -38,7 +38,7 @@ const TOPICS = [
     }
   },
   {
-    id: 'praep', title: 'Präpositionen + Artikel', sub: 'mit, für, ohne, aus, seit …',
+    id: 'praep', lv: 'A2', title: 'Präpositionen + Artikel', sub: 'mit, für, ohne, aus, seit …',
     rule: `<div class="gtable"><div><b>Akkusativ</b><br>durch · für · gegen · ohne · um</div><div><b>Dativ</b><br>aus · bei · mit · nach · seit · von · zu</div></div>${artTable()}`,
     gen() {
       const akk = ['für', 'ohne', 'gegen', 'durch'], dat = ['mit', 'aus', 'nach', 'seit'];
@@ -54,7 +54,7 @@ const TOPICS = [
     }
   },
   {
-    id: 'wechsel', title: 'Wechselpräpositionen', sub: 'Wo? → Dativ · Wohin? → Akkusativ',
+    id: 'wechsel', lv: 'A2', title: 'Wechselpräpositionen', sub: 'Wo? → Dativ · Wohin? → Akkusativ',
     rule: `<p><b>an, auf, hinter, in, neben, über, unter, vor, zwischen</b></p><div class="gtable"><div><b>Wo?</b> (Position)<br>liegen, stehen, hängen → <b>Dativ</b><br><i>Das Buch liegt auf dem Tisch.</i></div><div><b>Wohin?</b> (Bewegung)<br>legen, stellen, hängen → <b>Akkusativ</b><br><i>Ich lege das Buch auf den Tisch.</i></div></div>`,
     gen() {
       const p = rnd(['auf', 'unter', 'neben', 'hinter', 'vor']);
@@ -67,7 +67,7 @@ const TOPICS = [
     }
   },
   {
-    id: 'adjektiv', title: 'Adjektivendungen', sub: 'der neue Tisch, einen neuen Tisch …',
+    id: 'adjektiv', lv: 'B1', title: 'Adjektivendungen', sub: 'der neue Tisch, einen neuen Tisch …',
     rule: adjTable(),
     gen() {
       const c = rnd(['nom', 'akk', 'akk', 'dat', 'dat']), ty = rnd(['def', 'ind', 'pos']);
@@ -79,7 +79,7 @@ const TOPICS = [
     }
   },
   {
-    id: 'praesens', title: 'Konjugation: Präsens', sub: 'du fährst, er liest, ihr wisst …',
+    id: 'praesens', lv: 'A1', title: 'Konjugation: Präsens', sub: 'du fährst, er liest, ihr wisst …',
     rule: `<div class="gtable"><div>ich <b>-e</b><br>du <b>-st</b><br>er/sie/es <b>-t</b></div><div>wir <b>-en</b><br>ihr <b>-t</b><br>sie/Sie <b>-en</b></div></div><p class="small">Achtung: Viele starke Verben ändern den Vokal bei <b>du</b> und <b>er</b>: fahren → du fährst, lesen → er liest, nehmen → du nimmst. Modalverben: ich/er <b>kann, muss, will</b> (ohne Endung).</p>`,
     gen() {
       const v = rnd(G().verbs.filter(x => x.p)), i = Math.floor(Math.random() * 6);
@@ -88,7 +88,7 @@ const TOPICS = [
     }
   },
   {
-    id: 'perfekt', title: 'Perfekt', sub: 'habe gemacht, bin gefahren …',
+    id: 'perfekt', lv: 'A2', title: 'Perfekt', sub: 'habe gemacht, bin gefahren …',
     rule: `<p><b>haben/sein</b> (konjugiert, Position 2) + <b>Partizip II</b> (am Ende).</p><p><b>sein</b> bei Bewegung (fahren, gehen, fliegen) und Veränderung (aufstehen, werden), plus <i>sein, bleiben</i>. Fast alle anderen: <b>haben</b>.</p><p class="small">Trennbare Verben: auf<b>ge</b>standen, ein<b>ge</b>kauft. Verben mit be-, ver-, er- und -ieren: ohne ge- (besucht, verstanden).</p>`,
     gen() {
       const v = rnd(G().verbs.filter(x => x.pp)), i = Math.floor(Math.random() * 6);
@@ -98,7 +98,7 @@ const TOPICS = [
     }
   },
   {
-    id: 'konj2', title: 'Konjunktiv II', sub: 'hätte, wäre, würde, könnte …',
+    id: 'konj2', lv: 'B1', title: 'Konjunktiv II', sub: 'hätte, wäre, würde, könnte …',
     rule: `<p>Für Wünsche, höfliche Bitten und Ratschläge.</p><div class="gtable"><div>haben → <b>hätte</b><br>sein → <b>wäre</b><br>werden → <b>würde</b></div><div>können → <b>könnte</b><br>müssen → <b>müsste</b><br>sollen → <b>sollte</b></div></div><p class="small">Endungen: ich hätte, du hättest, er hätte, wir hätten, ihr hättet, sie hätten.</p>`,
     gen() {
       const k = rnd(G().konj2), i = Math.floor(Math.random() * 6);
@@ -108,7 +108,7 @@ const TOPICS = [
     }
   },
   {
-    id: 'wortstellung', title: 'Wortstellung: Verb am Ende', sub: 'weil, dass, ob, wenn …',
+    id: 'wortstellung', lv: 'B1', title: 'Wortstellung: Verb am Ende', sub: 'weil, dass, ob, wenn …',
     rule: `<p>Nach <b>weil, dass, ob, wenn, obwohl, bis</b> und Fragewörtern (wo, wann, warum) im Nebensatz steht das konjugierte Verb <b>am Ende</b>.</p><p><i>Ich bleibe zu Hause, weil ich krank <b>bin</b>.</i><br><i>…, weil ich gestern lange gearbeitet <b>habe</b>.</i></p>`,
     gen() {
       const o = rnd(G().order);
@@ -116,6 +116,33 @@ const TOPICS = [
     }
   }
 ];
+
+/* Topics drilled from a fixed sentence bank (data/grammar.json → bank), all Goethe-B1 grammar. */
+const BANK_TOPICS = [
+  ['praeteritum', 'Präteritum', 'war, hatte, fuhr, wohnte …', 'B1', `<p>In Texten und Berichten erzählt man im <b>Präteritum</b>. Regelmäßig: Stamm + <b>-te</b> (wohnte, arbeitete). Unregelmäßig: neuer Stamm (fahren → fuhr, schreiben → schrieb). Modalverben ohne Umlaut: konnte, musste, durfte.</p><div class="gtable"><div>ich wohn<b>te</b><br>du wohn<b>test</b><br>er wohn<b>te</b></div><div>wir wohn<b>ten</b><br>ihr wohn<b>tet</b><br>sie wohn<b>ten</b></div></div>`],
+  ['passiv', 'Passiv', 'wird gebaut, wurde gebaut …', 'B1', `<p>Wichtig ist die Handlung, nicht die Person: <b>werden</b> + <b>Partizip II</b>.</p><div class="gtable"><div>Präsens: Das Haus <b>wird</b> gebaut.<br>Präteritum: Das Haus <b>wurde</b> gebaut.</div><div>Perfekt: Das Haus <b>ist</b> gebaut <b>worden</b>.<br>Modalverb: Das Haus <b>muss</b> gebaut <b>werden</b>.</div></div>`],
+  ['relativ', 'Relativsätze', 'der Mann, der/den/dem …', 'B1', `<p>Das Relativpronomen hat das <b>Genus</b> vom Nomen davor und den <b>Kasus</b> aus dem Relativsatz. Verb am Ende.</p><table class="gt"><tr><th></th><th>m</th><th>f</th><th>n</th><th>Pl.</th></tr><tr><td>Nom.</td><td>der</td><td>die</td><td>das</td><td>die</td></tr><tr><td>Akk.</td><td><b>den</b></td><td>die</td><td>das</td><td>die</td></tr><tr><td>Dat.</td><td><b>dem</b></td><td><b>der</b></td><td><b>dem</b></td><td><b>denen</b></td></tr><tr><td>Gen.</td><td>dessen</td><td>deren</td><td>dessen</td><td>deren</td></tr></table>`],
+  ['verbpraep', 'Verben mit Präpositionen', 'warten auf, sich freuen über … darauf, worauf', 'B1', `<p>Viele Verben haben eine feste Präposition: <i>warten auf, sich interessieren für, sich erinnern an</i>. Lerne sie zusammen!</p><p>Frage nach einer Sache: <b>wo(r)- + Präposition</b> (Worauf? Wofür?). Antwort ohne Nomen: <b>da(r)- + Präposition</b> (darauf, dafür). Bei Personen: <i>Auf wen? Mit wem?</i></p>`],
+  ['konnektoren', 'Konnektoren', 'deshalb, trotzdem, weder … noch, je … desto', 'B1', `<p><b>Position 1, Verb danach:</b> deshalb, trotzdem, außerdem → <i>Deshalb <b>bin</b> ich …</i></p><p><b>Nebensatz, Verb am Ende:</b> weil, obwohl, falls → <i>…, obwohl es <b>regnet</b>.</i></p><p><b>Zweiteilig:</b> sowohl … als auch · weder … noch · entweder … oder · nicht nur … sondern auch · zwar … aber · je … desto · einerseits … andererseits</p>`],
+  ['infinitiv', 'Infinitiv mit zu, um … zu, damit', 'Lust zu kochen, um zu lernen …', 'B1', `<p>Nach vielen Verben und Ausdrücken: <b>zu + Infinitiv</b> am Ende (Ich habe keine Lust, <b>zu kochen</b>). Trennbar: an<b>zu</b>rufen.</p><p><b>um … zu</b> = Ziel, gleiches Subjekt. <b>damit</b> = Ziel, anderes Subjekt (oder Modalverb). Auch: <b>ohne … zu</b>, <b>statt … zu</b>.</p>`],
+  ['temporal', 'Temporale Nebensätze', 'als, wenn, nachdem, bevor, während …', 'B1', `<p><b>als</b> = einmal in der Vergangenheit · <b>wenn</b> = immer/jedes Mal oder Zukunft</p><p><b>bevor</b> (before) · <b>nachdem</b> (after, + Plusquamperfekt) · <b>während</b> (while) · <b>seit</b> (since) · <b>bis</b> (until) · <b>sobald</b> (as soon as)</p>`],
+  ['genitiv', 'Genitiv & wegen, trotz, während', 'des Mannes, wegen des Regens …', 'B1', `<p>Genitiv zeigt Besitz: das Auto <b>des</b> Vater<b>s</b>, die Farbe <b>der</b> Tür. Präpositionen mit Genitiv (Schreiben, formell): <b>wegen, trotz, während, statt, innerhalb, außerhalb</b>.</p><table class="gt"><tr><th></th><th>m</th><th>f</th><th>n</th><th>Pl.</th></tr><tr><td>Gen.</td><td>des / eines …(e)s</td><td>der / einer</td><td>des / eines …(e)s</td><td>der</td></tr></table>`],
+  ['plusquam', 'Plusquamperfekt', 'hatte gemacht, war gefahren', 'B1', `<p>Was <b>vorher</b> passiert ist: <b>hatte/war</b> + Partizip II. Oft mit <i>nachdem</i>: <i>Nachdem ich gegessen <b>hatte</b>, ging ich los.</i></p>`],
+  ['indirekt', 'Indirekte Fragen', 'Wissen Sie, wo …? Ich weiß nicht, ob …', 'B1', `<p>Höflich fragen: <i>Können Sie mir sagen, …? Wissen Sie, …?</i> W-Frage → W-Wort, Ja/Nein-Frage → <b>ob</b>. Das Verb steht <b>am Ende</b>: <i>Wissen Sie, wo der Bahnhof <b>ist</b>?</i></p>`],
+  ['komparativ', 'Komparativ & Superlativ', 'schneller als, am schnellsten', 'A2', `<p><b>-er + als</b> (schneller als) · <b>am …-sten</b> (am schnellsten) · gleich: <b>so … wie</b>. Oft Umlaut: alt → älter, groß → größer. Unregelmäßig: gut → besser → am besten, gern → lieber → am liebsten, viel → mehr → am meisten.</p>`],
+  ['ndekl', 'n-Deklination', 'den Kollegen, dem Nachbarn …', 'B1', `<p>Einige maskuline Nomen bekommen außer im Nominativ Singular ein <b>-(e)n</b>: der Kollege → den/dem/des Kolleg<b>en</b>. Typisch: -e (Kunde, Junge), -ent/-ant/-ist (Student, Praktikant, Polizist), Mensch, Nachbar, Herr.</p>`],
+  ['reflexiv', 'Reflexive Verben', 'ich freue mich, ich wasche mir die Hände', 'B1', `<div class="gtable"><div><b>Akkusativ</b><br>mich, dich, sich<br>uns, euch, sich</div><div><b>Dativ</b> (wenn es noch ein Akk-Objekt gibt)<br>mir, dir, sich<br>uns, euch, sich</div></div><p class="small"><i>Ich wasche <b>mich</b>.</i> aber <i>Ich wasche <b>mir</b> die Hände.</i></p>`],
+  ['futur', 'Futur I', 'Ich werde … machen', 'B1', `<p><b>werden</b> (Position 2) + <b>Infinitiv</b> (Ende): Pläne, Versprechen, Vermutungen (<i>Er wird wohl krank sein.</i>). Für Pläne reicht oft Präsens + Zeitangabe.</p>`]
+];
+BANK_TOPICS.forEach(([id, title, sub, lv, rule]) => TOPICS.push({
+  id, title, sub, lv, rule,
+  gen() {
+    const list = G().bank[id];
+    const last = drillState && drillState.it && drillState.it.src;
+    let it = rnd(list); if (list.length > 1) while (it === last) it = rnd(list);
+    return { html: esc(it.t), a: it.a, alt: it.alt, why: esc(it.w), src: it };
+  }
+}));
 
 function artTable() {
   return `<table class="gt"><tr><th></th><th>m</th><th>f</th><th>n</th></tr>
@@ -141,9 +168,10 @@ function grammarHome() {
   const st = S.gram || {};
   $app.innerHTML = `
     <div class="top"><button class="iconbtn" data-go="home" aria-label="Zurück">←</button><h1 style="flex:1">Grammatik-Training</h1></div>
-    <p class="small muted" style="margin:10px 0 14px">Wähle ein Thema und übe so lange du willst. Jede Aufgabe wird neu erzeugt.</p>
-    <div class="stack">${TOPICS.map(t => { const s = st[t.id]; return `<button class="tile" data-drill="${t.id}" style="width:100%;min-height:0">
-      <b>${t.title}</b><span>${t.sub}${s ? ` · ${s.ok}/${s.n} richtig` : ''}</span></button>`; }).join('')}</div>`;
+    <p class="small muted" style="margin:10px 0 14px">Wähle ein Thema und übe so lange du willst. Alle Themen gehören zur Grammatik der B1-Prüfung (A1/A2 = Grundlagen, die im B1-Test vorausgesetzt werden).</p>
+    ${[['B1-Themen', t => t.lv === 'B1'], ['Grundlagen (A1–A2)', t => t.lv !== 'B1']].map(([h, f]) => `<h2>${h}</h2>
+    <div class="stack">${TOPICS.filter(f).map(t => { const s = st[t.id]; return `<button class="tile" data-drill="${t.id}" style="width:100%;min-height:0">
+      <b>${t.title} ${lvBadge(t.lv)}</b><span>${t.sub}${s ? ` · ${s.ok}/${s.n} richtig` : ''}</span></button>`; }).join('')}</div>`).join('')}`;
   document.querySelectorAll('[data-drill]').forEach(b => b.onclick = () => drill(b.dataset.drill));
 }
 

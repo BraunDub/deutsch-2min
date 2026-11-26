@@ -1,4 +1,458 @@
 {
+"hb1": [
+{
+"mod": "Hören 1",
+"intro": "Du hörst eine Nachricht auf dem Anrufbeantworter.",
+"lines": [
+{
+"sp": "Frau Berger",
+"t": "Guten Tag, hier ist Sabine Berger von der Praxis Dr. Lindner. Sie haben morgen um zehn Uhr einen Termin bei uns. Leider ist Frau Doktor Lindner krank, deshalb müssen wir den Termin verschieben. Wir könnten Ihnen Donnerstag um halb neun oder Freitag um vierzehn Uhr anbieten. Bitte rufen Sie uns bis heute Abend zurück, damit wir den Termin eintragen können. Unsere Nummer ist null acht neun, zwei drei vier fünf sechs sieben. Vielen Dank und auf Wiederhören."
+}
+],
+"q": [
+{
+"q": "Der Termin morgen findet nicht statt.",
+"o": [
+"Richtig",
+"Falsch"
+],
+"a": 0
+},
+{
+"q": "Was soll man tun?",
+"o": [
+"Bis heute Abend anrufen.",
+"Am Donnerstag vorbeikommen.",
+"Eine E-Mail schreiben."
+],
+"a": 0
+}
+]
+},
+{
+"mod": "Hören 1",
+"intro": "Du hörst eine Durchsage am Bahnhof.",
+"lines": [
+{
+"sp": "Durchsage",
+"t": "Achtung an Gleis sieben. Der Regionalexpress nach Nürnberg, planmäßige Abfahrt zehn Uhr zwölf, fährt heute mit etwa fünfzehn Minuten Verspätung. Grund dafür ist eine Störung an einem Signal. Reisende nach Regensburg nehmen bitte den Zug um zehn Uhr zwanzig von Gleis drei und steigen in Landshut um. Wir bitten um Entschuldigung."
+}
+],
+"q": [
+{
+"q": "Der Zug nach Nürnberg fällt heute aus.",
+"o": [
+"Richtig",
+"Falsch"
+],
+"a": 1
+},
+{
+"q": "Was sollen Reisende nach Regensburg machen?",
+"o": [
+"Einen anderen Zug von Gleis drei nehmen.",
+"Auf Gleis sieben warten.",
+"Mit dem Bus fahren."
+],
+"a": 0
+}
+]
+},
+{
+"mod": "Hören 1",
+"intro": "Du hörst den Verkehrs- und Wetterbericht im Radio.",
+"lines": [
+{
+"sp": "Radio",
+"t": "Und nun der Verkehr: Auf der A9 zwischen München und Ingolstadt gibt es nach einem Unfall einen Stau von acht Kilometern. Bitte fahren Sie, wenn möglich, über die Landstraße. Zum Wetter: Heute bleibt es bewölkt bei Temperaturen um zwölf Grad. Am Wochenende wird es freundlicher. Am Samstag scheint überall die Sonne, am Sonntag kann es am Nachmittag Gewitter geben."
+}
+],
+"q": [
+{
+"q": "Auf der A9 gibt es nach einem Unfall einen Stau.",
+"o": [
+"Richtig",
+"Falsch"
+],
+"a": 0
+},
+{
+"q": "Wie wird das Wetter am Samstag?",
+"o": [
+"Sonnig.",
+"Bewölkt und kühl.",
+"Mit Gewitter am Nachmittag."
+],
+"a": 0
+}
+]
+},
+{
+"mod": "Hören 1",
+"intro": "Du hörst eine Ansage im Supermarkt.",
+"lines": [
+{
+"sp": "Ansage",
+"t": "Liebe Kundinnen und Kunden, nur heute bei uns: Alle Obst- und Gemüsesorten aus der Region kosten zwanzig Prozent weniger. Außerdem gibt es in unserer Bäckerei ab sechzehn Uhr jedes Brot zum halben Preis. Bitte beachten Sie: Wegen Inventur schließt unser Markt heute schon um achtzehn Uhr. Morgen sind wir wieder wie gewohnt bis zwanzig Uhr für Sie da."
+}
+],
+"q": [
+{
+"q": "Der Supermarkt hat heute bis zwanzig Uhr geöffnet.",
+"o": [
+"Richtig",
+"Falsch"
+],
+"a": 1
+},
+{
+"q": "Was ist ab sechzehn Uhr billiger?",
+"o": [
+"Brot.",
+"Obst und Gemüse.",
+"Alle Produkte."
+],
+"a": 0
+}
+]
+},
+{
+"mod": "Hören 2",
+"intro": "Du nimmst an einer Führung durch ein Stadtmuseum teil.",
+"lines": [
+{
+"sp": "Museumsführerin",
+"t": "Herzlich willkommen im Stadtmuseum! Ich bin Frau Wagner und begleite Sie heute etwa eine Stunde durch unser Haus. Wir beginnen hier im Erdgeschoss. Hier sehen Sie, wie die Menschen vor zweihundert Jahren in unserer Stadt gelebt haben. Im ersten Stock zeigen wir die Geschichte der Industrie, also der Fabriken, die hier im neunzehnten Jahrhundert entstanden sind. Der zweite Stock ist im Moment leider geschlossen, weil wir dort eine neue Ausstellung aufbauen. Fotografieren ist überall erlaubt, aber bitte ohne Blitz. Ihre Jacken und Taschen können Sie kostenlos in den Schließfächern neben dem Eingang lassen. Nach der Führung können Sie gern noch in unser Café im Hof gehen. Mit Ihrer Eintrittskarte bekommen Sie dort einen Kaffee gratis."
+}
+],
+"q": [
+{
+"q": "Wie lange dauert die Führung?",
+"o": [
+"Etwa eine Stunde.",
+"Etwa zwei Stunden.",
+"Eine halbe Stunde."
+],
+"a": 0
+},
+{
+"q": "Was zeigt das Museum im ersten Stock?",
+"o": [
+"Die Geschichte der Industrie.",
+"Das Leben vor zweihundert Jahren.",
+"Eine neue Ausstellung."
+],
+"a": 0
+},
+{
+"q": "Warum ist der zweite Stock geschlossen?",
+"o": [
+"Dort wird eine neue Ausstellung aufgebaut.",
+"Dort wird renoviert.",
+"Es gibt zu wenig Personal."
+],
+"a": 0
+},
+{
+"q": "Was bekommt man mit der Eintrittskarte im Café?",
+"o": [
+"Einen Kaffee gratis.",
+"Ein Stück Kuchen.",
+"Zehn Prozent Rabatt."
+],
+"a": 0
+}
+]
+},
+{
+"mod": "Hören 3",
+"intro": "Du hörst ein Gespräch zwischen zwei Freunden im Bus.",
+"lines": [
+{
+"sp": "Lena",
+"t": "Hey Tim! Na, wie war dein erster Monat in der neuen Firma?"
+},
+{
+"sp": "Tim",
+"t": "Ganz gut, danke. Die Kollegen sind sehr nett, nur der Weg ist lang. Ich brauche jetzt fast eine Stunde mit dem Bus."
+},
+{
+"sp": "Lena",
+"t": "Oh, das ist viel. Warum fährst du nicht mit dem Fahrrad?"
+},
+{
+"sp": "Tim",
+"t": "Im Sommer mache ich das bestimmt. Aber jetzt im Winter ist es mir zu kalt und zu dunkel."
+},
+{
+"sp": "Lena",
+"t": "Verstehe. Und arbeitest du immer noch so viel wie in deinem alten Job?"
+},
+{
+"sp": "Tim",
+"t": "Nein, zum Glück nicht. Ich habe feste Arbeitszeiten und kann freitags im Homeoffice arbeiten. Dadurch habe ich endlich mehr Zeit für meinen Deutschkurs."
+},
+{
+"sp": "Lena",
+"t": "Super! Dann können wir ja am Freitagabend mal wieder zusammen kochen."
+},
+{
+"sp": "Tim",
+"t": "Gern, aber diesen Freitag geht es nicht, da besuche ich meine Schwester. Nächste Woche?"
+}
+],
+"q": [
+{
+"q": "Tim gefällt die neue Firma.",
+"o": [
+"Richtig",
+"Falsch"
+],
+"a": 0
+},
+{
+"q": "Tim fährt im Moment mit dem Fahrrad zur Arbeit.",
+"o": [
+"Richtig",
+"Falsch"
+],
+"a": 1
+},
+{
+"q": "Tim arbeitet freitags zu Hause.",
+"o": [
+"Richtig",
+"Falsch"
+],
+"a": 0
+},
+{
+"q": "Lena und Tim kochen diesen Freitag zusammen.",
+"o": [
+"Richtig",
+"Falsch"
+],
+"a": 1
+}
+]
+},
+{
+"mod": "Hören 3",
+"intro": "Du hörst ein Gespräch zwischen zwei Nachbarinnen im Treppenhaus.",
+"lines": [
+{
+"sp": "Frau Kaya",
+"t": "Guten Morgen, Frau Schulz! Haben Sie schon gehört? Ab nächstem Monat wird die Miete teurer."
+},
+{
+"sp": "Frau Schulz",
+"t": "Ja, ich habe den Brief gestern bekommen. Dreißig Euro mehr im Monat. Das finde ich ganz schön viel."
+},
+{
+"sp": "Frau Kaya",
+"t": "Ich auch. Aber der Vermieter sagt, das Dach wird repariert und wir bekommen neue Fenster."
+},
+{
+"sp": "Frau Schulz",
+"t": "Neue Fenster sind gut, dann sparen wir wenigstens Heizkosten. Wann soll das denn passieren?"
+},
+{
+"sp": "Frau Kaya",
+"t": "Im Frühling, steht im Brief. Die Handwerker kommen dann ungefähr zwei Wochen lang."
+},
+{
+"sp": "Frau Schulz",
+"t": "Hoffentlich nicht zu früh am Morgen. Übrigens, könnten Sie nächste Woche meine Blumen gießen? Ich fahre zu meiner Tochter."
+},
+{
+"sp": "Frau Kaya",
+"t": "Natürlich, gern. Bringen Sie mir einfach den Schlüssel vorbei."
+}
+],
+"q": [
+{
+"q": "Die Miete steigt um dreißig Euro.",
+"o": [
+"Richtig",
+"Falsch"
+],
+"a": 0
+},
+{
+"q": "Die Fenster werden schon diesen Monat ausgetauscht.",
+"o": [
+"Richtig",
+"Falsch"
+],
+"a": 1
+},
+{
+"q": "Frau Schulz findet neue Fenster gut.",
+"o": [
+"Richtig",
+"Falsch"
+],
+"a": 0
+},
+{
+"q": "Frau Kaya fährt nächste Woche zu ihrer Tochter.",
+"o": [
+"Richtig",
+"Falsch"
+],
+"a": 1
+}
+]
+},
+{
+"mod": "Hören 4",
+"intro": "Du hörst eine Diskussion im Radio. Die Moderatorin spricht mit Herrn Brandt und Frau Ivanova zum Thema „Sollen Geschäfte auch sonntags öffnen?“ Wer sagt was?",
+"lines": [
+{
+"sp": "Moderatorin",
+"t": "Herzlich willkommen zu unserer Sendung. Heute geht es um die Frage: Sollen Geschäfte auch sonntags öffnen? Herr Brandt, Sie haben einen kleinen Laden. Was denken Sie?"
+},
+{
+"sp": "Herr Brandt",
+"t": "Ich bin klar dagegen. Der Sonntag ist für die Familie da. Ich arbeite schon sechs Tage in der Woche, und meine Mitarbeiter brauchen auch einen freien Tag."
+},
+{
+"sp": "Frau Ivanova",
+"t": "Das verstehe ich, aber viele Menschen arbeiten unter der Woche lange. Für sie wäre es praktisch, am Sonntag in Ruhe einzukaufen."
+},
+{
+"sp": "Moderatorin",
+"t": "Frau Ivanova, Sie arbeiten selbst in einem Krankenhaus, auch am Wochenende, oder?"
+},
+{
+"sp": "Frau Ivanova",
+"t": "Genau. Und deshalb weiß ich: Viele Leute würden gern sonntags arbeiten, wenn sie dafür mehr Geld bekommen."
+},
+{
+"sp": "Herr Brandt",
+"t": "Für große Supermärkte ist das vielleicht kein Problem. Aber kleine Geschäfte wie meins können sich zusätzliches Personal nicht leisten."
+},
+{
+"sp": "Moderatorin",
+"t": "Vielleicht ist ein Kompromiss möglich, zum Beispiel vier offene Sonntage im Jahr, wie es sie in vielen Städten schon gibt?"
+},
+{
+"sp": "Frau Ivanova",
+"t": "Das wäre ein guter Anfang, finde ich."
+}
+],
+"q": [
+{
+"q": "Der Sonntag sollte ein freier Tag für die Familie bleiben.",
+"o": [
+"Moderatorin",
+"Herr Brandt",
+"Frau Ivanova"
+],
+"a": 1
+},
+{
+"q": "Wer lange arbeitet, möchte vielleicht am Sonntag einkaufen.",
+"o": [
+"Moderatorin",
+"Herr Brandt",
+"Frau Ivanova"
+],
+"a": 2
+},
+{
+"q": "Kleine Läden können kein zusätzliches Personal bezahlen.",
+"o": [
+"Moderatorin",
+"Herr Brandt",
+"Frau Ivanova"
+],
+"a": 1
+},
+{
+"q": "Man könnte nur an einigen Sonntagen im Jahr öffnen.",
+"o": [
+"Moderatorin",
+"Herr Brandt",
+"Frau Ivanova"
+],
+"a": 0
+}
+]
+},
+{
+"mod": "Hören 4",
+"intro": "Du hörst eine Diskussion im Radio. Der Moderator spricht mit Frau Roth und Herrn Okafor zum Thema „Brauchen Kinder ein eigenes Handy?“ Wer sagt was?",
+"lines": [
+{
+"sp": "Moderator",
+"t": "Guten Abend! Ab welchem Alter brauchen Kinder ein eigenes Handy? Frau Roth, Sie sind Lehrerin an einer Grundschule."
+},
+{
+"sp": "Frau Roth",
+"t": "Ich sehe jeden Tag, wie schwer es Kindern fällt, sich zu konzentrieren, wenn sie ständig aufs Handy schauen. Vor dem zwölften Lebensjahr braucht ein Kind meiner Meinung nach kein eigenes Smartphone."
+},
+{
+"sp": "Herr Okafor",
+"t": "Ich sehe das anders. Mein Sohn ist zehn und fährt allein mit dem Bus zur Schule. Mit dem Handy kann er mich anrufen, wenn etwas passiert. Das gibt uns Sicherheit."
+},
+{
+"sp": "Frau Roth",
+"t": "Für Notfälle reicht aber ein einfaches Handy ohne Internet."
+},
+{
+"sp": "Moderator",
+"t": "Viele Eltern sagen aber auch: Wenn alle Kinder in der Klasse ein Smartphone haben, fühlt sich das eigene Kind sonst ausgeschlossen."
+},
+{
+"sp": "Herr Okafor",
+"t": "Genau das ist bei uns passiert. Die Klasse organisiert alles in einer Chatgruppe."
+},
+{
+"sp": "Frau Roth",
+"t": "Dann müssen die Eltern klare Regeln machen, zum Beispiel: kein Handy beim Essen und nicht nach acht Uhr abends."
+}
+],
+"q": [
+{
+"q": "Kinder unter zwölf brauchen kein eigenes Smartphone.",
+"o": [
+"Moderator",
+"Frau Roth",
+"Herr Okafor"
+],
+"a": 1
+},
+{
+"q": "Ein Handy gibt Sicherheit, wenn das Kind allein unterwegs ist.",
+"o": [
+"Moderator",
+"Frau Roth",
+"Herr Okafor"
+],
+"a": 2
+},
+{
+"q": "Ohne Smartphone fühlen sich manche Kinder ausgeschlossen.",
+"o": [
+"Moderator",
+"Frau Roth",
+"Herr Okafor"
+],
+"a": 0
+},
+{
+"q": "Eltern sollten feste Regeln für das Handy machen.",
+"o": [
+"Moderator",
+"Frau Roth",
+"Herr Okafor"
+],
+"a": 1
+}
+]
+}
+],
 "hoeren": [
 {
 "t": "Hallo, hier ist Lena. Wir treffen uns um halb sieben vor dem Restaurant, nicht um sieben.",
@@ -228,6 +682,72 @@
 "mod": "Lesen 3"
 },
 {
+"mod": "Lesen 2",
+"t": "Mehr Menschen lernen im Alter eine Sprache\n\nImmer mehr Menschen über sechzig besuchen einen Sprachkurs. Das zeigt eine neue Studie der Volkshochschulen. Im letzten Jahr waren fast ein Viertel aller Teilnehmenden älter als sechzig, vor zehn Jahren waren es nur zwölf Prozent. Besonders beliebt sind Spanisch und Italienisch, weil viele Rentner gern in den Süden reisen. Aber es gibt noch einen anderen Grund: Ärzte sagen, dass das Lernen einer Sprache das Gedächtnis trainiert. „Es ist nie zu spät“, sagt die 72-jährige Helga Maurer, die seit zwei Jahren Portugiesisch lernt. „Meine Enkel leben in Lissabon, und ich möchte mit ihnen in ihrer Sprache sprechen.“ Die Volkshochschulen wollen deshalb mehr Kurse am Vormittag anbieten.",
+"q": [
+{
+"q": "In dem Text geht es darum, dass …",
+"o": [
+"immer mehr ältere Menschen Sprachen lernen.",
+"Volkshochschulen weniger Kurse anbieten.",
+"Rentner vor allem Englisch lernen."
+],
+"a": 0
+},
+{
+"q": "Warum lernt Helga Maurer Portugiesisch?",
+"o": [
+"Sie will mit ihren Enkeln sprechen.",
+"Ihr Arzt hat es ihr empfohlen.",
+"Sie möchte in Portugal arbeiten."
+],
+"a": 0
+},
+{
+"q": "Was planen die Volkshochschulen?",
+"o": [
+"Mehr Kurse am Vormittag.",
+"Neue Kurse am Abend.",
+"Kurse nur für Rentner."
+],
+"a": 0
+}
+]
+},
+{
+"mod": "Lesen 2",
+"t": "Stadt testet kostenlosen Busverkehr\n\nAb Januar können die Bürgerinnen und Bürger in Neustadt ein Jahr lang kostenlos mit dem Bus fahren. Die Stadt möchte damit erreichen, dass weniger Menschen mit dem Auto in die Innenstadt fahren. Bisher kostete eine Monatskarte 49 Euro. Die Kosten von rund zwei Millionen Euro bezahlt die Stadt zusammen mit dem Land. Nicht alle sind begeistert: Die Busfahrer befürchten, dass die Busse zu voll werden. Der Verkehrsbetrieb will deshalb in den Morgenstunden zusätzliche Busse einsetzen. Ob das Projekt nach einem Jahr weitergeht, entscheidet der Stadtrat im Herbst.",
+"q": [
+{
+"q": "Was ist das Ziel des Projekts?",
+"o": [
+"Weniger Autoverkehr in der Innenstadt.",
+"Mehr Geld für die Stadt.",
+"Neue Arbeitsplätze für Busfahrer."
+],
+"a": 0
+},
+{
+"q": "Wovor haben die Busfahrer Angst?",
+"o": [
+"Dass die Busse zu voll werden.",
+"Dass sie weniger verdienen.",
+"Dass es keine Monatskarten mehr gibt."
+],
+"a": 0
+},
+{
+"q": "Wann wird über die Zukunft des Projekts entschieden?",
+"o": [
+"Im Herbst.",
+"Im Januar.",
+"Nach zwei Jahren."
+],
+"a": 0
+}
+]
+},
+{
 "t": "Liebe Mieterinnen und Mieter, am Dienstag, den 14. November, wird zwischen 8 und 12 Uhr das Wasser im ganzen Haus abgestellt. Grund sind Reparaturarbeiten an den Leitungen. Bitte füllen Sie sich vorher Wasser ab. Vielen Dank für Ihr Verständnis! Ihre Hausverwaltung",
 "q": [
 {
@@ -398,7 +918,7 @@
 "schreiben": [
 {
 "p": "Your friend Jonas couldn't come to your future father-in-law's 60th birthday party. Write him an email (about 80 words): describe the party, say what you liked best, and suggest meeting up soon.",
-"m": "Lieber Jonas,\n\nschade, dass du am Samstag nicht dabei sein konntest! Die Feier für meinen zukünftigen Schwiegervater war wirklich schön. Fast die ganze Verwandtschaft war da, und am Abend hat eine kleine Band gespielt. Am besten hat mir gefallen, dass mir ein Onkel ein paar bairische Wörter beigebracht hat. Jetzt kann ich schon „Servus“ und „Pfiat di“ sagen! Hast du nächste Woche Zeit? Wir könnten am Freitag zusammen etwas trinken gehen. Dann erzähle ich dir alles genauer.\n\nViele Grüße\nBraun",
+"m": "Lieber Jonas,\n\nschade, dass du am Samstag nicht dabei sein konntest! Die Feier für meinen zukünftigen Schwiegervater war wirklich schön. Fast die ganze Verwandtschaft war da, und am Abend hat eine kleine Band gespielt. Am besten hat mir gefallen, dass ich mich lange mit einem Onkel unterhalten habe. Er hat mir viel über die Familie erzählt. Hast du nächste Woche Zeit? Wir könnten am Freitag zusammen etwas trinken gehen. Dann erzähle ich dir alles genauer.\n\nViele Grüße\nAlex",
 "tip": "After dass, the conjugated verb goes to the very end: …, dass mir ein Onkel ein paar Wörter beigebracht hat.",
 "chk": [
 "Did you cover all 3 points?",
@@ -441,7 +961,7 @@
 },
 {
 "p": "In an online forum, people are discussing: 'Should people who move to a region learn the local dialect?' Write your opinion (about 80 words).",
-"m": "Ich finde die Frage sehr interessant, weil ich selbst Familie in Bayern habe. Meiner Meinung nach muss man den Dialekt nicht sprechen, aber man sollte ihn verstehen. Bei Familienfesten oder im Dorf sprechen viele Leute Bairisch, und wenn man nichts versteht, fühlt man sich schnell ausgeschlossen. Andererseits ist Hochdeutsch für die Arbeit und für Behörden wichtiger. Deshalb lerne ich zuerst Hochdeutsch und nebenbei ein paar typische Wörter wie „fei“ oder „gell“. Das macht Spaß, und die Leute freuen sich darüber.",
+"m": "Ich finde die Frage sehr interessant, weil ich selbst Familie in Bayern habe. Meiner Meinung nach muss man den Dialekt nicht sprechen, aber man sollte ihn verstehen. Bei Familienfesten oder im Dorf sprechen viele Leute Bairisch, und wenn man nichts versteht, fühlt man sich schnell ausgeschlossen. Andererseits ist Hochdeutsch für die Arbeit und für Behörden wichtiger. Deshalb lerne ich zuerst Hochdeutsch und höre nebenbei gut zu, wenn die Leute Dialekt sprechen. Das macht Spaß, und die Leute freuen sich darüber.",
 "tip": "Deshalb and andererseits take position 1, so the verb comes right after them: Deshalb lerne ich …",
 "chk": [
 "A clear opinion (Meiner Meinung nach / Ich finde)?",
@@ -452,6 +972,29 @@
 "wk": 10,
 "th": "alltag",
 "mod": "Schreiben 2"
+},
+{
+"mod": "Schreiben 2",
+"p": "In an online forum about 'Leben in der Stadt', people discuss: 'Brauchen wir in der Stadt noch ein eigenes Auto?' Write your opinion (about 80 words).",
+"m": "Ich finde diese Frage sehr wichtig. Meiner Meinung nach braucht man in einer großen Stadt kein eigenes Auto. Die Busse und Bahnen fahren oft, und viele Wege kann man mit dem Fahrrad machen. Außerdem ist ein Auto teuer: Man muss Benzin, Versicherung und einen Parkplatz bezahlen. Andererseits ist ein Auto praktisch, wenn man Kinder hat oder am Wochenende aufs Land fahren möchte. Für solche Fälle gibt es aber Carsharing. Deshalb verkaufe ich mein Auto vielleicht bald.",
+"tip": "Struktur: Einleitung → Meinung (Meiner Meinung nach …) → Gründe (außerdem) → Gegenargument (andererseits) → Schluss (deshalb).",
+"chk": [
+"Hast du deine Meinung klar gesagt?",
+"Gibt es mindestens zwei Gründe?",
+"Hast du ein Gegenargument genannt?",
+"Ca. 80 Wörter?"
+]
+},
+{
+"mod": "Schreiben 3",
+"p": "Your German course teacher, Frau Hoffmann, has invited the class to a museum visit on Saturday. You cannot come. Write her a polite email (about 40 words): thank her, apologise, give a reason.",
+"m": "Liebe Frau Hoffmann,\n\nvielen Dank für die Einladung zum Museumsbesuch am Samstag. Leider kann ich nicht mitkommen, weil meine Schwiegereltern an diesem Wochenende zu Besuch kommen. Das tut mir sehr leid. Ich wünsche Ihnen und der Gruppe viel Spaß!\n\nViele Grüße\nAlex",
+"tip": "Teil 3 ist halbformell: Anrede „Liebe Frau …“, Sie-Form, Dank + Entschuldigung + Grund + Gruß.",
+"chk": [
+"Anrede und Gruß richtig?",
+"Sie-Form benutzt?",
+"Dank, Entschuldigung, Grund?"
+]
 },
 {
 "p": "Your colleague invited you to dinner on Saturday, but you can't come. Write one polite sentence declining and giving a reason.",
@@ -590,6 +1133,28 @@
 "mod": "Sprechen 3"
 },
 {
+"mod": "Sprechen 2",
+"p": "Presentation (about 3 minutes): 'Online einkaufen oder im Geschäft?' Follow the 5 slides: 1) introduce the topic, 2) your experience, 3) the situation in your home country, 4) pros and cons + your opinion, 5) conclusion and thanks.",
+"m": "Ich möchte heute über das Thema „Online einkaufen oder im Geschäft?“ sprechen. Ich selbst kaufe Kleidung lieber im Geschäft, weil ich sie anprobieren möchte, aber Bücher bestelle ich oft online. In meinem Heimatland kaufen sehr viele Leute online, weil die Geschäfte weit weg sind. Ein Vorteil vom Online-Einkauf ist, dass man Zeit spart. Ein Nachteil ist aber, dass kleine Geschäfte schließen müssen. Meiner Meinung nach sollte man beides nutzen. Zum Schluss möchte ich sagen: Lokale Geschäfte sind wichtig für die Stadt. Vielen Dank für Ihre Aufmerksamkeit.",
+"tip": "Nutze die Redemittel-Karten: eine feste Formulierung pro Folie macht die Präsentation sicher.",
+"chk": [
+"Alle 5 Folien?",
+"Eigene Erfahrung mit Beispiel?",
+"Vorteil und Nachteil?"
+]
+},
+{
+"mod": "Sprechen 1",
+"p": "Plan together with a classmate: your German course wants to organise a farewell party for your teacher. Discuss when, where, food and a present. Your partner says: 'Wir könnten im Kursraum feiern.'",
+"m": "Im Kursraum? Das ist eine gute Idee, dann müssen wir nichts bezahlen. Wann passt es dir, am Freitag nach dem Kurs? Ich schlage vor, dass jeder etwas zu essen mitbringt. Ich kann einen Kuchen backen. Und als Geschenk: Was hältst du davon, wenn wir ein Buch kaufen und alle unterschreiben eine Karte? Gut, dann machen wir es so: Du fragst die anderen, und ich kümmere mich um das Geschenk.",
+"tip": "Teil 1: reagieren (Gute Idee / Ich bin nicht so sicher), Vorschläge machen (Was hältst du davon …?), am Ende zusammenfassen (Dann machen wir es so).",
+"chk": [
+"Auf den Vorschlag reagiert?",
+"Eigene Vorschläge gemacht?",
+"Am Ende zusammengefasst?"
+]
+},
+{
 "p": "Stellen Sie sich vor: Name, Herkunft, Beruf, seit wann Sie in Deutschland leben.",
 "m": "Ich heiße …, ich komme aus … und arbeite als … Ich lebe seit drei Jahren in Deutschland.",
 "tip": "Goethe B1 Sprechen Teil 1 usually starts like this. seit + Dativ + present tense."
@@ -667,7 +1232,7 @@
 },
 {
 "sp": "B",
-"t": "Nee, hab ich vergessen. Mach ich morgen, gell?"
+"t": "Nee, hab ich vergessen. Mach ich morgen, okay?"
 }
 ],
 "q": "Was hat B vergessen?",
@@ -725,7 +1290,7 @@
 },
 {
 "sp": "A",
-"t": "Ach, der feiert doch erst ab acht. Da könnt ihr vorher locker noch auf eine Mass vorbeischauen."
+"t": "Ach, der feiert doch erst ab acht. Da könnt ihr vorher locker noch auf ein Bier vorbeischauen."
 },
 {
 "sp": "B",
