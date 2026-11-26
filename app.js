@@ -4,9 +4,9 @@
 const $app = document.getElementById('app');
 const DAY = 864e5;
 const INTERVALS = [0, 1, 3, 7, 14, 30, 60, 120]; // days per SRS box
-const SKILLS = ['wb', 'lesen', 'hoeren', 'schreiben', 'sprechen', 'party'];
+const SKILLS = ['wb', 'lesen', 'hoeren', 'hb1', 'schreiben', 'sprechen', 'party'];
 const STATES = { '': 'Noch nicht gewählt', BW: 'Baden-Württemberg', BY: 'Bayern', BE: 'Berlin', BB: 'Brandenburg', HB: 'Bremen', HH: 'Hamburg', HE: 'Hessen', MV: 'Mecklenburg-Vorpommern', NI: 'Niedersachsen', NW: 'Nordrhein-Westfalen', RP: 'Rheinland-Pfalz', SL: 'Saarland', SN: 'Sachsen', ST: 'Sachsen-Anhalt', SH: 'Schleswig-Holstein', TH: 'Thüringen' };
-const TYPE_LABEL = { vocab: 'Wortschatz', decode: 'Entschlüsseln', lid: 'Leben in Deutschland', lesen: 'Lesen', hoeren: 'Hören', schreiben: 'Schreiben', sprechen: 'Sprechen', party: 'Party-Hören', wb: 'Arbeitsheft' };
+const TYPE_LABEL = { vocab: 'Wortschatz', decode: 'Entschlüsseln', lid: 'Leben in Deutschland', lesen: 'Lesen', hoeren: 'Hören', schreiben: 'Schreiben', sprechen: 'Sprechen', party: 'Party-Hören', wb: 'Arbeitsheft', hb1: 'Hören (Prüfung)' };
 
 let DATA = null;
 let S = load();
@@ -14,7 +14,7 @@ let session = null;
 
 /* ---------- storage ---------- */
 function load() {
-  const def = { srs: {}, decks: [], streak: { last: '', n: 0 }, days: {}, seen: {}, settings: { state: 'BY', mix: 6, rate: 0.95, week: 1 } };
+  const def = { srs: {}, decks: [], streak: { last: '', n: 0 }, days: {}, seen: {}, settings: { state: 'BY', mix: 6, rate: 0.95, week: 1, focus: 'b1', b1Date: '', lidDate: '' } };
   try { const s = JSON.parse(localStorage.getItem('d2m') || '{}'); return { ...def, ...s, settings: { ...def.settings, ...(s.settings || {}) } }; }
   catch { return def; }
 }
@@ -26,6 +26,19 @@ const esc = s => String(s ?? '').replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': 
 const shuffle = a => { a = a.slice(); for (let i = a.length - 1; i > 0; i--) { const j = Math.floor(Math.random() * (i + 1)); [a[i], a[j]] = [a[j], a[i]]; } return a; };
 const pickRandom = a => a[Math.floor(Math.random() * a.length)];
 function toast(msg) { const t = document.createElement('div'); t.className = 'toast'; t.textContent = msg; document.body.appendChild(t); setTimeout(() => t.remove(), 2200); }
+
+/* ---------- CEFR levels ---------- */
+/* Every built-in word and grammar topic carries lv (A1 … C1). Words found in the official
+   Goethe A1/A2/B1 word lists also carry gl:1. Up to B1 = exam material; B2/C1 = beyond the exam. */
+const LV_RANK = { A1: 1, A2: 2, B1: 3, B2: 4, C1: 5, C2: 6 };
+const isExam = x => !x.lv || LV_RANK[x.lv] <= 3; // own Quizlet cards (no level) count as exam material
+const lvBadge = lv => lv ? `<span class="lv ${LV_RANK[lv] <= 3 ? 'lv-ok' : 'lv-up'}">${lv}</span>` : '';
+const b1Focus = () => S.settings.focus !== 'all';
+/* order for new cards: in B1 focus, exam-level words first; the curated weekly words before the long
+   B1-Wortliste deck; the current week's words first */
+const freshRank = x => (b1Focus() && !isExam(x) ? 100 : 0) + (x.deck === 'B1-Wortliste' ? 10 : 0) - (x.wk === S.settings.week ? 1 : 0);
+const freshOrder = (a, b) => freshRank(a) - freshRank(b);
+const daysUntil = d => d ? Math.ceil((new Date(d + 'T09:00') - Date.now()) / DAY) : null;
 
 /* ---------- speech ---------- */
 let deVoice = null;
@@ -57,11 +70,23 @@ const Recog = window.SpeechRecognition || window.webkitSpeechRecognition;
 
 /* ---------- SRS ---------- */
 function srsGet(k) { return S.srs[k]; }
+/* "Wiederholen" rounds: practising a word that isn't due yet. Nochmal resets it like a normal
+   review; Gut/Leicht only note that you saw it, so the spacing schedule isn't pushed ahead. */
+function practiceGrade(k, g) {
+  if (g === 0) return grade(k, 0);
+  const r = S.srs[k]; if (r) { r.l = Date.now(); r.pr = (r.pr || 0) + 1; save(); }
+}
 function isDue(k, now = Date.now()) { const r = S.srs[k]; return r && r.d <= now; }
 function grade(k, g) { // g: 0 again, 1 good, 2 easy
+  const fresh = !S.srs[k] || S.srs[k].lr;
   const r = S.srs[k] || { b: 0, d: 0 };
   if (g === 0) r.b = 1; else r.b = Math.min(INTERVALS.length - 1, r.b + g);
   r.d = g === 0 ? Date.now() + 10 * 60e3 : Date.now() + INTERVALS[r.b] * DAY - 3 * 3600e3;
+  /* learning step: a new word (or one you just missed) answered "Gut" comes back once more
+     later the same day (in about an hour) before it moves on to tomorrow */
+  if (g === 1 && fresh && !r.lr) { r.b = 0; r.lr = 1; r.d = Date.now() + 3600e3; }
+  else if (g === 1 && r.lr) { r.b = 1; delete r.lr; r.d = Date.now() + INTERVALS[1] * DAY - 3 * 3600e3; }
+  else if (g === 0) r.lr = 1; else delete r.lr;
   r.l = Date.now();
   S.srs[k] = r; save();
 }
@@ -69,7 +94,7 @@ function grade(k, g) { // g: 0 again, 1 good, 2 easy
 function choose(pool, n, keyOf) {
   const now = Date.now();
   const due = pool.filter(x => isDue(keyOf(x), now)).sort((a, b) => S.srs[keyOf(a)].d - S.srs[keyOf(b)].d);
-  const fresh = shuffle(pool.filter(x => !srsGet(keyOf(x)))).sort(weekFirst);
+  const fresh = shuffle(pool.filter(x => !srsGet(keyOf(x)))).sort(freshOrder);
   return [...due, ...fresh].slice(0, n);
 }
 
@@ -79,9 +104,9 @@ function choose(pool, n, keyOf) {
 function balanced(pool, n, keyOf) {
   const now = Date.now();
   const due = pool.filter(x => isDue(keyOf(x), now)).sort((a, b) => S.srs[keyOf(a)].d - S.srs[keyOf(b)].d);
-  const fresh = shuffle(pool.filter(x => !srsGet(keyOf(x)))).sort(weekFirst);
+  const fresh = shuffle(pool.filter(x => !srsGet(keyOf(x)))).sort(freshOrder);
   const known = pool.filter(x => { const r = srsGet(keyOf(x)); return r && r.d > now; })
-    .sort((a, b) => (S.srs[keyOf(a)].l || 0) - (S.srs[keyOf(b)].l || 0));
+    .sort((a, b) => (b1Focus() ? isExam(b) - isExam(a) : 0) || (S.srs[keyOf(a)].l || 0) - (S.srs[keyOf(b)].l || 0));
   const minReview = Math.min(Math.ceil(n * 0.2), due.length + known.length); // always some review
   const nNew = Math.min(fresh.length, Math.max(Math.ceil(n * 0.3), n - due.length), n - minReview);
   const out = [...due.slice(0, n - nNew), ...fresh.slice(0, nNew)];
@@ -141,12 +166,26 @@ function skillItem(kind) {
 function buildSection(kind) {
   if (kind === 'wb') return [wbItem()];
   if (kind === 'vocab') return balanced(vocabPool(), 10, x => x.k).map(c => ({ t: 'vocab', c }));
+  if (kind === 'review') return reviewRound(10);
   if (kind === 'decode') return balanced(decodePool(), 5, x => x.k).map(c => ({ t: 'decode', c }));
   if (kind === 'lid') return choose(lidPool(), 5, x => x.k).map(c => ({ t: 'lid', c }));
-  const n = kind === 'hoeren' ? 4 : kind === 'lesen' || kind === 'party' ? 2 : 3;
+  const n = kind === 'hoeren' ? 4 : kind === 'hb1' ? 1 : kind === 'lesen' || kind === 'party' ? 2 : 3;
   const out = []; const used = new Set();
   for (let j = 0; j < n; j++) { const it = skillItem(kind); if (used.has(it.i)) continue; used.add(it.i); markSeen(kind, it.i); out.push(it); }
   return out;
+}
+
+/* Wiederholen: words you studied recently (last 14 days), least recently seen first,
+   so the same words keep coming back even when the schedule says "not yet". */
+function reviewPool() {
+  const since = Date.now() - 14 * DAY;
+  return vocabPool().filter(x => { const r = srsGet(x.k); return r && (r.l || 0) > since; })
+    .sort((a, b) => (S.srs[a.k].l || 0) - (S.srs[b.k].l || 0));
+}
+function reviewRound(n) {
+  const due = vocabPool().filter(x => isDue(x.k));
+  const pick = [...due, ...reviewPool().filter(x => !isDue(x.k))].slice(0, n);
+  return shuffle(pick).map(c => ({ t: 'vocab', c }));
 }
 
 /* ---------- streak & stats ---------- */
@@ -182,20 +221,23 @@ function home() {
       <span class="pill" style="flex:none">Woche ${S.settings.week}</span>
       <span class="pill" style="flex:none">Heute: ${t.n} · 🇩🇪 ${t.lid || 0}/5</span>
     </div>
+    ${countdownRow()}
     ${missionCard()}
     <button class="btn primary" data-start="mix">▶ 2-Minuten-Mix</button>
     <p class="muted small" style="text-align:center">Ein paar Wörter, eine Einbürgerungsfrage und eine kurze Übung</p>
     ${progressCard()}
     <div class="grid" style="margin-top:12px">
       ${wbTile()}
-      ${tile('vocab', '10 Wörter', `${dueV} zum Wiederholen · ${newV} neu`)}
+      ${tile('vocab', '10 Wörter', `${dueV} zum Wiederholen · ${newV} neu${b1Focus() ? ' · B1-Fokus' : ''}`)}
+      ${tile('review', 'Wiederholen', `${reviewPool().length} Wörter der letzten 2 Wochen`)}
+      <button class="tile" data-go="tests"><b>📝 Probetests</b><span>B1 & Einbürgerungstest mit Ergebnis</span></button>
+      <button class="tile" data-go="exam"><b>🎯 B1-Prüfung</b><span>Lesen, Hören, Schreiben, Sprechen im Prüfungsformat</span></button>
       <button class="tile" data-go="lid"><b>Leben in Deutschland</b><span>Lektionen + Fragen · ${lidDone}/${lidAll.length} beantwortet</span></button>
       <button class="tile" data-go="grammar"><b>Grammatik-Training</b><span>Ein Thema, so lange du willst</span></button>
-      ${tile('lesen', 'Lesen', 'Kurze Texte, B1')}
-      ${tile('party', 'Party-Hören', 'Schnelle Alltagsdialoge')}
     </div>
     <details style="margin-top:12px"><summary>Mehr üben</summary>
       <div class="grid" style="margin-top:10px">
+        ${tile('party', 'Party-Hören', 'Schnelle Alltagsdialoge')}
         ${tile('decode', 'Entschlüsseln', 'Wörter aus Teilen')}
         ${tile('hoeren', 'Diktat', 'Hören & tippen')}
         ${tile('schreiben', 'Schreiben', 'Ein Satz, mit Muster')}
@@ -207,13 +249,14 @@ function home() {
 const tile = (k, title, sub) => `<button class="tile" data-start="${k}"><b>${esc(title)}</b><span>${esc(sub)}</span></button>`;
 
 function startSession(kind) {
+  if (kind.startsWith('test:')) return startTest(kind.slice(5));
   const q = kind === 'mix' ? buildMix() : buildSection(kind);
   if (kind === 'mix') q.filter(x => SKILLS.includes(x.t)).forEach(x => { if (x.i !== undefined) markSeen(x.t, x.i); (S.seen._skills ||= {})[x.t] = (S.seen._skills[x.t] || 0) + 1; save(); });
-  if (!q.length) { toast('Gerade nichts fällig. Komm später wieder!'); return; }
-  startQueue(kind, q);
+  if (!q.length) { toast(kind === 'review' ? 'Noch keine gelernten Wörter. Mach zuerst eine 10-Wörter-Runde!' : 'Gerade nichts fällig. Komm später wieder!'); return; }
+  startQueue(kind, q, kind === 'review' ? { practice: true } : {});
 }
 function startQueue(kind, q, extra) {
-  session = { kind, q, pos: 0, ok: 0, start: Date.now(), requeued: new Set(), ...extra };
+  session = { kind, q, pos: 0, ok: 0, pts: 0, max: 0, start: Date.now(), again: {}, ...extra };
   clearInterval(window._tick);
   window._tick = setInterval(() => { const el = document.querySelector('.timer'); if (el && session) el.textContent = fmtTime(Date.now() - session.start); }, 1000);
   renderItem();
@@ -242,16 +285,18 @@ function next(correct) {
 }
 function finish() {
   clearInterval(window._tick); stopSpeech();
+  if (session.test && session.max) (S.tests ||= []).push({ id: session.test.id, d: today(), p: session.pts, m: session.max }), save();
   const secs = Math.round((Date.now() - session.start) / 1000);
   $app.innerHTML = `
     <div class="card done"><div class="body">
-      <div class="big">${streakNow() > 1 ? '🔥' : '✅'}</div>
-      <h1>Gut gemacht!</h1>
+      <div class="big">${session.test ? '📝' : streakNow() > 1 ? '🔥' : '✅'}</div>
+      <h1>${session.test ? 'Test beendet' : 'Gut gemacht!'}</h1>
       <p class="muted">${session.q.length} Aufgaben in ${fmtTime(secs * 1000)} · Serie: ${streakNow()} Tag${streakNow() === 1 ? '' : 'e'}</p>
       ${session.lesson ? lessonFinishHtml(session.lesson) : ''}
+      ${session.test ? testResultHtml() : ''}
     </div>
     <div class="stack actions">${session.lesson ? lessonFinishActions(session.lesson) : `
-      <button class="btn primary" data-start="${session.kind}">Noch eine Runde</button>
+      <button class="btn primary" data-start="${session.test ? 'test:' + session.test.id : session.kind}">${session.test ? 'Neuer Test' : 'Noch eine Runde'}</button>
       <button class="btn ghost" data-go="home">Fertig</button>`}
     </div></div>`;
   if (session.lesson) wireLessonFinish(session.lesson);
@@ -260,14 +305,14 @@ function finish() {
 function renderItem() {
   stopSpeech();
   const it = session.q[session.pos];
-  ({ vocab: vVocab, decode: vDecode, lid: vLid, lesen: vLesen, hoeren: vHoeren, schreiben: vSchreiben, sprechen: vSprechen, party: vParty, wb: vWb })[it.t](it.c);
+  ({ vocab: vVocab, decode: vDecode, lid: vLid, lesen: vLesen, hoeren: vHoeren, schreiben: vSchreiben, sprechen: vSprechen, party: vParty, wb: vWb, hb1: vHb1, tq: vTq })[it.t](it.c);
   window.scrollTo(0, 0);
 }
 
 /* --- Wortschatz (flashcard) --- */
 function vVocab(c) {
   const tag = c.deck ? `Wortschatz · ${c.deck}` : 'Wortschatz';
-  const front = `<div class="word"${c.w.length > 40 ? ' style="font-size:22px;font-weight:500"' : ''}>${esc(c.w)}</div>${c.s ? `<div class="sentence">${esc(c.s)}</div>` : ''}`;
+  const front = `<div class="lvrow">${lvBadge(c.lv)}${c.lv && !isExam(c) ? '<span class="small muted">über B1</span>' : ''}</div><div class="word"${c.w.length > 40 ? ' style="font-size:22px;font-weight:500"' : ''}>${esc(c.w)}</div>${c.s ? `<div class="sentence">${esc(c.s)}</div>` : ''}`;
   $app.innerHTML = frame(`
     <div class="top" style="margin-top:6px"><button class="speak" id="say" aria-label="Vorlesen">🔊</button></div>
     <div class="body flipzone" id="flip">${front}<p class="muted small" style="margin-top:22px">Tippen zum Umdrehen</p></div>`, tag);
@@ -288,14 +333,19 @@ function vVocab(c) {
       </div>`;
     document.getElementById('say').onclick = () => say(speakText);
     document.querySelectorAll('[data-g]').forEach(b => b.onclick = () => {
-      const g = +b.dataset.g; grade(c.k, g);
+      const g = +b.dataset.g;
+      if (session.practice) practiceGrade(c.k, g); else grade(c.k, g);
+      // Nochmal: the card comes back at the end of this round (up to twice)
+      const n = session.again[c.k] = (session.again[c.k] || 0) + (g === 0 ? 1 : 0);
+      if (g === 0 && n <= 2) session.q.push({ t: 'vocab', c });
       next(g > 0);
     });
   };
 }
 
 function extras(c) {
-  const rows = [['Plural', c.pl], ['Rektion', c.rp], ['Kollokation', c.col]].filter(r => r[1]);
+  const lvText = c.lv ? (c.gl ? `${c.lv} · Goethe-Wortliste` : isExam(c) ? `${c.lv} (geschätzt)` : `${c.lv} · über B1, nicht in der Prüfung`) : '';
+  const rows = [['Formen', c.f], ['Plural', c.pl], ['Rektion', c.rp], ['Kollokation', c.col], ['Niveau', lvText]].filter(r => r[1]);
   return rows.length ? `<div class="small" style="margin-top:10px">${rows.map(([k, v]) => `<div class="statline"><span class="muted">${k}</span><span>${esc(v)}</span></div>`).join('')}</div>` : '';
 }
 const checklist = c => c.chk && c.chk.length ? `<div class="morph" style="margin-top:12px"><b>Check zuerst:</b>${c.chk.map((t, i) => `<label style="display:flex;gap:8px;margin-top:6px"><input type="checkbox" style="width:auto"> ${esc(t)}</label>`).join('')}</div>` : '';
@@ -308,6 +358,8 @@ function mc({ tag, head, options, answer, onDone, after, en }) {
     <div id="fb"></div></div>`, tag);
   document.querySelectorAll('.opt').forEach(b => b.onclick = () => {
     const i = +b.dataset.i, ok = i === answer;
+    session.max++; if (ok) session.pts++;
+    if (session.test && !ok) session.missed.push(`${stripTags(head)} → ${options[answer]}`);
     document.querySelectorAll('.opt').forEach(x => { x.disabled = true; if (+x.dataset.i === answer) x.classList.add('right'); });
     if (!ok) b.classList.add('wrong');
     if (en) document.querySelectorAll('.opt').forEach(x => { const t = en[+x.dataset.i]; if (t) x.insertAdjacentHTML('beforeend', `<span class="opt-en">${esc(t)}</span>`); });
@@ -317,11 +369,19 @@ function mc({ tag, head, options, answer, onDone, after, en }) {
   });
 }
 
+const stripTags = h => { const d = document.createElement('div'); d.innerHTML = h; d.querySelectorAll('details,button,.lvrow,.small').forEach(e => e.remove()); const t = d.textContent.replace(/\s+/g, ' ').trim(); return t.length > 170 ? '… ' + t.slice(-160) : t; };
+
+/* --- Test-Frage (Wortschatz/Grammatik, multiple choice) --- */
+function vTq(c) {
+  mc({ tag: c.tag, head: `<p class="sentence" style="font-size:20px">${c.html}</p>`, options: c.o, answer: c.a,
+    after: c.why ? `<p class="small" style="margin-top:8px">${c.why}</p>` : '', onDone: ok => next(ok) });
+}
+
 /* --- Entschlüsseln --- */
 function vDecode(c) {
   mc({
     tag: 'Entschlüsseln · Was bedeutet das?',
-    head: `<div class="word">${esc(c.w)}</div><div class="sentence">${esc(c.s)}</div>`,
+    head: `<div class="lvrow">${lvBadge(c.lv)}</div><div class="word">${esc(c.w)}</div><div class="sentence">${esc(c.s)}</div>`,
     options: c.o, answer: c.a,
     after: `<div class="morph" style="margin-top:10px">${esc(c.p)}</div>`,
     onDone: ok => { grade(c.k, ok ? 1 : 0); next(ok); }
@@ -524,7 +584,7 @@ function wbTile() {
   const u = DATA.workbook[p.u];
   return `<button class="tile" data-start="wb" style="grid-column:1/-1;min-height:0"><b>📖 Arbeitsheft</b>
     <span>${p.finished ? 'Alle Einheiten fertig. Wiederholen?' : `Einheit ${p.u + 1}: ${esc(u.title)} · Schritt ${p.s + 1}/5 (${WB_NAMES[WB_STEPS[p.s]]})`}</span>
-    <span>${esc(u.grammar)}</span></button>`;
+    <span>${esc(u.grammar)} ${lvBadge(u.lv)}</span></button>`;
 }
 function wbAdvance(c) {
   const w = S.wb || { u: 0, s: 0 };
@@ -635,14 +695,15 @@ function progressData() {
   const learning = words.filter(x => { const r = srsGet(x.k); return r && r.b < 3; }).length;
   const lid = lidPool(); const lidSure = lid.filter(x => (srsGet(x.k) || {}).b >= 2).length;
   const wb = S.wb || { u: 0, s: 0 }; const wbTotal = (DATA.workbook || []).length * WB_STEPS.length;
-  return { words: words.length, sure, learning, lid: lid.length, lidSure, wbDone: Math.min(wbTotal, wb.u * WB_STEPS.length + wb.s), wbTotal };
+  const b1 = words.filter(isExam), b1Sure = b1.filter(x => (srsGet(x.k) || {}).b >= 3).length;
+  return { words: words.length, sure, learning, b1: b1.length, b1Sure, lid: lid.length, lidSure, wbDone: Math.min(wbTotal, wb.u * WB_STEPS.length + wb.s), wbTotal };
 }
 const bar = (parts, total) => `<div class="pbar">${parts.map(([v, c]) => `<i style="width:${total ? (v / total) * 100 : 0}%;background:${c}"></i>`).join('')}</div>`;
 function progressCard() {
   const p = progressData();
   return `<button class="tile" data-go="progress" style="width:100%;min-height:0;margin-top:14px">
     <b>📈 Dein Fortschritt</b>
-    <span style="margin-top:8px">Wörter sicher: ${p.sure} von ${p.words}</span>${bar([[p.sure, 'var(--good)'], [p.learning, 'var(--accent)']], p.words)}
+    <span style="margin-top:8px">B1-Wörter sicher: ${p.b1Sure} von ${p.b1}</span>${bar([[p.b1Sure, 'var(--good)']], p.b1)}
     <span>Arbeitsheft: ${p.wbDone} von ${p.wbTotal} Schritten</span>${bar([[p.wbDone, 'var(--warn)']], p.wbTotal)}
     <span>Einbürgerungstest: ${p.lidSure} von ${p.lid} Fragen sicher</span>${bar([[p.lidSure, '#5cc8ff']], p.lid)}
   </button>`;
@@ -651,7 +712,8 @@ function progressView() {
   const p = progressData();
   const days = Object.keys(S.days).sort();
   const total = Object.values(S.days).reduce((a, d) => a + d.n, 0);
-  const decks = {};
+  const decks = {}, levels = {};
+  vocabPool().forEach(x => { const o = levels[x.lv || ''] ||= { n: 0, sure: 0, seen: 0 }; o.n++; const r = srsGet(x.k); if (r) o.seen++; if (r && r.b >= 3) o.sure++; });
   vocabPool().forEach(x => { const d = x.deck || 'Basis'; const o = decks[d] ||= { n: 0, sure: 0, seen: 0 }; o.n++; const r = srsGet(x.k); if (r) o.seen++; if (r && r.b >= 3) o.sure++; });
   const last7 = Array.from({ length: 7 }, (_, i) => new Date(Date.now() - (6 - i) * DAY).toLocaleDateString('sv'));
   const max = Math.max(1, ...last7.map(d => (S.days[d] || {}).n || 0));
@@ -668,6 +730,10 @@ function progressView() {
     <h2>Wörter</h2>
     <p class="small"><span style="color:var(--good)">■</span> sicher (eine Woche+ gemerkt) · <span style="color:var(--accent)">■</span> im Lernen · grau: noch neu</p>
     ${bar([[p.sure, 'var(--good)'], [p.learning, 'var(--accent)']], p.words)}
+    <h2>Nach Niveau</h2>
+    <p class="small muted">A1–B1 kommt in der Prüfung vor. B2 und C1 sind für später (Ziel C1).</p>
+    ${Object.entries(levels).sort().map(([l, o]) => `<div class="statline"><span>${lvBadge(l) || 'ohne Niveau'}</span><span>${o.sure} sicher · ${o.seen - o.sure} im Lernen · ${o.n - o.seen} neu</span></div>`).join('')}
+    <h2>Nach Stapel</h2>
     ${Object.entries(decks).sort((a, b) => b[1].n - a[1].n).map(([d, o]) => `<div class="statline"><span>${esc(d)}</span><span>${o.sure} sicher · ${o.seen - o.sure} im Lernen · ${o.n - o.seen} neu</span></div>`).join('')}
     <h2>Arbeitsheft</h2>
     ${bar([[p.wbDone, 'var(--warn)']], p.wbTotal)}
@@ -676,6 +742,130 @@ function progressView() {
     ${bar([[p.lidSure, '#5cc8ff']], p.lid)}
     <p class="small muted">${p.lidSure} von ${p.lid} Fragen zweimal richtig. Im Test: 33 Fragen, 17 richtig zum Bestehen.</p>
     <p class="small muted" style="margin-top:18px">Wie Wiederholung funktioniert: Jede Karte, die du kannst, kommt nach 1, 3, 7, 14, 30, 60 Tagen wieder. Jede 10er-Runde mischt fällige Wiederholungen mit neuen Wörtern. Wenn nichts fällig ist, kommen Wörter, die du am längsten nicht gesehen hast.</p>`;
+}
+
+/* --- Probetests: exam-like tests with a score at the end --- */
+const TESTS = [
+  { id: 'lid', t: 'Einbürgerungstest', sub: '33 Fragen wie im echten Test (30 allgemein + 3 Bundesland), 60 Min., bestanden ab 17 richtig', pass: m => Math.ceil(m * 17 / 33) },
+  { id: 'lesen', t: 'B1 Lesen', sub: 'Teil 1–5, je ein Text. Bestanden ab 60 %', pass: m => Math.ceil(m * 0.6) },
+  { id: 'hoeren', t: 'B1 Hören', sub: 'Teil 1–4, Text nur hören. Bestanden ab 60 %', pass: m => Math.ceil(m * 0.6) },
+  { id: 'wg', t: 'Wortschatz & Grammatik B1', sub: '20 Fragen: 10 Wörter, 10 Grammatik', pass: m => Math.ceil(m * 0.6) },
+  { id: 'schreiben', t: 'B1 Schreiben', sub: 'Teil 1–3 hintereinander (60 Min.), mit Musterlösung und Claude-Feedback' },
+  { id: 'sprechen', t: 'B1 Sprechen', sub: 'Teil 1–3 laut üben, mit Muster' }
+];
+function byMod(kind, mod) {
+  const all = DATA.tasks[kind].map((c, i) => ({ c, i }));
+  const tagged = all.filter(x => x.c.mod === mod);
+  return tagged.length ? pickRandom(tagged) : null;
+}
+function startTest(id) {
+  const T = TESTS.find(t => t.id === id); let q = [];
+  if (id === 'lid') {
+    const all = DATA.lid.map(x => ({ ...x, k: 'l:' + x.id }));
+    q = [...shuffle(all.filter(x => !x.s)).slice(0, 30), ...shuffle(all.filter(x => x.s === S.settings.state)).slice(0, 3)].map(c => ({ t: 'lid', c }));
+  } else if (id === 'lesen' || id === 'schreiben' || id === 'sprechen') {
+    const n = { lesen: 5, schreiben: 3, sprechen: 3 }[id], name = { lesen: 'Lesen', schreiben: 'Schreiben', sprechen: 'Sprechen' }[id];
+    for (let p = 1; p <= n; p++) { const x = byMod(id, `${name} ${p}`); if (x) q.push({ t: id, c: x.c, i: x.i }); }
+  } else if (id === 'hoeren') {
+    const t1 = shuffle(DATA.tasks.hb1.filter(c => c.mod === 'Hören 1')).slice(0, 2);
+    q = [...t1, ...[2, 3, 4].map(p => pickRandom(DATA.tasks.hb1.filter(c => c.mod === `Hören ${p}`)))].filter(Boolean).map(c => ({ t: 'hb1', c }));
+  } else if (id === 'wg') q = wgTest();
+  if (!q.length) return toast('Dafür gibt es noch keine Aufgaben');
+  startQueue('test', q, { test: T, missed: [] });
+}
+function wgTest() {
+  const words = shuffle(vocabPool().filter(x => x.lv && isExam(x) && x.s && x.m && !x.deck?.match(/Sätze|Affixe|Redemittel/)));
+  const out = words.slice(0, 10).map(c => {
+    const wrong = shuffle(words.filter(x => x.m !== c.m && x.k !== c.k)).slice(0, 3).map(x => x.m);
+    return { t: 'tq', c: { tag: 'Probetest · Wortschatz', html: `<b>${esc(c.w)}</b><br><span class="small muted">${esc(c.s)}</span>`, o: [c.m, ...wrong], a: 0 } };
+  });
+  const B = DATA.grammar.bank, topics = shuffle(Object.keys(B)).slice(0, 10);
+  topics.forEach(k => {
+    const it = pickRandom(B[k].filter(x => (x.t.match(/___/g) || []).length === 1));
+    if (!it) return;
+    const others = [...new Set(B[k].map(x => x.a).filter(a => a !== it.a && !a.includes(' ')))];
+    const o = [it.a, ...shuffle(others).slice(0, 3)];
+    const tp = TOPICS.find(t => t.id === k);
+    out.push({ t: 'tq', c: { tag: `Probetest · Grammatik · ${tp ? tp.title : ''}`, html: esc(it.t).replace('___', '<b>_____</b>'), o, a: 0, why: esc(it.w) } });
+  });
+  return shuffle(out);
+}
+function testResultHtml() {
+  const { pts, max, test } = session;
+  if (!max) return `<p class="small muted">Vergleiche deine Antworten mit dem Muster. Für echtes Feedback: „Mit Claude prüfen“.</p>`;
+  const need = test.pass(max), ok = pts >= need;
+  return `<div class="tile" style="min-height:0;margin-top:14px;text-align:center">
+    <b style="font-size:30px">${pts} / ${max}</b><span>${Math.round(pts / max * 100)} % · zum Bestehen: ${need}</span>
+    <b style="margin-top:8px;color:${ok ? 'var(--good)' : 'var(--bad)'}">${ok ? 'Bestanden ✓' : 'Noch nicht bestanden'}</b></div>
+    ${session.missed.length ? `<details style="text-align:left"><summary class="small">Falsche Antworten (${session.missed.length})</summary>${session.missed.map(m => `<p class="small">${esc(m)}</p>`).join('')}</details>` : ''}`;
+}
+function testsView() {
+  stopSpeech();
+  const hist = (S.tests || []).slice().reverse();
+  const last = id => { const h = hist.find(x => x.id === id); return h ? ` · zuletzt ${h.p}/${h.m} (${Math.round(h.p / h.m * 100)} %)` : ''; };
+  $app.innerHTML = `
+    <div class="top"><button class="iconbtn" data-go="home" aria-label="Zurück">←</button><h1 style="flex:1">Probetests</h1></div>
+    <p class="small muted" style="margin:10px 0">Jeder Test wird neu gemischt. Am Ende siehst du Punkte, ob du bestanden hättest und welche Fragen falsch waren.</p>
+    <div class="stack">${TESTS.map(t => `<button class="tile" data-start="test:${t.id}" style="width:100%;min-height:0"><b>${t.t}</b><span>${t.sub}${last(t.id)}</span></button>`).join('')}</div>
+    ${hist.length ? `<h2>Deine Ergebnisse</h2>${hist.slice(0, 12).map(h => { const T = TESTS.find(t => t.id === h.id); const ok = T && T.pass && h.p >= T.pass(h.m); return `<div class="statline"><span>${new Date(h.d).toLocaleDateString('de-DE')} · ${T ? T.t : h.id}</span><span style="color:${ok ? 'var(--good)' : 'var(--bad)'}">${h.p}/${h.m}</span></div>`; }).join('')}` : ''}`;
+}
+
+/* --- Countdown to the exams (dates set in Einstellungen) --- */
+function countdownRow() {
+  const b = daysUntil(S.settings.b1Date), l = daysUntil(S.settings.lidDate);
+  const pill = (label, d) => d === null ? '' : `<span class="pill" style="flex:none">${label}: ${d > 0 ? `noch ${d} Tag${d === 1 ? '' : 'e'}` : d === 0 ? 'heute!' : 'vorbei'}</span>`;
+  if (b === null && l === null) return `<button class="pill" data-go="settings" style="display:block;margin:-6px 0 14px;background:none">📅 Prüfungstermine eintragen</button>`;
+  return `<div class="row" style="margin:-6px 0 14px;flex:none" data-go="settings">${pill('🎯 B1', b)}${pill('🇩🇪 LiD', l)}</div>`;
+}
+
+/* --- B1-Prüfung: the four modules with exam-format practice --- */
+const EXAM = [
+  { k: 'lesen', t: 'Lesen', time: '65 Min.', parts: ['Teil 1: Blog oder E-Mail, richtig/falsch', 'Teil 2: zwei Zeitungsartikel, a/b/c', 'Teil 3: Situationen und Anzeigen zuordnen', 'Teil 4: Meinungen in einem Forum, ja/nein (dafür oder dagegen?)', 'Teil 5: Hausordnung oder Regeln, a/b/c'] },
+  { k: 'hb1', t: 'Hören', time: '40 Min.', parts: ['Teil 1: fünf kurze Texte (Ansagen, Mailbox), richtig/falsch + a/b/c, zweimal', 'Teil 2: ein Vortrag oder eine Führung, a/b/c, einmal', 'Teil 3: ein Gespräch, richtig/falsch, einmal', 'Teil 4: eine Radiodiskussion: Wer sagt was? Zweimal'] },
+  { k: 'schreiben', t: 'Schreiben', time: '60 Min.', parts: ['Teil 1: E-Mail an einen Freund, ca. 80 Wörter, drei Punkte', 'Teil 2: Meinung in einem Forum, ca. 80 Wörter', 'Teil 3: höfliche E-Mail (z. B. Termin absagen), ca. 40 Wörter'] },
+  { k: 'sprechen', t: 'Sprechen', time: '15 Min. (zu zweit)', parts: ['Teil 1: gemeinsam etwas planen', 'Teil 2: ein Thema präsentieren (5 Folien)', 'Teil 3: auf die Präsentation reagieren und eine Frage stellen'] }
+];
+function examView() {
+  stopSpeech();
+  const d = daysUntil(S.settings.b1Date);
+  const words = vocabPool().filter(isExam); const sure = words.filter(x => (srsGet(x.k) || {}).b >= 3).length;
+  $app.innerHTML = `
+    <div class="top"><button class="iconbtn" data-go="home" aria-label="Zurück">←</button><h1 style="flex:1">B1-Prüfung</h1></div>
+    <p class="small muted" style="margin:10px 0">Goethe-Zertifikat B1: vier Module, jedes zählt einzeln. Bestanden ab <b>60 %</b> pro Modul (60 von 100 Punkten). ${d !== null && d >= 0 ? `Deine Prüfung: in <b>${d} Tagen</b>.` : '<button class="pill" data-go="settings" style="background:none">📅 Datum eintragen</button>'}</p>
+    <div class="stack">${EXAM.map(m => `<div class="tile" style="min-height:0">
+      <b>${m.t} <span class="muted small">· ${m.time}</span></b>
+      ${m.parts.map(p => `<span>${esc(p)}</span>`).join('')}
+      <button class="btn" data-start="${m.k}" style="margin-top:10px;padding:12px">${m.t} üben</button></div>`).join('')}</div>
+    <button class="btn primary" data-go="tests" style="margin-top:12px">📝 Probetests mit Ergebnis</button>
+    <h2>Was du dafür brauchst</h2>
+    <div class="statline"><span>B1-Wörter (Goethe-Wortliste + Kurs)</span><span>${sure} von ${words.length} sicher</span></div>
+    ${bar([[sure, 'var(--good)']], words.length)}
+    <div class="row" style="margin-top:10px"><button class="btn" data-start="vocab">10 Wörter</button><button class="btn" data-go="grammar">Grammatik</button></div>
+    <p class="small muted" style="margin-top:14px">Tipp: Schreiben und Sprechen bekommen die meisten Punkte für Struktur und Redemittel. Lerne die Redemittel-Karten und nutze „Mit Claude prüfen“ für Feedback.</p>`;
+}
+
+/* --- Hören im Prüfungsformat: text hidden, questions after listening --- */
+function vHb1(c) {
+  let qi = 0, score = 0, plays = 0;
+  const max = c.mod === 'Hören 2' || c.mod === 'Hören 3' ? 1 : 2;
+  const head = () => `<p class="small muted">${esc(c.intro || 'Hör den Text und beantworte die Fragen.')} In der Prüfung hörst du ihn <b>${max === 1 ? 'einmal' : 'zweimal'}</b>.</p>
+    <div class="row" style="margin:10px 0"><button class="btn" id="hp">🔊 Abspielen <span class="muted small" id="hpn">(${plays}/${max})</span></button><button class="btn ghost" id="hs">🐢 Langsam</button></div>
+    <p style="margin-top:12px;font-weight:600">${esc(c.q[qi].q)}</p>`;
+  const wire = () => {
+    document.getElementById('hp').onclick = () => { plays++; document.getElementById('hpn').textContent = `(${plays}/${max})`; playLines(c.lines, 1.0); };
+    document.getElementById('hs').onclick = () => playLines(c.lines, 0.8);
+  };
+  const show = () => {
+    mc({
+      tag: `Hören (Prüfung) · Frage ${qi + 1}/${c.q.length}`,
+      head: head(), options: c.q[qi].o, answer: c.q[qi].a,
+      after: qi === c.q.length - 1 ? `<details style="background:var(--card2);margin-top:10px"><summary class="small">Transkript</summary>${c.lines.map(l => `<p class="small"><b>${esc(l.sp)}:</b> ${esc(l.t)}</p>`).join('')}</details>` : '',
+      onDone: ok => { if (ok) score++; qi++; if (qi < c.q.length) show(); else next(score === c.q.length); }
+    });
+    wire();
+  };
+  show();
+  setTimeout(() => { plays++; const n = document.getElementById('hpn'); if (n) n.textContent = `(${plays}/${max})`; playLines(c.lines, 1.0); }, 300);
 }
 
 /* --- Mission des Tages --- */
@@ -754,6 +944,10 @@ function settingsView() {
     <div class="stack" style="margin-top:14px">
       <label>Bundesland (für die 10 Landesfragen im Einbürgerungstest)
         <select id="st">${Object.entries(STATES).map(([k, v]) => `<option value="${k}" ${k === S.settings.state ? 'selected' : ''}>${v}</option>`).join('')}</select></label>
+      <label>Fokus
+        <select id="focus"><option value="b1" ${b1Focus() ? 'selected' : ''}>B1-Prüfung: neue Wörter bis B1 zuerst</option><option value="all" ${b1Focus() ? '' : 'selected'}>Alles: auch B2/C1-Wörter</option></select></label>
+      <div class="row"><label>Termin B1-Prüfung<input type="date" id="b1d" value="${esc(S.settings.b1Date)}"></label>
+        <label>Termin Einbürgerungstest<input type="date" id="lidd" value="${esc(S.settings.lidDate)}"></label></div>
       <label>Lernwoche (1–12, steuert die Themen im Mix)
         <select id="wk">${Array.from({ length: 12 }, (_, i) => i + 1).map(n => `<option ${n === S.settings.week ? 'selected' : ''}>${n}</option>`).join('')}</select></label>
       <label>Aufgaben pro Mix
@@ -772,6 +966,9 @@ function settingsView() {
     <input type="file" id="file" accept="application/json" hidden>
     <p class="small muted" style="margin-top:24px">Fragen „Leben in Deutschland“: offizieller Fragenkatalog des BAMF (ohne Bildfragen). Prüfungsformat angelehnt an Goethe-Zertifikat B1.</p>`;
   document.getElementById('st').onchange = e => { S.settings.state = e.target.value; save(); };
+  document.getElementById('focus').onchange = e => { S.settings.focus = e.target.value; save(); };
+  document.getElementById('b1d').onchange = e => { S.settings.b1Date = e.target.value; save(); };
+  document.getElementById('lidd').onchange = e => { S.settings.lidDate = e.target.value; save(); };
   document.getElementById('wk').onchange = e => { S.settings.week = +e.target.value; save(); };
   document.getElementById('mix').onchange = e => { S.settings.mix = +e.target.value; save(); };
   document.getElementById('rate').onchange = e => { S.settings.rate = +e.target.value; save(); };
@@ -793,7 +990,7 @@ document.addEventListener('click', e => {
   const s = e.target.closest('[data-start]'); if (s) return startSession(s.dataset.start);
   const g = e.target.closest('[data-go]'); if (!g) return;
   clearInterval(window._tick);
-  ({ home, settings: settingsView, import: importView, progress: progressView, grammar: grammarHome, lid: lidHome })[g.dataset.go]();
+  ({ home, settings: settingsView, import: importView, progress: progressView, grammar: grammarHome, lid: lidHome, exam: examView, tests: testsView })[g.dataset.go]();
 });
 
 async function boot() {

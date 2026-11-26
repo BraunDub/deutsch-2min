@@ -1,5 +1,5 @@
 // Cache-first service worker so the app opens instantly and works offline.
-const CACHE = 'd2m-v8';
+const CACHE = 'd2m-v10';
 const FILES = ['./', 'index.html', 'styles.css', 'app.js', 'grammar.js', 'lid.js', 'manifest.webmanifest',
   'data/vocab.json', 'data/decode.json', 'data/lid.json', 'data/tasks.json', 'data/missions.json', 'data/workbook.json', 'data/grammar.json', 'data/lessons.json',
   'icons/icon-192.png', 'icons/icon-512.png', 'icons/apple-touch-icon.png'];

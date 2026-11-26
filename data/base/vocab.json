@@ -6,7 +6,9 @@
 "x": "er- + mäßig (moderate) + -ung → making it moderate",
 "pl": "die Ermäßigungen",
 "rp": "eine Ermäßigung auf + Akk",
-"col": "eine Ermäßigung bekommen"
+"col": "eine Ermäßigung bekommen",
+"lv": "A2",
+"gl": 1
 },
 {
 "w": "die Anmeldung",
@@ -14,25 +16,31 @@
 "m": "registration (e.g. of your address)",
 "x": "an- (onto) + melden (report) + -ung → reporting yourself onto a list",
 "pl": "die Anmeldungen",
-"col": "die Anmeldung beim Bürgeramt"
+"col": "die Anmeldung beim Bürgeramt",
+"lv": "A1",
+"gl": 1
 },
 {
 "w": "die Aufenthaltserlaubnis",
 "s": "Meine Aufenthaltserlaubnis läuft im März ab.",
 "m": "residence permit",
-"x": "Aufenthalt (stay: auf + ent + halten) + -s- + Erlaubnis (permission: erlauben + -nis) → permission to stay"
+"x": "Aufenthalt (stay: auf + ent + halten) + -s- + Erlaubnis (permission: erlauben + -nis) → permission to stay",
+"lv": "B1"
 },
 {
 "w": "der Termin",
 "s": "Ich habe morgen einen Termin beim Bürgeramt.",
 "m": "appointment",
-"x": "from Latin terminus (boundary, end point) → a fixed point in time"
+"x": "from Latin terminus (boundary, end point) → a fixed point in time",
+"lv": "A1",
+"gl": 1
 },
 {
 "w": "die Bescheinigung",
 "s": "Der Arbeitgeber stellt eine Bescheinigung aus.",
 "m": "certificate, written confirmation",
-"x": "be- + scheinen (to shine/appear) + -ig + -ung → making something visible in writing"
+"x": "be- + scheinen (to shine/appear) + -ig + -ung → making something visible in writing",
+"lv": "B1"
 },
 {
 "w": "beantragen",
@@ -40,7 +48,9 @@
 "m": "to apply for",
 "x": "be- (makes it transitive) + Antrag (application) → to put in an application for something",
 "rp": "etw. (Akk) bei + Dat beantragen",
-"col": "ein Visum beantragen"
+"col": "ein Visum beantragen",
+"lv": "B1",
+"gl": 1
 },
 {
 "w": "der Antrag",
@@ -49,19 +59,25 @@
 "x": "an- (towards) + tragen (carry) → something carried to an office",
 "pl": "die Anträge",
 "rp": "ein Antrag auf + Akk",
-"col": "einen Antrag stellen"
+"col": "einen Antrag stellen",
+"lv": "B1",
+"gl": 1
 },
 {
 "w": "ausfüllen",
 "s": "Bitte füllen Sie das Formular vollständig aus.",
 "m": "to fill in (a form)",
-"x": "aus- (out, completely) + füllen (fill) → fill out"
+"x": "aus- (out, completely) + füllen (fill) → fill out",
+"lv": "A1",
+"gl": 1
 },
 {
 "w": "die Unterschrift",
 "s": "Hier fehlt noch Ihre Unterschrift.",
 "m": "signature",
-"x": "unter- (under) + Schrift (writing) → the writing at the bottom"
+"x": "unter- (under) + Schrift (writing) → the writing at the bottom",
+"lv": "A1",
+"gl": 1
 },
 {
 "w": "die Voraussetzung",
@@ -70,31 +86,39 @@
 "x": "voraus- (ahead) + setzen (set) + -ung → something set in place beforehand",
 "pl": "die Voraussetzungen",
 "rp": "die Voraussetzung für + Akk",
-"col": "die Voraussetzungen erfüllen"
+"col": "die Voraussetzungen erfüllen",
+"lv": "B1",
+"gl": 1
 },
 {
 "w": "die Einbürgerung",
 "s": "Nach der Einbürgerung bekommt man einen deutschen Pass.",
 "m": "naturalisation",
-"x": "ein- (into) + Bürger (citizen) + -ung → making someone into a citizen"
+"x": "ein- (into) + Bürger (citizen) + -ung → making someone into a citizen",
+"lv": "B1"
 },
 {
 "w": "die Staatsangehörigkeit",
 "s": "Welche Staatsangehörigkeit haben Sie?",
 "m": "citizenship, nationality",
-"x": "Staat (state) + -s- + angehören (belong to) + -ig + -keit → the state of belonging to a state"
+"x": "Staat (state) + -s- + angehören (belong to) + -ig + -keit → the state of belonging to a state",
+"lv": "B1"
 },
 {
 "w": "verlängern",
 "s": "Ich muss meinen Vertrag verlängern.",
 "m": "to extend, renew",
-"x": "ver- (changes state) + länger (longer) → to make longer"
+"x": "ver- (changes state) + länger (longer) → to make longer",
+"lv": "B1",
+"gl": 1
 },
 {
 "w": "der Vertrag",
 "s": "Lesen Sie den Vertrag genau, bevor Sie unterschreiben.",
 "m": "contract",
-"x": "vertragen (to get along, agree) → what parties agree on"
+"x": "vertragen (to get along, agree) → what parties agree on",
+"lv": "A2",
+"gl": 1
 },
 {
 "w": "kündigen",
@@ -102,55 +126,71 @@
 "m": "to cancel, give notice, terminate",
 "x": "related to kund (known) → to make known that something ends",
 "rp": "etw. (Akk) kündigen / jdm. (Dat) kündigen",
-"col": "den Vertrag kündigen"
+"col": "den Vertrag kündigen",
+"lv": "A2",
+"gl": 1
 },
 {
 "w": "die Nebenkosten",
 "s": "Die Miete beträgt 800 Euro plus Nebenkosten.",
 "m": "additional costs (utilities on top of rent)",
-"x": "neben (beside) + Kosten (costs) → costs on the side"
+"x": "neben (beside) + Kosten (costs) → costs on the side",
+"lv": "B1"
 },
 {
 "w": "die Kaution",
 "s": "Die Kaution beträgt drei Monatsmieten.",
 "m": "security deposit",
-"x": "from Latin cautio (caution, security) → money held as security"
+"x": "from Latin cautio (caution, security) → money held as security",
+"lv": "B1"
 },
 {
 "w": "der Vermieter",
 "s": "Der Vermieter repariert die Heizung nächste Woche.",
 "m": "landlord",
-"x": "ver- (giving away) + mieten (rent) + -er (person) → the one who rents out"
+"x": "ver- (giving away) + mieten (rent) + -er (person) → the one who rents out",
+"lv": "A1",
+"gl": 1
 },
 {
 "w": "zuständig",
 "s": "Welches Amt ist dafür zuständig?",
 "m": "responsible, in charge",
-"x": "zu- (to) + Stand (standing, position) + -ig → whose position it belongs to"
+"x": "zu- (to) + Stand (standing, position) + -ig → whose position it belongs to",
+"lv": "B1",
+"gl": 1
 },
 {
 "w": "die Behörde",
 "s": "Die Behörde hat meinen Antrag noch nicht bearbeitet.",
 "m": "public authority, government office",
-"x": "old verb behören (to belong) → the body that matters belong to"
+"x": "old verb behören (to belong) → the body that matters belong to",
+"lv": "B1",
+"gl": 1
 },
 {
 "w": "bearbeiten",
 "s": "Wir bearbeiten Ihre Anfrage so schnell wie möglich.",
 "m": "to process, deal with, edit",
-"x": "be- (act on something) + arbeiten (work) → to work on something"
+"x": "be- (act on something) + arbeiten (work) → to work on something",
+"lv": "B1",
+"gl": 1
 },
 {
 "w": "die Erfahrung",
 "s": "Sie hat viel Erfahrung im Kundenservice.",
 "m": "experience",
-"x": "er- (achieve) + fahren (travel) + -ung → what you gain by travelling through life"
+"x": "er- (achieve) + fahren (travel) + -ung → what you gain by travelling through life",
+"lv": "A2",
+"gl": 1
 },
 {
 "w": "sich bewerben",
 "s": "Ich bewerbe mich um eine Stelle als Ingenieur.",
 "m": "to apply (for a job)",
-"x": "be- + werben (to advertise, court) → to advertise yourself for something"
+"x": "be- + werben (to advertise, court) → to advertise yourself for something",
+"lv": "A2",
+"gl": 1
 },
 {
 "w": "die Bewerbung",
@@ -159,55 +199,72 @@
 "x": "bewerben + -ung → the act of applying",
 "pl": "die Bewerbungen",
 "rp": "sich bewerben um + Akk",
-"col": "eine Bewerbung schreiben"
+"col": "eine Bewerbung schreiben",
+"lv": "A2",
+"gl": 1
 },
 {
 "w": "die Krankmeldung",
 "s": "Schicken Sie uns bitte die Krankmeldung bis Mittwoch.",
 "m": "sick note",
-"x": "krank (sick) + melden (report) + -ung → reporting that you are sick"
+"x": "krank (sick) + melden (report) + -ung → reporting that you are sick",
+"lv": "B1"
 },
 {
 "w": "die Überweisung",
 "s": "Die Überweisung dauert ein bis zwei Werktage.",
 "m": "bank transfer; also a doctor's referral",
-"x": "über- (across) + weisen (point, direct) + -ung → directing something across"
+"x": "über- (across) + weisen (point, direct) + -ung → directing something across",
+"lv": "B1",
+"gl": 1
 },
 {
 "w": "die Rechnung",
 "s": "Können Sie mir bitte die Rechnung schicken?",
 "m": "bill, invoice",
-"x": "rechnen (calculate) + -ung → the calculation"
+"x": "rechnen (calculate) + -ung → the calculation",
+"lv": "A1",
+"gl": 1
 },
 {
 "w": "rechtzeitig",
 "s": "Bitte kommen Sie rechtzeitig zum Termin.",
 "m": "in time, punctually",
-"x": "recht (right) + Zeit (time) + -ig → at the right time"
+"x": "recht (right) + Zeit (time) + -ig → at the right time",
+"lv": "B1",
+"gl": 1
 },
 {
 "w": "die Verspätung",
 "s": "Der Zug hat zwanzig Minuten Verspätung.",
 "m": "delay",
-"x": "ver- + spät (late) + -ung → the state of being made late"
+"x": "ver- + spät (late) + -ung → the state of being made late",
+"lv": "A2",
+"gl": 1
 },
 {
 "w": "umsteigen",
 "s": "In Köln müssen Sie umsteigen.",
 "m": "to change (trains, buses)",
-"x": "um- (around, change) + steigen (climb) → climb over into another vehicle"
+"x": "um- (around, change) + steigen (climb) → climb over into another vehicle",
+"lv": "A2",
+"gl": 1
 },
 {
 "w": "die Gewohnheit",
 "s": "Früh aufzustehen ist eine gute Gewohnheit.",
 "m": "habit",
-"x": "gewohnt (used to) + -heit → the state of being used to something"
+"x": "gewohnt (used to) + -heit → the state of being used to something",
+"lv": "B1",
+"gl": 1
 },
 {
 "w": "die Vorstellung",
 "s": "Ich habe keine Vorstellung, wie das funktioniert.",
 "m": "idea, notion; also introduction or performance",
-"x": "vor- (in front) + stellen (place) + -ung → something placed in front of you (or your mind)"
+"x": "vor- (in front) + stellen (place) + -ung → something placed in front of you (or your mind)",
+"lv": "B1",
+"gl": 1
 },
 {
 "w": "unterstützen",
@@ -215,78 +272,100 @@
 "m": "to support",
 "x": "unter- (under) + stützen (prop up) → to prop up from below",
 "rp": "jdn. (Akk) bei + Dat unterstützen",
-"col": "jemanden finanziell unterstützen"
+"col": "jemanden finanziell unterstützen",
+"lv": "B1",
+"gl": 1
 },
 {
 "w": "die Ausbildung",
 "s": "Sie macht eine Ausbildung zur Krankenpflegerin.",
 "m": "vocational training",
-"x": "aus- (out) + bilden (form, shape) + -ung → forming someone out fully"
+"x": "aus- (out) + bilden (form, shape) + -ung → forming someone out fully",
+"lv": "A2",
+"gl": 1
 },
 {
 "w": "die Ehe",
 "s": "In Deutschland ist die Ehe durch das Grundgesetz geschützt.",
 "m": "marriage",
-"x": "Old High German ewa (law, eternity) → a legal, lasting bond"
+"x": "Old High German ewa (law, eternity) → a legal, lasting bond",
+"lv": "A1",
+"gl": 1
 },
 {
 "w": "das Standesamt",
 "s": "Wir heiraten im Mai auf dem Standesamt.",
 "m": "registry office (civil marriages, births)",
-"x": "Stand (civil status) + -es- + Amt (office) → office for civil status"
+"x": "Stand (civil status) + -es- + Amt (office) → office for civil status",
+"lv": "B1"
 },
 {
 "w": "die Gleichberechtigung",
 "s": "Die Gleichberechtigung von Mann und Frau steht im Grundgesetz.",
 "m": "equal rights, equality",
-"x": "gleich (equal) + berechtigen (entitle: be- + Recht) + -ung → being equally entitled"
+"x": "gleich (equal) + berechtigen (entitle: be- + Recht) + -ung → being equally entitled",
+"lv": "B2"
 },
 {
 "w": "die Meinungsfreiheit",
 "s": "Die Meinungsfreiheit ist ein Grundrecht.",
 "m": "freedom of expression",
-"x": "Meinung (opinion) + -s- + Freiheit (frei + -heit) → freedom of opinion"
+"x": "Meinung (opinion) + -s- + Freiheit (frei + -heit) → freedom of opinion",
+"lv": "B1"
 },
 {
 "w": "wählen",
 "s": "Deutsche Staatsbürger dürfen ab 18 den Bundestag wählen.",
 "m": "to vote; to choose; to dial",
-"x": "one root, three uses: choose a party, choose a number, choose a dish"
+"x": "one root, three uses: choose a party, choose a number, choose a dish",
+"lv": "A2",
+"gl": 1
 },
 {
 "w": "die Rücksicht",
 "s": "Bitte nehmen Sie Rücksicht auf die Nachbarn.",
 "m": "consideration (for others)",
-"x": "Rück- (back) + Sicht (view) → looking back at others"
+"x": "Rück- (back) + Sicht (view) → looking back at others",
+"lv": "B1",
+"gl": 1
 },
 {
 "w": "die Mülltrennung",
 "s": "In Deutschland ist Mülltrennung sehr wichtig.",
 "m": "waste separation",
-"x": "Müll (rubbish) + trennen (separate) + -ung"
+"x": "Müll (rubbish) + trennen (separate) + -ung",
+"lv": "B1"
 },
 {
 "w": "vereinbaren",
 "s": "Können wir einen Termin vereinbaren?",
 "m": "to arrange, agree on",
-"x": "ver- + ein (one) + -bar + -en → to make into one (agreement)"
+"x": "ver- + ein (one) + -bar + -en → to make into one (agreement)",
+"lv": "A2",
+"gl": 1
 },
 {
 "w": "absagen",
 "s": "Leider muss ich den Termin absagen.",
 "m": "to cancel (an appointment, event)",
-"x": "ab- (off, away) + sagen (say) → to say it off"
+"x": "ab- (off, away) + sagen (say) → to say it off",
+"lv": "B1",
+"gl": 1
 },
 {
 "w": "zusagen",
 "s": "Ich habe für die Party zugesagt.",
 "m": "to accept (an invitation), confirm",
-"x": "zu- (towards, yes) + sagen (say) → to say yes to"
+"x": "zu- (towards, yes) + sagen (say) → to say yes to",
+"lv": "B1",
+"gl": 1
 },
 {
 "w": "die Pflicht",
 "s": "In Deutschland gibt es eine Schulpflicht.",
 "m": "duty, obligation",
-"x": "pflegen (care for, tend) → what you are bound to tend to"
+"x": "pflegen (care for, tend) → what you are bound to tend to",
+"lv": "B1",
+"gl": 1
 }
 ]

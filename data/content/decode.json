@@ -11,7 +11,9 @@
   ],
   "a": 0,
   "wk": 2,
-  "th": "alltag"
+  "th": "alltag",
+  "lv": "A2",
+  "gl": 1
  },
  {
   "w": "vergesslich",
@@ -25,7 +27,8 @@
   ],
   "a": 0,
   "wk": 1,
-  "th": "familie"
+  "th": "familie",
+  "lv": "B1"
  },
  {
   "w": "der Gesprächspartner",
@@ -39,7 +42,8 @@
   ],
   "a": 0,
   "wk": 1,
-  "th": "familie"
+  "th": "familie",
+  "lv": "B1"
  },
  {
   "w": "ungenießbar",
@@ -53,7 +57,8 @@
   ],
   "a": 0,
   "wk": 2,
-  "th": "alltag"
+  "th": "alltag",
+  "lv": "B2"
  },
  {
   "w": "nachvollziehbar",
@@ -67,7 +72,8 @@
   ],
   "a": 0,
   "wk": 3,
-  "th": "alltag"
+  "th": "alltag",
+  "lv": "B2"
  },
  {
   "w": "die Abmeldung",
@@ -81,7 +87,8 @@
   ],
   "a": 0,
   "wk": 4,
-  "th": "amt"
+  "th": "amt",
+  "lv": "B1"
  },
  {
   "w": "befristet",
@@ -95,7 +102,8 @@
   ],
   "a": 0,
   "wk": 5,
-  "th": "arbeit"
+  "th": "arbeit",
+  "lv": "B1"
  },
  {
   "w": "die Unterkunft",
@@ -109,7 +117,9 @@
   ],
   "a": 0,
   "wk": 7,
-  "th": "familie"
+  "th": "familie",
+  "lv": "A2",
+  "gl": 1
  },
  {
   "w": "unvermeidlich",
@@ -123,7 +133,8 @@
   ],
   "a": 0,
   "wk": 7,
-  "th": "familie"
+  "th": "familie",
+  "lv": "B2"
  },
  {
   "w": "zuverlässig",
@@ -137,7 +148,9 @@
   ],
   "a": 0,
   "wk": 8,
-  "th": "wohnen"
+  "th": "wohnen",
+  "lv": "B1",
+  "gl": 1
  },
  {
   "w": "die Nachbarschaft",
@@ -151,7 +164,8 @@
   ],
   "a": 0,
   "wk": 8,
-  "th": "wohnen"
+  "th": "wohnen",
+  "lv": "B1"
  },
  {
   "w": "die Vorbereitung",
@@ -165,6 +179,8 @@
   ],
   "a": 0,
   "wk": 11,
-  "th": "alltag"
+  "th": "alltag",
+  "lv": "B1",
+  "gl": 1
  }
 ]

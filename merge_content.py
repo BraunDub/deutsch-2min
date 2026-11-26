@@ -4,7 +4,10 @@ root=sys.argv[1]; C=os.path.join(root,'data','content'); D=os.path.join(root,'da
 L=lambda p:json.load(open(p,encoding='utf-8'))
 W=lambda p,o:json.dump(o,open(p,'w',encoding='utf-8'),ensure_ascii=False,indent=0)
 base=L(os.path.join(D,'base','vocab.json')); new=L(os.path.join(C,'vocab.json'))
-words={c['w'] for c in new}; W(os.path.join(D,'vocab.json'), new+[c for c in base if c['w'] not in words])
+words={c['w'] for c in new}; vocab=new+[c for c in base if c['w'] not in words]
+# B1-Wortliste deck: Goethe B1 words the curated decks don't cover yet (generated, see README)
+words={c['w'] for c in vocab}; vocab+=[c for c in L(os.path.join(D,'base','b1_wortliste.json')) if c['w'] not in words]
+W(os.path.join(D,'vocab.json'), vocab)
 base=L(os.path.join(D,'base','decode.json')); new=L(os.path.join(C,'decode.json'))
 words={c['w'] for c in new}; W(os.path.join(D,'decode.json'), new+[c for c in base if c['w'] not in words])
 base=L(os.path.join(D,'base','tasks.json')); new=L(os.path.join(C,'tasks.json'))

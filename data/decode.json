@@ -11,7 +11,9 @@
 ],
 "a": 0,
 "wk": 2,
-"th": "alltag"
+"th": "alltag",
+"lv": "A2",
+"gl": 1
 },
 {
 "w": "vergesslich",
@@ -25,7 +27,8 @@
 ],
 "a": 0,
 "wk": 1,
-"th": "familie"
+"th": "familie",
+"lv": "B1"
 },
 {
 "w": "der Gesprächspartner",
@@ -39,7 +42,8 @@
 ],
 "a": 0,
 "wk": 1,
-"th": "familie"
+"th": "familie",
+"lv": "B1"
 },
 {
 "w": "ungenießbar",
@@ -53,7 +57,8 @@
 ],
 "a": 0,
 "wk": 2,
-"th": "alltag"
+"th": "alltag",
+"lv": "B2"
 },
 {
 "w": "nachvollziehbar",
@@ -67,7 +72,8 @@
 ],
 "a": 0,
 "wk": 3,
-"th": "alltag"
+"th": "alltag",
+"lv": "B2"
 },
 {
 "w": "die Abmeldung",
@@ -81,7 +87,8 @@
 ],
 "a": 0,
 "wk": 4,
-"th": "amt"
+"th": "amt",
+"lv": "B1"
 },
 {
 "w": "befristet",
@@ -95,7 +102,8 @@
 ],
 "a": 0,
 "wk": 5,
-"th": "arbeit"
+"th": "arbeit",
+"lv": "B1"
 },
 {
 "w": "die Unterkunft",
@@ -109,7 +117,9 @@
 ],
 "a": 0,
 "wk": 7,
-"th": "familie"
+"th": "familie",
+"lv": "A2",
+"gl": 1
 },
 {
 "w": "unvermeidlich",
@@ -123,7 +133,8 @@
 ],
 "a": 0,
 "wk": 7,
-"th": "familie"
+"th": "familie",
+"lv": "B2"
 },
 {
 "w": "zuverlässig",
@@ -137,7 +148,9 @@
 ],
 "a": 0,
 "wk": 8,
-"th": "wohnen"
+"th": "wohnen",
+"lv": "B1",
+"gl": 1
 },
 {
 "w": "die Nachbarschaft",
@@ -151,7 +164,8 @@
 ],
 "a": 0,
 "wk": 8,
-"th": "wohnen"
+"th": "wohnen",
+"lv": "B1"
 },
 {
 "w": "die Vorbereitung",
@@ -165,7 +179,9 @@
 ],
 "a": 0,
 "wk": 11,
-"th": "alltag"
+"th": "alltag",
+"lv": "B1",
+"gl": 1
 },
 {
 "w": "unvermeidbar",
@@ -177,7 +193,8 @@
 "unforgivable",
 "unnecessary"
 ],
-"a": 0
+"a": 0,
+"lv": "B2"
 },
 {
 "w": "die Erreichbarkeit",
@@ -189,7 +206,8 @@
 "richness",
 "responsibility"
 ],
-"a": 0
+"a": 0,
+"lv": "B2"
 },
 {
 "w": "verschlafen",
@@ -201,7 +219,8 @@
 "to sleep badly",
 "to stay awake"
 ],
-"a": 0
+"a": 0,
+"lv": "B1"
 },
 {
 "w": "sich verlaufen",
@@ -213,7 +232,9 @@
 "to walk through",
 "to stroll"
 ],
-"a": 0
+"a": 0,
+"lv": "B1",
+"gl": 1
 },
 {
 "w": "die Ausnahme",
@@ -225,7 +246,9 @@
 "exit",
 "expense"
 ],
-"a": 0
+"a": 0,
+"lv": "B1",
+"gl": 1
 },
 {
 "w": "entlasten",
@@ -237,7 +260,8 @@
 "to dismiss",
 "to delay"
 ],
-"a": 0
+"a": 0,
+"lv": "B2"
 },
 {
 "w": "umweltfreundlich",
@@ -249,7 +273,8 @@
 "friendly to everyone",
 "worldly"
 ],
-"a": 0
+"a": 0,
+"lv": "B1"
 },
 {
 "w": "die Einsamkeit",
@@ -261,7 +286,8 @@
 "simplicity",
 "entry"
 ],
-"a": 0
+"a": 0,
+"lv": "B2"
 },
 {
 "w": "nachvollziehen",
@@ -273,7 +299,8 @@
 "to pull back",
 "to imitate"
 ],
-"a": 0
+"a": 0,
+"lv": "B2"
 },
 {
 "w": "die Rückgabe",
@@ -285,7 +312,8 @@
 "delivery",
 "gift"
 ],
-"a": 0
+"a": 0,
+"lv": "B1"
 },
 {
 "w": "zweisprachig",
@@ -297,7 +325,8 @@
 "talkative",
 "doubtful"
 ],
-"a": 0
+"a": 0,
+"lv": "B1"
 },
 {
 "w": "missverstehen",
@@ -309,7 +338,8 @@
 "to fail to hear",
 "to disagree"
 ],
-"a": 0
+"a": 0,
+"lv": "B1"
 },
 {
 "w": "die Unabhängigkeit",
@@ -321,7 +351,8 @@
 "dependence",
 "unhappiness"
 ],
-"a": 0
+"a": 0,
+"lv": "B2"
 },
 {
 "w": "verbieten",
@@ -333,7 +364,9 @@
 "to announce",
 "to bid"
 ],
-"a": 0
+"a": 0,
+"lv": "A2",
+"gl": 1
 },
 {
 "w": "die Vorsicht",
@@ -345,7 +378,9 @@
 "preview",
 "view"
 ],
-"a": 0
+"a": 0,
+"lv": "A1",
+"gl": 1
 },
 {
 "w": "aufräumen",
@@ -357,7 +392,9 @@
 "to build up",
 "to air out"
 ],
-"a": 0
+"a": 0,
+"lv": "A2",
+"gl": 1
 },
 {
 "w": "die Lebensmittel",
@@ -369,7 +406,9 @@
 "middle age",
 "living costs"
 ],
-"a": 0
+"a": 0,
+"lv": "A1",
+"gl": 1
 },
 {
 "w": "unzuverlässig",
@@ -381,7 +420,8 @@
 "unfinished",
 "unpaid"
 ],
-"a": 0
+"a": 0,
+"lv": "B1"
 },
 {
 "w": "die Gesetzgebung",
@@ -393,7 +433,8 @@
 "jurisdiction",
 "constitution"
 ],
-"a": 0
+"a": 0,
+"lv": "C1"
 },
 {
 "w": "verständlich",
@@ -405,7 +446,9 @@
 "sympathetic",
 "complicated"
 ],
-"a": 0
+"a": 0,
+"lv": "B1",
+"gl": 1
 },
 {
 "w": "die Wohngemeinschaft",
@@ -417,7 +460,9 @@
 "neighbourhood",
 "residents' association"
 ],
-"a": 0
+"a": 0,
+"lv": "B1",
+"gl": 1
 },
 {
 "w": "enttäuschen",
@@ -429,6 +474,8 @@
 "to surprise",
 "to annoy"
 ],
-"a": 0
+"a": 0,
+"lv": "B1",
+"gl": 1
 }
 ]
