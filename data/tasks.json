@@ -542,7 +542,7 @@
 ],
 "lesen": [
 {
-"t": "Hallo zusammen! Letztes Wochenende waren wir bei Lenas Eltern in der Nähe von Landshut. Am Samstag hat ihr Vater seinen 60. Geburtstag gefeiert, und es kamen fast dreißig Gäste. Ich war ziemlich nervös, weil viele Verwandte Dialekt sprechen. Am Anfang habe ich kaum etwas verstanden, aber Lenas Tante hat mir die wichtigsten Wörter erklärt. Am Sonntag sind wir dann zusammen auf einen Berg gewandert, obwohl es geregnet hat. Nächstes Mal will ich schon ein paar Sätze auf Bairisch sagen!",
+"t": "Hallo zusammen! Letztes Wochenende waren wir bei Lenas Eltern in der Nähe von Landshut. Am Samstag hat ihr Vater seinen 60. Geburtstag gefeiert, und es kamen fast dreißig Gäste. Ich war ziemlich nervös, weil viele Verwandte Dialekt sprechen. Am Anfang habe ich kaum etwas verstanden, aber Lenas Tante hat mir die wichtigsten Wörter erklärt. Am Sonntag sind wir dann zusammen auf einen Berg gewandert, obwohl es geregnet hat. Nächstes Mal will ich mehr mit der Familie sprechen.",
 "q": [
 {
 "q": "Warum war der Autor nervös?",
@@ -742,6 +742,368 @@
 "Im Herbst.",
 "Im Januar.",
 "Nach zwei Jahren."
+],
+"a": 0
+}
+]
+},
+{
+"mod": "Lesen 1",
+"th": "arbeit",
+"t": "Liebes Tagebuch,\n\nheute war mein erster Tag im neuen Job, und ich bin total müde, aber glücklich. Ich bin extra früh losgefahren, weil ich auf keinen Fall zu spät kommen wollte. Natürlich war ich dann eine halbe Stunde zu früh da und habe draußen einen Kaffee getrunken. Meine Chefin, Frau Petersen, hat mir zuerst das Büro gezeigt und mich allen vorgestellt. Ich glaube, ich habe mir höchstens drei Namen gemerkt! Mittags waren wir zusammen in der Kantine. Das Essen war okay, aber nicht so gut wie bei meiner alten Firma. Am Nachmittag habe ich meinen Laptop bekommen, aber das Passwort hat nicht funktioniert, deshalb konnte ich noch nicht richtig arbeiten. Morgen soll ein Kollege aus der IT-Abteilung kommen. Am Abend hat mich meine Schwester angerufen, und ich habe ihr alles erzählt.",
+"q": [
+{
+"q": "Die Autorin ist zu spät zur Arbeit gekommen.",
+"o": [
+"Richtig",
+"Falsch"
+],
+"a": 1
+},
+{
+"q": "Frau Petersen hat ihr die Kolleginnen und Kollegen vorgestellt.",
+"o": [
+"Richtig",
+"Falsch"
+],
+"a": 0
+},
+{
+"q": "Das Essen in der Kantine war besser als in der alten Firma.",
+"o": [
+"Richtig",
+"Falsch"
+],
+"a": 1
+},
+{
+"q": "Am ersten Tag konnte sie schon normal am Laptop arbeiten.",
+"o": [
+"Richtig",
+"Falsch"
+],
+"a": 1
+},
+{
+"q": "Sie hat abends mit ihrer Schwester telefoniert.",
+"o": [
+"Richtig",
+"Falsch"
+],
+"a": 0
+}
+]
+},
+{
+"mod": "Lesen 1",
+"th": "freizeit",
+"t": "Hallo Sarah,\n\nwie geht es dir? Ich muss dir unbedingt von unserem Urlaub an der Ostsee erzählen! Wir hatten eine kleine Ferienwohnung direkt am Strand. Leider war das Wetter in der ersten Woche ziemlich schlecht: Es hat fast jeden Tag geregnet, und es war windig. Deshalb sind wir oft ins Schwimmbad oder ins Museum gegangen. In der zweiten Woche kam dann endlich die Sonne. Die Kinder waren jeden Tag im Meer, obwohl das Wasser nur 17 Grad hatte! Mein Mann hat einen Segelkurs gemacht, und ich habe viel gelesen und mich erholt. Am letzten Abend haben wir in einem Fischrestaurant gegessen – das war der Höhepunkt. Nächstes Jahr wollen wir wieder hin, aber diesmal im August.\n\nLiebe Grüße\nKatrin",
+"q": [
+{
+"q": "Die Ferienwohnung lag direkt am Strand.",
+"o": [
+"Richtig",
+"Falsch"
+],
+"a": 0
+},
+{
+"q": "In der ersten Woche war das Wetter sehr schön.",
+"o": [
+"Richtig",
+"Falsch"
+],
+"a": 1
+},
+{
+"q": "Die Kinder sind im Meer geschwommen.",
+"o": [
+"Richtig",
+"Falsch"
+],
+"a": 0
+},
+{
+"q": "Katrin hat einen Segelkurs gemacht.",
+"o": [
+"Richtig",
+"Falsch"
+],
+"a": 1
+},
+{
+"q": "Die Familie möchte nächstes Jahr wieder an die Ostsee fahren.",
+"o": [
+"Richtig",
+"Falsch"
+],
+"a": 0
+}
+]
+},
+{
+"mod": "Lesen 2",
+"th": "alltag",
+"t": "Immer mehr Deutsche arbeiten von zu Hause\n\nSeit einigen Jahren arbeiten viele Angestellte mindestens einen Tag pro Woche im Homeoffice. Laut einer Umfrage möchten die meisten das auch in Zukunft so machen. Als größten Vorteil nennen sie die Zeit, die sie ohne den Weg zur Arbeit sparen. Viele Firmen sehen das Homeoffice ebenfalls positiv, weil sie weniger Büroräume brauchen. Es gibt aber auch Probleme: Jeder Dritte sagt, dass ihm der Kontakt zu den Kollegen fehlt. Außerdem fällt es manchen schwer, Arbeit und Freizeit zu trennen. Experten empfehlen deshalb feste Arbeitszeiten und einen eigenen Arbeitsplatz in der Wohnung.",
+"q": [
+{
+"q": "Was ist für Angestellte der größte Vorteil des Homeoffice?",
+"o": [
+"Sie sparen den Weg zur Arbeit.",
+"Sie verdienen mehr Geld.",
+"Sie haben mehr Kontakt zu Kollegen."
+],
+"a": 0
+},
+{
+"q": "Warum finden viele Firmen das Homeoffice gut?",
+"o": [
+"Sie brauchen weniger Büros.",
+"Die Mitarbeiter arbeiten länger.",
+"Sie müssen keine Computer kaufen."
+],
+"a": 0
+},
+{
+"q": "Was empfehlen Experten?",
+"o": [
+"Feste Arbeitszeiten und einen eigenen Arbeitsplatz.",
+"Nur einen Tag pro Woche zu Hause zu arbeiten.",
+"Abends die E-Mails zu lesen."
+],
+"a": 0
+}
+]
+},
+{
+"mod": "Lesen 3",
+"th": "freizeit",
+"t": "A) Sprachcafé International: Jeden Mittwoch ab 18 Uhr in der Stadtbibliothek. Deutsch sprechen mit Muttersprachlern, kostenlos, ohne Anmeldung.\n\nB) Kochkurs „Bayerische Küche“: vier Samstage, jeweils 10–14 Uhr. 120 €, Anmeldung bis 1. März.\n\nC) Babysitter gesucht: Familie mit zwei Kindern (3 und 6) sucht zuverlässige Hilfe an zwei Abenden pro Woche. 13 € pro Stunde.\n\nD) Fahrradwerkstatt zum Selbermachen: Reparieren Sie Ihr Rad mit unserem Werkzeug und unserer Hilfe. Dienstag und Donnerstag 16–20 Uhr, Spende erwünscht.\n\nE) Umzugshilfe: Zwei starke Studenten helfen beim Umzug, auch am Wochenende. 25 € pro Stunde und Person.",
+"q": [
+{
+"q": "Olga möchte nach der Arbeit ihr Deutsch verbessern, hat aber wenig Geld.",
+"o": [
+"Anzeige A",
+"Anzeige B",
+"Anzeige D"
+],
+"a": 0
+},
+{
+"q": "Ahmed hat einen Platten und möchte lernen, wie man das selbst repariert.",
+"o": [
+"Anzeige D",
+"Anzeige E",
+"Anzeige A"
+],
+"a": 0
+},
+{
+"q": "Lucia studiert und sucht einen Nebenjob am Abend.",
+"o": [
+"Anzeige C",
+"Anzeige E",
+"Anzeige B"
+],
+"a": 0
+},
+{
+"q": "Familie Weber zieht am Samstag in eine neue Wohnung.",
+"o": [
+"Anzeige E",
+"Anzeige C",
+"Anzeige D"
+],
+"a": 0
+}
+]
+},
+{
+"mod": "Lesen 3",
+"th": "wohnen",
+"t": "A) 2-Zimmer-Wohnung, 55 m², Altbau, 3. Stock ohne Aufzug, 850 € warm, ab sofort. Keine Haustiere.\n\nB) WG-Zimmer, 16 m², möbliert, in netter 3er-WG nahe der Uni, 480 € warm, ab 1. April.\n\nC) 4-Zimmer-Wohnung mit Garten am Stadtrand, 110 m², 1.650 € warm, Kita und Schule in der Nähe.\n\nD) 1-Zimmer-Apartment, Erdgeschoss, barrierefrei, mit Aufzug zur Tiefgarage, 690 € warm.\n\nE) Ferienwohnung in den Bergen, wochenweise zu vermieten, ab 500 € pro Woche.",
+"q": [
+{
+"q": "Herr Krüger sitzt im Rollstuhl und sucht eine kleine Wohnung.",
+"o": [
+"Anzeige D",
+"Anzeige A",
+"Anzeige B"
+],
+"a": 0
+},
+{
+"q": "Familie Nowak hat drei Kinder und möchte mehr Platz.",
+"o": [
+"Anzeige C",
+"Anzeige A",
+"Anzeige E"
+],
+"a": 0
+},
+{
+"q": "Tom beginnt im April sein Studium und möchte nicht allein wohnen.",
+"o": [
+"Anzeige B",
+"Anzeige D",
+"Anzeige A"
+],
+"a": 0
+},
+{
+"q": "Anna und ihr Freund suchen eine Wohnung im Zentrum und haben eine Katze.",
+"o": [
+"Keine Anzeige passt.",
+"Anzeige A",
+"Anzeige C"
+],
+"a": 0
+}
+]
+},
+{
+"mod": "Lesen 4",
+"th": "alltag",
+"t": "Forum: Sollte man in der Stadt das Auto abschaffen?\n\nJonas, 29: Ich habe mein Auto vor zwei Jahren verkauft und vermisse es überhaupt nicht. Mit Fahrrad, Bus und Carsharing komme ich überall hin und spare viel Geld.\n\nPetra, 45: Für mich ist das keine Option. Ich habe zwei kleine Kinder und muss sie morgens zur Kita bringen, bevor ich zur Arbeit fahre. Mit dem Bus würde das ewig dauern.\n\nMilan, 63: Ich bin für weniger Autos in der Innenstadt, aber die Stadt muss erst den Busverkehr verbessern. Bei uns fährt abends nur einmal pro Stunde ein Bus.\n\nLea, 19: Autos verschmutzen die Luft und nehmen viel Platz weg. Ich finde, die Innenstadt sollte komplett autofrei sein.",
+"q": [
+{
+"q": "Ist Jonas dafür, in der Stadt ohne Auto zu leben?",
+"o": [
+"Ja",
+"Nein"
+],
+"a": 0
+},
+{
+"q": "Ist Petra dafür, in der Stadt ohne Auto zu leben?",
+"o": [
+"Ja",
+"Nein"
+],
+"a": 1
+},
+{
+"q": "Was sagt Milan?",
+"o": [
+"Zuerst muss der Busverkehr besser werden.",
+"Busse fahren in seiner Stadt sehr oft.",
+"Er braucht sein Auto für die Arbeit."
+],
+"a": 0
+},
+{
+"q": "Ist Lea für eine autofreie Innenstadt?",
+"o": [
+"Ja",
+"Nein"
+],
+"a": 0
+}
+]
+},
+{
+"mod": "Lesen 4",
+"th": "alltag",
+"t": "Forum: Kinder und Taschengeld – ab wann und wie viel?\n\nFrank, 41: Unsere Tochter bekommt seit ihrem sechsten Geburtstag ein bisschen Taschengeld. So lernt sie früh, mit Geld umzugehen und zu sparen.\n\nNesrin, 36: Ich gebe meinen Kindern kein festes Taschengeld. Wenn sie etwas brauchen, kaufen wir es zusammen. Ich finde, Kinder sollten sich noch keine Sorgen um Geld machen müssen.\n\nUlrike, 52: Taschengeld ja, aber die Kinder sollten dafür auch kleine Aufgaben im Haushalt übernehmen, zum Beispiel den Tisch decken.\n\nDavid, 24: Ich habe als Kind nie Taschengeld bekommen und musste später alles selbst lernen. Das war nicht leicht. Deshalb finde ich Taschengeld sehr wichtig.",
+"q": [
+{
+"q": "Ist Frank für Taschengeld?",
+"o": [
+"Ja",
+"Nein"
+],
+"a": 0
+},
+{
+"q": "Ist Nesrin für Taschengeld?",
+"o": [
+"Ja",
+"Nein"
+],
+"a": 1
+},
+{
+"q": "Was meint Ulrike?",
+"o": [
+"Kinder sollen für ihr Taschengeld im Haushalt helfen.",
+"Kinder sollen kein Taschengeld bekommen.",
+"Taschengeld ist erst ab 12 sinnvoll."
+],
+"a": 0
+},
+{
+"q": "Ist David für Taschengeld?",
+"o": [
+"Ja",
+"Nein"
+],
+"a": 0
+}
+]
+},
+{
+"mod": "Lesen 5",
+"th": "alltag",
+"t": "Benutzungsordnung der Stadtbibliothek (Auszug)\n\n1. Ausweis: Für die Ausleihe brauchen Sie einen Bibliotheksausweis. Er kostet 15 € pro Jahr, für Kinder und Studierende ist er kostenlos. Bringen Sie zur Anmeldung Ihren Personalausweis mit.\n2. Leihfrist: Bücher können Sie vier Wochen ausleihen, DVDs nur eine Woche. Die Leihfrist kann zweimal online verlängert werden, wenn niemand das Medium reserviert hat.\n3. Gebühren: Für jeden Tag, den Sie zu spät zurückgeben, zahlen Sie 0,50 € pro Medium.\n4. Verhalten: Essen ist in den Lesesälen nicht erlaubt, Getränke nur in geschlossenen Flaschen. Bitte telefonieren Sie im Eingangsbereich.",
+"q": [
+{
+"q": "Wer muss für den Ausweis nichts bezahlen?",
+"o": [
+"Studierende",
+"Rentner",
+"Alle Erwachsenen"
+],
+"a": 0
+},
+{
+"q": "Wann kann man ein Buch nicht verlängern?",
+"o": [
+"Wenn eine andere Person es reserviert hat.",
+"Wenn man es schon vier Wochen hat.",
+"Wenn man online ist."
+],
+"a": 0
+},
+{
+"q": "Was ist im Lesesaal erlaubt?",
+"o": [
+"Wasser aus einer geschlossenen Flasche",
+"Ein Sandwich",
+"Ein kurzes Telefonat"
+],
+"a": 0
+}
+]
+},
+{
+"mod": "Lesen 5",
+"th": "freizeit",
+"t": "Hinweise für Kursteilnehmende der Volkshochschule\n\nAnmeldung: Melden Sie sich bitte spätestens eine Woche vor Kursbeginn online oder im Büro an. Die Kursgebühr wird vor dem ersten Termin von Ihrem Konto abgebucht.\n\nAbmeldung: Bis zehn Tage vor Kursbeginn können Sie sich kostenlos abmelden. Danach müssen Sie die volle Gebühr bezahlen, außer Sie finden eine Ersatzperson.\n\nKursausfall: Wenn sich weniger als sechs Personen anmelden, findet der Kurs nicht statt. Sie bekommen Ihr Geld dann vollständig zurück.\n\nErmäßigung: Schüler, Studierende und Arbeitslose bekommen 30 % Ermäßigung. Bitte zeigen Sie einen Nachweis.",
+"q": [
+{
+"q": "Wann wird die Kursgebühr bezahlt?",
+"o": [
+"Vor dem ersten Kurstermin.",
+"Nach dem letzten Kurstermin.",
+"Am ersten Kurstag bar."
+],
+"a": 0
+},
+{
+"q": "Sie melden sich fünf Tage vor Kursbeginn ab. Was passiert?",
+"o": [
+"Sie zahlen die volle Gebühr, wenn niemand Ihren Platz nimmt.",
+"Sie bekommen das Geld zurück.",
+"Sie zahlen 30 % der Gebühr."
+],
+"a": 0
+},
+{
+"q": "Wer bekommt eine Ermäßigung?",
+"o": [
+"Arbeitslose mit Nachweis.",
+"Alle Teilnehmenden über 60.",
+"Wer sich früh anmeldet."
 ],
 "a": 0
 }
