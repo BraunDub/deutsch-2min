@@ -70,11 +70,23 @@ const Recog = window.SpeechRecognition || window.webkitSpeechRecognition;
 
 /* ---------- SRS ---------- */
 function srsGet(k) { return S.srs[k]; }
+/* "Wiederholen" rounds: practising a word that isn't due yet. Nochmal resets it like a normal
+   review; Gut/Leicht only note that you saw it, so the spacing schedule isn't pushed ahead. */
+function practiceGrade(k, g) {
+  if (g === 0) return grade(k, 0);
+  const r = S.srs[k]; if (r) { r.l = Date.now(); r.pr = (r.pr || 0) + 1; save(); }
+}
 function isDue(k, now = Date.now()) { const r = S.srs[k]; return r && r.d <= now; }
 function grade(k, g) { // g: 0 again, 1 good, 2 easy
+  const fresh = !S.srs[k] || S.srs[k].lr;
   const r = S.srs[k] || { b: 0, d: 0 };
   if (g === 0) r.b = 1; else r.b = Math.min(INTERVALS.length - 1, r.b + g);
   r.d = g === 0 ? Date.now() + 10 * 60e3 : Date.now() + INTERVALS[r.b] * DAY - 3 * 3600e3;
+  /* learning step: a new word (or one you just missed) answered "Gut" comes back once more
+     later the same day (in about an hour) before it moves on to tomorrow */
+  if (g === 1 && fresh && !r.lr) { r.b = 0; r.lr = 1; r.d = Date.now() + 3600e3; }
+  else if (g === 1 && r.lr) { r.b = 1; delete r.lr; r.d = Date.now() + INTERVALS[1] * DAY - 3 * 3600e3; }
+  else if (g === 0) r.lr = 1; else delete r.lr;
   r.l = Date.now();
   S.srs[k] = r; save();
 }
@@ -154,12 +166,26 @@ function skillItem(kind) {
 function buildSection(kind) {
   if (kind === 'wb') return [wbItem()];
   if (kind === 'vocab') return balanced(vocabPool(), 10, x => x.k).map(c => ({ t: 'vocab', c }));
+  if (kind === 'review') return reviewRound(10);
   if (kind === 'decode') return balanced(decodePool(), 5, x => x.k).map(c => ({ t: 'decode', c }));
   if (kind === 'lid') return choose(lidPool(), 5, x => x.k).map(c => ({ t: 'lid', c }));
   const n = kind === 'hoeren' ? 4 : kind === 'hb1' ? 1 : kind === 'lesen' || kind === 'party' ? 2 : 3;
   const out = []; const used = new Set();
   for (let j = 0; j < n; j++) { const it = skillItem(kind); if (used.has(it.i)) continue; used.add(it.i); markSeen(kind, it.i); out.push(it); }
   return out;
+}
+
+/* Wiederholen: words you studied recently (last 14 days), least recently seen first,
+   so the same words keep coming back even when the schedule says "not yet". */
+function reviewPool() {
+  const since = Date.now() - 14 * DAY;
+  return vocabPool().filter(x => { const r = srsGet(x.k); return r && (r.l || 0) > since; })
+    .sort((a, b) => (S.srs[a.k].l || 0) - (S.srs[b.k].l || 0));
+}
+function reviewRound(n) {
+  const due = vocabPool().filter(x => isDue(x.k));
+  const pick = [...due, ...reviewPool().filter(x => !isDue(x.k))].slice(0, n);
+  return shuffle(pick).map(c => ({ t: 'vocab', c }));
 }
 
 /* ---------- streak & stats ---------- */
@@ -203,6 +229,8 @@ function home() {
     <div class="grid" style="margin-top:12px">
       ${wbTile()}
       ${tile('vocab', '10 Wörter', `${dueV} zum Wiederholen · ${newV} neu${b1Focus() ? ' · B1-Fokus' : ''}`)}
+      ${tile('review', 'Wiederholen', `${reviewPool().length} Wörter der letzten 2 Wochen`)}
+      <button class="tile" data-go="tests"><b>📝 Probetests</b><span>B1 & Einbürgerungstest mit Ergebnis</span></button>
       <button class="tile" data-go="exam"><b>🎯 B1-Prüfung</b><span>Lesen, Hören, Schreiben, Sprechen im Prüfungsformat</span></button>
       <button class="tile" data-go="lid"><b>Leben in Deutschland</b><span>Lektionen + Fragen · ${lidDone}/${lidAll.length} beantwortet</span></button>
       <button class="tile" data-go="grammar"><b>Grammatik-Training</b><span>Ein Thema, so lange du willst</span></button>
@@ -221,13 +249,14 @@ function home() {
 const tile = (k, title, sub) => `<button class="tile" data-start="${k}"><b>${esc(title)}</b><span>${esc(sub)}</span></button>`;
 
 function startSession(kind) {
+  if (kind.startsWith('test:')) return startTest(kind.slice(5));
   const q = kind === 'mix' ? buildMix() : buildSection(kind);
   if (kind === 'mix') q.filter(x => SKILLS.includes(x.t)).forEach(x => { if (x.i !== undefined) markSeen(x.t, x.i); (S.seen._skills ||= {})[x.t] = (S.seen._skills[x.t] || 0) + 1; save(); });
-  if (!q.length) { toast('Gerade nichts fällig. Komm später wieder!'); return; }
-  startQueue(kind, q);
+  if (!q.length) { toast(kind === 'review' ? 'Noch keine gelernten Wörter. Mach zuerst eine 10-Wörter-Runde!' : 'Gerade nichts fällig. Komm später wieder!'); return; }
+  startQueue(kind, q, kind === 'review' ? { practice: true } : {});
 }
 function startQueue(kind, q, extra) {
-  session = { kind, q, pos: 0, ok: 0, start: Date.now(), requeued: new Set(), ...extra };
+  session = { kind, q, pos: 0, ok: 0, pts: 0, max: 0, start: Date.now(), again: {}, ...extra };
   clearInterval(window._tick);
   window._tick = setInterval(() => { const el = document.querySelector('.timer'); if (el && session) el.textContent = fmtTime(Date.now() - session.start); }, 1000);
   renderItem();
@@ -256,16 +285,18 @@ function next(correct) {
 }
 function finish() {
   clearInterval(window._tick); stopSpeech();
+  if (session.test && session.max) (S.tests ||= []).push({ id: session.test.id, d: today(), p: session.pts, m: session.max }), save();
   const secs = Math.round((Date.now() - session.start) / 1000);
   $app.innerHTML = `
     <div class="card done"><div class="body">
-      <div class="big">${streakNow() > 1 ? '🔥' : '✅'}</div>
-      <h1>Gut gemacht!</h1>
+      <div class="big">${session.test ? '📝' : streakNow() > 1 ? '🔥' : '✅'}</div>
+      <h1>${session.test ? 'Test beendet' : 'Gut gemacht!'}</h1>
       <p class="muted">${session.q.length} Aufgaben in ${fmtTime(secs * 1000)} · Serie: ${streakNow()} Tag${streakNow() === 1 ? '' : 'e'}</p>
       ${session.lesson ? lessonFinishHtml(session.lesson) : ''}
+      ${session.test ? testResultHtml() : ''}
     </div>
     <div class="stack actions">${session.lesson ? lessonFinishActions(session.lesson) : `
-      <button class="btn primary" data-start="${session.kind}">Noch eine Runde</button>
+      <button class="btn primary" data-start="${session.test ? 'test:' + session.test.id : session.kind}">${session.test ? 'Neuer Test' : 'Noch eine Runde'}</button>
       <button class="btn ghost" data-go="home">Fertig</button>`}
     </div></div>`;
   if (session.lesson) wireLessonFinish(session.lesson);
@@ -274,7 +305,7 @@ function finish() {
 function renderItem() {
   stopSpeech();
   const it = session.q[session.pos];
-  ({ vocab: vVocab, decode: vDecode, lid: vLid, lesen: vLesen, hoeren: vHoeren, schreiben: vSchreiben, sprechen: vSprechen, party: vParty, wb: vWb, hb1: vHb1 })[it.t](it.c);
+  ({ vocab: vVocab, decode: vDecode, lid: vLid, lesen: vLesen, hoeren: vHoeren, schreiben: vSchreiben, sprechen: vSprechen, party: vParty, wb: vWb, hb1: vHb1, tq: vTq })[it.t](it.c);
   window.scrollTo(0, 0);
 }
 
@@ -302,7 +333,11 @@ function vVocab(c) {
       </div>`;
     document.getElementById('say').onclick = () => say(speakText);
     document.querySelectorAll('[data-g]').forEach(b => b.onclick = () => {
-      const g = +b.dataset.g; grade(c.k, g);
+      const g = +b.dataset.g;
+      if (session.practice) practiceGrade(c.k, g); else grade(c.k, g);
+      // Nochmal: the card comes back at the end of this round (up to twice)
+      const n = session.again[c.k] = (session.again[c.k] || 0) + (g === 0 ? 1 : 0);
+      if (g === 0 && n <= 2) session.q.push({ t: 'vocab', c });
       next(g > 0);
     });
   };
@@ -323,6 +358,8 @@ function mc({ tag, head, options, answer, onDone, after, en }) {
     <div id="fb"></div></div>`, tag);
   document.querySelectorAll('.opt').forEach(b => b.onclick = () => {
     const i = +b.dataset.i, ok = i === answer;
+    session.max++; if (ok) session.pts++;
+    if (session.test && !ok) session.missed.push(`${stripTags(head)} → ${options[answer]}`);
     document.querySelectorAll('.opt').forEach(x => { x.disabled = true; if (+x.dataset.i === answer) x.classList.add('right'); });
     if (!ok) b.classList.add('wrong');
     if (en) document.querySelectorAll('.opt').forEach(x => { const t = en[+x.dataset.i]; if (t) x.insertAdjacentHTML('beforeend', `<span class="opt-en">${esc(t)}</span>`); });
@@ -330,6 +367,14 @@ function mc({ tag, head, options, answer, onDone, after, en }) {
       <button class="btn primary actions" id="nx">Weiter</button>`;
     document.getElementById('nx').onclick = () => { onDone(ok); };
   });
+}
+
+const stripTags = h => { const d = document.createElement('div'); d.innerHTML = h; d.querySelectorAll('details,button,.lvrow,.small').forEach(e => e.remove()); const t = d.textContent.replace(/\s+/g, ' ').trim(); return t.length > 170 ? '… ' + t.slice(-160) : t; };
+
+/* --- Test-Frage (Wortschatz/Grammatik, multiple choice) --- */
+function vTq(c) {
+  mc({ tag: c.tag, head: `<p class="sentence" style="font-size:20px">${c.html}</p>`, options: c.o, answer: c.a,
+    after: c.why ? `<p class="small" style="margin-top:8px">${c.why}</p>` : '', onDone: ok => next(ok) });
 }
 
 /* --- Entschlüsseln --- */
@@ -699,6 +744,72 @@ function progressView() {
     <p class="small muted" style="margin-top:18px">Wie Wiederholung funktioniert: Jede Karte, die du kannst, kommt nach 1, 3, 7, 14, 30, 60 Tagen wieder. Jede 10er-Runde mischt fällige Wiederholungen mit neuen Wörtern. Wenn nichts fällig ist, kommen Wörter, die du am längsten nicht gesehen hast.</p>`;
 }
 
+/* --- Probetests: exam-like tests with a score at the end --- */
+const TESTS = [
+  { id: 'lid', t: 'Einbürgerungstest', sub: '33 Fragen wie im echten Test (30 allgemein + 3 Bundesland), 60 Min., bestanden ab 17 richtig', pass: m => Math.ceil(m * 17 / 33) },
+  { id: 'lesen', t: 'B1 Lesen', sub: 'Teil 1–5, je ein Text. Bestanden ab 60 %', pass: m => Math.ceil(m * 0.6) },
+  { id: 'hoeren', t: 'B1 Hören', sub: 'Teil 1–4, Text nur hören. Bestanden ab 60 %', pass: m => Math.ceil(m * 0.6) },
+  { id: 'wg', t: 'Wortschatz & Grammatik B1', sub: '20 Fragen: 10 Wörter, 10 Grammatik', pass: m => Math.ceil(m * 0.6) },
+  { id: 'schreiben', t: 'B1 Schreiben', sub: 'Teil 1–3 hintereinander (60 Min.), mit Musterlösung und Claude-Feedback' },
+  { id: 'sprechen', t: 'B1 Sprechen', sub: 'Teil 1–3 laut üben, mit Muster' }
+];
+function byMod(kind, mod) {
+  const all = DATA.tasks[kind].map((c, i) => ({ c, i }));
+  const tagged = all.filter(x => x.c.mod === mod);
+  return tagged.length ? pickRandom(tagged) : null;
+}
+function startTest(id) {
+  const T = TESTS.find(t => t.id === id); let q = [];
+  if (id === 'lid') {
+    const all = DATA.lid.map(x => ({ ...x, k: 'l:' + x.id }));
+    q = [...shuffle(all.filter(x => !x.s)).slice(0, 30), ...shuffle(all.filter(x => x.s === S.settings.state)).slice(0, 3)].map(c => ({ t: 'lid', c }));
+  } else if (id === 'lesen' || id === 'schreiben' || id === 'sprechen') {
+    const n = { lesen: 5, schreiben: 3, sprechen: 3 }[id], name = { lesen: 'Lesen', schreiben: 'Schreiben', sprechen: 'Sprechen' }[id];
+    for (let p = 1; p <= n; p++) { const x = byMod(id, `${name} ${p}`); if (x) q.push({ t: id, c: x.c, i: x.i }); }
+  } else if (id === 'hoeren') {
+    const t1 = shuffle(DATA.tasks.hb1.filter(c => c.mod === 'Hören 1')).slice(0, 2);
+    q = [...t1, ...[2, 3, 4].map(p => pickRandom(DATA.tasks.hb1.filter(c => c.mod === `Hören ${p}`)))].filter(Boolean).map(c => ({ t: 'hb1', c }));
+  } else if (id === 'wg') q = wgTest();
+  if (!q.length) return toast('Dafür gibt es noch keine Aufgaben');
+  startQueue('test', q, { test: T, missed: [] });
+}
+function wgTest() {
+  const words = shuffle(vocabPool().filter(x => x.lv && isExam(x) && x.s && x.m && !x.deck?.match(/Sätze|Affixe|Redemittel/)));
+  const out = words.slice(0, 10).map(c => {
+    const wrong = shuffle(words.filter(x => x.m !== c.m && x.k !== c.k)).slice(0, 3).map(x => x.m);
+    return { t: 'tq', c: { tag: 'Probetest · Wortschatz', html: `<b>${esc(c.w)}</b><br><span class="small muted">${esc(c.s)}</span>`, o: [c.m, ...wrong], a: 0 } };
+  });
+  const B = DATA.grammar.bank, topics = shuffle(Object.keys(B)).slice(0, 10);
+  topics.forEach(k => {
+    const it = pickRandom(B[k].filter(x => (x.t.match(/___/g) || []).length === 1));
+    if (!it) return;
+    const others = [...new Set(B[k].map(x => x.a).filter(a => a !== it.a && !a.includes(' ')))];
+    const o = [it.a, ...shuffle(others).slice(0, 3)];
+    const tp = TOPICS.find(t => t.id === k);
+    out.push({ t: 'tq', c: { tag: `Probetest · Grammatik · ${tp ? tp.title : ''}`, html: esc(it.t).replace('___', '<b>_____</b>'), o, a: 0, why: esc(it.w) } });
+  });
+  return shuffle(out);
+}
+function testResultHtml() {
+  const { pts, max, test } = session;
+  if (!max) return `<p class="small muted">Vergleiche deine Antworten mit dem Muster. Für echtes Feedback: „Mit Claude prüfen“.</p>`;
+  const need = test.pass(max), ok = pts >= need;
+  return `<div class="tile" style="min-height:0;margin-top:14px;text-align:center">
+    <b style="font-size:30px">${pts} / ${max}</b><span>${Math.round(pts / max * 100)} % · zum Bestehen: ${need}</span>
+    <b style="margin-top:8px;color:${ok ? 'var(--good)' : 'var(--bad)'}">${ok ? 'Bestanden ✓' : 'Noch nicht bestanden'}</b></div>
+    ${session.missed.length ? `<details style="text-align:left"><summary class="small">Falsche Antworten (${session.missed.length})</summary>${session.missed.map(m => `<p class="small">${esc(m)}</p>`).join('')}</details>` : ''}`;
+}
+function testsView() {
+  stopSpeech();
+  const hist = (S.tests || []).slice().reverse();
+  const last = id => { const h = hist.find(x => x.id === id); return h ? ` · zuletzt ${h.p}/${h.m} (${Math.round(h.p / h.m * 100)} %)` : ''; };
+  $app.innerHTML = `
+    <div class="top"><button class="iconbtn" data-go="home" aria-label="Zurück">←</button><h1 style="flex:1">Probetests</h1></div>
+    <p class="small muted" style="margin:10px 0">Jeder Test wird neu gemischt. Am Ende siehst du Punkte, ob du bestanden hättest und welche Fragen falsch waren.</p>
+    <div class="stack">${TESTS.map(t => `<button class="tile" data-start="test:${t.id}" style="width:100%;min-height:0"><b>${t.t}</b><span>${t.sub}${last(t.id)}</span></button>`).join('')}</div>
+    ${hist.length ? `<h2>Deine Ergebnisse</h2>${hist.slice(0, 12).map(h => { const T = TESTS.find(t => t.id === h.id); const ok = T && T.pass && h.p >= T.pass(h.m); return `<div class="statline"><span>${new Date(h.d).toLocaleDateString('de-DE')} · ${T ? T.t : h.id}</span><span style="color:${ok ? 'var(--good)' : 'var(--bad)'}">${h.p}/${h.m}</span></div>`; }).join('')}` : ''}`;
+}
+
 /* --- Countdown to the exams (dates set in Einstellungen) --- */
 function countdownRow() {
   const b = daysUntil(S.settings.b1Date), l = daysUntil(S.settings.lidDate);
@@ -725,6 +836,7 @@ function examView() {
       <b>${m.t} <span class="muted small">· ${m.time}</span></b>
       ${m.parts.map(p => `<span>${esc(p)}</span>`).join('')}
       <button class="btn" data-start="${m.k}" style="margin-top:10px;padding:12px">${m.t} üben</button></div>`).join('')}</div>
+    <button class="btn primary" data-go="tests" style="margin-top:12px">📝 Probetests mit Ergebnis</button>
     <h2>Was du dafür brauchst</h2>
     <div class="statline"><span>B1-Wörter (Goethe-Wortliste + Kurs)</span><span>${sure} von ${words.length} sicher</span></div>
     ${bar([[sure, 'var(--good)']], words.length)}
@@ -878,7 +990,7 @@ document.addEventListener('click', e => {
   const s = e.target.closest('[data-start]'); if (s) return startSession(s.dataset.start);
   const g = e.target.closest('[data-go]'); if (!g) return;
   clearInterval(window._tick);
-  ({ home, settings: settingsView, import: importView, progress: progressView, grammar: grammarHome, lid: lidHome, exam: examView })[g.dataset.go]();
+  ({ home, settings: settingsView, import: importView, progress: progressView, grammar: grammarHome, lid: lidHome, exam: examView, tests: testsView })[g.dataset.go]();
 });
 
 async function boot() {

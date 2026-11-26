@@ -5125,7 +5125,7 @@
  },
  {
   "w": "verzichten",
-  "s": "",
+  "s": "Heute verzichte ich auf Süßigkeiten.",
   "m": "to renounce / to do without",
   "x": "ver- away + Zicht claim",
   "wk": 0,
@@ -5136,7 +5136,7 @@
  },
  {
   "w": "bewältigen",
-  "s": "",
+  "s": "Sie hat die schwierige Situation gut bewältigt.",
   "m": "to cope with / to overcome",
   "x": "be- transitive + walten to govern",
   "wk": 0,
@@ -5146,7 +5146,7 @@
  },
  {
   "w": "verfügen",
-  "s": "",
+  "s": "Das Hotel verfügt über ein Schwimmbad.",
   "m": "to have at one's disposal",
   "x": "ver- intensification + fügen to join",
   "wk": 0,
@@ -5156,7 +5156,7 @@
  },
  {
   "w": "abwägen",
-  "s": "",
+  "s": "Wir müssen die Vor- und Nachteile genau abwägen.",
   "m": "to weigh up / to consider",
   "x": "ab- off + wägen to weigh",
   "wk": 0,
@@ -5166,7 +5166,7 @@
  },
  {
   "w": "einräumen",
-  "s": "",
+  "s": "Er hat eingeräumt, dass er einen Fehler gemacht hat.",
   "m": "to concede / to make room for",
   "x": "ein- into + Raum space or room",
   "wk": 0,
@@ -5176,7 +5176,7 @@
  },
  {
   "w": "erschweren",
-  "s": "",
+  "s": "Der Regen erschwert die Arbeit auf der Baustelle.",
   "m": "to make harder / to complicate",
   "x": "er- resultative + schwer hard",
   "wk": 0,
@@ -5186,7 +5186,7 @@
  },
  {
   "w": "erleichtern",
-  "s": "",
+  "s": "Eine gute Planung erleichtert den Umzug.",
   "m": "to make easier / to relieve",
   "x": "er- resultative + leicht easy",
   "wk": 0,
@@ -5197,7 +5197,7 @@
  },
  {
   "w": "schildern",
-  "s": "",
+  "s": "Bitte schildern Sie, was passiert ist.",
   "m": "to describe / to depict",
   "x": "Schild sign or shield root",
   "wk": 0,
@@ -5207,7 +5207,7 @@
  },
  {
   "w": "gewähren",
-  "s": "",
+  "s": "Die Bank hat uns einen Kredit gewährt.",
   "m": "to grant / to allow",
   "x": "ge- completion + währen to endure",
   "wk": 0,
@@ -5217,7 +5217,7 @@
  },
  {
   "w": "voraussetzen",
-  "s": "",
+  "s": "Für diese Stelle werden gute Deutschkenntnisse vorausgesetzt.",
   "m": "to presuppose / to require",
   "x": "vor- before + aus- out + setzen to set",
   "wk": 0,
@@ -5227,7 +5227,7 @@
  },
  {
   "w": "nachweisen",
-  "s": "",
+  "s": "Sie müssen Ihre Deutschkenntnisse mit einem Zertifikat nachweisen.",
   "m": "to prove / to demonstrate",
   "x": "nach- after + weisen to show",
   "wk": 0,
@@ -5237,7 +5237,7 @@
  },
  {
   "w": "überwinden",
-  "s": "",
+  "s": "Er hat seine Angst vor dem Sprechen überwunden.",
   "m": "to overcome / to get over",
   "x": "über- over + winden to struggle",
   "wk": 0,
@@ -5247,7 +5247,7 @@
  },
  {
   "w": "gelten",
-  "s": "",
+  "s": "Das Ticket gilt für alle Busse und Bahnen.",
   "m": "to be valid / to apply",
   "x": "gelt- worth or value root",
   "wk": 0,
@@ -5258,7 +5258,7 @@
  },
  {
   "w": "scheitern",
-  "s": "",
+  "s": "Das Projekt ist am Geld gescheitert.",
   "m": "to fail / to founder",
   "x": "Scheit wreckage root",
   "wk": 0,
@@ -5268,7 +5268,7 @@
  },
  {
   "w": "mutig",
-  "s": "",
+  "s": "Es war mutig von dir, das zu sagen.",
   "m": "courageous / having the quality of courage",
   "x": "-ig + Mut (courage)",
   "wk": 0,
@@ -5279,7 +5279,7 @@
  },
  {
   "w": "empfindlich",
-  "s": "",
+  "s": "Meine Haut ist sehr empfindlich gegen Sonne.",
   "m": "sensitive / in the manner of feeling deeply",
   "x": "-lich + Empfind (to feel)",
   "wk": 0,
@@ -5289,7 +5289,7 @@
  },
  {
   "w": "freundlich",
-  "s": "",
+  "s": "Die Verkäuferin war sehr freundlich.",
   "m": "friendly / in the manner of a friend",
   "x": "-lich + Freund (friend)",
   "wk": 0,
@@ -5300,7 +5300,7 @@
  },
  {
   "w": "nachdenklich",
-  "s": "",
+  "s": "Nach dem Gespräch war er sehr nachdenklich.",
   "m": "thoughtful / pensive",
   "x": "-lich + nach (after) + denken (to think)",
   "wk": 0,
@@ -5310,7 +5310,7 @@
  },
  {
   "w": "rücksichtslos",
-  "s": "",
+  "s": "Der Fahrer ist rücksichtslos über die rote Ampel gefahren.",
   "m": "inconsiderate / without consideration",
   "x": "-los + Rücksicht (consideration)",
   "wk": 0,
@@ -5320,7 +5320,7 @@
  },
  {
   "w": "aufmerksam",
-  "s": "",
+  "s": "Die Schüler hören aufmerksam zu.",
   "m": "attentive / inclined to pay attention",
   "x": "-sam + auf (up) + Merk (to notice)",
   "wk": 0,
@@ -5331,7 +5331,7 @@
  },
  {
   "w": "vertrauenswürdig",
-  "s": "",
+  "s": "Unser Babysitter ist absolut vertrauenswürdig.",
   "m": "trustworthy / worthy of trust",
   "x": "-würdig + Vertrauen (trust)",
   "wk": 0,
@@ -5341,7 +5341,7 @@
  },
  {
   "w": "wissbegierig",
-  "s": "",
+  "s": "Kinder sind von Natur aus wissbegierig.",
   "m": "eager to learn",
   "x": "-ig + Wissen (knowledge) + Begier (hunger/desire)",
   "wk": 0,
@@ -5351,7 +5351,7 @@
  },
  {
   "w": "eigensinnig",
-  "s": "",
+  "s": "Mein Sohn ist manchmal ziemlich eigensinnig.",
   "m": "stubborn / own-minded",
   "x": "-ig + eigen (own) + Sinn (sense/mind)",
   "wk": 0,
@@ -5361,7 +5361,7 @@
  },
  {
   "w": "gelassen",
-  "s": "",
+  "s": "Auch vor der Prüfung bleibt sie gelassen.",
   "m": "calm / composed / released into stillness",
   "x": "ge- + lassen (to let go)",
   "wk": 0,
@@ -5371,7 +5371,7 @@
  },
  {
   "w": "tapfer",
-  "s": "",
+  "s": "Das Kind war beim Arzt sehr tapfer.",
   "m": "brave / courageous",
   "x": "root word",
   "wk": 0,
@@ -5381,7 +5381,7 @@
  },
  {
   "w": "stolz",
-  "s": "",
+  "s": "Ich bin stolz auf dich!",
   "m": "proud",
   "x": "root word",
   "wk": 0,
@@ -5392,7 +5392,7 @@
  },
  {
   "w": "bescheiden",
-  "s": "",
+  "s": "Trotz seines Erfolgs ist er bescheiden geblieben.",
   "m": "modest / unassuming",
   "x": "be- (transitive) + Scheid (to distinguish)",
   "wk": 0,
@@ -5402,7 +5402,7 @@
  },
  {
   "w": "leidenschaftlich",
-  "s": "",
+  "s": "Er kocht leidenschaftlich gern.",
   "m": "passionate / in the manner of passion",
   "x": "-lich + Leidenschaft (passion)",
   "wk": 0,
@@ -5412,7 +5412,7 @@
  },
  {
   "w": "gleichgültig",
-  "s": "",
+  "s": "Es ist mir gleichgültig, wo wir essen.",
   "m": "indifferent / all things equally valid",
   "x": "-ig + gleich (equal) + gültig (valid)",
   "wk": 0,
@@ -5422,7 +5422,7 @@
  },
  {
   "w": "selbstbewusst",
-  "s": "",
+  "s": "Sie tritt im Vorstellungsgespräch selbstbewusst auf.",
   "m": "self-confident / self-aware",
   "x": "selbst (self) + bewusst (aware)",
   "wk": 0,
@@ -5432,7 +5432,7 @@
  },
  {
   "w": "einfühlsam",
-  "s": "",
+  "s": "Die Ärztin ist sehr einfühlsam mit Kindern.",
   "m": "empathetic / inclined to feel into others",
   "x": "-sam + ein (into) + Gefühl (feeling)",
   "wk": 0,
@@ -5442,7 +5442,7 @@
  },
  {
   "w": "rückhaltlos",
-  "s": "",
+  "s": "Ich unterstütze deine Entscheidung rückhaltlos.",
   "m": "unreserved / without holding back",
   "x": "-los + Rückhalt (reserve/support)",
   "wk": 0,
@@ -5452,7 +5452,7 @@
  },
  {
   "w": "aufrichtig",
-  "s": "",
+  "s": "Ich möchte mich aufrichtig bei dir entschuldigen.",
   "m": "sincere / upright / directed upward",
   "x": "-ig + auf (up) + richt (to direct)",
   "wk": 0,
@@ -5462,7 +5462,7 @@
  },
  {
   "w": "unerschütterlich",
-  "s": "",
+  "s": "Sie hat ein unerschütterliches Vertrauen in ihre Familie.",
   "m": "unshakeable / steadfast",
   "x": "un- + er- + schüttern (to shake) + -lich",
   "wk": 0,
@@ -5472,7 +5472,7 @@
  },
  {
   "w": "mitfühlend",
-  "s": "",
+  "s": "Er hat mir einen mitfühlenden Brief geschrieben.",
   "m": "compassionate / feeling with others",
   "x": "mit- (with) + fühlen (to feel)",
   "wk": 0,
@@ -5482,7 +5482,7 @@
  },
  {
   "w": "gleichmütig",
-  "s": "",
+  "s": "Er hörte die schlechte Nachricht gleichmütig an.",
   "m": "even-tempered / equanimous",
   "x": "-ig + gleich (equal) + Mut (courage/mood)",
   "wk": 0,
@@ -5492,7 +5492,7 @@
  },
  {
   "w": "verzweifelt",
-  "s": "",
+  "s": "Sie suchte verzweifelt ihren Schlüssel.",
   "m": "desperate / despairing",
   "x": "ver- (intensification) + zweifeln (to doubt)",
   "wk": 0,
@@ -5502,7 +5502,7 @@
  },
  {
   "w": "überheblich",
-  "s": "",
+  "s": "Ich finde seine Art etwas überheblich.",
   "m": "arrogant / lifting oneself above others",
   "x": "über- (over) + heben (to lift) + -lich",
   "wk": 0,
@@ -5512,7 +5512,7 @@
  },
  {
   "w": "nachgiebig",
-  "s": "",
+  "s": "Die Eltern sind mit ihren Kindern zu nachgiebig.",
   "m": "yielding / accommodating / giving way",
   "x": "-ig + nach (after) + geben (to give)",
   "wk": 0,
@@ -5522,7 +5522,7 @@
  },
  {
   "w": "beharrlich",
-  "s": "",
+  "s": "Wenn du beharrlich übst, wirst du besser.",
   "m": "persistent / tenacious",
   "x": "-lich + beharren (to persist)",
   "wk": 0,
@@ -5532,7 +5532,7 @@
  },
  {
   "w": "selbstlos",
-  "s": "",
+  "s": "Sie hilft anderen ganz selbstlos.",
   "m": "selfless / without self-interest",
   "x": "-los + selbst (self)",
   "wk": 0,
@@ -5542,7 +5542,7 @@
  },
  {
   "w": "zerstreut",
-  "s": "",
+  "s": "Ich bin heute total zerstreut und vergesse alles.",
   "m": "absent-minded / scattered",
   "x": "zer- (apart) + streuen (to scatter)",
   "wk": 0,
@@ -5552,7 +5552,7 @@
  },
  {
   "w": "reizbar",
-  "s": "",
+  "s": "Wenn ich müde bin, bin ich schnell reizbar.",
   "m": "irritable / capable of being provoked",
   "x": "-bar + reizen (to irritate)",
   "wk": 0,
@@ -5562,7 +5562,7 @@
  },
  {
   "w": "unvoreingenommen",
-  "s": "",
+  "s": "Wir sollten neuen Kollegen unvoreingenommen begegnen.",
   "m": "unbiased / unprejudiced",
   "x": "un- + vor (before) + ein + genommen (taken)",
   "wk": 0,
@@ -5572,7 +5572,7 @@
  },
  {
   "w": "sanftmütig",
-  "s": "",
+  "s": "Unser Hund ist groß, aber sehr sanftmütig.",
   "m": "gentle-natured / meek",
   "x": "-ig + sanft (gentle) + Mut (mood/spirit)",
   "wk": 0,
@@ -5582,7 +5582,7 @@
  },
  {
   "w": "hinterhältig",
-  "s": "",
+  "s": "Das war eine hinterhältige Frage.",
   "m": "devious / holding something behind",
   "x": "-ig + hinter (behind) + halten (to hold)",
   "wk": 0,
@@ -5592,7 +5592,7 @@
  },
  {
   "w": "freigiebig",
-  "s": "",
+  "s": "Mein Onkel ist sehr freigiebig mit Geschenken.",
   "m": "generous / freely giving",
   "x": "-ig + frei (free) + geben (to give)",
   "wk": 0,
@@ -5602,7 +5602,7 @@
  },
  {
   "w": "das Fahrrad",
-  "s": "",
+  "s": "Ich fahre jeden Tag mit dem Fahrrad zur Arbeit.",
   "m": "bicycle",
   "x": "Fahr (travel) + Rad (wheel)",
   "wk": 0,
@@ -5613,7 +5613,7 @@
  },
  {
   "w": "das Mountainbike",
-  "s": "",
+  "s": "Mit dem Mountainbike fahren wir durch den Wald.",
   "m": "mountain bike",
   "x": "root word",
   "wk": 0,
@@ -5624,7 +5624,7 @@
  },
  {
   "w": "der Lenker",
-  "s": "",
+  "s": "Halt den Lenker mit beiden Händen fest.",
   "m": "handlebars / one who steers",
   "x": "-er + lenken (to steer)",
   "wk": 0,
@@ -5634,7 +5634,7 @@
  },
  {
   "w": "die Bremse",
-  "s": "",
+  "s": "Die Bremse an meinem Fahrrad funktioniert nicht richtig.",
   "m": "brake",
   "x": "root word",
   "wk": 0,
@@ -5645,7 +5645,7 @@
  },
  {
   "w": "bremsen",
-  "s": "",
+  "s": "Vor der Kurve musst du bremsen.",
   "m": "to brake / to slow down",
   "x": "root word",
   "wk": 0,
@@ -5656,7 +5656,7 @@
  },
  {
   "w": "die Gangschaltung",
-  "s": "",
+  "s": "Die Gangschaltung muss repariert werden.",
   "m": "gear system / derailleur",
   "x": "Gang (gear) + Schaltung (switching system)",
   "wk": 0,
@@ -5666,7 +5666,7 @@
  },
  {
   "w": "schalten",
-  "s": "",
+  "s": "Am Berg musst du rechtzeitig schalten.",
   "m": "to change gear / to switch",
   "x": "root word",
   "wk": 0,
@@ -5677,7 +5677,7 @@
  },
  {
   "w": "der Gang",
-  "s": "",
+  "s": "Im dritten Gang fährt es sich am leichtesten.",
   "m": "gear / passage",
   "x": "root word",
   "wk": 0,
@@ -5687,7 +5687,7 @@
  },
  {
   "w": "im ersten Gang",
-  "s": "",
+  "s": "Am steilen Berg fahre ich im ersten Gang.",
   "m": "in first gear",
   "x": "im (in the) + ersten (first) + Gang (gear)",
   "wk": 0,
@@ -5697,7 +5697,7 @@
  },
  {
   "w": "hoch schalten",
-  "s": "",
+  "s": "Auf der geraden Strecke kannst du hoch schalten.",
   "m": "to shift up a gear",
   "x": "hoch (high) + schalten (to switch)",
   "wk": 0,
@@ -5707,7 +5707,7 @@
  },
  {
   "w": "runter schalten",
-  "s": "",
+  "s": "Schalte runter, bevor es bergauf geht.",
   "m": "to shift down a gear",
   "x": "runter (down) + schalten (to switch)",
   "wk": 0,
@@ -5717,7 +5717,7 @@
  },
  {
   "w": "die Federung",
-  "s": "",
+  "s": "Die Federung macht die Fahrt im Gelände bequemer.",
   "m": "suspension / the springing system",
   "x": "-ung + federn (to spring)",
   "wk": 0,
@@ -5727,7 +5727,7 @@
  },
  {
   "w": "die Felge",
-  "s": "",
+  "s": "Nach dem Sturz war die Felge verbogen.",
   "m": "rim / wheel rim",
   "x": "root word",
   "wk": 0,
@@ -5737,7 +5737,7 @@
  },
  {
   "w": "der Schlauch",
-  "s": "",
+  "s": "Der Schlauch hat ein Loch und muss geflickt werden.",
   "m": "inner tube",
   "x": "root word",
   "wk": 0,
@@ -5747,7 +5747,7 @@
  },
  {
   "w": "die Luftpumpe",
-  "s": "",
+  "s": "Hast du eine Luftpumpe dabei?",
   "m": "air pump / bike pump",
   "x": "Luft (air) + Pumpe (pump)",
   "wk": 0,
@@ -5757,7 +5757,7 @@
  },
  {
   "w": "aufpumpen",
-  "s": "",
+  "s": "Ich muss die Reifen aufpumpen.",
   "m": "to inflate / to pump up",
   "x": "auf- (up) + pumpen (to pump)",
   "wk": 0,
@@ -5767,7 +5767,7 @@
  },
  {
   "w": "die Reifenpanne",
-  "s": "",
+  "s": "Unterwegs hatten wir eine Reifenpanne.",
   "m": "puncture / flat tyre",
   "x": "Reifen (tyre) + Panne (breakdown)",
   "wk": 0,
@@ -5777,7 +5777,7 @@
  },
  {
   "w": "flicken",
-  "s": "",
+  "s": "Kannst du mir helfen, den Reifen zu flicken?",
   "m": "to patch / to repair",
   "x": "root word",
   "wk": 0,
@@ -5787,7 +5787,7 @@
  },
  {
   "w": "das Flickzeug",
-  "s": "",
+  "s": "Ich habe immer Flickzeug in der Satteltasche.",
   "m": "puncture repair kit",
   "x": "flicken (to patch) + Zeug (stuff/kit)",
   "wk": 0,
@@ -5797,7 +5797,7 @@
  },
  {
   "w": "die Kette",
-  "s": "",
+  "s": "Die Kette ist abgesprungen.",
   "m": "chain",
   "x": "root word",
   "wk": 0,
@@ -5808,7 +5808,7 @@
  },
  {
   "w": "die Kettenschaltung",
-  "s": "",
+  "s": "Mein neues Rad hat eine Kettenschaltung mit 21 Gängen.",
   "m": "chain gear system",
   "x": "Kette (chain) + Schaltung (switching)",
   "wk": 0,
@@ -5818,7 +5818,7 @@
  },
  {
   "w": "das Kettenöl",
-  "s": "",
+  "s": "Die Kette quietscht, sie braucht Kettenöl.",
   "m": "chain oil / lubricant",
   "x": "Kette (chain) + Öl (oil)",
   "wk": 0,
@@ -5828,7 +5828,7 @@
  },
  {
   "w": "der Sattel",
-  "s": "",
+  "s": "Der Sattel ist zu hoch für mich.",
   "m": "saddle",
   "x": "root word",
   "wk": 0,
@@ -5838,7 +5838,7 @@
  },
  {
   "w": "die Satteltasche",
-  "s": "",
+  "s": "In der Satteltasche ist Platz für einen Regenmantel.",
   "m": "saddle bag",
   "x": "Sattel (saddle) + Tasche (bag)",
   "wk": 0,
@@ -5848,7 +5848,7 @@
  },
  {
   "w": "der Fahrradständer",
-  "s": "",
+  "s": "Vor dem Bahnhof gibt es viele Fahrradständer.",
   "m": "bike stand",
   "x": "Fahrrad (bicycle) + Ständer (stand)",
   "wk": 0,
@@ -5858,7 +5858,7 @@
  },
  {
   "w": "das Fahrradschloss",
-  "s": "",
+  "s": "Vergiss nicht, das Fahrradschloss abzuschließen.",
   "m": "bike lock",
   "x": "Fahrrad (bicycle) + Schloss (lock)",
   "wk": 0,
@@ -5868,7 +5868,7 @@
  },
  {
   "w": "der Fahrradhelm",
-  "s": "",
+  "s": "Ohne Fahrradhelm fahre ich nicht los.",
   "m": "cycling helmet",
   "x": "Fahrrad (bicycle) + Helm (helmet)",
   "wk": 0,
@@ -5878,7 +5878,7 @@
  },
  {
   "w": "die Fahrradhandschuhe",
-  "s": "",
+  "s": "Im Winter trage ich warme Fahrradhandschuhe.",
   "m": "cycling gloves",
   "x": "Fahrrad (bicycle) + Handschuhe (gloves)",
   "wk": 0,
@@ -5888,7 +5888,7 @@
  },
  {
   "w": "die Trinkflasche",
-  "s": "",
+  "s": "Füll die Trinkflasche vor der Tour mit Wasser.",
   "m": "water bottle",
   "x": "trinken (to drink) + Flasche (bottle)",
   "wk": 0,
@@ -5898,7 +5898,7 @@
  },
  {
   "w": "der Flaschenhalter",
-  "s": "",
+  "s": "Die Trinkflasche steckt im Flaschenhalter.",
   "m": "bottle cage / holder",
   "x": "Flasche (bottle) + Halter (holder)",
   "wk": 0,
@@ -5908,7 +5908,7 @@
  },
  {
   "w": "die Fahrradtour",
-  "s": "",
+  "s": "Am Wochenende machen wir eine Fahrradtour an der Isar.",
   "m": "cycling tour / bike ride",
   "x": "Fahrrad (bicycle) + Tour (tour)",
   "wk": 0,
@@ -5918,7 +5918,7 @@
  },
  {
   "w": "die Etappe",
-  "s": "",
+  "s": "Die erste Etappe war 60 Kilometer lang.",
   "m": "stage / leg of a journey",
   "x": "root word",
   "wk": 0,
@@ -5928,7 +5928,7 @@
  },
  {
   "w": "bergauf fahren",
-  "s": "",
+  "s": "Bergauf zu fahren ist sehr anstrengend.",
   "m": "to ride uphill",
   "x": "Berg (mountain) + auf (up) + fahren (to ride)",
   "wk": 0,
@@ -5938,7 +5938,7 @@
  },
  {
   "w": "bergab fahren",
-  "s": "",
+  "s": "Beim Bergabfahren musst du vorsichtig bremsen.",
   "m": "to ride downhill",
   "x": "Berg (mountain) + ab (down) + fahren (to ride)",
   "wk": 0,
@@ -5948,7 +5948,7 @@
  },
  {
   "w": "überholen",
-  "s": "",
+  "s": "Der Radfahrer überholt mich links.",
   "m": "to overtake",
   "x": "über- (over) + holen (to fetch)",
   "wk": 0,
@@ -5959,7 +5959,7 @@
  },
  {
   "w": "die Kurve nehmen",
-  "s": "",
+  "s": "Nimm die Kurve langsam, es ist nass.",
   "m": "to take a corner",
   "x": "Kurve (bend) + nehmen (to take)",
   "wk": 0,
@@ -5969,7 +5969,7 @@
  },
  {
   "w": "ausweichen",
-  "s": "",
+  "s": "Ich musste einem Hund ausweichen.",
   "m": "to swerve / to dodge",
   "x": "aus- (out) + weichen (to yield)",
   "wk": 0,
@@ -5979,7 +5979,7 @@
  },
  {
   "w": "stürzen",
-  "s": "",
+  "s": "Sie ist mit dem Fahrrad gestürzt.",
   "m": "to crash / to fall",
   "x": "root word",
   "wk": 0,
@@ -5990,7 +5990,7 @@
  },
  {
   "w": "der Sturz",
-  "s": "",
+  "s": "Bei dem Sturz hat er sich das Knie verletzt.",
   "m": "crash / fall",
   "x": "root word",
   "wk": 0,
@@ -6000,7 +6000,7 @@
  },
  {
   "w": "das Trikot",
-  "s": "",
+  "s": "Das Team fährt in gelben Trikots.",
   "m": "cycling jersey",
   "x": "root word",
   "wk": 0,
@@ -6010,7 +6010,7 @@
  },
  {
   "w": "die Radhose",
-  "s": "",
+  "s": "Mit einer gepolsterten Radhose sitzt man bequemer.",
   "m": "cycling shorts",
   "x": "Rad (wheel/cycle) + Hose (trousers)",
   "wk": 0,
@@ -6020,7 +6020,7 @@
  },
  {
   "w": "die Klickpedale",
-  "s": "",
+  "s": "Mit Klickpedalen hat man mehr Kraft beim Treten.",
   "m": "clipless pedals",
   "x": "klicken (to click) + Pedale (pedals)",
   "wk": 0,
@@ -6030,7 +6030,7 @@
  },
  {
   "w": "einrasten",
-  "s": "",
+  "s": "Der Schuh rastet im Pedal ein.",
   "m": "to clip in / to lock into place",
   "x": "ein- (in) + rasten (to lock)",
   "wk": 0,
@@ -6040,7 +6040,7 @@
  },
  {
   "w": "die Trittfrequenz",
-  "s": "",
+  "s": "Eine hohe Trittfrequenz schont die Knie.",
   "m": "cadence",
   "x": "Tritt (step/pedal stroke) + Frequenz (frequency)",
   "wk": 0,
@@ -6050,7 +6050,7 @@
  },
  {
   "w": "die Wattzahl",
-  "s": "",
+  "s": "Das Gerät zeigt die Wattzahl beim Training an.",
   "m": "wattage / power output",
   "x": "Watt + Zahl (number)",
   "wk": 0,
