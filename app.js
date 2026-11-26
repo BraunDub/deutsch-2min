@@ -128,9 +128,11 @@ const decodePool = () => DATA.decode.filter(inWeek).map(c => ({ ...c, k: 'd:' + 
 const lidPool = () => DATA.lid.filter(q => !q.s || q.s === S.settings.state).map(q => ({ ...q, k: 'l:' + q.id }));
 function leastSeen(kind, list) {
   const seen = S.seen[kind] || {};
-  let ids = list.map((_, i) => i).filter(i => inWeek(list[i]));
+  // exam-format texts (Lesen, Hören-Prüfung) always use the whole pool so they keep rotating
+  const anyWeek = kind === 'lesen' || kind === 'hb1';
+  let ids = list.map((_, i) => i).filter(i => anyWeek || inWeek(list[i]));
   if (!ids.length) ids = list.map((_, i) => i);
-  const cur = ids.filter(i => list[i].wk === S.settings.week);
+  const cur = anyWeek ? [] : ids.filter(i => list[i].wk === S.settings.week);
   const minOf = arr => Math.min(...arr.map(i => seen[i] || 0));
   // current week's tasks first until each has been seen once
   if (cur.length && minOf(cur) === 0) ids = cur;
@@ -753,10 +755,15 @@ const TESTS = [
   { id: 'schreiben', t: 'B1 Schreiben', sub: 'Teil 1–3 hintereinander (60 Min.), mit Musterlösung und Claude-Feedback' },
   { id: 'sprechen', t: 'B1 Sprechen', sub: 'Teil 1–3 laut üben, mit Muster' }
 ];
+/* least-seen task of one exam part, so tests rotate through all texts */
 function byMod(kind, mod) {
-  const all = DATA.tasks[kind].map((c, i) => ({ c, i }));
-  const tagged = all.filter(x => x.c.mod === mod);
-  return tagged.length ? pickRandom(tagged) : null;
+  const seen = S.seen[kind] || {};
+  const tagged = DATA.tasks[kind].map((c, i) => ({ c, i })).filter(x => x.c.mod === mod);
+  if (!tagged.length) return null;
+  const min = Math.min(...tagged.map(x => seen[x.i] || 0));
+  const x = pickRandom(tagged.filter(x => (seen[x.i] || 0) === min));
+  markSeen(kind, x.i);
+  return x;
 }
 function startTest(id) {
   const T = TESTS.find(t => t.id === id); let q = [];
@@ -767,8 +774,8 @@ function startTest(id) {
     const n = { lesen: 5, schreiben: 3, sprechen: 3 }[id], name = { lesen: 'Lesen', schreiben: 'Schreiben', sprechen: 'Sprechen' }[id];
     for (let p = 1; p <= n; p++) { const x = byMod(id, `${name} ${p}`); if (x) q.push({ t: id, c: x.c, i: x.i }); }
   } else if (id === 'hoeren') {
-    const t1 = shuffle(DATA.tasks.hb1.filter(c => c.mod === 'Hören 1')).slice(0, 2);
-    q = [...t1, ...[2, 3, 4].map(p => pickRandom(DATA.tasks.hb1.filter(c => c.mod === `Hören ${p}`)))].filter(Boolean).map(c => ({ t: 'hb1', c }));
+    const a = byMod('hb1', 'Hören 1'), b2 = byMod('hb1', 'Hören 1');
+    q = [a, b2 && b2.i !== a.i ? b2 : null, ...[2, 3, 4].map(p => byMod('hb1', `Hören ${p}`))].filter(Boolean).map(x => ({ t: 'hb1', c: x.c, i: x.i }));
   } else if (id === 'wg') q = wgTest();
   if (!q.length) return toast('Dafür gibt es noch keine Aufgaben');
   startQueue('test', q, { test: T, missed: [] });
