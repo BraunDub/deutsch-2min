@@ -90,6 +90,43 @@ function grade(k, g) { // g: 0 again, 1 good, 2 easy
   r.l = Date.now();
   S.srs[k] = r; save();
 }
+/* ---------- missed words come back 30–50 cards later ----------
+   S.vc counts every word card you grade. Nochmal puts the word in S.later with a slot
+   30–50 cards ahead (random). Until then it is held back from normal rounds; when its slot
+   comes up (in any word round, review round or mix, even days later) it is slipped into the
+   queue. If you were away for 6+ hours it comes back at the start of the next round. */
+const LATER_MIN = 30, LATER_MAX = 50, LATER_PER_ROUND = 3, LATER_STALE = 6 * 3600e3;
+const heldBack = k => !!(S.later && S.later[k]);
+function scheduleLater(k) {
+  (S.later ||= {})[k] = { at: (S.vc || 0) + LATER_MIN + Math.floor(Math.random() * (LATER_MAX - LATER_MIN + 1)), t: Date.now() };
+}
+function laterDue(now = Date.now()) {
+  const L = S.later || {};
+  return Object.keys(L).filter(k => L[k].at <= (S.vc || 0) || now - L[k].t > LATER_STALE).sort((a, b) => L[a].at - L[b].at);
+}
+/* before showing the next card: slip in a missed word whose slot has come */
+function slipInLater() {
+  if (!session || session.test || session.lesson || !['vocab', 'review', 'mix'].includes(session.kind)) return;
+  if ((session.ins || 0) >= LATER_PER_ROUND) return;
+  const ahead = new Set(session.q.slice(session.pos).filter(x => x.t === 'vocab').map(x => x.c.k));
+  const pool = new Map(vocabPool().map(c => [c.k, c]));
+  for (const k of laterDue()) {
+    if (ahead.has(k)) continue;
+    const c = pool.get(k);
+    if (!c) { delete S.later[k]; save(); continue; } // deck switched off or removed
+    session.q.splice(session.pos, 0, { t: 'vocab', c, lt: 1 });
+    session.ins = (session.ins || 0) + 1;
+    return;
+  }
+}
+/* after grading a word card */
+function trackLater(k, g, fromLater) {
+  S.vc = (S.vc || 0) + 1;
+  if (g === 0) scheduleLater(k);           // missed (again): new slot 30–50 cards ahead
+  else if (fromLater) delete S.later[k];   // came back at its slot and you knew it: done
+  save();
+}
+
 /* choose n keys from a pool: due first (oldest due), then new ones */
 function choose(pool, n, keyOf) {
   const now = Date.now();
@@ -152,7 +189,7 @@ function nextSkill() {
 function buildMix() {
   const n = S.settings.mix;
   const q = [];
-  balanced(vocabPool(), Math.max(2, n - 3), x => x.k).forEach(c => q.push({ t: 'vocab', c }));
+  balanced(vocabPool().filter(x => !heldBack(x.k)), Math.max(2, n - 3), x => x.k).forEach(c => q.push({ t: 'vocab', c }));
   choose(decodePool(), 1, x => x.k).forEach(c => q.push({ t: 'decode', c }));
   const lidLeft = Math.max(1, Math.min(2, 5 - ((S.days[today()] || {}).lid || 0)));
   lidPick(lidLeft).forEach(c => q.push({ t: 'lid', c })); // continues where the lessons left off
@@ -167,7 +204,7 @@ function skillItem(kind) {
 }
 function buildSection(kind) {
   if (kind === 'wb') return [wbItem()];
-  if (kind === 'vocab') return balanced(vocabPool(), 10, x => x.k).map(c => ({ t: 'vocab', c }));
+  if (kind === 'vocab') return balanced(vocabPool().filter(x => !heldBack(x.k)), 10, x => x.k).map(c => ({ t: 'vocab', c }));
   if (kind === 'review') return reviewRound(10);
   if (kind === 'decode') return balanced(decodePool(), 5, x => x.k).map(c => ({ t: 'decode', c }));
   if (kind === 'lid') return choose(lidPool(), 5, x => x.k).map(c => ({ t: 'lid', c }));
@@ -185,8 +222,8 @@ function reviewPool() {
     .sort((a, b) => (S.srs[a.k].l || 0) - (S.srs[b.k].l || 0));
 }
 function reviewRound(n) {
-  const due = vocabPool().filter(x => isDue(x.k));
-  const pick = [...due, ...reviewPool().filter(x => !isDue(x.k))].slice(0, n);
+  const due = vocabPool().filter(x => isDue(x.k) && !heldBack(x.k));
+  const pick = [...due, ...reviewPool().filter(x => !isDue(x.k) && !heldBack(x.k))].slice(0, n);
   return shuffle(pick).map(c => ({ t: 'vocab', c }));
 }
 
@@ -306,14 +343,15 @@ function finish() {
 
 function renderItem() {
   stopSpeech();
+  slipInLater();
   const it = session.q[session.pos];
-  ({ vocab: vVocab, decode: vDecode, lid: vLid, lesen: vLesen, hoeren: vHoeren, schreiben: vSchreiben, sprechen: vSprechen, party: vParty, wb: vWb, hb1: vHb1, tq: vTq })[it.t](it.c);
+  ({ vocab: (c) => vVocab(c, it.lt), decode: vDecode, lid: vLid, lesen: vLesen, hoeren: vHoeren, schreiben: vSchreiben, sprechen: vSprechen, party: vParty, wb: vWb, hb1: vHb1, tq: vTq })[it.t](it.c);
   window.scrollTo(0, 0);
 }
 
 /* --- Wortschatz (flashcard) --- */
-function vVocab(c) {
-  const tag = c.deck ? `Wortschatz · ${c.deck}` : 'Wortschatz';
+function vVocab(c, fromLater) {
+  const tag = (c.deck ? `Wortschatz · ${c.deck}` : 'Wortschatz') + (fromLater ? ' · ↻ noch einmal' : '');
   const front = `<div class="lvrow">${lvBadge(c.lv)}${c.lv && !isExam(c) ? '<span class="small muted">über B1</span>' : ''}</div><div class="word"${c.w.length > 40 ? ' style="font-size:22px;font-weight:500"' : ''}>${esc(c.w)}</div>${c.s ? `<div class="sentence">${esc(c.s)}</div>` : ''}`;
   $app.innerHTML = frame(`
     <div class="top" style="margin-top:6px"><button class="speak" id="say" aria-label="Vorlesen">🔊</button></div>
@@ -337,7 +375,8 @@ function vVocab(c) {
     document.querySelectorAll('[data-g]').forEach(b => b.onclick = () => {
       const g = +b.dataset.g;
       if (session.practice) practiceGrade(c.k, g); else grade(c.k, g);
-      // Nochmal: the card comes back at the end of this round (up to twice)
+      trackLater(c.k, g, fromLater);
+      // Nochmal: the card also comes back at the end of this round (up to twice)
       const n = session.again[c.k] = (session.again[c.k] || 0) + (g === 0 ? 1 : 0);
       if (g === 0 && n <= 2) session.q.push({ t: 'vocab', c });
       next(g > 0);
